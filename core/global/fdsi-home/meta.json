@@ -6,19 +6,30 @@
   "area": "global",
   "displayName": "Home",
   "description": "Home tab icon.",
-  "tags": ["home", "nav"],
+  "tags": [
+    "home",
+    "nav"
+  ],
   "aliases": [],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-home-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-home-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-home-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-home-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1247",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "d5e3c0c0afdec8e8",
+    "lastSyncedAt": "2026-09-18T13:17:38.475Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

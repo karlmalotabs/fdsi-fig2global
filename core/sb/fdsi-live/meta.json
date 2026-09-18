@@ -6,19 +6,31 @@
   "area": "sb",
   "displayName": "Live",
   "description": "Live event/broadcast icon.",
-  "tags": ["live", "streaming", "broadcast"],
+  "tags": [
+    "live",
+    "streaming",
+    "broadcast"
+  ],
   "aliases": [],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-live-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-live-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-live-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-live-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1295",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "5e7952f5e5693ab3",
+    "lastSyncedAt": "2026-09-18T13:17:43.498Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

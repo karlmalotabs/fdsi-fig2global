@@ -6,19 +6,33 @@
   "area": "gx",
   "displayName": "My Games",
   "description": "User's games icon.",
-  "tags": ["my-games", "games", "account"],
-  "aliases": ["fdsi-my_games"],
+  "tags": [
+    "my-games",
+    "games",
+    "account"
+  ],
+  "aliases": [
+    "fdsi-my_games"
+  ],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-my-games-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-my-games-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-my-games-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-my-games-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1255",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "ad27606356f24301",
+    "lastSyncedAt": "2026-09-18T13:17:40.487Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

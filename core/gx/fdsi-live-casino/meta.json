@@ -6,19 +6,32 @@
   "area": "gx",
   "displayName": "Live Casino",
   "description": "Live casino icon.",
-  "tags": ["live-casino", "casino"],
-  "aliases": ["fdsi-live_casino"],
+  "tags": [
+    "live-casino",
+    "casino"
+  ],
+  "aliases": [
+    "fdsi-live_casino"
+  ],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-live-casino-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-live-casino-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-live-casino-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-live-casino-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1272",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "84628f5d39455a1f",
+    "lastSyncedAt": "2026-09-18T13:17:41.421Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

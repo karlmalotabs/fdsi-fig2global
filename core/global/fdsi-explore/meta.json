@@ -6,19 +6,31 @@
   "area": "global",
   "displayName": "Explore",
   "description": "Explore/discover icon.",
-  "tags": ["explore", "discover", "categories"],
+  "tags": [
+    "explore",
+    "discover",
+    "categories"
+  ],
   "aliases": [],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-explore-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-explore-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-explore-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-explore-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1235",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "2f2737693a466369",
+    "lastSyncedAt": "2026-09-18T13:17:37.172Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

@@ -6,19 +6,31 @@
   "area": "sb",
   "displayName": "Betslip",
   "description": "Betting slip icon.",
-  "tags": ["betslip", "bet", "ticket"],
+  "tags": [
+    "betslip",
+    "bet",
+    "ticket"
+  ],
   "aliases": [],
   "status": "active",
   "deprecatedInFavorOf": null,
   "variants": [
-    { "size": "reg", "style": "outline", "file": "fdsi-betslip-reg-outline.svg" },
-    { "size": "reg", "style": "solid", "file": "fdsi-betslip-reg-solid.svg" }
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-betslip-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-betslip-reg-solid.svg"
+    }
   ],
   "figma": {
-    "nodeId": null,
+    "nodeId": "19:1280",
     "componentKey": null,
-    "lastSyncedHash": null,
-    "lastSyncedAt": null
+    "lastSyncedHash": "b64ad6948fa4da88",
+    "lastSyncedAt": "2026-09-18T13:17:42.535Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
