@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../registry/schema/icon.meta.schema.json",
+  "name": "fdsi-my-bets",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "My Bets",
+  "description": "User's placed/saved bets icon.",
+  "tags": ["my-bets", "bets", "account"],
+  "aliases": ["fdsi-my_bets"],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    { "size": "reg", "style": "outline", "file": "fdsi-my-bets-reg-outline.svg" },
+    { "size": "reg", "style": "solid", "file": "fdsi-my-bets-reg-solid.svg" }
+  ],
+  "figma": {
+    "nodeId": null,
+    "componentKey": null,
+    "lastSyncedHash": null,
+    "lastSyncedAt": null
+  },
+  "version": "0.1.0",
+  "createdAt": "2026-09-18",
+  "updatedAt": "2026-09-18"
+}

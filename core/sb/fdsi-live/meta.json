@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../registry/schema/icon.meta.schema.json",
+  "name": "fdsi-live",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Live",
+  "description": "Live event/broadcast icon.",
+  "tags": ["live", "streaming", "broadcast"],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    { "size": "reg", "style": "outline", "file": "fdsi-live-reg-outline.svg" },
+    { "size": "reg", "style": "solid", "file": "fdsi-live-reg-solid.svg" }
+  ],
+  "figma": {
+    "nodeId": null,
+    "componentKey": null,
+    "lastSyncedHash": null,
+    "lastSyncedAt": null
+  },
+  "version": "0.1.0",
+  "createdAt": "2026-09-18",
+  "updatedAt": "2026-09-18"
+}

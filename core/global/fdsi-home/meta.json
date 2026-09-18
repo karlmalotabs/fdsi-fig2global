@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../registry/schema/icon.meta.schema.json",
+  "name": "fdsi-home",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Home",
+  "description": "Home tab icon.",
+  "tags": ["home", "nav"],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    { "size": "reg", "style": "outline", "file": "fdsi-home-reg-outline.svg" },
+    { "size": "reg", "style": "solid", "file": "fdsi-home-reg-solid.svg" }
+  ],
+  "figma": {
+    "nodeId": null,
+    "componentKey": null,
+    "lastSyncedHash": null,
+    "lastSyncedAt": null
+  },
+  "version": "0.1.0",
+  "createdAt": "2026-09-18",
+  "updatedAt": "2026-09-18"
+}

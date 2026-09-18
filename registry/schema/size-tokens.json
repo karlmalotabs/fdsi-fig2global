@@ -1,0 +1,6 @@
+{
+  "description": "Canonical px dimensions per size token. Every SVG's width/height/viewBox must match its size token's value exactly here — this is the safeguard a future validation script will enforce.",
+  "sm": 16,
+  "reg": 24,
+  "lg": 48
+}

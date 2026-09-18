@@ -1,0 +1,43 @@
+{
+  "$schema": "../schema/area.index.schema.json",
+  "brand": "core",
+  "area": "bx",
+  "generatedAt": "2026-09-04T00:00:00Z",
+  "icons": [
+    {
+      "name": "fdsi-transfer",
+      "path": "core/bx/fdsi-transfer",
+      "status": "draft",
+      "deprecatedInFavorOf": null,
+      "aliases": ["icon-transfer-arrows-fabric"],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-transfer-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-transfer-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-wallet",
+      "path": "core/bx/fdsi-wallet",
+      "status": "draft",
+      "deprecatedInFavorOf": null,
+      "aliases": ["icon-wallet-fabric"],
+      "variants": [
+        { "size": "sm", "style": "outline", "file": "fdsi-wallet-sm-outline.svg" },
+        { "size": "reg", "style": "outline", "file": "fdsi-wallet-reg-outline.svg" },
+        { "size": "lg", "style": "solid", "file": "fdsi-wallet-lg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-card",
+      "path": "core/bx/fdsi-card",
+      "status": "draft",
+      "deprecatedInFavorOf": null,
+      "aliases": ["icon-credit-card-fabric"],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-card-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-card-reg-solid.svg" },
+        { "size": "lg", "style": "outline", "file": "fdsi-card-lg-outline.svg" }
+      ]
+    }
+  ]
+}

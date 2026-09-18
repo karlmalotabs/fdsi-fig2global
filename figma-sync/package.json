@@ -1,0 +1,21 @@
+{
+  "name": "fdsi-figma-sync",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Figma plugin that syncs fdsi-icons between this repo and a Figma library.",
+  "scripts": {
+    "build:main": "esbuild src/main/code.ts --bundle --outfile=dist/code.js --target=es2020 --format=iife",
+    "build:ui": "esbuild src/ui/ui.ts --bundle --outfile=dist/ui.js --target=es2020 --format=iife && cp src/ui/ui.html dist/ui.html",
+    "build": "npm run build:main && npm run build:ui",
+    "typecheck": "tsc --noEmit",
+    "verify:github-read": "esbuild scripts/verify-github-read.ts --bundle --platform=node --format=esm --outfile=.tmp/verify-github-read.mjs && node .tmp/verify-github-read.mjs",
+    "watch:main": "npm run build:main -- --watch",
+    "watch:ui": "npm run build:ui -- --watch"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.100.0",
+    "@types/node": "^26.6.1",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.6.0"
+  }
+}

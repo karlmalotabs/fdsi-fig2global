@@ -1,0 +1,14 @@
+{
+  "$schema": "../schema/aliases.index.schema.json",
+  "fdsi-search-outline-old": { "canonical": "fdsi-search", "path": "core/global/fdsi-search", "brand": "core", "area": "global" },
+  "icn-search": { "canonical": "fdsi-search", "path": "core/global/fdsi-search", "brand": "core", "area": "global" },
+  "fdsi-magnifying-glass": { "canonical": "fdsi-search", "path": "core/global/fdsi-search", "brand": "core", "area": "global" },
+  "fdsi-magnifier": { "canonical": "fdsi-search", "path": "core/global/fdsi-search", "brand": "core", "area": "global" },
+  "icon-magnifying-glass-fabric": { "canonical": "fdsi-search", "path": "core/global/fdsi-search", "brand": "core", "area": "global" },
+  "icon-transfer-arrows-fabric": { "canonical": "fdsi-transfer", "path": "core/bx/fdsi-transfer", "brand": "core", "area": "bx" },
+  "icon-wallet-fabric": { "canonical": "fdsi-wallet", "path": "core/bx/fdsi-wallet", "brand": "core", "area": "bx" },
+  "icon-credit-card-fabric": { "canonical": "fdsi-card", "path": "core/bx/fdsi-card", "brand": "core", "area": "bx" },
+  "fdsi-my_bets": { "canonical": "fdsi-my-bets", "path": "core/sb/fdsi-my-bets", "brand": "core", "area": "sb" },
+  "fdsi-my_games": { "canonical": "fdsi-my-games", "path": "core/gx/fdsi-my-games", "brand": "core", "area": "gx" },
+  "fdsi-live_casino": { "canonical": "fdsi-live-casino", "path": "core/gx/fdsi-live-casino", "brand": "core", "area": "gx" }
+}

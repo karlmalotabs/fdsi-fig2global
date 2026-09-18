@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fdsi.dev/schema/area.index.schema.json",
+  "title": "FDSI Area Icon Index",
+  "description": "Schema for a generated per-area aggregate (e.g. registry/generated/global.icons.json). Intended to be produced by a future build script from per-icon meta.json files; current files under registry/generated are hand-authored samples.",
+  "type": "object",
+  "required": ["brand", "area", "generatedAt", "icons"],
+  "properties": {
+    "brand": { "type": "string" },
+    "area": { "type": "string" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "icons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "path", "status", "variants"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*$" },
+          "path": { "type": "string", "description": "Repo-relative path to the icon's folder." },
+          "status": { "type": "string", "enum": ["active", "deprecated", "draft"] },
+          "deprecatedInFavorOf": { "type": ["string", "null"] },
+          "aliases": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["size", "style", "file"],
+              "properties": {
+                "size": { "type": "string", "enum": ["sm", "reg", "lg"] },
+                "style": { "type": "string", "enum": ["outline", "solid", "color"] },
+                "file": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

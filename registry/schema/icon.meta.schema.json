@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fdsi.dev/schema/icon.meta.schema.json",
+  "title": "FDSI Icon Metadata",
+  "description": "Schema for the per-icon meta.json co-located with an icon's SVG variants.",
+  "type": "object",
+  "required": ["name", "prefix", "brand", "area", "status", "variants"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Full prefixed slug, must match the icon's folder name."
+    },
+    "prefix": { "const": "fdsi" },
+    "brand": {
+      "type": "string",
+      "description": "Top-level brand/tenant folder this icon lives under (e.g. core)."
+    },
+    "area": {
+      "type": "string",
+      "description": "Category folder inside the brand (e.g. global, bx, gx, sb, payments)."
+    },
+    "displayName": { "type": "string" },
+    "description": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Old/legacy icon names kept for agent grep-based bulk renames."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "deprecated", "draft"]
+    },
+    "deprecatedInFavorOf": {
+      "type": ["string", "null"],
+      "description": "Canonical icon name to use instead. Required when status is deprecated."
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["size", "style", "file"],
+        "additionalProperties": false,
+        "properties": {
+          "size": {
+            "type": "string",
+            "enum": ["sm", "reg", "lg"],
+            "description": "Canonical px per token (sm=16, reg=24, lg=48) is defined in size-tokens.json; the SVG's width/height/viewBox must match it."
+          },
+          "style": { "type": "string", "enum": ["outline", "solid", "color"] },
+          "file": {
+            "type": "string",
+            "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|color)\\.svg$"
+          }
+        }
+      }
+    },
+    "figma": {
+      "type": "object",
+      "description": "Fields reserved for the future bi-directional Figma sync tool.",
+      "additionalProperties": false,
+      "properties": {
+        "nodeId": { "type": ["string", "null"] },
+        "componentKey": { "type": ["string", "null"] },
+        "lastSyncedHash": { "type": ["string", "null"] },
+        "lastSyncedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "version": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["status"],
+        "properties": { "status": { "const": "deprecated" } }
+      },
+      "then": { "required": ["deprecatedInFavorOf"] }
+    }
+  ],
+  "additionalProperties": false
+}

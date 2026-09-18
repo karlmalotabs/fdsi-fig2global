@@ -1,0 +1,61 @@
+{
+  "$schema": "../schema/area.index.schema.json",
+  "brand": "core",
+  "area": "global",
+  "generatedAt": "2026-09-04T00:00:00Z",
+  "icons": [
+    {
+      "name": "fdsi-accessibility",
+      "path": "core/global/fdsi-accessibility",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        { "size": "sm", "style": "outline", "file": "fdsi-accessibility-sm-outline.svg" },
+        { "size": "reg", "style": "outline", "file": "fdsi-accessibility-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-accessibility-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-search",
+      "path": "core/global/fdsi-search",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": ["fdsi-search-outline-old", "icn-search", "icon-magnifying-glass-fabric"],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-search-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-search-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-magnifier",
+      "path": "core/global/fdsi-magnifier",
+      "status": "deprecated",
+      "deprecatedInFavorOf": "fdsi-search",
+      "aliases": ["fdsi-magnifying-glass"],
+      "variants": []
+    },
+    {
+      "name": "fdsi-explore",
+      "path": "core/global/fdsi-explore",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-explore-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-explore-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-home",
+      "path": "core/global/fdsi-home",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-home-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-home-reg-solid.svg" }
+      ]
+    }
+  ]
+}

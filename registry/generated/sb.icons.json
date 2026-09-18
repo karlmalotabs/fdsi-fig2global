@@ -1,0 +1,41 @@
+{
+  "$schema": "../schema/area.index.schema.json",
+  "brand": "core",
+  "area": "sb",
+  "generatedAt": "2026-09-18T00:00:00Z",
+  "icons": [
+    {
+      "name": "fdsi-betslip",
+      "path": "core/sb/fdsi-betslip",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-betslip-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-betslip-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-live",
+      "path": "core/sb/fdsi-live",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-live-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-live-reg-solid.svg" }
+      ]
+    },
+    {
+      "name": "fdsi-my-bets",
+      "path": "core/sb/fdsi-my-bets",
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": ["fdsi-my_bets"],
+      "variants": [
+        { "size": "reg", "style": "outline", "file": "fdsi-my-bets-reg-outline.svg" },
+        { "size": "reg", "style": "solid", "file": "fdsi-my-bets-reg-solid.svg" }
+      ]
+    }
+  ]
+}

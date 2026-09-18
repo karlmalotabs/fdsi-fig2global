@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Future tooling (reserved, not used yet)
+node_modules/
+dist/
+.tmp/
+*.log

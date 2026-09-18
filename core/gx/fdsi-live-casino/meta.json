@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../registry/schema/icon.meta.schema.json",
+  "name": "fdsi-live-casino",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Live Casino",
+  "description": "Live casino icon.",
+  "tags": ["live-casino", "casino"],
+  "aliases": ["fdsi-live_casino"],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    { "size": "reg", "style": "outline", "file": "fdsi-live-casino-reg-outline.svg" },
+    { "size": "reg", "style": "solid", "file": "fdsi-live-casino-reg-solid.svg" }
+  ],
+  "figma": {
+    "nodeId": null,
+    "componentKey": null,
+    "lastSyncedHash": null,
+    "lastSyncedAt": null
+  },
+  "version": "0.1.0",
+  "createdAt": "2026-09-18",
+  "updatedAt": "2026-09-18"
+}
