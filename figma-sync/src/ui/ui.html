@@ -3,48 +3,244 @@
 <head>
 <meta charset="UTF-8" />
 <style>
-  body { font: 12px/1.4 -apple-system, sans-serif; margin: 0; padding: 12px; color: #1a1a1a; }
-  h2 { font-size: 13px; margin: 16px 0 6px; }
-  fieldset { border: 1px solid #ddd; border-radius: 6px; padding: 8px; margin: 0 0 8px; }
-  label { display: block; margin-top: 6px; font-size: 11px; color: #555; }
-  input { width: 100%; box-sizing: border-box; padding: 4px; font-size: 12px; }
-  button { margin: 8px 6px 0 0; padding: 6px 10px; font-size: 12px; cursor: pointer; }
-  #log { white-space: pre-wrap; background: #f5f5f5; border-radius: 6px; padding: 8px; max-height: 160px; overflow: auto; font-family: monospace; font-size: 11px; }
-  .entry { margin-bottom: 6px; }
-  .error { color: #c0392b; }
+  /* Colours come from Figma's theme variables (themeColors) so light and dark follow the editor; fallbacks are the light values. */
+  :root {
+    --bg: var(--figma-color-bg, #ffffff);
+    --bg2: var(--figma-color-bg-secondary, #f5f5f5);
+    --bg3: var(--figma-color-bg-tertiary, #eeeeee);
+    --hover: var(--figma-color-bg-hover, #f0f0f0);
+    --selected: var(--figma-color-bg-selected, #e5f4ff);
+    --text: var(--figma-color-text, #1e1e1e);
+    --sub: var(--figma-color-text-secondary, #6b6b6b);
+    --faint: var(--figma-color-text-tertiary, #9a9a9a);
+    --border: var(--figma-color-border, #e6e6e6);
+    --border-strong: var(--figma-color-border-strong, #cfcfcf);
+    --brand: var(--figma-color-bg-brand, #0d99ff);
+    --brand-hover: var(--figma-color-bg-brand-hover, #0b87e0);
+    --brand-t: var(--figma-color-bg-brand-tertiary, #e5f4ff);
+    --brand-text: var(--figma-color-text-brand, #0d99ff);
+    --onbrand: var(--figma-color-text-onbrand, #ffffff);
+    --ok-bg: var(--figma-color-bg-success-tertiary, #e6f6ec);
+    --ok: var(--figma-color-text-success, #0b7a41);
+    --warn-bg: var(--figma-color-bg-warning-tertiary, #fff3db);
+    --warn: var(--figma-color-text-warning, #c77700);
+    --bad-bg: var(--figma-color-bg-danger-tertiary, #fde9e5);
+    --bad: var(--figma-color-text-danger, #d9381e);
+    --pr-bg: var(--figma-color-bg-component-tertiary, #f0e8fc);
+    --pr: var(--figma-color-text-component, #7b3fd6);
+    --off-bg: var(--figma-color-bg-disabled, #e6e6e6);
+    --off: var(--figma-color-text-disabled, #9a9a9a);
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { font: 12px/1.4 Inter, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
+  [hidden] { display: none !important; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  button:disabled { cursor: default; }
+  input, select { font: inherit; color: var(--text); }
+
+  #app { display: flex; flex-direction: column; height: 100%; }
+  .scroll { flex: 1; min-height: 0; overflow-y: auto; background: var(--bg2); }
+  .row-flex { display: flex; align-items: center; gap: 8px; }
+
+  /* header and tabs */
+  .header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; }
+  .title { font-size: 14px; font-weight: 600; }
+  .sub { color: var(--sub); font-size: 11px; }
+  .tabs { display: flex; gap: 16px; padding: 0 16px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .tab { background: none; border: 0; border-bottom: 2px solid transparent; padding: 9px 4px 7px; color: var(--sub); font-weight: 500; display: flex; gap: 6px; align-items: center; }
+  .tab.active { color: var(--text); font-weight: 600; border-bottom-color: var(--brand); }
+  .count { background: var(--bg3); color: var(--sub); border-radius: 8px; padding: 0 6px; font-size: 10px; font-weight: 500; }
+
+  /* buttons and chips */
+  .btn { border: 1px solid var(--border-strong); background: var(--bg); border-radius: 6px; padding: 6px 12px; font-weight: 500; }
+  .btn:hover:not(:disabled) { background: var(--hover); }
+  .btn.primary { background: var(--brand); border-color: var(--brand); color: var(--onbrand); }
+  .btn.primary:hover:not(:disabled) { background: var(--brand-hover); }
+  .btn:disabled { background: var(--off-bg); border-color: var(--off-bg); color: var(--off); }
+  .link { background: none; border: 0; padding: 0; color: var(--brand-text); font-weight: 500; }
+  .link:hover { text-decoration: underline; }
+  .chip { display: inline-block; border-radius: 10px; padding: 2px 8px; font-size: 11px; font-weight: 500; white-space: nowrap; background: var(--bg3); color: var(--sub); }
+  .chip.ok { background: var(--ok-bg); color: var(--ok); }
+  .chip.info { background: var(--brand-t); color: var(--brand-text); }
+  .chip.warn { background: var(--warn-bg); color: var(--warn); }
+  .chip.bad { background: var(--bad-bg); color: var(--bad); }
+  .chip.pr { background: var(--pr-bg); color: var(--pr); }
+  .tag { border: 1px solid var(--pr); color: var(--pr); border-radius: 4px; padding: 0 6px; margin-left: 6px; font-size: 10px; font-weight: 500; }
+
+  /* library */
+  .banner { display: flex; align-items: center; gap: 10px; padding: 8px 16px; background: var(--brand-t); color: var(--brand-text); }
+  .banner.warn { background: var(--warn-bg); color: var(--warn); }
+  .banner .grow { flex: 1; }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 16px; background: var(--bg); border-bottom: 1px solid var(--border); }
+  .filter { border: 1px solid var(--border); background: var(--bg); border-radius: 12px; padding: 3px 10px; color: var(--sub); }
+  .filter.active { background: var(--text); border-color: var(--text); color: var(--bg); }
+  .list-head { display: flex; align-items: center; gap: 10px; padding: 8px 16px; color: var(--sub); font-size: 11px; background: var(--bg); border-bottom: 1px solid var(--border); }
+  .item { display: grid; grid-template-columns: 18px 32px minmax(0, 1fr) 64px 124px; align-items: center; gap: 10px; padding: 8px 16px; background: var(--bg); border-bottom: 1px solid var(--border); cursor: pointer; }
+  .item:hover { background: var(--hover); }
+  .item.selected { background: var(--selected); }
+  .item .name { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item .meta { color: var(--sub); font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item .err { color: var(--bad); font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item .area { color: var(--sub); font-size: 11px; }
+  .item .chip { justify-self: end; }
+  .preview { width: 28px; height: 28px; border-radius: 6px; background: var(--bg2); display: flex; align-items: center; justify-content: center; }
+  .preview i { width: 18px; height: 18px; background: var(--text); -webkit-mask: var(--mask) center / contain no-repeat; mask: var(--mask) center / contain no-repeat; }
+  .preview.empty i { background: var(--faint); opacity: 0.4; -webkit-mask: none; mask: none; border-radius: 3px; width: 10px; height: 10px; }
+  .check { width: 16px; height: 16px; accent-color: var(--brand); margin: 0; }
+  .empty { padding: 48px 32px; text-align: center; color: var(--sub); display: flex; flex-direction: column; align-items: center; gap: 10px; background: var(--bg2); }
+  .empty .big { font-size: 14px; font-weight: 600; color: var(--text); }
+  .actionbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 16px; border-top: 1px solid var(--border); background: var(--bg); }
+
+  /* review */
+  .pad { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+  .seg { display: flex; gap: 2px; padding: 2px; border-radius: 7px; background: var(--bg2); }
+  .seg button { flex: 1; border: 1px solid transparent; background: none; border-radius: 5px; padding: 5px; color: var(--sub); font-weight: 500; }
+  .seg button.active { background: var(--bg); border-color: var(--border-strong); color: var(--text); font-weight: 600; }
+  .card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+  .card.blocked { border-color: var(--bad); }
+  .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .change { display: flex; gap: 8px; align-items: flex-start; font-size: 11px; }
+  .change .field { width: 110px; flex: none; color: var(--sub); }
+  .del { background: var(--bad-bg); color: var(--bad); border-radius: 4px; padding: 1px 6px; word-break: break-word; }
+  .add { background: var(--ok-bg); color: var(--ok); border-radius: 4px; padding: 1px 6px; word-break: break-word; }
+  .errbox { background: var(--bad-bg); color: var(--bad); border-radius: 6px; padding: 8px 10px; font-size: 11px; }
+  details summary { cursor: pointer; color: var(--sub); font-size: 11px; }
+  details pre { margin: 6px 0 0; font: 11px/1.5 ui-monospace, Menlo, monospace; color: var(--sub); white-space: pre-wrap; word-break: break-all; }
+
+  /* settings and activity */
+  .field { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .field label { font-size: 11px; font-weight: 500; color: var(--sub); }
+  .field input { padding: 7px 10px; border: 1px solid var(--border-strong); border-radius: 6px; background: var(--bg); }
+  .field .hint { font-size: 11px; color: var(--sub); }
+  .radio { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); cursor: pointer; }
+  .radio.on { border-color: var(--brand); background: var(--brand-t); }
+  .radio input { margin: 2px 0 0; accent-color: var(--brand); }
+  .radio .t { font-weight: 600; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); display: inline-block; }
+  .dot.ok { background: var(--ok); }
+  .section-title { font-size: 11px; font-weight: 500; color: var(--sub); }
+  .event { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); }
+  .event.bad { border-color: var(--bad); }
+  .badge { width: 24px; height: 24px; flex: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; background: var(--bg3); color: var(--sub); }
+  .badge.ok { background: var(--ok-bg); color: var(--ok); }
+  .badge.info { background: var(--brand-t); color: var(--brand-text); }
+  .badge.bad { background: var(--bad-bg); color: var(--bad); }
+  .badge.pr { background: var(--pr-bg); color: var(--pr); }
+  .event .body { flex: 1; min-width: 0; }
+  .event .t { font-weight: 500; }
+  .event .d { color: var(--sub); font-size: 11px; white-space: pre-wrap; word-break: break-word; }
+  .event .when { color: var(--faint); font-size: 11px; white-space: nowrap; }
+
+  .grip { position: fixed; right: 0; bottom: 0; width: 16px; height: 16px; cursor: nwse-resize; touch-action: none;
+    background: linear-gradient(135deg, transparent 0 50%, var(--border-strong) 50% 56%, transparent 56% 70%, var(--border-strong) 70% 76%, transparent 76%); }
 </style>
 </head>
 <body>
-  <h2>Settings</h2>
-  <fieldset>
-    <label>GitHub token</label>
-    <input id="token" type="password" />
-    <label>Owner</label>
-    <input id="owner" />
-    <label>Repo</label>
-    <input id="repo" />
-    <label>Branch</label>
-    <input id="branch" value="main" />
-    <label>Brand</label>
-    <input id="brand" value="core" />
-    <button id="save-settings">Save</button>
-  </fieldset>
+  <div id="app">
+    <div id="chrome">
+      <div class="header">
+        <div>
+          <div class="title">Icon Sync</div>
+          <div class="sub"><span id="target">not configured</span><span id="mode-tag" class="tag" hidden>Pull request mode</span></div>
+        </div>
+        <button class="btn primary" id="scan">Scan</button>
+      </div>
+      <div class="tabs">
+        <button class="tab active" data-tab="library">Library <span class="count" id="count-library">0</span></button>
+        <button class="tab" data-tab="activity">Activity <span class="count" id="count-activity">0</span></button>
+        <button class="tab" data-tab="settings">Settings</button>
+      </div>
+    </div>
 
-  <h2>Sync</h2>
-  <button id="pull">Pull from GitHub</button>
-  <button id="reconcile">Check status</button>
-  <button id="post-publish">Post-publish sync</button>
+    <section id="view-library" style="display:flex;flex-direction:column;flex:1;min-height:0">
+      <div class="banner" id="banner" hidden>
+        <span class="grow" id="banner-text"></span>
+        <button class="link" id="banner-scan">Scan now</button>
+        <button class="link" id="banner-dismiss" title="Dismiss">✕</button>
+      </div>
+      <div class="banner warn" id="baseline-banner" hidden>
+        <span class="grow" id="baseline-text"></span>
+        <button class="link" id="adopt-baseline">Adopt baseline</button>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="list-head" id="list-head">
+        <input type="checkbox" class="check" id="select-visible" title="Select every icon in view that can be pushed" />
+        <span id="list-summary"></span>
+      </div>
+      <div class="scroll" id="list"></div>
+      <div class="actionbar">
+        <div>
+          <div id="selected-text" style="font-weight:500"></div>
+          <button class="link" id="select-changed" hidden>Select all that changed in Figma</button>
+        </div>
+        <div class="row-flex">
+          <button class="btn" id="pull">Pull from repo</button>
+          <button class="btn primary" id="review">Review push</button>
+        </div>
+      </div>
+    </section>
 
-  <h2>Push selection</h2>
-  <button id="load-selection">Load selection</button>
-  <div id="mapping"></div>
-  <button id="prepare-push" style="display:none">Prepare push</button>
-  <div id="plan"></div>
-  <button id="confirm-push" style="display:none">Confirm commit</button>
-  <button id="cancel-push" style="display:none">Cancel</button>
+    <section id="view-review" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
+      <div class="pad" style="background:var(--bg);padding-bottom:14px;border-bottom:1px solid var(--border)">
+        <button class="link" id="back" style="align-self:flex-start">← Back to library</button>
+        <div>
+          <div class="title" style="font-size:16px">Review push</div>
+          <div class="sub" id="review-sub"></div>
+        </div>
+        <div class="seg" id="review-mode">
+          <button data-mode="direct">Commit directly</button>
+          <button data-mode="pr">Open pull request</button>
+        </div>
+        <label class="row-flex"><input type="checkbox" class="check" id="allow-new-area" /> Allow creating a new area</label>
+      </div>
+      <div class="scroll"><div class="pad" id="plan"></div></div>
+      <div class="actionbar">
+        <div>
+          <div id="review-status" style="font-weight:500"></div>
+          <div class="sub" id="review-hint"></div>
+        </div>
+        <div class="row-flex">
+          <button class="btn" id="cancel-push">Cancel</button>
+          <button class="btn primary" id="confirm-push">Commit</button>
+        </div>
+      </div>
+    </section>
 
-  <h2>Log</h2>
-  <div id="log"></div>
+    <section id="view-activity" class="scroll" hidden>
+      <div class="pad" id="activity"></div>
+    </section>
+
+    <section id="view-settings" class="scroll" hidden>
+      <div class="pad">
+        <div class="field"><label for="token">GitHub token</label><input id="token" type="password" autocomplete="off" />
+          <span class="hint">Needs Contents and Pull requests (read and write). Stored only in this Figma account.</span></div>
+        <div class="row-flex" style="align-items:flex-start">
+          <div class="field"><label for="owner">Owner</label><input id="owner" /></div>
+          <div class="field"><label for="repo">Repository</label><input id="repo" /></div>
+        </div>
+        <div class="row-flex" style="align-items:flex-start">
+          <div class="field"><label for="branch">Base branch</label><input id="branch" value="main" /></div>
+          <div class="field"><label for="brand">Brand</label><input id="brand" value="core" /></div>
+        </div>
+        <div class="section-title">When pushing</div>
+        <label class="radio" data-mode="pr"><input type="radio" name="write-mode" value="pr" />
+          <span><div class="t">Open a pull request</div><div class="sub">Commits to a new branch and opens a PR. CI regenerates the registry on it.</div></span></label>
+        <label class="radio" data-mode="direct"><input type="radio" name="write-mode" value="direct" />
+          <span><div class="t">Commit directly</div><div class="sub">Writes straight to the base branch. Use for the sandbox only.</div></span></label>
+        <div class="row-flex"><button class="btn primary" id="save-settings">Save settings</button><span id="connection" class="sub"></span></div>
+
+        <div class="section-title" style="margin-top:8px">Maintenance</div>
+        <div class="row-flex" style="flex-wrap:wrap">
+          <button class="btn" id="table-create-rows">Create missing rows</button>
+          <button class="btn" id="table-read">Read table</button>
+          <button class="btn" id="hash-check">Hash check (selection)</button>
+          <button class="btn" id="post-publish">Post-publish sync</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="grip" id="grip"></div>
 
   <script src="./ui.js"></script>
 </body>

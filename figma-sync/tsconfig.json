@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "types": ["@figma/plugin-typings", "node"]
   },
-  "include": ["src/**/*.ts", "scripts/**/*.ts", "../registry/schema/*.json"]
+  "include": ["src/**/*.ts", "scripts/**/*.ts", "tests/**/*.ts", "../registry/schema/*.json"]
 }

@@ -39,7 +39,11 @@ export interface PluginSettings {
   repo: string;
   branch: string;
   brand: string;
+  /** `direct` commits to `branch`; `pr` commits to a new branch and opens a pull request. Missing means direct. */
+  writeMode?: WriteMode;
 }
+
+export type WriteMode = "direct" | "pr";
 
 /** A variant fetched from GitHub or exported from Figma, paired with its raw SVG text. */
 export interface VariantContent {
@@ -63,4 +67,6 @@ export interface SyncPlanEntry {
   renamedFrom?: string;
   files: FileChange[];
   validationErrors: string[];
+  /** Designer-visible metadata differences against the repo's current meta.json. */
+  metaChanges?: string[];
 }

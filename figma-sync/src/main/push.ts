@@ -1,9 +1,19 @@
 import type { FileChange, IconMeta, PluginSettings, SyncPlanEntry, VariantContent } from "./types";
 import { GitHubClient } from "./github-client";
 import { hashIconVariants } from "./hashing";
-import { isValidIconName, variantFileName } from "./naming";
+import { variantFileName } from "./naming";
 import { validateIconMeta, validateVariantSvgs } from "./schema-validate";
-import { readVariantProperties } from "./figma-nodes";
+import { exportSetVariants, getOrCreateTableContainer, tagIconComponentSet, writePendingPr } from "./figma-nodes";
+import { toRepoSvg } from "./svg-translate";
+import { optimizeSvg } from "./svg-optimize";
+import { validateRowFields } from "./contract";
+import type { RowFields } from "./contract";
+import { buildIconMeta, describeMetaChanges } from "./meta-build";
+import { readTableRows, writeRowFields } from "./table";
+import type { TableRow } from "./table";
+import { currentFigmaBase, loadRepoCatalog, refreshBases } from "./scan";
+import { commitChanges } from "./commit-changes";
+import type { CommitOutcome } from "./commit-changes";
 
 export interface SelectionInfo {
   nodeId: string;
@@ -11,18 +21,26 @@ export interface SelectionInfo {
   existing: { name: string; brand: string; area: string } | null;
 }
 
-/** Reports, for each selected ComponentSet, whether it's already tracked or needs a rename/mapping dialog. */
-export function getSelectionInfo(selection: readonly SceneNode[]): SelectionInfo[] {
+function findRow(rows: readonly TableRow[], ...names: (string | null)[]): TableRow | null {
+  for (const name of names) {
+    const row = name ? rows.find((r) => r.fields.name === name) : undefined;
+    if (row) return row;
+  }
+  return null;
+}
+
+/** Identity per selected ComponentSet: the layer name, with the area from the table row (or the last pushed area). */
+export function getSelectionInfo(selection: readonly SceneNode[], brand: string): SelectionInfo[] {
+  const rows = readTableRows(getOrCreateTableContainer());
   return selection
     .filter((n): n is ComponentSetNode => n.type === "COMPONENT_SET")
     .map((set) => {
-      const name = set.getPluginData("fdsiName");
-      const brand = set.getPluginData("fdsiBrand");
-      const area = set.getPluginData("fdsiArea");
+      const taggedName = set.getPluginData("fdsiName");
+      const area = findRow(rows, set.name, taggedName)?.fields.area || set.getPluginData("fdsiArea");
       return {
         nodeId: set.id,
         label: set.name,
-        existing: name && brand && area ? { name, brand, area } : null,
+        existing: area ? { name: set.name, brand: set.getPluginData("fdsiBrand") || brand, area } : null,
       };
     });
 }
@@ -38,18 +56,27 @@ export interface PushPlan {
   /** Kept only in the main thread (not sent to the UI) so confirm-push can re-tag nodes after commit. */
   nodesByName: Map<string, ComponentSetNode>;
   hashesByName: Map<string, string>;
+  rowsByName: Map<string, TableRow>;
+  fieldsByName: Map<string, RowFields>;
 }
 
-/** Figma → GitHub: exports each selected ComponentSet's variants and stages (but does not commit) the diff. */
+/** Figma → GitHub: exports each selected ComponentSet, builds meta.json from its table row, and stages (but does not commit) the diff. */
 export async function buildPushPlan(
   selection: readonly ComponentSetNode[],
   identities: Record<string, PushIdentity>,
   settings: PluginSettings,
-  client: GitHubClient
+  client: GitHubClient,
+  allowNewArea = false
 ): Promise<PushPlan> {
-  const plan: SyncPlanEntry[] = [];
-  const nodesByName = new Map<string, ComponentSetNode>();
-  const hashesByName = new Map<string, string>();
+  const result: PushPlan = {
+    plan: [],
+    nodesByName: new Map(),
+    hashesByName: new Map(),
+    rowsByName: new Map(),
+    fieldsByName: new Map(),
+  };
+  const catalog = await loadRepoCatalog(settings, client);
+  const rows = readTableRows(getOrCreateTableContainer());
 
   for (const set of selection) {
     const identity = identities[set.id];
@@ -57,106 +84,117 @@ export async function buildPushPlan(
 
     const previousName = set.getPluginData("fdsiName") || null;
     const isRename = previousName !== null && previousName !== identity.name;
+    const editedName = previousName ?? identity.name;
 
-    const variants: VariantContent[] = [];
-    for (const child of set.children) {
-      if (child.type !== "COMPONENT") continue;
-      const { size, style } = readVariantProperties(child);
-      if (!size || !style) continue;
-      const svg = await child.exportAsync({ format: "SVG_STRING" });
-      variants.push({ size, style, svg });
+    const row = findRow(rows, identity.name, previousName);
+    if (!row) {
+      result.plan.push({
+        iconName: identity.name,
+        brand: identity.brand,
+        area: identity.area,
+        action: "skip",
+        files: [],
+        validationErrors: [`${identity.name}: no table row; use "Create missing rows" and fill in the fields first`],
+      });
+      continue;
     }
 
-    const validationErrors: string[] = [];
-    if (!isValidIconName(identity.name)) {
-      validationErrors.push(`"${identity.name}" is not a valid fdsi- slug`);
-    }
-    validationErrors.push(...validateVariantSvgs(variants));
+    const fields: RowFields = { ...row.fields, name: identity.name, area: identity.area };
+    const variants: VariantContent[] = await exportSetVariants(set);
+    const artworkHash = hashIconVariants(variants);
+
+    const validationErrors: string[] = [
+      ...validateRowFields(fields, {
+        knownAreas: catalog.knownAreas,
+        allowNewArea,
+        others: catalog.icons.filter((i) => i.name !== editedName).map((i) => ({ name: i.name, aliases: i.aliases })),
+      }),
+      ...validateVariantSvgs(variants),
+    ];
 
     const path = `${identity.brand}/${identity.area}/${identity.name}`;
-    const existingMeta = await client.getFileJson<IconMeta>(`${path}/meta.json`, settings.branch);
-    const hash = hashIconVariants(variants);
+    const oldIcon = catalog.icons.find((i) => i.name === editedName) ?? null;
+    const existingMeta = oldIcon ? await client.getFileJson<IconMeta>(`${oldIcon.path}/meta.json`, settings.branch) : null;
 
     const files: FileChange[] = [];
-    const aliases = new Set(existingMeta?.aliases ?? []);
-    let action: SyncPlanEntry["action"] = existingMeta ? "update" : "create";
-
-    if (isRename && previousName) {
-      action = "rename";
-      aliases.add(previousName);
-      const oldPath = `${identity.brand}/${identity.area}/${previousName}`;
-      const oldMeta = await client.getFileJson<IconMeta>(`${oldPath}/meta.json`, settings.branch);
-      if (oldMeta) {
-        for (const variant of oldMeta.variants) files.push({ path: `${oldPath}/${variant.file}`, delete: true });
-        files.push({ path: `${oldPath}/meta.json`, delete: true });
-      }
+    // Renamed or moved to another area: the old folder is removed in the same commit.
+    if (oldIcon && existingMeta && oldIcon.path !== path) {
+      for (const variant of existingMeta.variants) files.push({ path: `${oldIcon.path}/${variant.file}`, delete: true });
+      files.push({ path: `${oldIcon.path}/meta.json`, delete: true });
     }
 
-    const today = new Date().toISOString().slice(0, 10);
-    const nextMeta: IconMeta = {
-      name: identity.name,
-      prefix: "fdsi",
+    const nextMeta = buildIconMeta({
+      fields,
       brand: identity.brand,
-      area: identity.area,
-      displayName: existingMeta?.displayName ?? identity.name,
-      description: existingMeta?.description ?? "",
-      tags: existingMeta?.tags ?? [],
-      aliases: [...aliases],
-      status: "active",
-      deprecatedInFavorOf: null,
-      variants: variants.map((v) => ({
-        size: v.size,
-        style: v.style,
-        file: variantFileName(identity.name, v.size, v.style),
-      })),
-      figma: {
-        nodeId: set.id,
-        componentKey: existingMeta?.figma?.componentKey ?? null,
-        lastSyncedHash: hash,
-        lastSyncedAt: new Date().toISOString(),
-      },
-      version: existingMeta?.version ?? "0.1.0",
-      createdAt: existingMeta?.createdAt ?? today,
-      updatedAt: today,
-    };
+      existing: existingMeta,
+      previousName: isRename ? previousName : null,
+      variants: variants.map((v) => ({ size: v.size, style: v.style, file: variantFileName(identity.name, v.size, v.style) })),
+      nodeId: set.id,
+      artworkHash,
+      now: new Date(),
+    });
     validationErrors.push(...validateIconMeta(nextMeta));
 
     files.push({ path: `${path}/meta.json`, content: `${JSON.stringify(nextMeta, null, 2)}\n` });
     for (const variant of variants) {
       files.push({
         path: `${path}/${variantFileName(identity.name, variant.size, variant.style)}`,
-        content: variant.svg,
+        content: optimizeSvg(toRepoSvg(variant.svg, variant.style)),
       });
     }
 
-    plan.push({
+    result.plan.push({
       iconName: identity.name,
       brand: identity.brand,
       area: identity.area,
-      action,
+      action: isRename ? "rename" : existingMeta ? "update" : "create",
       renamedFrom: isRename ? previousName ?? undefined : undefined,
       files,
       validationErrors,
+      metaChanges: describeMetaChanges(existingMeta, nextMeta),
     });
-    nodesByName.set(identity.name, set);
-    hashesByName.set(identity.name, hash);
+    result.nodesByName.set(identity.name, set);
+    result.hashesByName.set(identity.name, artworkHash);
+    result.rowsByName.set(identity.name, row);
+    result.fieldsByName.set(identity.name, fields);
   }
 
-  return { plan, nodesByName, hashesByName };
+  return result;
 }
 
-/** Commits every staged file across the whole plan in one atomic commit; throws if any entry failed validation. */
+/** Commits every staged file across the whole plan in one atomic commit (or one pull request); throws if any entry failed validation. */
 export async function applyPushPlan(
   plan: SyncPlanEntry[],
   settings: PluginSettings,
   client: GitHubClient
-): Promise<string> {
+): Promise<CommitOutcome> {
   const blockingErrors = plan.flatMap((p) => p.validationErrors);
   if (blockingErrors.length > 0) {
     throw new Error(`Refusing to commit, validation failed: ${blockingErrors.join("; ")}`);
   }
+  return commitChanges(plan, settings, client);
+}
 
-  const files = plan.flatMap((p) => p.files);
-  const summary = plan.map((p) => `${p.action} ${p.iconName}`).join(", ");
-  return client.commitFiles(settings.branch, `feat(icons): sync from Figma — ${summary}`, files);
+/**
+ * After a successful write: re-tag the sets and make the rows match what was committed. A direct commit also records both
+ * baselines; a pull request records only what is needed to settle the baselines once it merges (see `resolvePendingPrs`).
+ */
+export async function finalizePush(
+  pending: PushPlan,
+  outcome: CommitOutcome,
+  settings: PluginSettings,
+  client: GitHubClient
+): Promise<void> {
+  for (const [name, set] of pending.nodesByName) {
+    const entry = pending.plan.find((p) => p.iconName === name)!;
+    tagIconComponentSet(set, { name, brand: entry.brand, area: entry.area, hash: pending.hashesByName.get(name)! });
+    await writeRowFields(pending.rowsByName.get(name)!.frame, pending.fieldsByName.get(name)!);
+  }
+
+  const sets = [...pending.nodesByName.values()];
+  if (outcome.mode === "direct") {
+    await refreshBases(settings, client, sets);
+    return;
+  }
+  for (const set of sets) writePendingPr(set, { number: outcome.number, figmaBase: await currentFigmaBase(set) });
 }

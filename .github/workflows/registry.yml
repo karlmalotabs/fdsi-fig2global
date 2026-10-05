@@ -1,0 +1,65 @@
+name: registry
+
+# Validates icon metadata and keeps registry/generated/* current. The Figma plugin either commits to main (direct mode)
+# or opens a pull request (PR mode); in PR mode the regenerated files are committed onto the PR branch.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "core/**"
+      - "registry/schema/**"
+      - "registry/scripts/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "core/**"
+      - "registry/schema/**"
+      - "registry/scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: registry-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    # Pull requests from forks get a read-only token, so they are checked by validate-fork instead.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # Exits non-zero on invalid meta.json, naming, size or alias problems.
+      - name: Validate and regenerate
+        run: node registry/scripts/build-registry.mjs
+      - name: Commit regenerated files
+        run: |
+          if git diff --quiet -- registry/generated; then
+            echo "registry is up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/generated
+          git commit -m "chore(registry): regenerate [skip ci]"
+          git push
+
+  validate-fork:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate and require an up-to-date registry
+        run: |
+          node registry/scripts/build-registry.mjs
+          git diff --exit-code -- registry/generated

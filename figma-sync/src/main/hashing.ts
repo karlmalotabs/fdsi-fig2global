@@ -18,7 +18,7 @@ export function fnv1a64Hex(input: string): string {
   return hash.toString(16).padStart(16, "0");
 }
 
-function normalizeSvg(svg: string): string {
+export function normalizeSvg(svg: string): string {
   return svg.replace(/\s+/g, " ").trim();
 }
 

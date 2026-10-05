@@ -5,9 +5,10 @@
   "description": "Figma plugin that syncs fdsi-icons between this repo and a Figma library.",
   "scripts": {
     "build:main": "esbuild src/main/code.ts --bundle --outfile=dist/code.js --target=es2020 --format=iife",
-    "build:ui": "esbuild src/ui/ui.ts --bundle --outfile=dist/ui.js --target=es2020 --format=iife && cp src/ui/ui.html dist/ui.html",
+    "build:ui": "node scripts/build-ui.mjs",
     "build": "npm run build:main && npm run build:ui",
     "typecheck": "tsc --noEmit",
+    "test": "esbuild tests/contract.test.ts tests/svg-translate.test.ts tests/svg-optimize.test.ts tests/scan.test.ts tests/meta-build.test.ts tests/commit-changes.test.ts tests/library.test.ts --bundle --platform=node --format=esm --outdir=.tmp/tests --out-extension:.js=.mjs && node --test .tmp/tests/*.test.mjs",
     "verify:github-read": "esbuild scripts/verify-github-read.ts --bundle --platform=node --format=esm --outfile=.tmp/verify-github-read.mjs && node .tmp/verify-github-read.mjs",
     "watch:main": "npm run build:main -- --watch",
     "watch:ui": "npm run build:ui -- --watch"
@@ -16,6 +17,7 @@
     "@figma/plugin-typings": "^1.100.0",
     "@types/node": "^26.6.1",
     "esbuild": "^0.28.2",
+    "svgo": "^4.1.0",
     "typescript": "^5.6.0"
   }
 }
