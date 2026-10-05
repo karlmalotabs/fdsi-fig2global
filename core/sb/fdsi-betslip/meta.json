@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../registry/schema/icon.meta.schema.json",
   "name": "fdsi-betslip",
   "prefix": "fdsi",
   "brand": "core",
@@ -29,10 +28,10 @@
   "figma": {
     "nodeId": "1:65",
     "componentKey": "60545be6b26a95f3dc870f9399ba31c459e0b184",
-    "lastSyncedHash": "b64ad6948fa4da88",
-    "lastSyncedAt": "2026-10-05T13:50:37.362Z"
+    "lastSyncedHash": "66891cba21c1d728",
+    "lastSyncedAt": "2026-10-05T13:54:01.498Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-09-18"
+  "updatedAt": "2026-10-05"
 }

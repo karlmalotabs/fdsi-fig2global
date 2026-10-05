@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../registry/schema/icon.meta.schema.json",
   "name": "fdsi-my-bets",
   "prefix": "fdsi",
   "brand": "core",
@@ -31,10 +30,10 @@
   "figma": {
     "nodeId": "1:93",
     "componentKey": "8db65d4af8057ce1ce76d682d33fdfc500d7268a",
-    "lastSyncedHash": "4f662666a70cc16a",
-    "lastSyncedAt": "2026-10-05T13:50:37.645Z"
+    "lastSyncedHash": "fa978e660540c0af",
+    "lastSyncedAt": "2026-10-05T13:54:01.821Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-09-18"
+  "updatedAt": "2026-10-05"
 }

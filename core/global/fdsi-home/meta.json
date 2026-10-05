@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../registry/schema/icon.meta.schema.json",
   "name": "fdsi-home",
   "prefix": "fdsi",
   "brand": "core",
@@ -28,10 +27,10 @@
   "figma": {
     "nodeId": "1:32",
     "componentKey": "4afaeac40687e4e3df4ed4efe344a36b20181c01",
-    "lastSyncedHash": "d5e3c0c0afdec8e8",
-    "lastSyncedAt": "2026-10-05T13:50:36.918Z"
+    "lastSyncedHash": "d0239f08e146525e",
+    "lastSyncedAt": "2026-10-05T13:54:01.019Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-09-18"
+  "updatedAt": "2026-10-05"
 }

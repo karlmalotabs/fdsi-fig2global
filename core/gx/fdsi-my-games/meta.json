@@ -1,5 +1,4 @@
 {
-  "$schema": "../../../registry/schema/icon.meta.schema.json",
   "name": "fdsi-my-games",
   "prefix": "fdsi",
   "brand": "core",
@@ -31,10 +30,10 @@
   "figma": {
     "nodeId": "1:57",
     "componentKey": "7a95a721ddc8b69a9485b68282a4d876644d8305",
-    "lastSyncedHash": "ad27606356f24301",
-    "lastSyncedAt": "2026-10-05T13:50:37.218Z"
+    "lastSyncedHash": "a76356c57019a5ad",
+    "lastSyncedAt": "2026-10-05T13:54:01.331Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-09-18"
+  "updatedAt": "2026-10-05"
 }
