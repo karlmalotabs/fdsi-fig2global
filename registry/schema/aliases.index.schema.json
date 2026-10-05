@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fdsi.dev/schema/aliases.index.schema.json",
   "title": "FDSI Global Aliases Index",
-  "description": "Schema for the generated flat alias -> canonical icon map used for agent grep-based bulk renames. Intended to be produced by a future build script from each icon's meta.json aliases array; the current file under registry/generated is a hand-authored sample.",
+  "description": "Schema for the generated flat alias -> canonical icon map used for agent grep-based bulk renames. Produced by registry/scripts/build-registry.mjs from each icon's meta.json aliases array (deprecated icons also map to their replacement).",
   "type": "object",
   "additionalProperties": {
     "type": "object",

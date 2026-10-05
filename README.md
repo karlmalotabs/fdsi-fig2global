@@ -13,4 +13,4 @@ Managed, multi-tenant SVG icon repository for the FDSI design system. Icons are 
 See [docs/naming-conventions.md](docs/naming-conventions.md), [docs/multi-brand.md](docs/multi-brand.md), and [docs/contributing.md](docs/contributing.md).
 
 ## Status
-This is a structure-only scaffold: no build/validation scripts or Figma plugin exist yet. `/registry/generated/*` files are hand-authored samples showing the intended shape of future build output.
+`/registry/generated/*` is produced and validated by `node registry/scripts/build-registry.mjs`.

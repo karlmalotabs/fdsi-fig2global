@@ -7,6 +7,9 @@ Thumbs.db
 !.vscode/extensions.json
 .idea/
 
+# Local Storybook sandbox (not committed)
+storybook/
+
 # Future tooling (reserved, not used yet)
 node_modules/
 dist/

@@ -1,14 +1,34 @@
 {
-  "generatedAt": "2026-09-04T00:00:00Z",
+  "generatedAt": "2026-10-05T12:29:38.151Z",
   "brands": [
     {
       "brand": "core",
       "areas": [
-        { "area": "global", "iconCount": 5, "file": "registry/generated/global.icons.json" },
-        { "area": "bx", "iconCount": 3, "file": "registry/generated/bx.icons.json" },
-        { "area": "gx", "iconCount": 2, "file": "registry/generated/gx.icons.json" },
-        { "area": "sb", "iconCount": 3, "file": "registry/generated/sb.icons.json" },
-        { "area": "payments", "iconCount": 0, "file": null }
+        {
+          "area": "bx",
+          "iconCount": 0,
+          "file": null
+        },
+        {
+          "area": "global",
+          "iconCount": 2,
+          "file": "registry/generated/global.icons.json"
+        },
+        {
+          "area": "gx",
+          "iconCount": 2,
+          "file": "registry/generated/gx.icons.json"
+        },
+        {
+          "area": "payments",
+          "iconCount": 0,
+          "file": null
+        },
+        {
+          "area": "sb",
+          "iconCount": 3,
+          "file": "registry/generated/sb.icons.json"
+        }
       ]
     }
   ]

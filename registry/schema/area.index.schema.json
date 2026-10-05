@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://fdsi.dev/schema/area.index.schema.json",
   "title": "FDSI Area Icon Index",
-  "description": "Schema for a generated per-area aggregate (e.g. registry/generated/global.icons.json). Intended to be produced by a future build script from per-icon meta.json files; current files under registry/generated are hand-authored samples.",
+  "description": "Schema for a generated per-area aggregate (e.g. registry/generated/global.icons.json). Produced by registry/scripts/build-registry.mjs from per-icon meta.json files.",
   "type": "object",
   "required": ["brand", "area", "generatedAt", "icons"],
   "properties": {
@@ -17,6 +17,9 @@
         "properties": {
           "name": { "type": "string", "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*$" },
           "path": { "type": "string", "description": "Repo-relative path to the icon's folder." },
+          "displayName": { "type": "string" },
+          "description": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
           "status": { "type": "string", "enum": ["active", "deprecated", "draft"] },
           "deprecatedInFavorOf": { "type": ["string", "null"] },
           "aliases": {

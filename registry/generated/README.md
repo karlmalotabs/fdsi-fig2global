@@ -1,5 +1,13 @@
-# Generated Registry Files (samples)
+# Generated Registry Files
 
-These aggregate JSON files (`global.icons.json`, `index.json`, `aliases.index.json`) will eventually be produced automatically by a build script that reads every `meta.json` under `/core` (and future brand folders). No such script exists yet — the files here are **hand-authored samples** matching the schemas in `/registry/schema`, based on the example icons currently in the repo.
+Do not edit by hand. Regenerate with:
 
-Regenerate these by hand if the example icons change, until the build tooling lands.
+```
+node registry/scripts/build-registry.mjs
+```
+
+The script reads every `<brand>/<area>/<icon>/meta.json`, validates it (name/folder match, variant files exist and are listed, SVG `width`/`height`/`viewBox` match the size token, alias and deprecation rules) and exits non-zero on any error. Output:
+
+- `<area>.icons.json` per area for `core`, `<brand>.<area>.icons.json` for other brands
+- `index.json` — brands/areas overview
+- `aliases.index.json` — alias (and deprecated name) -> canonical icon

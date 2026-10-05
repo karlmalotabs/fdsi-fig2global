@@ -22,7 +22,7 @@ Each size token maps to a fixed, non-negotiable pixel dimension — the canonica
 | `reg`      | 24  |
 | `lg`       | 48  |
 
-Every SVG's `width`, `height`, and `viewBox` must match its size token's px value exactly. There's no automated check yet — verify by eye until a validation script enforces this.
+Every SVG's `width`, `height`, and `viewBox` must match its size token's px value exactly. `node registry/scripts/build-registry.mjs` enforces this.
 
 ## Regex
 ```

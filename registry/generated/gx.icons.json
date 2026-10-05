@@ -2,28 +2,61 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "gx",
-  "generatedAt": "2026-09-18T00:00:00Z",
+  "generatedAt": "2026-10-05T12:29:38.136Z",
   "icons": [
-    {
-      "name": "fdsi-my-games",
-      "path": "core/gx/fdsi-my-games",
-      "status": "active",
-      "deprecatedInFavorOf": null,
-      "aliases": ["fdsi-my_games"],
-      "variants": [
-        { "size": "reg", "style": "outline", "file": "fdsi-my-games-reg-outline.svg" },
-        { "size": "reg", "style": "solid", "file": "fdsi-my-games-reg-solid.svg" }
-      ]
-    },
     {
       "name": "fdsi-live-casino",
       "path": "core/gx/fdsi-live-casino",
+      "displayName": "Live Casino",
+      "description": "Live casino icon.",
+      "tags": [
+        "live-casino",
+        "casino"
+      ],
       "status": "active",
       "deprecatedInFavorOf": null,
-      "aliases": ["fdsi-live_casino"],
+      "aliases": [
+        "fdsi-live_casino"
+      ],
       "variants": [
-        { "size": "reg", "style": "outline", "file": "fdsi-live-casino-reg-outline.svg" },
-        { "size": "reg", "style": "solid", "file": "fdsi-live-casino-reg-solid.svg" }
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-live-casino-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-live-casino-reg-solid.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-my-games",
+      "path": "core/gx/fdsi-my-games",
+      "displayName": "My Games",
+      "description": "User's games icon.",
+      "tags": [
+        "my-games",
+        "games",
+        "account"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [
+        "fdsi-my_games"
+      ],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-my-games-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-my-games-reg-solid.svg"
+        }
       ]
     }
   ]
