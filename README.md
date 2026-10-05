@@ -31,6 +31,24 @@ The plugin compares each side with the state recorded at the last sync and shows
 
 Everything about the plugin (architecture, table anatomy, push and pull flows, UI, settings, troubleshooting) is in [figma-sync/README.md](figma-sync/README.md). The design decisions and phased plan are in [docs/figma-contract-and-plan.md](docs/figma-contract-and-plan.md).
 
+## Storybook
+
+A local Storybook sandbox (`storybook/`, not committed) renders the repo icons with a Stencil `<fds-icon>` component and an icon explorer driven by `core/**/meta.json`. The screenshots below are real captures of it.
+
+**Icon explorer**: search by name, alias, tag, area, size or style (for example `area:sb`, `alias:my_bets`, `tag:live`, `style:solid`).
+
+![Icon explorer](docs/images/storybook/icon-explorer.png)
+
+![Icon explorer filtered with area:sb](docs/images/storybook/icon-explorer-filtered.png)
+
+**`<fds-icon>`**: one icon by name (aliases resolve to the canonical icon), with the nearest variant used when the requested size or style is missing.
+
+![fds-icon playground](docs/images/storybook/fds-icon-playground.png)
+
+All icons across all size and style variants (a dash means the variant does not exist yet):
+
+![All icons, all variants](docs/images/storybook/fds-icon-all-variants.png)
+
 ## Registry
 
 `registry/generated/*` is produced and validated by `node registry/scripts/build-registry.mjs`. The workflow [.github/workflows/registry.yml](.github/workflows/registry.yml) runs it on every change to `core/**`, the schemas or the scripts, fails on invalid `meta.json`, naming, size or alias problems, and commits the regenerated files. Do not edit `registry/generated` by hand.
