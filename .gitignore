@@ -8,7 +8,7 @@ Thumbs.db
 .idea/
 
 # Local Storybook sandbox (not committed)
-storybook/
+/storybook/
 
 # Future tooling (reserved, not used yet)
 node_modules/
