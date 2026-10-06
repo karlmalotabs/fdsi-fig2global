@@ -3,7 +3,7 @@
   "prefix": "fdsi",
   "brand": "core",
   "area": "global",
-  "displayName": "Explorekasjd",
+  "displayName": "Explore My Dreams",
   "description": "Explore/discover icon.",
   "tags": [
     "explore",
@@ -26,10 +26,10 @@
     }
   ],
   "figma": {
-    "nodeId": "3:111",
+    "nodeId": "16:533",
     "componentKey": "3b3ed21f1fc676c0e3dd9bc34e249c123565f777",
-    "lastSyncedHash": "3bfe4209d0f928fa",
-    "lastSyncedAt": "2026-10-06T07:56:12.030Z"
+    "lastSyncedHash": "bfe5e0ee87962cbe",
+    "lastSyncedAt": "2026-10-06T09:30:15.800Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",

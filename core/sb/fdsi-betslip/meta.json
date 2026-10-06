@@ -26,12 +26,12 @@
     }
   ],
   "figma": {
-    "nodeId": "3:78",
+    "nodeId": "16:498",
     "componentKey": "60545be6b26a95f3dc870f9399ba31c459e0b184",
-    "lastSyncedHash": "f43566171c75a675",
-    "lastSyncedAt": "2026-10-05T15:05:51.649Z"
+    "lastSyncedHash": "e0d9a9d48960e99c",
+    "lastSyncedAt": "2026-10-06T09:30:15.373Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-10-05"
+  "updatedAt": "2026-10-06"
 }
