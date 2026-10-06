@@ -4,10 +4,11 @@
   "brand": "core",
   "area": "gx",
   "displayName": "Live Casinooooo",
-  "description": "Live casino icon.",
+  "description": "Live casino iconsdsd",
   "tags": [
     "live-casino",
-    "casino"
+    "casino",
+    "dupa"
   ],
   "aliases": [
     "fdsi-live_casino"
@@ -27,10 +28,10 @@
     }
   ],
   "figma": {
-    "nodeId": "17:883",
+    "nodeId": "19:1623",
     "componentKey": "2fe3187c51773b63e3a505f9db4736b76a2d0917",
-    "lastSyncedHash": "bea2d168a4bbb01d",
-    "lastSyncedAt": "2026-10-06T11:00:57.714Z"
+    "lastSyncedHash": "c6668816e3f2d067",
+    "lastSyncedAt": "2026-10-06T11:51:06.281Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
