@@ -3,7 +3,7 @@
   "prefix": "fdsi",
   "brand": "core",
   "area": "global",
-  "displayName": "Explore",
+  "displayName": "Explorekasjd",
   "description": "Explore/discover icon.",
   "tags": [
     "explore",
@@ -29,9 +29,9 @@
     "nodeId": "3:111",
     "componentKey": "3b3ed21f1fc676c0e3dd9bc34e249c123565f777",
     "lastSyncedHash": "3bfe4209d0f928fa",
-    "lastSyncedAt": "2026-10-05T15:05:52.172Z"
+    "lastSyncedAt": "2026-10-06T07:56:12.030Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
-  "updatedAt": "2026-10-05"
+  "updatedAt": "2026-10-06"
 }
