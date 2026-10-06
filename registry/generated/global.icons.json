@@ -2,12 +2,12 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "global",
-  "generatedAt": "2026-10-05T12:29:38.135Z",
+  "generatedAt": "2026-10-06T07:56:37.030Z",
   "icons": [
     {
       "name": "fdsi-explore",
       "path": "core/global/fdsi-explore",
-      "displayName": "Explore",
+      "displayName": "Explorekasjd",
       "description": "Explore/discover icon.",
       "tags": [
         "explore",
