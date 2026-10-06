@@ -19,8 +19,6 @@ Each icon lives in `core/<area>/<icon-name>/` with its `meta.json` and its size 
 
 ## Figma sync
 
-<img src="figma-sync/assets/icon-256.png" alt="Icon Sync plugin icon" width="96" align="right">
-
 Designers maintain icons in a Figma table: one band per area, one row per icon, and the icon ComponentSet (variants `Size` x `Style`) inside its row.
 
 ![The icon table in Figma](docs/images/figma-sync/table-overview.png)

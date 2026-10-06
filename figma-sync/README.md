@@ -1,6 +1,8 @@
-# FDSI Icon Sync (Figma plugin)
+<p align="center">
+  <img src="assets/icon-256.png" alt="Icon Sync plugin icon" width="96">
+</p>
 
-<img src="assets/icon-256.png" alt="Icon Sync plugin icon" width="96" align="right">
+<h1 align="center">FDSI Icon Sync (Figma plugin)</h1>
 
 A Figma plugin that keeps the FDSI icon library in Figma and this repository in sync, in both directions. Designers work in a Figma table (one row per icon, one ComponentSet per icon). The plugin pushes artwork and metadata to GitHub and pulls repo changes back into the table. The repo stays the source of truth for consumers (web components, Storybook, S3).
 
