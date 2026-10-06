@@ -2,16 +2,17 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "gx",
-  "generatedAt": "2026-10-06T11:01:18.290Z",
+  "generatedAt": "2026-10-06T11:51:27.573Z",
   "icons": [
     {
       "name": "fdsi-live-casino",
       "path": "core/gx/fdsi-live-casino",
       "displayName": "Live Casinooooo",
-      "description": "Live casino icon.",
+      "description": "Live casino iconsdsd",
       "tags": [
         "live-casino",
-        "casino"
+        "casino",
+        "dupa"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
