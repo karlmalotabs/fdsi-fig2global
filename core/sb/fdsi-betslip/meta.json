@@ -3,7 +3,7 @@
   "prefix": "fdsi",
   "brand": "core",
   "area": "sb",
-  "displayName": "Betslipsss",
+  "displayName": "aw",
   "description": "Betting slip icon.sdsds",
   "tags": [
     "betslip",
@@ -26,10 +26,10 @@
     }
   ],
   "figma": {
-    "nodeId": "18:1269",
+    "nodeId": "21:1752",
     "componentKey": "60545be6b26a95f3dc870f9399ba31c459e0b184",
     "lastSyncedHash": "119d6df3874729b9",
-    "lastSyncedAt": "2026-10-06T11:21:31.032Z"
+    "lastSyncedAt": "2026-10-06T12:26:39.205Z"
   },
   "version": "0.1.0",
   "createdAt": "2026-09-18",
