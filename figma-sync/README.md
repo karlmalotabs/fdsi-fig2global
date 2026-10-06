@@ -1,5 +1,7 @@
 # FDSI Icon Sync (Figma plugin)
 
+<img src="assets/icon-256.png" alt="Icon Sync plugin icon" width="96" align="right">
+
 A Figma plugin that keeps the FDSI icon library in Figma and this repository in sync, in both directions. Designers work in a Figma table (one row per icon, one ComponentSet per icon). The plugin pushes artwork and metadata to GitHub and pulls repo changes back into the table. The repo stays the source of truth for consumers (web components, Storybook, S3).
 
 > **Status: implemented, not yet runtime-tested.** Everything type-checks, builds and passes the unit tests (7 files), but it has not been run in a real Figma session against a real GitHub repo. Try it in a scratch Figma file and a scratch repo (or a branch) first.
@@ -258,6 +260,8 @@ npm run verify:github-read   # read-only check against the live repo
 ```
 
 Install in Figma desktop: **Plugins, Development, Import plugin from manifest…**, then pick `figma-sync/manifest.json`. The manifest `id` is a placeholder (`REPLACE_WITH_REGISTERED_PLUGIN_ID`); replace it with a registered id before sharing the plugin.
+
+Plugin icon (monogram, inverted variant C): [assets/icon-128.png](assets/icon-128.png), [assets/icon-256.png](assets/icon-256.png) and [assets/icon.svg](assets/icon.svg). Figma has no manifest field for it; upload the 128 px (or 256 px) PNG in the publish dialog. The same mark is inlined in the plugin header in [src/ui/ui.html](src/ui/ui.html).
 
 ## Troubleshooting
 
