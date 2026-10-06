@@ -2,13 +2,13 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "sb",
-  "generatedAt": "2026-10-05T12:29:38.145Z",
+  "generatedAt": "2026-10-06T11:21:52.287Z",
   "icons": [
     {
       "name": "fdsi-betslip",
       "path": "core/sb/fdsi-betslip",
-      "displayName": "Betslip",
-      "description": "Betting slip icon.",
+      "displayName": "Betslipsss",
+      "description": "Betting slip icon.sdsds",
       "tags": [
         "betslip",
         "bet",
