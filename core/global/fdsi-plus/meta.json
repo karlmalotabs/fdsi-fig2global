@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-plus",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Plus / Add",
+  "description": "Add selection to betslip, increase stake amount, or create a new item.",
+  "tags": [
+    "plus",
+    "add",
+    "new",
+    "create",
+    "increase",
+    "increment",
+    "expand"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-plus-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-plus-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-plus-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-plus-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

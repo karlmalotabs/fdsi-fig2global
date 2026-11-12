@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-crash-rocket",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Crash Game Rocket",
+  "description": "Crash multiplier arcade games where players cash out before the rocket explodes.",
+  "tags": [
+    "crash",
+    "rocket",
+    "multiplier",
+    "arcade",
+    "instant-game",
+    "blast",
+    "space"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-crash-rocket-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-crash-rocket-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-crash-rocket-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-crash-rocket-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

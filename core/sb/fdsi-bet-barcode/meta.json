@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-bet-barcode",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Retail Ticket Scanner / Barcode",
+  "description": "Retail shop betslip barcode scanner for checking or cashing out in-store tickets.",
+  "tags": [
+    "barcode",
+    "scanner",
+    "retail",
+    "shop",
+    "ticket-check",
+    "in-store"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bet-barcode-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bet-barcode-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bet-barcode-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bet-barcode-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

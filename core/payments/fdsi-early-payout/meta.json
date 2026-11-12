@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-early-payout",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Early Payout / Instant Settlement",
+  "description": "Instant automatic payout when your team goes 2 goals ahead (2-Up Early Payout).",
+  "tags": [
+    "early-payout",
+    "instant-win",
+    "2-up",
+    "lightning",
+    "settled",
+    "fast-payout"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-early-payout-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-early-payout-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-early-payout-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-early-payout-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

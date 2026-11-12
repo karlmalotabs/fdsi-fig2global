@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-mma-octagon",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "MMA Open-Finger Fight Glove",
+  "description": "UFC, Bellator, and PFL Mixed Martial Arts (MMA) fight winner and round markets.",
+  "tags": [
+    "mma",
+    "ufc",
+    "glove",
+    "fight",
+    "combat",
+    "cage",
+    "grappling",
+    "knockout"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mma-octagon-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mma-octagon-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mma-octagon-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mma-octagon-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

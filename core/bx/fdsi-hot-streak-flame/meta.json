@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-hot-streak-flame",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Hot Streak Flame",
+  "description": "Trending hot game, player winning streak, or popular market indicator.",
+  "tags": [
+    "flame",
+    "fire",
+    "hot",
+    "trending",
+    "popular",
+    "streak",
+    "burn"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-hot-streak-flame-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-hot-streak-flame-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-hot-streak-flame-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-hot-streak-flame-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,5 +1,5 @@
 export type IconSize = "sm" | "reg" | "lg";
-export type IconStyle = "outline" | "solid" | "color";
+export type IconStyle = "outline" | "solid" | "duotone" | "color";
 export type IconStatus = "active" | "deprecated" | "draft";
 
 export interface IconVariant {

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-chevron-double-right",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Double Chevrons",
+  "description": "Fast-forward, skip to last page, or collapse/expand a side navigation panel.",
+  "tags": [
+    "chevron",
+    "double",
+    "fast-forward",
+    "skip",
+    "last",
+    "sidebar",
+    "collapse"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-chevron-double-right-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-chevron-double-right-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-chevron-double-right-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-chevron-double-right-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

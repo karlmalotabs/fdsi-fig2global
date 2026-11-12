@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-wheel-of-fortune",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Wheel of Fortune / Game Show",
+  "description": "Live casino game shows, Crazy Time prize wheels, and daily spin bonuses.",
+  "tags": [
+    "wheel",
+    "game-show",
+    "fortune",
+    "spin",
+    "prize",
+    "live-casino",
+    "bonus"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-wheel-of-fortune-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-wheel-of-fortune-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-wheel-of-fortune-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-wheel-of-fortune-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

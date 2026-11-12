@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-padlock",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Security Padlock",
+  "description": "Locked market, password security, or encrypted account data.",
+  "tags": [
+    "padlock",
+    "lock",
+    "security",
+    "password",
+    "encrypted",
+    "closed",
+    "private"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-padlock-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-padlock-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-padlock-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-padlock-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

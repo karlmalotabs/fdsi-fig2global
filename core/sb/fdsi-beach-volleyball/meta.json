@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-beach-volleyball",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Beach Volleyball",
+  "description": "FIVB Pro Tour and Olympic 2-on-2 beach volleyball markets.",
+  "tags": [
+    "beach-volleyball",
+    "net",
+    "ball",
+    "sand",
+    "fivb",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-beach-volleyball-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-beach-volleyball-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-beach-volleyball-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-beach-volleyball-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-water-polo",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Water Polo",
+  "description": "LEN Champions League and Olympic water polo match and total goals.",
+  "tags": [
+    "water-polo",
+    "ball",
+    "aquatics",
+    "pool",
+    "olympic",
+    "team-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-water-polo-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-water-polo-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-water-polo-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-water-polo-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

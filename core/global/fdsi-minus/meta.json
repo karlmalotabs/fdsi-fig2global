@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-minus",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Minus / Collapse",
+  "description": "Decrease stake amount, remove item, or collapse section.",
+  "tags": [
+    "minus",
+    "subtract",
+    "decrease",
+    "decrement",
+    "remove",
+    "collapse"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-minus-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-minus-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-minus-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-minus-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,21 +1,3 @@
 {
-  "$schema": "../schema/aliases.index.schema.json",
-  "fdsi-live_casino": {
-    "canonical": "fdsi-live-casino",
-    "path": "core/gx/fdsi-live-casino",
-    "brand": "core",
-    "area": "gx"
-  },
-  "fdsi-my_games": {
-    "canonical": "fdsi-my-games",
-    "path": "core/gx/fdsi-my-games",
-    "brand": "core",
-    "area": "gx"
-  },
-  "fdsi-my_bets": {
-    "canonical": "fdsi-my-bets",
-    "path": "core/sb/fdsi-my-bets",
-    "brand": "core",
-    "area": "sb"
-  }
+  "$schema": "../schema/aliases.index.schema.json"
 }

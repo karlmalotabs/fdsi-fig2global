@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-formula-1-car",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Formula 1 Bolide",
+  "description": "Formula 1 open-wheel bolide for Grand Prix race, podium, and fastest lap.",
+  "tags": [
+    "formula-1",
+    "f1",
+    "bolide",
+    "race-car",
+    "motorsport",
+    "grand-prix"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-formula-1-car-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-formula-1-car-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-formula-1-car-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-formula-1-car-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-odds-boost",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Odds Boost",
+  "description": "Enhanced odds price boost with higher payout on selected markets.",
+  "tags": [
+    "odds-boost",
+    "price-boost",
+    "enhanced",
+    "arrow",
+    "rocket",
+    "super-boost",
+    "value"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-odds-boost-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-odds-boost-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-odds-boost-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-odds-boost-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

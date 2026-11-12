@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-casino-chip",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Casino Chip",
+  "description": "Table games, live casino chips, and wagering denomination selector.",
+  "tags": [
+    "chip",
+    "token",
+    "casino",
+    "table-games",
+    "bet",
+    "stake",
+    "wager"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-casino-chip-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-casino-chip-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-casino-chip-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-casino-chip-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

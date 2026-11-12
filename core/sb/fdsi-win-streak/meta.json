@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-win-streak",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Winning Streak / Combo Multiplier",
+  "description": "Multi-bet winning streak challenge and progressive combo boost.",
+  "tags": [
+    "win-streak",
+    "combo",
+    "stars",
+    "challenge",
+    "milestone",
+    "hot-streak"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-win-streak-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-win-streak-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-win-streak-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-win-streak-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

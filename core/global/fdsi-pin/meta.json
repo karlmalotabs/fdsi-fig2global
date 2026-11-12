@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-pin",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Pin / Sticky Event",
+  "description": "Pin a favorite league, live scoreboard, or market group to the top of the page.",
+  "tags": [
+    "pin",
+    "thumbtack",
+    "sticky",
+    "keep",
+    "top",
+    "attach",
+    "fix"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-pin-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-pin-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-pin-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-pin-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

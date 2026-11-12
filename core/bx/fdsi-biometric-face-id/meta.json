@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-biometric-face-id",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Biometric Face ID",
+  "description": "Biometric Face ID authentication for instant secure login and withdrawals.",
+  "tags": [
+    "face-id",
+    "biometric",
+    "scan",
+    "authentication",
+    "login",
+    "security",
+    "face"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-biometric-face-id-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-biometric-face-id-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-biometric-face-id-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-biometric-face-id-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

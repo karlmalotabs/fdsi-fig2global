@@ -2,17 +2,21 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "global",
-  "generatedAt": "2026-10-06T09:31:26.964Z",
+  "generatedAt": "2026-11-12T12:46:38.817Z",
   "icons": [
     {
-      "name": "fdsi-explore",
-      "path": "core/global/fdsi-explore",
-      "displayName": "Explore My Dreams",
-      "description": "Explore/discover icon.",
+      "name": "fdsi-bookmark",
+      "path": "core/global/fdsi-bookmark",
+      "displayName": "Bookmark / Saved Event",
+      "description": "Bookmark a match, market, or promotion for quick access later.",
       "tags": [
-        "explore",
-        "discover",
-        "categories"
+        "bookmark",
+        "save",
+        "ribbon",
+        "pin",
+        "watch",
+        "saved",
+        "later"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
@@ -21,23 +25,965 @@
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-explore-reg-outline.svg"
+          "file": "fdsi-bookmark-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-explore-reg-solid.svg"
+          "file": "fdsi-bookmark-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bookmark-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bookmark-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-calendar",
+      "path": "core/global/fdsi-calendar",
+      "displayName": "Calendar / Match Schedule",
+      "description": "Browse upcoming fixture schedules, match dates, or transaction history by date.",
+      "tags": [
+        "calendar",
+        "date",
+        "schedule",
+        "fixtures",
+        "events",
+        "day",
+        "month",
+        "planner"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-calendar-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-calendar-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-calendar-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-calendar-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-caret-down",
+      "path": "core/global/fdsi-caret-down",
+      "displayName": "Caret Down",
+      "description": "Compact inline dropdown indicator for select inputs, filters, and compact menus.",
+      "tags": [
+        "caret",
+        "down",
+        "select",
+        "dropdown",
+        "picker",
+        "menu",
+        "inline"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-caret-down-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-caret-down-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-caret-down-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-caret-down-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-caret-left",
+      "path": "core/global/fdsi-caret-left",
+      "displayName": "Caret Left",
+      "description": "Compact inline leftward indicator for RTL tree branches or inline steppers.",
+      "tags": [
+        "caret",
+        "left",
+        "previous",
+        "back",
+        "tree",
+        "stepper",
+        "inline"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-caret-left-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-caret-left-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-caret-left-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-caret-left-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-caret-right",
+      "path": "core/global/fdsi-caret-right",
+      "displayName": "Caret Right",
+      "description": "Compact inline tree-view or nested menu indicator showing a collapsed branch.",
+      "tags": [
+        "caret",
+        "right",
+        "tree",
+        "branch",
+        "submenu",
+        "expand",
+        "inline"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-caret-right-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-caret-right-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-caret-right-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-caret-right-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-caret-sort",
+      "path": "core/global/fdsi-caret-sort",
+      "displayName": "Caret Sort Up/Down",
+      "description": "Bidirectional sort indicator for sortable table columns and list headers.",
+      "tags": [
+        "caret",
+        "sort",
+        "order",
+        "table",
+        "column",
+        "ascending",
+        "descending",
+        "filter"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-caret-sort-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-caret-sort-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-caret-sort-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-caret-sort-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-caret-up",
+      "path": "core/global/fdsi-caret-up",
+      "displayName": "Caret Up",
+      "description": "Compact inline upward indicator for ascending sort or open select menus.",
+      "tags": [
+        "caret",
+        "up",
+        "ascending",
+        "sort",
+        "select",
+        "close",
+        "inline"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-caret-up-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-caret-up-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-caret-up-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-caret-up-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-check",
+      "path": "core/global/fdsi-check",
+      "displayName": "Checkmark / Confirmation Tick",
+      "description": "Confirm selection, indicate completed state, or verify valid input.",
+      "tags": [
+        "check",
+        "tick",
+        "confirm",
+        "done",
+        "valid",
+        "success",
+        "complete",
+        "selected"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-check-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-check-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-check-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-check-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-chevron-double-right",
+      "path": "core/global/fdsi-chevron-double-right",
+      "displayName": "Double Chevrons",
+      "description": "Fast-forward, skip to last page, or collapse/expand a side navigation panel.",
+      "tags": [
+        "chevron",
+        "double",
+        "fast-forward",
+        "skip",
+        "last",
+        "sidebar",
+        "collapse"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-chevron-double-right-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-chevron-double-right-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-chevron-double-right-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-chevron-double-right-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-chevron-down",
+      "path": "core/global/fdsi-chevron-down",
+      "displayName": "Chevron Down",
+      "description": "Expand accordion section, open dropdown menu, or reveal additional options.",
+      "tags": [
+        "chevron",
+        "down",
+        "expand",
+        "open",
+        "dropdown",
+        "accordion",
+        "more"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-chevron-down-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-chevron-down-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-chevron-down-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-chevron-down-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-chevron-left",
+      "path": "core/global/fdsi-chevron-left",
+      "displayName": "Chevron Left",
+      "description": "Navigate back to the previous screen, step, or carousel item.",
+      "tags": [
+        "chevron",
+        "left",
+        "back",
+        "previous",
+        "return",
+        "arrow",
+        "navigate"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-chevron-left-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-chevron-left-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-chevron-left-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-chevron-left-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-chevron-right",
+      "path": "core/global/fdsi-chevron-right",
+      "displayName": "Chevron Right",
+      "description": "Navigate forward, drill down into a sub-menu, or advance to the next item.",
+      "tags": [
+        "chevron",
+        "right",
+        "next",
+        "forward",
+        "arrow",
+        "navigate",
+        "drilldown",
+        "breadcrumb"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-chevron-right-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-chevron-right-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-chevron-right-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-chevron-right-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-chevron-up",
+      "path": "core/global/fdsi-chevron-up",
+      "displayName": "Chevron Up",
+      "description": "Collapse an open accordion section, fold content, or scroll to top.",
+      "tags": [
+        "chevron",
+        "up",
+        "collapse",
+        "fold",
+        "less",
+        "top",
+        "accordion"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-chevron-up-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-chevron-up-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-chevron-up-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-chevron-up-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-clock",
+      "path": "core/global/fdsi-clock",
+      "displayName": "Clock / Kick-Off Time",
+      "description": "Display match kick-off time, countdown, or recent activity.",
+      "tags": [
+        "clock",
+        "time",
+        "schedule",
+        "kickoff",
+        "countdown",
+        "hour",
+        "recent"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-clock-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-clock-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-clock-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-clock-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-close",
+      "path": "core/global/fdsi-close",
+      "displayName": "Close X",
+      "description": "Dismiss modal, close drawer, clear input, or cancel current action.",
+      "tags": [
+        "close",
+        "dismiss",
+        "cancel",
+        "clear",
+        "remove",
+        "x",
+        "cross",
+        "modal"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-close-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-close-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-close-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-close-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-close-circle",
+      "path": "core/global/fdsi-close-circle",
+      "displayName": "Close Circle",
+      "description": "Enclosed circular close action for clearing search fields, tags, or toast alerts.",
+      "tags": [
+        "close",
+        "circle",
+        "clear",
+        "reset",
+        "cancel",
+        "remove",
+        "delete",
+        "chip"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-close-circle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-close-circle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-close-circle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-close-circle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-copy",
+      "path": "core/global/fdsi-copy",
+      "displayName": "Copy Betslip Code",
+      "description": "Copy betslip booking code, transaction ID, or referral link to clipboard.",
+      "tags": [
+        "copy",
+        "duplicate",
+        "clipboard",
+        "clone",
+        "code",
+        "paste"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-copy-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-copy-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-copy-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-copy-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-external-link",
+      "path": "core/global/fdsi-external-link",
+      "displayName": "External Link / Pop-Out Window",
+      "description": "Open detailed statistics, regulatory info, or external page in a new window.",
+      "tags": [
+        "external",
+        "open",
+        "new-tab",
+        "window",
+        "popout",
+        "launch",
+        "out"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-external-link-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-external-link-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-external-link-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-external-link-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-eye-hidden",
+      "path": "core/global/fdsi-eye-hidden",
+      "displayName": "Eye Off / Hide Balance",
+      "description": "Hide wallet balance, mask password input, or enable privacy mode.",
+      "tags": [
+        "eye",
+        "hide",
+        "hidden",
+        "mask",
+        "invisible",
+        "private",
+        "balance",
+        "password"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-eye-hidden-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-eye-hidden-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-eye-hidden-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-eye-hidden-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-eye-visible",
+      "path": "core/global/fdsi-eye-visible",
+      "displayName": "Eye / Show Balance",
+      "description": "Show wallet balance, reveal password, or unhide sensitive account data.",
+      "tags": [
+        "eye",
+        "show",
+        "visible",
+        "reveal",
+        "view",
+        "balance",
+        "password",
+        "privacy"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-eye-visible-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-eye-visible-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-eye-visible-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-eye-visible-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-filter",
+      "path": "core/global/fdsi-filter",
+      "displayName": "Filter Funnel",
+      "description": "Filter events, markets, transactions, or casino games by criteria.",
+      "tags": [
+        "filter",
+        "funnel",
+        "refine",
+        "narrow",
+        "sort",
+        "criteria",
+        "facets"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-filter-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-filter-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-filter-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-filter-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-fullscreen",
+      "path": "core/global/fdsi-fullscreen",
+      "displayName": "Fullscreen / Expand View",
+      "description": "Expand live stream video or casino game canvas to full screen.",
+      "tags": [
+        "fullscreen",
+        "expand",
+        "maximize",
+        "enlarge",
+        "video",
+        "screen"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-fullscreen-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-fullscreen-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-fullscreen-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-fullscreen-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-grid",
+      "path": "core/global/fdsi-grid",
+      "displayName": "Bento Category Grid",
+      "description": "Switch to grid layout view or open the app/lobby category launcher.",
+      "tags": [
+        "grid",
+        "bento",
+        "dashboard",
+        "tiles",
+        "view",
+        "layout",
+        "categories",
+        "lobby"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-grid-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-grid-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-grid-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-grid-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-heart",
+      "path": "core/global/fdsi-heart",
+      "displayName": "Heart / Favorite",
+      "description": "Save a sport, team, league, or casino game to player favorites.",
+      "tags": [
+        "heart",
+        "favorite",
+        "like",
+        "love",
+        "save",
+        "wishlist",
+        "preferred"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-heart-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-heart-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-heart-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-heart-reg-color.svg"
         }
       ]
     },
     {
       "name": "fdsi-home",
       "path": "core/global/fdsi-home",
-      "displayName": "Home",
-      "description": "Home tab icon.",
+      "displayName": "Navigation Home",
+      "description": "Return to the main lobby, home screen, or primary dashboard.",
       "tags": [
         "home",
-        "nav"
+        "house",
+        "lobby",
+        "main",
+        "start",
+        "dashboard",
+        "navigation"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
@@ -52,6 +998,1201 @@
           "size": "reg",
           "style": "solid",
           "file": "fdsi-home-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-home-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-home-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-info",
+      "path": "core/global/fdsi-info",
+      "displayName": "Info Circle",
+      "description": "Display market rules, bet settlement terms, or contextual tooltip information.",
+      "tags": [
+        "info",
+        "information",
+        "details",
+        "rules",
+        "tooltip",
+        "about",
+        "help"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-info-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-info-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-info-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-info-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-link",
+      "path": "core/global/fdsi-link",
+      "displayName": "Link / Referral URL",
+      "description": "Copy direct URL link or connect linked accounts and referrals.",
+      "tags": [
+        "link",
+        "chain",
+        "url",
+        "hyperlink",
+        "connect",
+        "referral"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-link-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-link-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-link-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-link-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-log-in",
+      "path": "core/global/fdsi-log-in",
+      "displayName": "Log In",
+      "description": "Sign in to an existing player account or enter authenticated session.",
+      "tags": [
+        "login",
+        "sign-in",
+        "enter",
+        "auth",
+        "account",
+        "session",
+        "door",
+        "arrow"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-log-in-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-log-in-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-log-in-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-log-in-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-log-out",
+      "path": "core/global/fdsi-log-out",
+      "displayName": "Log Out",
+      "description": "Sign out of the current player account and end the active session.",
+      "tags": [
+        "logout",
+        "sign-out",
+        "exit",
+        "leave",
+        "session",
+        "account",
+        "door"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-log-out-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-log-out-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-log-out-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-log-out-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-menu",
+      "path": "core/global/fdsi-menu",
+      "displayName": "Navigation Hamburger Menu",
+      "description": "Open primary application navigation drawer or mobile hamburger menu.",
+      "tags": [
+        "menu",
+        "hamburger",
+        "navigation",
+        "drawer",
+        "bars",
+        "sidebar",
+        "list"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-menu-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-menu-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-menu-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-menu-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-minus",
+      "path": "core/global/fdsi-minus",
+      "displayName": "Minus / Collapse",
+      "description": "Decrease stake amount, remove item, or collapse section.",
+      "tags": [
+        "minus",
+        "subtract",
+        "decrease",
+        "decrement",
+        "remove",
+        "collapse"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-minus-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-minus-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-minus-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-minus-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-blocked",
+      "path": "core/global/fdsi-mod-blocked",
+      "displayName": "Modifier — Blocked",
+      "description": "Standalone red circular prohibited/blocked status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "blocked",
+        "prohibited",
+        "restricted",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-blocked-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-blocked-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-blocked-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-blocked-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-check",
+      "path": "core/global/fdsi-mod-check",
+      "displayName": "Modifier — Check",
+      "description": "Standalone green circular checkmark status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "check",
+        "verified",
+        "success",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-check-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-check-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-check-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-check-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-flame",
+      "path": "core/global/fdsi-mod-flame",
+      "displayName": "Modifier — Flame",
+      "description": "Standalone orange flame hot/trending modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "flame",
+        "fire",
+        "hot",
+        "trending"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-flame-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-flame-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-flame-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-flame-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-info",
+      "path": "core/global/fdsi-mod-info",
+      "displayName": "Modifier — Info",
+      "description": "Standalone blue circular information status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "info",
+        "information",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-info-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-info-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-info-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-info-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-minus",
+      "path": "core/global/fdsi-mod-minus",
+      "displayName": "Modifier — Minus",
+      "description": "Standalone red circular minus/remove status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "minus",
+        "remove",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-minus-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-minus-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-minus-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-minus-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-padlock",
+      "path": "core/global/fdsi-mod-padlock",
+      "displayName": "Modifier — Padlock",
+      "description": "Standalone blue padlock security/locked modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "padlock",
+        "lock",
+        "security",
+        "locked"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-padlock-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-padlock-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-padlock-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-padlock-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-pending",
+      "path": "core/global/fdsi-mod-pending",
+      "displayName": "Modifier — Pending",
+      "description": "Standalone blue circular clock/pending status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "pending",
+        "clock",
+        "waiting",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-pending-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-pending-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-pending-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-pending-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-plus",
+      "path": "core/global/fdsi-mod-plus",
+      "displayName": "Modifier — Plus",
+      "description": "Standalone green circular plus/add status modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "plus",
+        "add",
+        "new",
+        "status"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-plus-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-plus-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-plus-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-plus-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-sparkle",
+      "path": "core/global/fdsi-mod-sparkle",
+      "displayName": "Modifier — Sparkle",
+      "description": "Standalone amber 4-point sparkle new/promo modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "sparkle",
+        "new",
+        "magic",
+        "promo"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-sparkle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-sparkle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-sparkle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-sparkle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mod-star",
+      "path": "core/global/fdsi-mod-star",
+      "displayName": "Modifier — Star",
+      "description": "Standalone amber 5-point star favorite/featured modifier badge.",
+      "tags": [
+        "modifier",
+        "badge",
+        "star",
+        "favorite",
+        "featured",
+        "vip"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mod-star-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mod-star-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mod-star-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mod-star-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-pin",
+      "path": "core/global/fdsi-pin",
+      "displayName": "Pin / Sticky Event",
+      "description": "Pin a favorite league, live scoreboard, or market group to the top of the page.",
+      "tags": [
+        "pin",
+        "thumbtack",
+        "sticky",
+        "keep",
+        "top",
+        "attach",
+        "fix"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-pin-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-pin-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-pin-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-pin-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-plus",
+      "path": "core/global/fdsi-plus",
+      "displayName": "Plus / Add",
+      "description": "Add selection to betslip, increase stake amount, or create a new item.",
+      "tags": [
+        "plus",
+        "add",
+        "new",
+        "create",
+        "increase",
+        "increment",
+        "expand"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-plus-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-plus-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-plus-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-plus-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-power",
+      "path": "core/global/fdsi-power",
+      "displayName": "Power / Log Off Switch",
+      "description": "Quickly end session, log out, or toggle system power state.",
+      "tags": [
+        "power",
+        "switch",
+        "off",
+        "shutdown",
+        "logout",
+        "disconnect"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-power-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-power-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-power-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-power-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-search",
+      "path": "core/global/fdsi-search",
+      "displayName": "Search Magnifier",
+      "description": "Search events, teams, leagues, slot titles, or help articles.",
+      "tags": [
+        "search",
+        "find",
+        "magnifier",
+        "lookup",
+        "query",
+        "explore",
+        "filter"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-search-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-search-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-search-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-search-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-settings",
+      "path": "core/global/fdsi-settings",
+      "displayName": "Settings Gear",
+      "description": "Open account preferences, odds format configuration, or application settings.",
+      "tags": [
+        "settings",
+        "gear",
+        "cog",
+        "preferences",
+        "options",
+        "configuration",
+        "system"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-settings-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-settings-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-settings-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-settings-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-share",
+      "path": "core/global/fdsi-share",
+      "displayName": "Share / Send Betslip",
+      "description": "Share a betslip, referral link, or big win across social channels.",
+      "tags": [
+        "share",
+        "send",
+        "social",
+        "network",
+        "nodes",
+        "export",
+        "referral"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-share-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-share-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-share-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-share-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-sliders",
+      "path": "core/global/fdsi-sliders",
+      "displayName": "Tuning Sliders",
+      "description": "Adjust granular filter parameters, bet ranges, or display controls.",
+      "tags": [
+        "sliders",
+        "tuning",
+        "controls",
+        "adjust",
+        "preferences",
+        "options",
+        "equalizer"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-sliders-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-sliders-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-sliders-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-sliders-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-smartphone",
+      "path": "core/global/fdsi-smartphone",
+      "displayName": "Smartphone / Mobile Betting App",
+      "description": "Mobile app download, SMS verification, or device management.",
+      "tags": [
+        "smartphone",
+        "mobile",
+        "phone",
+        "device",
+        "app",
+        "ios",
+        "android"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-smartphone-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-smartphone-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-smartphone-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-smartphone-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-theme-dark",
+      "path": "core/global/fdsi-theme-dark",
+      "displayName": "Theme / Dark Mode Crescent Moon",
+      "description": "Toggle dark mode appearance or night-time display theme.",
+      "tags": [
+        "moon",
+        "dark",
+        "night",
+        "theme",
+        "appearance",
+        "mode"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-theme-dark-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-theme-dark-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-theme-dark-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-theme-dark-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-trash",
+      "path": "core/global/fdsi-trash",
+      "displayName": "Trash / Clear Betslip",
+      "description": "Remove a selection from the betslip or clear all saved items.",
+      "tags": [
+        "trash",
+        "delete",
+        "remove",
+        "bin",
+        "clear",
+        "discard",
+        "garbage"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-trash-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-trash-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-trash-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-trash-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-user",
+      "path": "core/global/fdsi-user",
+      "displayName": "User Profile / Account",
+      "description": "Open player profile, account overview, or personal details.",
+      "tags": [
+        "user",
+        "profile",
+        "account",
+        "avatar",
+        "person",
+        "member",
+        "player"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-user-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-user-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-user-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-user-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-volume-mute",
+      "path": "core/global/fdsi-volume-mute",
+      "displayName": "Mute / Sound Off",
+      "description": "Mute live stream audio, casino game music, or sound effects.",
+      "tags": [
+        "mute",
+        "silent",
+        "volume-off",
+        "audio",
+        "speaker",
+        "quiet"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-volume-mute-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-volume-mute-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-volume-mute-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-volume-mute-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-volume-on",
+      "path": "core/global/fdsi-volume-on",
+      "displayName": "Sound On / Speaker",
+      "description": "Audio enabled for live stream commentary, game sound effects, or match alerts.",
+      "tags": [
+        "volume",
+        "sound",
+        "audio",
+        "speaker",
+        "unmute",
+        "listen",
+        "on"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-volume-on-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-volume-on-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-volume-on-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-volume-on-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-warning",
+      "path": "core/global/fdsi-warning",
+      "displayName": "Warning / Alert Triangle",
+      "description": "Alert the user to suspended markets, stake limits, or important notices.",
+      "tags": [
+        "warning",
+        "alert",
+        "caution",
+        "error",
+        "danger",
+        "exclamation",
+        "notice",
+        "limit"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-warning-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-warning-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-warning-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-warning-reg-color.svg"
         }
       ]
     }

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-falcon-raptor",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Diving Falcon",
+  "description": "Eagles, Falcons, and avian team mascots or virtual bird racing.",
+  "tags": [
+    "falcon",
+    "eagle",
+    "hawk",
+    "bird",
+    "raptor",
+    "mascot",
+    "wings"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-falcon-raptor-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-falcon-raptor-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-falcon-raptor-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-falcon-raptor-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-calendar",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Calendar / Match Schedule",
+  "description": "Browse upcoming fixture schedules, match dates, or transaction history by date.",
+  "tags": [
+    "calendar",
+    "date",
+    "schedule",
+    "fixtures",
+    "events",
+    "day",
+    "month",
+    "planner"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-calendar-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-calendar-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-calendar-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-calendar-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

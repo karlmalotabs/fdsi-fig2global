@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-cricket-bat",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Cricket Bat & Ball",
+  "description": "International Test, ODI, T20, and IPL cricket bat-and-ball markets.",
+  "tags": [
+    "cricket",
+    "bat",
+    "ball",
+    "ipl",
+    "t20",
+    "ashes",
+    "wicket"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-cricket-bat-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-cricket-bat-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-cricket-bat-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-cricket-bat-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-alpine-skiing",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Downhill Skiing",
+  "description": "FIS World Cup and Winter Olympic alpine downhill and slalom skiing.",
+  "tags": [
+    "skiing",
+    "alpine",
+    "downhill",
+    "slalom",
+    "snow",
+    "winter-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-alpine-skiing-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-alpine-skiing-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-alpine-skiing-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-alpine-skiing-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

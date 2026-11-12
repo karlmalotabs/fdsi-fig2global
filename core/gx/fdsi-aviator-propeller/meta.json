@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-aviator-propeller",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Aviator Propeller",
+  "description": "Spinning aircraft propeller icon for Aviator and flight crash games.",
+  "tags": [
+    "aviator",
+    "propeller",
+    "plane",
+    "flight",
+    "crash",
+    "spin",
+    "blades"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-aviator-propeller-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-aviator-propeller-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-aviator-propeller-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-aviator-propeller-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

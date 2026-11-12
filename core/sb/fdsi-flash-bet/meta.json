@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-flash-bet",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Flash Bet / Next-60s Market",
+  "description": "Lightning-fast micro-markets settling in the next 60 seconds or next point.",
+  "tags": [
+    "flash-bet",
+    "micro-betting",
+    "instant",
+    "lightning",
+    "next-minute",
+    "fast-market"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-flash-bet-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-flash-bet-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-flash-bet-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-flash-bet-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

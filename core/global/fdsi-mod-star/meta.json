@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-mod-star",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Modifier — Star",
+  "description": "Standalone amber 5-point star favorite/featured modifier badge.",
+  "tags": [
+    "modifier",
+    "badge",
+    "star",
+    "favorite",
+    "featured",
+    "vip"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mod-star-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mod-star-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mod-star-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mod-star-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

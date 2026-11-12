@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-coins",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "High-Stakes Coins",
+  "description": "High-stakes bankroll, loyalty coins, or multi-currency balance.",
+  "tags": [
+    "coins",
+    "stack",
+    "bankroll",
+    "currency",
+    "money",
+    "gold",
+    "wealth",
+    "balance"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-coins-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-coins-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-coins-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-coins-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-theme-dark",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Theme / Dark Mode Crescent Moon",
+  "description": "Toggle dark mode appearance or night-time display theme.",
+  "tags": [
+    "moon",
+    "dark",
+    "night",
+    "theme",
+    "appearance",
+    "mode"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-theme-dark-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-theme-dark-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-theme-dark-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-theme-dark-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

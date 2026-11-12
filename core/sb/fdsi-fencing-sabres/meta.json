@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-fencing-sabres",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Fencing Crossed Sabres",
+  "description": "Olympic foil, épée, and sabre fencing bout and medal markets.",
+  "tags": [
+    "fencing",
+    "sabres",
+    "foils",
+    "epee",
+    "swords",
+    "crossed",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-fencing-sabres-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-fencing-sabres-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-fencing-sabres-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-fencing-sabres-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

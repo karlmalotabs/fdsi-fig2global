@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-bet-protection-shield",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Bet Protection Shield",
+  "description": "Protected bet token or acca insurance coverage against a single losing leg.",
+  "tags": [
+    "shield",
+    "protection",
+    "insurance",
+    "safe-bet",
+    "cover",
+    "heraldic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bet-protection-shield-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bet-protection-shield-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bet-protection-shield-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bet-protection-shield-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

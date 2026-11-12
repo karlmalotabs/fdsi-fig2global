@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-multiplier-x",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Crash / Slot Multiplier Badge",
+  "description": "Win multiplier badges (2x–10,000x) in tumbling slots and crash games.",
+  "tags": [
+    "multiplier",
+    "x",
+    "win",
+    "boost",
+    "tumbling",
+    "slots",
+    "crash"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-multiplier-x-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-multiplier-x-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-multiplier-x-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-multiplier-x-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

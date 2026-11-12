@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-live-stream",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Live Stream / Watch & Bet",
+  "description": "Watch live match video stream directly inside the sportsbook event view.",
+  "tags": [
+    "live-stream",
+    "watch",
+    "video",
+    "tv",
+    "play",
+    "monitor",
+    "broadcast"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-live-stream-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-live-stream-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-live-stream-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-live-stream-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

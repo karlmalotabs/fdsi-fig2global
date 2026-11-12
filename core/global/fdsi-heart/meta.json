@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-heart",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Heart / Favorite",
+  "description": "Save a sport, team, league, or casino game to player favorites.",
+  "tags": [
+    "heart",
+    "favorite",
+    "like",
+    "love",
+    "save",
+    "wishlist",
+    "preferred"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-heart-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-heart-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-heart-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-heart-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-slip-ticket",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Betslip Ticket",
+  "description": "Active betslip containing selected wagers, stakes, and potential payout.",
+  "tags": [
+    "betslip",
+    "ticket",
+    "wager",
+    "selections",
+    "coupon",
+    "stake",
+    "bet"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-slip-ticket-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-slip-ticket-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-slip-ticket-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-slip-ticket-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

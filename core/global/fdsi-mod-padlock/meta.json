@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-mod-padlock",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Modifier — Padlock",
+  "description": "Standalone blue padlock security/locked modifier badge.",
+  "tags": [
+    "modifier",
+    "badge",
+    "padlock",
+    "lock",
+    "security",
+    "locked"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mod-padlock-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mod-padlock-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mod-padlock-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mod-padlock-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

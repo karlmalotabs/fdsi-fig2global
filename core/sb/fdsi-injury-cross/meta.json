@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-injury-cross",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Medical / Injury Stoppage",
+  "description": "Injury stoppage, medical treatment on pitch, and injury protection.",
+  "tags": [
+    "injury",
+    "medical",
+    "first-aid",
+    "kit",
+    "cross",
+    "stoppage",
+    "physio"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-injury-cross-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-injury-cross-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-injury-cross-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-injury-cross-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-mystery-box",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Mystery Box / Prize Drop",
+  "description": "Mystery prize box drop with surprise free spins, cash, or free bets.",
+  "tags": [
+    "mystery",
+    "box",
+    "prize-drop",
+    "surprise",
+    "gift",
+    "question",
+    "reward"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mystery-box-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mystery-box-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mystery-box-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mystery-box-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-archery-bow",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Recurve Archery Bow & Broadhead Arrow",
+  "description": "Olympic recurve and compound archery head-to-head and medal markets.",
+  "tags": [
+    "archery",
+    "bow",
+    "arrow",
+    "recurve",
+    "target",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-archery-bow-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-archery-bow-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-archery-bow-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-archery-bow-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

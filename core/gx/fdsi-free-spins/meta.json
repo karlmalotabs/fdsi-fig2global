@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-free-spins",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Free Spins / Respin Cycle",
+  "description": "Free spins bonus rounds, respin mechanics, and auto-spin controls.",
+  "tags": [
+    "free-spins",
+    "respin",
+    "spin",
+    "cycle",
+    "arrows",
+    "bonus-round",
+    "slots"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-free-spins-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-free-spins-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-free-spins-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-free-spins-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

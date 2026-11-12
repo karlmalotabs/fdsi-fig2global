@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-playing-cards",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Playing Cards / Blackjack Pair",
+  "description": "Card table games including Blackjack, Poker, Baccarat, and Solitaire.",
+  "tags": [
+    "cards",
+    "playing-cards",
+    "deck",
+    "blackjack",
+    "poker",
+    "table-games",
+    "casino"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-playing-cards-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-playing-cards-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-playing-cards-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-playing-cards-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

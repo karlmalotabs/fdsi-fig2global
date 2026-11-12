@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-close",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Close X",
+  "description": "Dismiss modal, close drawer, clear input, or cancel current action.",
+  "tags": [
+    "close",
+    "dismiss",
+    "cancel",
+    "clear",
+    "remove",
+    "x",
+    "cross",
+    "modal"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-close-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-close-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-close-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-close-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

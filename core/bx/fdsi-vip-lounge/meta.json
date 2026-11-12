@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-vip-lounge",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "VIP Lounge Cocktail / Martini",
+  "description": "Exclusive VIP hospitality lounge, private tables, and concierge perks.",
+  "tags": [
+    "vip",
+    "lounge",
+    "martini",
+    "cocktail",
+    "hospitality",
+    "club",
+    "exclusive"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-vip-lounge-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-vip-lounge-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-vip-lounge-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-vip-lounge-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

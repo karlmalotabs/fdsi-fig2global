@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-halftime-split",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Half-Time / 45' Match Timer",
+  "description": "Half-Time / Full-Time (HT/FT) double result and 1st-half markets.",
+  "tags": [
+    "half-time",
+    "45-minutes",
+    "first-half",
+    "ht-ft",
+    "stopwatch",
+    "period"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-halftime-split-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-halftime-split-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-halftime-split-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-halftime-split-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

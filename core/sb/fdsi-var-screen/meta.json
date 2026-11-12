@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-var-screen",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "VAR / Video Assistant Referee",
+  "description": "Video Assistant Referee (VAR) review and overturned decision specials.",
+  "tags": [
+    "var",
+    "video-referee",
+    "review",
+    "monitor",
+    "screen",
+    "decision"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-var-screen-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-var-screen-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-var-screen-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-var-screen-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

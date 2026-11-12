@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-bingo-ball",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Keno / Bingo / Lotto Ball",
+  "description": "Bingo rooms, Keno draws, lotto numbers, and live ball-draw game shows.",
+  "tags": [
+    "bingo",
+    "lotto",
+    "ball",
+    "number",
+    "draw",
+    "keno",
+    "7"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bingo-ball-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bingo-ball-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bingo-ball-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bingo-ball-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

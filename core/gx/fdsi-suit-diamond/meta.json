@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-suit-diamond",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Diamond Suit",
+  "description": "Diamond rhombus card suit for poker tables, card filters, and suit bets.",
+  "tags": [
+    "diamond",
+    "rhombus",
+    "suit",
+    "cards",
+    "poker",
+    "red",
+    "casino"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-suit-diamond-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-suit-diamond-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-suit-diamond-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-suit-diamond-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

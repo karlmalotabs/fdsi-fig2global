@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-futsal-ball",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Futsal / Indoor Football",
+  "description": "FIFA and UEFA indoor 5-a-side futsal match and tournament markets.",
+  "tags": [
+    "futsal",
+    "indoor-football",
+    "5-a-side",
+    "ball",
+    "court",
+    "soccer"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-futsal-ball-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-futsal-ball-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-futsal-ball-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-futsal-ball-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

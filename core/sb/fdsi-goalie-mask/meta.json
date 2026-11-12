@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-goalie-mask",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Ice Hockey Goalie Mask",
+  "description": "Hockey goaltender saves, shutouts, and goalie player prop markets.",
+  "tags": [
+    "goalie",
+    "mask",
+    "goaltender",
+    "hockey",
+    "saves",
+    "shutout",
+    "nhl"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-goalie-mask-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-goalie-mask-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-goalie-mask-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-goalie-mask-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

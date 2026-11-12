@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-commentary-mic",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Live Audio Commentary / Podcast Mic",
+  "description": "Live audio match commentary, sportsbook podcasts, and expert previews.",
+  "tags": [
+    "microphone",
+    "commentary",
+    "audio",
+    "podcast",
+    "radio",
+    "live-voice"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-commentary-mic-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-commentary-mic-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-commentary-mic-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-commentary-mic-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

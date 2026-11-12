@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-moto-gp",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "MotoGP Superbike",
+  "description": "MotoGP, WorldSBK, and Isle of Man TT superbike motorcycle racing.",
+  "tags": [
+    "motogp",
+    "motorcycle",
+    "superbike",
+    "racing",
+    "motorsport",
+    "rider"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-moto-gp-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-moto-gp-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-moto-gp-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-moto-gp-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

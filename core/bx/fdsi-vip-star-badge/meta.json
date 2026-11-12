@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-vip-star-badge",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "VIP Loyalty Tier Badge",
+  "description": "Loyalty level-up badge, achievement rosette, and featured reward.",
+  "tags": [
+    "vip",
+    "star",
+    "rosette",
+    "badge",
+    "loyalty",
+    "achievement",
+    "reward",
+    "level"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-vip-star-badge-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-vip-star-badge-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-vip-star-badge-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-vip-star-badge-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

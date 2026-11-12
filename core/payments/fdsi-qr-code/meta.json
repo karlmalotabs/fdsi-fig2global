@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-qr-code",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "QR Code / Fast Deposit",
+  "description": "Scan QR code for instant mobile payment, Pix, Swish, or retail ticket check.",
+  "tags": [
+    "qr",
+    "scan",
+    "barcode",
+    "mobile-pay",
+    "pix",
+    "instant",
+    "camera"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-qr-code-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-qr-code-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-qr-code-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-qr-code-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

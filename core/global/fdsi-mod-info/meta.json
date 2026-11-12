@@ -1,0 +1,43 @@
+{
+  "name": "fdsi-mod-info",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Modifier — Info",
+  "description": "Standalone blue circular information status modifier badge.",
+  "tags": [
+    "modifier",
+    "badge",
+    "info",
+    "information",
+    "status"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mod-info-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mod-info-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mod-info-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mod-info-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

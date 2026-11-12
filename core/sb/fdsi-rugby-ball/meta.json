@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-rugby-ball",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Rugby Ball",
+  "description": "Rugby Union, Rugby League, Six Nations, and NRL betting markets.",
+  "tags": [
+    "rugby",
+    "union",
+    "league",
+    "six-nations",
+    "nrl",
+    "oval-ball"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-rugby-ball-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-rugby-ball-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-rugby-ball-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-rugby-ball-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

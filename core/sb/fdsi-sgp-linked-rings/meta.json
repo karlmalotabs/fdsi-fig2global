@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-sgp-linked-rings",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Same Game Parlay / SGP",
+  "description": "Same Game Parlay (SGP) and linked multi-market combinations.",
+  "tags": [
+    "sgp",
+    "same-game-parlay",
+    "linked",
+    "rings",
+    "chain",
+    "combo",
+    "multi"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-sgp-linked-rings-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-sgp-linked-rings-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-sgp-linked-rings-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-sgp-linked-rings-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

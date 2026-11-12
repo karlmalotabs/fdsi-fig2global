@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-table-tennis",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Table Tennis / Ping Pong",
+  "description": "24/7 international table tennis and ping-pong set and point markets.",
+  "tags": [
+    "table-tennis",
+    "ping-pong",
+    "paddle",
+    "racket",
+    "ball",
+    "ittf"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-table-tennis-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-table-tennis-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-table-tennis-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-table-tennis-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

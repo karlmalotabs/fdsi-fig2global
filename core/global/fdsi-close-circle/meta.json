@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-close-circle",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Close Circle",
+  "description": "Enclosed circular close action for clearing search fields, tags, or toast alerts.",
+  "tags": [
+    "close",
+    "circle",
+    "clear",
+    "reset",
+    "cancel",
+    "remove",
+    "delete",
+    "chip"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-close-circle-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-close-circle-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-close-circle-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-close-circle-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

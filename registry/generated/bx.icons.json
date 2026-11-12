@@ -1,0 +1,1010 @@
+{
+  "$schema": "../schema/area.index.schema.json",
+  "brand": "core",
+  "area": "bx",
+  "generatedAt": "2026-11-12T12:17:59.544Z",
+  "icons": [
+    {
+      "name": "fdsi-bet-insurance",
+      "path": "core/bx/fdsi-bet-insurance",
+      "displayName": "Bet Insurance / Safe Bet",
+      "description": "Rainy-day stake protection and risk-free bet insurance coverage.",
+      "tags": [
+        "umbrella",
+        "insurance",
+        "protection",
+        "risk-free",
+        "cover",
+        "safe",
+        "refund"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bet-insurance-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bet-insurance-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bet-insurance-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bet-insurance-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bet-protection-shield",
+      "path": "core/bx/fdsi-bet-protection-shield",
+      "displayName": "Bet Protection Shield",
+      "description": "Protected bet token or acca insurance coverage against a single losing leg.",
+      "tags": [
+        "shield",
+        "protection",
+        "insurance",
+        "safe-bet",
+        "cover",
+        "heraldic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bet-protection-shield-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bet-protection-shield-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bet-protection-shield-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bet-protection-shield-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-biometric-face-id",
+      "path": "core/bx/fdsi-biometric-face-id",
+      "displayName": "Biometric Face ID",
+      "description": "Biometric Face ID authentication for instant secure login and withdrawals.",
+      "tags": [
+        "face-id",
+        "biometric",
+        "scan",
+        "authentication",
+        "login",
+        "security",
+        "face"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-biometric-face-id-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-biometric-face-id-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-biometric-face-id-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-biometric-face-id-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-free-bet-gift",
+      "path": "core/bx/fdsi-free-bet-gift",
+      "displayName": "Free Bet / Bonus Gift Box",
+      "description": "Free bet token, welcome bonus package, or promotional gift drop.",
+      "tags": [
+        "gift",
+        "free-bet",
+        "bonus",
+        "present",
+        "reward",
+        "promotion",
+        "welcome"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-free-bet-gift-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-free-bet-gift-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-free-bet-gift-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-free-bet-gift-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-help-faq",
+      "path": "core/bx/fdsi-help-faq",
+      "displayName": "Help / FAQ",
+      "description": "Help center, frequently asked questions (FAQ), and betting guides.",
+      "tags": [
+        "help",
+        "question",
+        "faq",
+        "support",
+        "guide",
+        "how-to",
+        "assistance"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-help-faq-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-help-faq-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-help-faq-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-help-faq-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-hot-streak-flame",
+      "path": "core/bx/fdsi-hot-streak-flame",
+      "displayName": "Hot Streak Flame",
+      "description": "Trending hot game, player winning streak, or popular market indicator.",
+      "tags": [
+        "flame",
+        "fire",
+        "hot",
+        "trending",
+        "popular",
+        "streak",
+        "burn"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-hot-streak-flame-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-hot-streak-flame-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-hot-streak-flame-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-hot-streak-flame-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-key",
+      "path": "core/bx/fdsi-key",
+      "displayName": "Passkey / Access Key",
+      "description": "Password recovery, security credentials, or API/account access key.",
+      "tags": [
+        "key",
+        "password",
+        "access",
+        "unlock",
+        "credentials",
+        "security",
+        "auth"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-key-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-key-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-key-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-key-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-kyc-id-card",
+      "path": "core/bx/fdsi-kyc-id-card",
+      "displayName": "KYC ID Card / Verification",
+      "description": "Know Your Customer (KYC) document upload and identity verification.",
+      "tags": [
+        "kyc",
+        "id-card",
+        "identity",
+        "passport",
+        "license",
+        "verification",
+        "document"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-kyc-id-card-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-kyc-id-card-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-kyc-id-card-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-kyc-id-card-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-match-alert-bell",
+      "path": "core/bx/fdsi-match-alert-bell",
+      "displayName": "Live Match Alert / Kick-Off Bell",
+      "description": "Live goal alerts, kick-off reminders, and bet settlement notifications.",
+      "tags": [
+        "bell",
+        "ringing",
+        "match-alert",
+        "goal-alert",
+        "live-notification",
+        "alarm"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-match-alert-bell-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-match-alert-bell-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-match-alert-bell-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-match-alert-bell-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mystery-box",
+      "path": "core/bx/fdsi-mystery-box",
+      "displayName": "Mystery Box / Prize Drop",
+      "description": "Mystery prize box drop with surprise free spins, cash, or free bets.",
+      "tags": [
+        "mystery",
+        "box",
+        "prize-drop",
+        "surprise",
+        "gift",
+        "question",
+        "reward"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mystery-box-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mystery-box-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mystery-box-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mystery-box-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-notification-bell",
+      "path": "core/bx/fdsi-notification-bell",
+      "displayName": "Notification Bell",
+      "description": "Push notifications, account alerts, and promotional message inbox.",
+      "tags": [
+        "bell",
+        "notification",
+        "alert",
+        "inbox",
+        "push",
+        "reminder",
+        "updates"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-notification-bell-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-notification-bell-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-notification-bell-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-notification-bell-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-padlock",
+      "path": "core/bx/fdsi-padlock",
+      "displayName": "Security Padlock",
+      "description": "Locked market, password security, or encrypted account data.",
+      "tags": [
+        "padlock",
+        "lock",
+        "security",
+        "password",
+        "encrypted",
+        "closed",
+        "private"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-padlock-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-padlock-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-padlock-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-padlock-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-passkey",
+      "path": "core/bx/fdsi-passkey",
+      "displayName": "Security Passkey",
+      "description": "Passwordless WebAuthn passkey login and cryptographic sign-in.",
+      "tags": [
+        "passkey",
+        "key",
+        "auth",
+        "passwordless",
+        "biometric",
+        "security",
+        "login"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-passkey-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-passkey-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-passkey-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-passkey-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-prize-drop-parachute",
+      "path": "core/bx/fdsi-prize-drop-parachute",
+      "displayName": "Cash Drop / Airdrop Parachute",
+      "description": "Daily cash drop, airdrop bonus, and random prize giveaway.",
+      "tags": [
+        "parachute",
+        "airdrop",
+        "prize-drop",
+        "bonus",
+        "giveaway",
+        "reward",
+        "box"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-prize-drop-parachute-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-prize-drop-parachute-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-prize-drop-parachute-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-prize-drop-parachute-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-promo-megaphone",
+      "path": "core/bx/fdsi-promo-megaphone",
+      "displayName": "Promo / Announcement Megaphone",
+      "description": "Special promotional offer, price boost announcement, and news broadcast.",
+      "tags": [
+        "megaphone",
+        "promotion",
+        "announcement",
+        "offer",
+        "campaign",
+        "news",
+        "marketing"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-promo-megaphone-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-promo-megaphone-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-promo-megaphone-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-promo-megaphone-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-rg-session-timer",
+      "path": "core/bx/fdsi-rg-session-timer",
+      "displayName": "Casino Tournament Timer",
+      "description": "Responsible Gaming session reality-check reminder and play duration tracker.",
+      "tags": [
+        "responsible-gaming",
+        "rg",
+        "session",
+        "timer",
+        "hourglass",
+        "reality-check",
+        "duration"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-rg-session-timer-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-rg-session-timer-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-rg-session-timer-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-rg-session-timer-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-rg-stop-hand",
+      "path": "core/bx/fdsi-rg-stop-hand",
+      "displayName": "Responsible Gaming — Stop Hand",
+      "description": "Responsible Gaming self-exclusion, deposit cap, or take-a-break stop prompt.",
+      "tags": [
+        "responsible-gaming",
+        "rg",
+        "stop",
+        "hand",
+        "self-exclusion",
+        "limit",
+        "protection",
+        "pause"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-rg-stop-hand-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-rg-stop-hand-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-rg-stop-hand-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-rg-stop-hand-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-rg-timeout-hourglass",
+      "path": "core/bx/fdsi-rg-timeout-hourglass",
+      "displayName": "Responsible Gaming — Time-Out Hourglass",
+      "description": "Responsible Gaming short time-out or cooling-off break timer.",
+      "tags": [
+        "responsible-gaming",
+        "rg",
+        "timeout",
+        "hourglass",
+        "cooling-off",
+        "break",
+        "timer",
+        "limit"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-rg-timeout-hourglass-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-rg-timeout-hourglass-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-rg-timeout-hourglass-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-rg-timeout-hourglass-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-shield-security",
+      "path": "core/bx/fdsi-shield-security",
+      "displayName": "Security Shield",
+      "description": "Account security center, two-factor protection, and safe play guarantee.",
+      "tags": [
+        "shield",
+        "security",
+        "protection",
+        "safe",
+        "trust",
+        "check",
+        "guard"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-shield-security-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-shield-security-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-shield-security-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-shield-security-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-shield-verified",
+      "path": "core/bx/fdsi-shield-verified",
+      "displayName": "Verified Security Shield",
+      "description": "Verified player identity, licensed operator seal, or protected transaction.",
+      "tags": [
+        "shield",
+        "verified",
+        "approved",
+        "trusted",
+        "kyc",
+        "safe",
+        "security"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-shield-verified-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-shield-verified-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-shield-verified-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-shield-verified-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-support-headset",
+      "path": "core/bx/fdsi-support-headset",
+      "displayName": "Customer Support / Live Chat Headset",
+      "description": "24/7 customer support, live chat agent, and player helpdesk.",
+      "tags": [
+        "support",
+        "headset",
+        "helpdesk",
+        "customer-service",
+        "live-chat",
+        "agent",
+        "contact"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-support-headset-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-support-headset-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-support-headset-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-support-headset-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-vip-crown",
+      "path": "core/bx/fdsi-vip-crown",
+      "displayName": "Royal VIP Crown",
+      "description": "VIP loyalty club, royal tier status, and exclusive high-roller rewards.",
+      "tags": [
+        "crown",
+        "vip",
+        "royal",
+        "loyalty",
+        "king",
+        "tier",
+        "exclusive",
+        "premium"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-vip-crown-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-vip-crown-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-vip-crown-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-vip-crown-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-vip-diamond-crown",
+      "path": "core/bx/fdsi-vip-diamond-crown",
+      "displayName": "VIP Diamond Crown",
+      "description": "Diamond VIP elite tier, personal account manager, and luxury rewards.",
+      "tags": [
+        "crown",
+        "diamond",
+        "vip",
+        "elite",
+        "luxury",
+        "loyalty",
+        "high-roller"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-vip-diamond-crown-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-vip-diamond-crown-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-vip-diamond-crown-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-vip-diamond-crown-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-vip-lounge",
+      "path": "core/bx/fdsi-vip-lounge",
+      "displayName": "VIP Lounge Cocktail / Martini",
+      "description": "Exclusive VIP hospitality lounge, private tables, and concierge perks.",
+      "tags": [
+        "vip",
+        "lounge",
+        "martini",
+        "cocktail",
+        "hospitality",
+        "club",
+        "exclusive"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-vip-lounge-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-vip-lounge-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-vip-lounge-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-vip-lounge-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-vip-star-badge",
+      "path": "core/bx/fdsi-vip-star-badge",
+      "displayName": "VIP Loyalty Tier Badge",
+      "description": "Loyalty level-up badge, achievement rosette, and featured reward.",
+      "tags": [
+        "vip",
+        "star",
+        "rosette",
+        "badge",
+        "loyalty",
+        "achievement",
+        "reward",
+        "level"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-vip-star-badge-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-vip-star-badge-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-vip-star-badge-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-vip-star-badge-reg-color.svg"
+        }
+      ]
+    }
+  ]
+}

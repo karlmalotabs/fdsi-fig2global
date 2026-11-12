@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-lucky-horseshoe",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Lucky Horseshoe",
+  "description": "Lucky horseshoe jackpot slots, western themes, and fortune symbols.",
+  "tags": [
+    "horseshoe",
+    "luck",
+    "fortune",
+    "charm",
+    "gold",
+    "slots",
+    "western"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-lucky-horseshoe-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-lucky-horseshoe-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-lucky-horseshoe-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-lucky-horseshoe-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

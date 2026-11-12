@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-f1-monogram",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Formula 1 — Stylized Forward-Slanted 'F1' Speed Monogram",
+  "description": "Formula 1 Grand Prix race, qualifying, and constructors championship.",
+  "tags": [
+    "f1",
+    "formula-1",
+    "grand-prix",
+    "monogram",
+    "motorsport",
+    "racing"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-f1-monogram-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-f1-monogram-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-f1-monogram-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-f1-monogram-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-log-in",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Log In",
+  "description": "Sign in to an existing player account or enter authenticated session.",
+  "tags": [
+    "login",
+    "sign-in",
+    "enter",
+    "auth",
+    "account",
+    "session",
+    "door",
+    "arrow"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-log-in-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-log-in-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-log-in-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-log-in-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

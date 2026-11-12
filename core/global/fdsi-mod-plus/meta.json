@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-mod-plus",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Modifier — Plus",
+  "description": "Standalone green circular plus/add status modifier badge.",
+  "tags": [
+    "modifier",
+    "badge",
+    "plus",
+    "add",
+    "new",
+    "status"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mod-plus-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mod-plus-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mod-plus-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mod-plus-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

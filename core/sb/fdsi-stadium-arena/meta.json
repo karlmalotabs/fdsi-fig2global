@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-stadium-arena",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Stadium / Arena Venue",
+  "description": "Venue details, home/away stadium factor, and tournament host arenas.",
+  "tags": [
+    "stadium",
+    "arena",
+    "venue",
+    "colosseum",
+    "ground",
+    "home-advantage"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-stadium-arena-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-stadium-arena-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-stadium-arena-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-stadium-arena-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -2,17 +2,21 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "sb",
-  "generatedAt": "2026-10-06T12:27:11.603Z",
+  "generatedAt": "2026-11-12T12:46:38.822Z",
   "icons": [
     {
-      "name": "fdsi-betslip",
-      "path": "core/sb/fdsi-betslip",
-      "displayName": "aw",
-      "description": "Betting slip icon.sdsds",
+      "name": "fdsi-acca-parlay",
+      "path": "core/sb/fdsi-acca-parlay",
+      "displayName": "Accumulator / Parlay",
+      "description": "Accumulator (Acca) and multi-leg parlay bets across multiple events.",
       "tags": [
-        "betslip",
-        "bet",
-        "ticket"
+        "acca",
+        "accumulator",
+        "parlay",
+        "multi",
+        "combo",
+        "trend",
+        "legs"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
@@ -21,23 +25,2084 @@
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-betslip-reg-outline.svg"
+          "file": "fdsi-acca-parlay-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-betslip-reg-solid.svg"
+          "file": "fdsi-acca-parlay-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-acca-parlay-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-acca-parlay-reg-color.svg"
         }
       ]
     },
     {
-      "name": "fdsi-live",
-      "path": "core/sb/fdsi-live",
-      "displayName": "Live",
-      "description": "Live event/broadcast icon.",
+      "name": "fdsi-alpine-skiing",
+      "path": "core/sb/fdsi-alpine-skiing",
+      "displayName": "Downhill Skiing",
+      "description": "FIS World Cup and Winter Olympic alpine downhill and slalom skiing.",
+      "tags": [
+        "skiing",
+        "alpine",
+        "downhill",
+        "slalom",
+        "snow",
+        "winter-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-alpine-skiing-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-alpine-skiing-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-alpine-skiing-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-alpine-skiing-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-american-football",
+      "path": "core/sb/fdsi-american-football",
+      "displayName": "American Football / NFL",
+      "description": "NFL, NCAA College Football, and CFL gridiron betting markets.",
+      "tags": [
+        "american-football",
+        "nfl",
+        "ncaa",
+        "gridiron",
+        "super-bowl",
+        "pigskin"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-american-football-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-american-football-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-american-football-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-american-football-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-archery-bow",
+      "path": "core/sb/fdsi-archery-bow",
+      "displayName": "Recurve Archery Bow & Broadhead Arrow",
+      "description": "Olympic recurve and compound archery head-to-head and medal markets.",
+      "tags": [
+        "archery",
+        "bow",
+        "arrow",
+        "recurve",
+        "target",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-archery-bow-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-archery-bow-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-archery-bow-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-archery-bow-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-athletics-sprint",
+      "path": "core/sb/fdsi-athletics-sprint",
+      "displayName": "Athletics Sprint",
+      "description": "Track and field 100m sprint, marathon, and Diamond League athletics.",
+      "tags": [
+        "athletics",
+        "sprint",
+        "running",
+        "runner",
+        "track",
+        "marathon",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-athletics-sprint-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-athletics-sprint-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-athletics-sprint-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-athletics-sprint-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-aussie-rules-posts",
+      "path": "core/sb/fdsi-aussie-rules-posts",
+      "displayName": "Australian Rules / Rugby H-Posts",
+      "description": "Australian Rules Football (AFL) goalposts for match and margin betting.",
+      "tags": [
+        "aussie-rules",
+        "afl",
+        "goalposts",
+        "footy",
+        "australia",
+        "behind-posts"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-aussie-rules-posts-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-aussie-rules-posts-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-aussie-rules-posts-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-aussie-rules-posts-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-badminton-shuttle",
+      "path": "core/sb/fdsi-badminton-shuttle",
+      "displayName": "Badminton Shuttlecock",
+      "description": "BWF World Tour and Olympic badminton match and handicap markets.",
+      "tags": [
+        "badminton",
+        "shuttlecock",
+        "birdie",
+        "feathers",
+        "racket-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-badminton-shuttle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-badminton-shuttle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-badminton-shuttle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-badminton-shuttle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-baseball-mlb",
+      "path": "core/sb/fdsi-baseball-mlb",
+      "displayName": "Baseball / MLB",
+      "description": "MLB, NPB, and international baseball moneyline, run line, and total markets.",
+      "tags": [
+        "baseball",
+        "mlb",
+        "ball",
+        "stitches",
+        "home-run",
+        "inning",
+        "pitcher"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-baseball-mlb-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-baseball-mlb-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-baseball-mlb-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-baseball-mlb-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-basketball",
+      "path": "core/sb/fdsi-basketball",
+      "displayName": "Basketball Hoop",
+      "description": "NBA, EuroLeague, and FIBA basketball point spread, total, and player props.",
+      "tags": [
+        "basketball",
+        "nba",
+        "hoop",
+        "basket",
+        "net",
+        "euroleague",
+        "court"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-basketball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-basketball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-basketball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-basketball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-beach-volleyball",
+      "path": "core/sb/fdsi-beach-volleyball",
+      "displayName": "Beach Volleyball",
+      "description": "FIVB Pro Tour and Olympic 2-on-2 beach volleyball markets.",
+      "tags": [
+        "beach-volleyball",
+        "net",
+        "ball",
+        "sand",
+        "fivb",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-beach-volleyball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-beach-volleyball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-beach-volleyball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-beach-volleyball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bet-barcode",
+      "path": "core/sb/fdsi-bet-barcode",
+      "displayName": "Retail Ticket Scanner / Barcode",
+      "description": "Retail shop betslip barcode scanner for checking or cashing out in-store tickets.",
+      "tags": [
+        "barcode",
+        "scanner",
+        "retail",
+        "shop",
+        "ticket-check",
+        "in-store"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bet-barcode-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bet-barcode-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bet-barcode-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bet-barcode-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-biathlon-target",
+      "path": "core/sb/fdsi-biathlon-target",
+      "displayName": "Biathlon / Shooting Target Plate",
+      "description": "Winter biathlon cross-country skiing and rifle shooting target markets.",
+      "tags": [
+        "biathlon",
+        "target",
+        "shooting",
+        "winter-sports",
+        "knockdown",
+        "ibu"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-biathlon-target-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-biathlon-target-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-biathlon-target-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-biathlon-target-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-booking-cards",
+      "path": "core/sb/fdsi-booking-cards",
+      "displayName": "Yellow / Red Booking Cards",
+      "description": "Total booking points, yellow/red cards shown, and player to be carded markets.",
+      "tags": [
+        "cards",
+        "yellow-card",
+        "red-card",
+        "booking",
+        "sending-off",
+        "referee",
+        "foul"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-booking-cards-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-booking-cards-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-booking-cards-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-booking-cards-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bowling-strike",
+      "path": "core/sb/fdsi-bowling-strike",
+      "displayName": "Bowling Pin & Ball",
+      "description": "PBA ten-pin bowling strike and tournament outright markets.",
+      "tags": [
+        "bowling",
+        "ten-pin",
+        "pin",
+        "ball",
+        "strike",
+        "alley"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bowling-strike-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bowling-strike-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bowling-strike-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bowling-strike-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-boxing-glove",
+      "path": "core/sb/fdsi-boxing-glove",
+      "displayName": "Boxing Glove",
+      "description": "Professional Championship Boxing bout winner, method of victory, and round betting.",
+      "tags": [
+        "boxing",
+        "glove",
+        "heavyweight",
+        "bout",
+        "knockout",
+        "ring",
+        "fight"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-boxing-glove-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-boxing-glove-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-boxing-glove-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-boxing-glove-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bracket-tree",
+      "path": "core/sb/fdsi-bracket-tree",
+      "displayName": "Knockout Tournament Bracket",
+      "description": "Knockout tournament bracket predictor, path to the final, and playoffs.",
+      "tags": [
+        "bracket",
+        "tournament",
+        "knockout",
+        "playoffs",
+        "draw",
+        "tree"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bracket-tree-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bracket-tree-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bracket-tree-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bracket-tree-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-builder-lego",
+      "path": "core/sb/fdsi-builder-lego",
+      "displayName": "Bet Builder — Isometric Lego Block",
+      "description": "Bet Builder tool for combining multiple markets from the same match.",
+      "tags": [
+        "bet-builder",
+        "same-game-multi",
+        "lego",
+        "block",
+        "custom-bet",
+        "combine"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-builder-lego-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-builder-lego-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-builder-lego-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-builder-lego-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-builder-lego-unified",
+      "path": "core/sb/fdsi-builder-lego-unified",
+      "displayName": "Bet Builder — Isometric Lego Block",
+      "description": "Bet Builder single-block variant for multi-market match combinations.",
+      "tags": [
+        "bet-builder",
+        "lego",
+        "isometric",
+        "cube",
+        "same-game-parlay",
+        "custom"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-builder-lego-unified-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-builder-lego-unified-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-builder-lego-unified-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-builder-lego-unified-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-checkered-flag",
+      "path": "core/sb/fdsi-checkered-flag",
+      "displayName": "Motorsport Checkered Flag",
+      "description": "Motorsport race winner, pole position, and podium finish markets.",
+      "tags": [
+        "checkered-flag",
+        "motorsport",
+        "racing",
+        "finish-line",
+        "lap",
+        "winner"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-checkered-flag-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-checkered-flag-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-checkered-flag-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-checkered-flag-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-commentary-mic",
+      "path": "core/sb/fdsi-commentary-mic",
+      "displayName": "Live Audio Commentary / Podcast Mic",
+      "description": "Live audio match commentary, sportsbook podcasts, and expert previews.",
+      "tags": [
+        "microphone",
+        "commentary",
+        "audio",
+        "podcast",
+        "radio",
+        "live-voice"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-commentary-mic-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-commentary-mic-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-commentary-mic-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-commentary-mic-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-corner-flag",
+      "path": "core/sb/fdsi-corner-flag",
+      "displayName": "Corner Kick Flag",
+      "description": "Total match corners, corner handicap, and race-to-X corners markets.",
+      "tags": [
+        "corner",
+        "flag",
+        "corner-kick",
+        "set-piece",
+        "football",
+        "touchline"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-corner-flag-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-corner-flag-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-corner-flag-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-corner-flag-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-cricket-bat",
+      "path": "core/sb/fdsi-cricket-bat",
+      "displayName": "Cricket Bat & Ball",
+      "description": "International Test, ODI, T20, and IPL cricket bat-and-ball markets.",
+      "tags": [
+        "cricket",
+        "bat",
+        "ball",
+        "ipl",
+        "t20",
+        "ashes",
+        "wicket"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-cricket-bat-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-cricket-bat-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-cricket-bat-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-cricket-bat-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-curling-stone",
+      "path": "core/sb/fdsi-curling-stone",
+      "displayName": "Curling Stone",
+      "description": "Winter Olympic and World Championship curling end and match markets.",
+      "tags": [
+        "curling",
+        "stone",
+        "granite",
+        "ice",
+        "winter-sports",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-curling-stone-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-curling-stone-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-curling-stone-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-curling-stone-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-darts-target",
+      "path": "core/sb/fdsi-darts-target",
+      "displayName": "Competition Dart",
+      "description": "PDC World Darts Championship and Premier League 180s and match markets.",
+      "tags": [
+        "darts",
+        "pdc",
+        "steel-tip",
+        "flight",
+        "bullseye",
+        "180",
+        "oche"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-darts-target-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-darts-target-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-darts-target-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-darts-target-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-esports-gamepad",
+      "path": "core/sb/fdsi-esports-gamepad",
+      "displayName": "Pro Esports Gamepad",
+      "description": "CS2, League of Legends, Dota 2, EA FC, and competitive Esports betting.",
+      "tags": [
+        "esports",
+        "gaming",
+        "gamepad",
+        "controller",
+        "cs2",
+        "lol",
+        "dota",
+        "virtuals"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-esports-gamepad-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-esports-gamepad-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-esports-gamepad-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-esports-gamepad-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-extra-time-watch",
+      "path": "core/sb/fdsi-extra-time-watch",
+      "displayName": "Injury / Extra Time",
+      "description": "Injury time, stoppage minutes added, and extra-time qualification markets.",
+      "tags": [
+        "extra-time",
+        "injury-time",
+        "stoppage",
+        "stopwatch",
+        "overtime",
+        "90-plus"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-extra-time-watch-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-extra-time-watch-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-extra-time-watch-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-extra-time-watch-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-f1-monogram",
+      "path": "core/sb/fdsi-f1-monogram",
+      "displayName": "Formula 1 — Stylized Forward-Slanted 'F1' Speed Monogram",
+      "description": "Formula 1 Grand Prix race, qualifying, and constructors championship.",
+      "tags": [
+        "f1",
+        "formula-1",
+        "grand-prix",
+        "monogram",
+        "motorsport",
+        "racing"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-f1-monogram-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-f1-monogram-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-f1-monogram-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-f1-monogram-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-falcon-raptor",
+      "path": "core/sb/fdsi-falcon-raptor",
+      "displayName": "Diving Falcon",
+      "description": "Eagles, Falcons, and avian team mascots or virtual bird racing.",
+      "tags": [
+        "falcon",
+        "eagle",
+        "hawk",
+        "bird",
+        "raptor",
+        "mascot",
+        "wings"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-falcon-raptor-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-falcon-raptor-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-falcon-raptor-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-falcon-raptor-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-fencing-sabres",
+      "path": "core/sb/fdsi-fencing-sabres",
+      "displayName": "Fencing Crossed Sabres",
+      "description": "Olympic foil, épée, and sabre fencing bout and medal markets.",
+      "tags": [
+        "fencing",
+        "sabres",
+        "foils",
+        "epee",
+        "swords",
+        "crossed",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-fencing-sabres-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-fencing-sabres-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-fencing-sabres-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-fencing-sabres-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-field-hockey",
+      "path": "core/sb/fdsi-field-hockey",
+      "displayName": "Field Hockey J-Stick & Ball",
+      "description": "FIH Pro League and Olympic turf field hockey match markets.",
+      "tags": [
+        "field-hockey",
+        "stick",
+        "ball",
+        "turf",
+        "fih",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-field-hockey-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-field-hockey-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-field-hockey-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-field-hockey-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-flash-bet",
+      "path": "core/sb/fdsi-flash-bet",
+      "displayName": "Flash Bet / Next-60s Market",
+      "description": "Lightning-fast micro-markets settling in the next 60 seconds or next point.",
+      "tags": [
+        "flash-bet",
+        "micro-betting",
+        "instant",
+        "lightning",
+        "next-minute",
+        "fast-market"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-flash-bet-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-flash-bet-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-flash-bet-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-flash-bet-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-football-soccer",
+      "path": "core/sb/fdsi-football-soccer",
+      "displayName": "3D Isometric Telstar Ball",
+      "description": "Premier League, Champions League, and World Cup football (soccer) markets.",
+      "tags": [
+        "football",
+        "soccer",
+        "ball",
+        "premier-league",
+        "champions-league",
+        "fifa"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-football-soccer-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-football-soccer-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-football-soccer-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-football-soccer-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-formula-1-car",
+      "path": "core/sb/fdsi-formula-1-car",
+      "displayName": "Formula 1 Bolide",
+      "description": "Formula 1 open-wheel bolide for Grand Prix race, podium, and fastest lap.",
+      "tags": [
+        "formula-1",
+        "f1",
+        "bolide",
+        "race-car",
+        "motorsport",
+        "grand-prix"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-formula-1-car-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-formula-1-car-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-formula-1-car-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-formula-1-car-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-free-kick",
+      "path": "core/sb/fdsi-free-kick",
+      "displayName": "Free Kick / Curling Shot",
+      "description": "Direct free-kick goal, set-piece specials, and shot outside the box.",
+      "tags": [
+        "free-kick",
+        "set-piece",
+        "wall",
+        "curling-shot",
+        "football",
+        "goal"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-free-kick-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-free-kick-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-free-kick-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-free-kick-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-futsal-ball",
+      "path": "core/sb/fdsi-futsal-ball",
+      "displayName": "Futsal / Indoor Football",
+      "description": "FIFA and UEFA indoor 5-a-side futsal match and tournament markets.",
+      "tags": [
+        "futsal",
+        "indoor-football",
+        "5-a-side",
+        "ball",
+        "court",
+        "soccer"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-futsal-ball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-futsal-ball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-futsal-ball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-futsal-ball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-goal-posts",
+      "path": "core/sb/fdsi-goal-posts",
+      "displayName": "3D Football Goal Net / Score",
+      "description": "Total goals, over/under goals, both teams to score (BTTS), and correct score.",
+      "tags": [
+        "goal",
+        "net",
+        "score",
+        "btts",
+        "over-under",
+        "goalposts",
+        "football"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-goal-posts-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-goal-posts-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-goal-posts-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-goal-posts-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-goalie-gloves",
+      "path": "core/sb/fdsi-goalie-gloves",
+      "displayName": "Goalkeeper Saves / Clean Sheet",
+      "description": "Clean sheet (team to win to nil) and goalkeeper total saves markets.",
+      "tags": [
+        "goalkeeper",
+        "gloves",
+        "clean-sheet",
+        "saves",
+        "keeper",
+        "shutout"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-goalie-gloves-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-goalie-gloves-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-goalie-gloves-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-goalie-gloves-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-goalie-mask",
+      "path": "core/sb/fdsi-goalie-mask",
+      "displayName": "Ice Hockey Goalie Mask",
+      "description": "Hockey goaltender saves, shutouts, and goalie player prop markets.",
+      "tags": [
+        "goalie",
+        "mask",
+        "goaltender",
+        "hockey",
+        "saves",
+        "shutout",
+        "nhl"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-goalie-mask-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-goalie-mask-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-goalie-mask-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-goalie-mask-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-golden-boot",
+      "path": "core/sb/fdsi-golden-boot",
+      "displayName": "Golden Boot / Top Goalscorer",
+      "description": "First goalscorer, anytime scorer, and tournament Golden Boot winner.",
+      "tags": [
+        "golden-boot",
+        "cleat",
+        "football-boot",
+        "goalscorer",
+        "striker",
+        "top-scorer"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-golden-boot-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-golden-boot-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-golden-boot-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-golden-boot-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-golf-pin",
+      "path": "core/sb/fdsi-golf-pin",
+      "displayName": "Golf Flag & Putting Green",
+      "description": "PGA Tour, Majors, and Ryder Cup golf outright and 3-ball markets.",
+      "tags": [
+        "golf",
+        "pin",
+        "flag",
+        "green",
+        "hole",
+        "pga",
+        "masters"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-golf-pin-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-golf-pin-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-golf-pin-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-golf-pin-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-greyhound-bust",
+      "path": "core/sb/fdsi-greyhound-bust",
+      "displayName": "Horse Racing & Jockey",
+      "description": "Greyhound racing portrait mark for dog track cards and specials.",
+      "tags": [
+        "greyhound",
+        "dog-racing",
+        "sighthound",
+        "whippet",
+        "bust",
+        "track"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-greyhound-bust-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-greyhound-bust-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-greyhound-bust-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-greyhound-bust-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-greyhound-sprint",
+      "path": "core/sb/fdsi-greyhound-sprint",
+      "displayName": "Sprinting Greyhound",
+      "description": "Live greyhound track racing win, forecast, and tricast markets.",
+      "tags": [
+        "greyhound",
+        "dog-racing",
+        "sprint",
+        "hound",
+        "coursing",
+        "tricast"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-greyhound-sprint-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-greyhound-sprint-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-greyhound-sprint-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-greyhound-sprint-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-gymnastics-rings",
+      "path": "core/sb/fdsi-gymnastics-rings",
+      "displayName": "Artistic Gymnastics",
+      "description": "Artistic gymnastics all-around and apparatus medal markets.",
+      "tags": [
+        "gymnastics",
+        "rings",
+        "iron-cross",
+        "athlete",
+        "artistic",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-gymnastics-rings-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-gymnastics-rings-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-gymnastics-rings-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-gymnastics-rings-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-halftime-split",
+      "path": "core/sb/fdsi-halftime-split",
+      "displayName": "Half-Time / 45' Match Timer",
+      "description": "Half-Time / Full-Time (HT/FT) double result and 1st-half markets.",
+      "tags": [
+        "half-time",
+        "45-minutes",
+        "first-half",
+        "ht-ft",
+        "stopwatch",
+        "period"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-halftime-split-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-halftime-split-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-halftime-split-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-halftime-split-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-handball-throw",
+      "path": "core/sb/fdsi-handball-throw",
+      "displayName": "Handball / Throw Athlete",
+      "description": "European EHF Champions League and World Championship team handball.",
+      "tags": [
+        "handball",
+        "throw",
+        "athlete",
+        "ehf",
+        "indoor",
+        "team-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-handball-throw-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-handball-throw-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-handball-throw-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-handball-throw-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-horse-racing",
+      "path": "core/sb/fdsi-horse-racing",
+      "displayName": "Galloping Thoroughbred",
+      "description": "Thoroughbred flat, jump, and international festival horse racing.",
+      "tags": [
+        "horse-racing",
+        "thoroughbred",
+        "gallop",
+        "racehorse",
+        "equestrian",
+        "derby"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-horse-racing-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-horse-racing-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-horse-racing-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-horse-racing-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-ice-hockey",
+      "path": "core/sb/fdsi-ice-hockey",
+      "displayName": "Ice Hockey Stick & Puck",
+      "description": "NHL, KHL, and World Championship ice hockey stick and puck markets.",
+      "tags": [
+        "ice-hockey",
+        "nhl",
+        "stick",
+        "puck",
+        "rink",
+        "winter-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-ice-hockey-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-ice-hockey-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-ice-hockey-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-ice-hockey-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-ice-skate",
+      "path": "core/sb/fdsi-ice-skate",
+      "displayName": "Figure Skating / Ice Skate",
+      "description": "Figure skating, speed skating, and short-track winter ice markets.",
+      "tags": [
+        "ice-skate",
+        "skating",
+        "blade",
+        "boot",
+        "figure-skating",
+        "speed-skating",
+        "winter"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-ice-skate-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-ice-skate-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-ice-skate-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-ice-skate-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-injury-cross",
+      "path": "core/sb/fdsi-injury-cross",
+      "displayName": "Medical / Injury Stoppage",
+      "description": "Injury stoppage, medical treatment on pitch, and injury protection.",
+      "tags": [
+        "injury",
+        "medical",
+        "first-aid",
+        "kit",
+        "cross",
+        "stoppage",
+        "physio"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-injury-cross-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-injury-cross-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-injury-cross-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-injury-cross-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-jockey-cap",
+      "path": "core/sb/fdsi-jockey-cap",
+      "displayName": "Horse Racing Jockey Silk Cap",
+      "description": "Thoroughbred flat and national hunt horse racing silks and jockey specials.",
+      "tags": [
+        "jockey",
+        "cap",
+        "silks",
+        "horse-racing",
+        "helmet",
+        "turf",
+        "racecourse"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-jockey-cap-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-jockey-cap-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-jockey-cap-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-jockey-cap-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-kayak-paddle",
+      "path": "core/sb/fdsi-kayak-paddle",
+      "displayName": "Kayak & Double-Bladed Paddle",
+      "description": "Canoe sprint, kayak slalom, and whitewater paddling markets.",
+      "tags": [
+        "kayak",
+        "canoe",
+        "paddle",
+        "boat",
+        "slalom",
+        "water-sports",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-kayak-paddle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-kayak-paddle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-kayak-paddle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-kayak-paddle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-lacrosse-stick",
+      "path": "core/sb/fdsi-lacrosse-stick",
+      "displayName": "Lacrosse Crosse & Ball",
+      "description": "PLL, NLL, and NCAA lacrosse stick and ball match markets.",
+      "tags": [
+        "lacrosse",
+        "crosse",
+        "stick",
+        "pocket",
+        "net",
+        "ball",
+        "pll"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-lacrosse-stick-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-lacrosse-stick-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-lacrosse-stick-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-lacrosse-stick-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-live-broadcast",
+      "path": "core/sb/fdsi-live-broadcast",
+      "displayName": "Live In-Play",
+      "description": "Live in-play betting events currently underway with real-time odds.",
       "tags": [
         "live",
-        "streaming",
+        "in-play",
+        "broadcast",
+        "radio",
+        "waves",
+        "real-time",
+        "now"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-live-broadcast-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-live-broadcast-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-live-broadcast-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-live-broadcast-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-live-stream",
+      "path": "core/sb/fdsi-live-stream",
+      "displayName": "Live Stream / Watch & Bet",
+      "description": "Watch live match video stream directly inside the sportsbook event view.",
+      "tags": [
+        "live-stream",
+        "watch",
+        "video",
+        "tv",
+        "play",
+        "monitor",
         "broadcast"
       ],
       "status": "active",
@@ -47,40 +2112,1758 @@
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-live-reg-outline.svg"
+          "file": "fdsi-live-stream-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-live-reg-solid.svg"
+          "file": "fdsi-live-stream-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-live-stream-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-live-stream-reg-color.svg"
         }
       ]
     },
     {
-      "name": "fdsi-my-bets",
-      "path": "core/sb/fdsi-my-bets",
-      "displayName": "My Bets",
-      "description": "User's placed/saved bets icon.",
+      "name": "fdsi-martial-arts-belt",
+      "path": "core/sb/fdsi-martial-arts-belt",
+      "displayName": "Judo / Karate / BJJ Belt",
+      "description": "Judo, Karate, Taekwondo, and Brazilian Jiu-Jitsu (BJJ) combat sports.",
       "tags": [
-        "my-bets",
-        "bets",
-        "account"
+        "martial-arts",
+        "judo",
+        "karate",
+        "bjj",
+        "black-belt",
+        "combat",
+        "olympic"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
-      "aliases": [
-        "fdsi-my_bets"
-      ],
+      "aliases": [],
       "variants": [
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-my-bets-reg-outline.svg"
+          "file": "fdsi-martial-arts-belt-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-my-bets-reg-solid.svg"
+          "file": "fdsi-martial-arts-belt-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-martial-arts-belt-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-martial-arts-belt-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-match-substitution",
+      "path": "core/sb/fdsi-match-substitution",
+      "displayName": "Player Substitution",
+      "description": "Player substitution markets and Super Sub rollover (bet carries over to sub).",
+      "tags": [
+        "substitution",
+        "sub",
+        "super-sub",
+        "player-on",
+        "player-off",
+        "arrows"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-match-substitution-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-match-substitution-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-match-substitution-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-match-substitution-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mma-octagon",
+      "path": "core/sb/fdsi-mma-octagon",
+      "displayName": "MMA Open-Finger Fight Glove",
+      "description": "UFC, Bellator, and PFL Mixed Martial Arts (MMA) fight winner and round markets.",
+      "tags": [
+        "mma",
+        "ufc",
+        "glove",
+        "fight",
+        "combat",
+        "cage",
+        "grappling",
+        "knockout"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mma-octagon-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mma-octagon-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mma-octagon-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mma-octagon-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-moto-gp",
+      "path": "core/sb/fdsi-moto-gp",
+      "displayName": "MotoGP Superbike",
+      "description": "MotoGP, WorldSBK, and Isle of Man TT superbike motorcycle racing.",
+      "tags": [
+        "motogp",
+        "motorcycle",
+        "superbike",
+        "racing",
+        "motorsport",
+        "rider"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-moto-gp-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-moto-gp-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-moto-gp-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-moto-gp-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-motocross-bike",
+      "path": "core/sb/fdsi-motocross-bike",
+      "displayName": "Speedway / Motocross Dirt Bike",
+      "description": "Speedway GP, MXGP motocross, and supercross dirt-bike racing.",
+      "tags": [
+        "speedway",
+        "motocross",
+        "dirt-bike",
+        "motorcycle",
+        "mxgp",
+        "supercross"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-motocross-bike-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-motocross-bike-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-motocross-bike-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-motocross-bike-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-odds-boost",
+      "path": "core/sb/fdsi-odds-boost",
+      "displayName": "Odds Boost",
+      "description": "Enhanced odds price boost with higher payout on selected markets.",
+      "tags": [
+        "odds-boost",
+        "price-boost",
+        "enhanced",
+        "arrow",
+        "rocket",
+        "super-boost",
+        "value"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-odds-boost-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-odds-boost-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-odds-boost-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-odds-boost-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-odds-down",
+      "path": "core/sb/fdsi-odds-down",
+      "displayName": "Price / Odds Shortening Down",
+      "description": "Odds shortening / dropping downward indicator on live price updates.",
+      "tags": [
+        "odds-down",
+        "shortening",
+        "lower",
+        "decrease",
+        "triangle",
+        "down",
+        "price-change"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-odds-down-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-odds-down-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-odds-down-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-odds-down-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-odds-format",
+      "path": "core/sb/fdsi-odds-format",
+      "displayName": "Odds Format / Margin %",
+      "description": "Switch between Decimal (2.50), Fractional (6/4), and American (+150) odds.",
+      "tags": [
+        "odds-format",
+        "percentage",
+        "margin",
+        "decimal",
+        "fractional",
+        "american"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-odds-format-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-odds-format-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-odds-format-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-odds-format-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-odds-up",
+      "path": "core/sb/fdsi-odds-up",
+      "displayName": "Price / Odds Drifting Up",
+      "description": "Odds lengthening / drifting upward indicator on live price updates.",
+      "tags": [
+        "odds-up",
+        "drifting",
+        "higher",
+        "increase",
+        "triangle",
+        "up",
+        "price-change"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-odds-up-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-odds-up-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-odds-up-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-odds-up-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-offside-flag",
+      "path": "core/sb/fdsi-offside-flag",
+      "displayName": "Assistant Referee Offside Flag",
+      "description": "Total match offsides and player offside prop markets.",
+      "tags": [
+        "offside",
+        "linesman",
+        "flag",
+        "assistant-referee",
+        "football",
+        "props"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-offside-flag-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-offside-flag-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-offside-flag-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-offside-flag-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-penalty-spot",
+      "path": "core/sb/fdsi-penalty-spot",
+      "displayName": "Penalty Kick Spot",
+      "description": "Penalty kick awarded, penalty shootout winner, and spot-kick conversion.",
+      "tags": [
+        "penalty",
+        "spot-kick",
+        "shootout",
+        "goal",
+        "football",
+        "12-yards"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-penalty-spot-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-penalty-spot-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-penalty-spot-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-penalty-spot-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-pitch-tracker",
+      "path": "core/sb/fdsi-pitch-tracker",
+      "displayName": "Match Pitch View",
+      "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
+      "tags": [
+        "pitch",
+        "field",
+        "tracker",
+        "visualizer",
+        "stadium",
+        "football",
+        "court"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-pitch-tracker-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-pitch-tracker-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-pitch-tracker-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-pitch-tracker-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-placed-check",
+      "path": "core/sb/fdsi-placed-check",
+      "displayName": "Placed Bet",
+      "description": "Confirmed and settled bet ticket in the player's open or settled bets.",
+      "tags": [
+        "placed-bet",
+        "settled",
+        "confirmed",
+        "ticket",
+        "check",
+        "wager",
+        "receipt"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-placed-check-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-placed-check-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-placed-check-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-placed-check-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-podium-ranks",
+      "path": "core/sb/fdsi-podium-ranks",
+      "displayName": "Leaderboard / Podium 1-2-3",
+      "description": "1st, 2nd, 3rd podium finish, each-way places, and tournament leaderboards.",
+      "tags": [
+        "podium",
+        "leaderboard",
+        "ranks",
+        "1-2-3",
+        "top-3",
+        "standings",
+        "places"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-podium-ranks-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-podium-ranks-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-podium-ranks-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-podium-ranks-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-pool-eight-ball",
+      "path": "core/sb/fdsi-pool-eight-ball",
+      "displayName": "8-Ball Pool / Snooker",
+      "description": "World Snooker Tour, 8-Ball, and 9-Ball pool frame and match markets.",
+      "tags": [
+        "pool",
+        "8-ball",
+        "snooker",
+        "billiards",
+        "cue-sports",
+        "black-ball"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-pool-eight-ball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-pool-eight-ball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-pool-eight-ball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-pool-eight-ball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-referee-whistle",
+      "path": "core/sb/fdsi-referee-whistle",
+      "displayName": "Referee Whistle",
+      "description": "Match officiating markets, fouls committed, and referee stoppage specials.",
+      "tags": [
+        "whistle",
+        "referee",
+        "umpire",
+        "foul",
+        "official",
+        "stoppage"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-referee-whistle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-referee-whistle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-referee-whistle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-referee-whistle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-road-cycling",
+      "path": "core/sb/fdsi-road-cycling",
+      "displayName": "Road Cycling",
+      "description": "Tour de France, Giro d'Italia, andUCI World Tour road cycling stage markets.",
+      "tags": [
+        "cycling",
+        "bike",
+        "bicycle",
+        "tour-de-france",
+        "peloton",
+        "uci"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-road-cycling-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-road-cycling-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-road-cycling-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-road-cycling-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-rowing-scull",
+      "path": "core/sb/fdsi-rowing-scull",
+      "displayName": "Rowing / Scull",
+      "description": "Olympic rowing, single sculls, eights, and University Boat Race markets.",
+      "tags": [
+        "rowing",
+        "scull",
+        "oar",
+        "boat",
+        "crew",
+        "regatta",
+        "water-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-rowing-scull-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-rowing-scull-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-rowing-scull-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-rowing-scull-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-rugby-ball",
+      "path": "core/sb/fdsi-rugby-ball",
+      "displayName": "Rugby Ball",
+      "description": "Rugby Union, Rugby League, Six Nations, and NRL betting markets.",
+      "tags": [
+        "rugby",
+        "union",
+        "league",
+        "six-nations",
+        "nrl",
+        "oval-ball"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-rugby-ball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-rugby-ball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-rugby-ball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-rugby-ball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-sailing-yacht",
+      "path": "core/sb/fdsi-sailing-yacht",
+      "displayName": "Sailing / Regatta Yacht",
+      "description": "America's Cup, SailGP, and Olympic yachting regatta markets.",
+      "tags": [
+        "sailing",
+        "yacht",
+        "boat",
+        "regatta",
+        "americas-cup",
+        "wind",
+        "water-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-sailing-yacht-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-sailing-yacht-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-sailing-yacht-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-sailing-yacht-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-sgp-linked-rings",
+      "path": "core/sb/fdsi-sgp-linked-rings",
+      "displayName": "Same Game Parlay / SGP",
+      "description": "Same Game Parlay (SGP) and linked multi-market combinations.",
+      "tags": [
+        "sgp",
+        "same-game-parlay",
+        "linked",
+        "rings",
+        "chain",
+        "combo",
+        "multi"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-sgp-linked-rings-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-sgp-linked-rings-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-sgp-linked-rings-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-sgp-linked-rings-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slip-ticket",
+      "path": "core/sb/fdsi-slip-ticket",
+      "displayName": "Betslip Ticket",
+      "description": "Active betslip containing selected wagers, stakes, and potential payout.",
+      "tags": [
+        "betslip",
+        "ticket",
+        "wager",
+        "selections",
+        "coupon",
+        "stake",
+        "bet"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slip-ticket-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slip-ticket-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slip-ticket-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slip-ticket-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-snowboard",
+      "path": "core/sb/fdsi-snowboard",
+      "displayName": "Snowboard / Halfpipe Board",
+      "description": "Winter X Games and Olympic snowboard halfpipe, slopestyle, and cross.",
+      "tags": [
+        "snowboard",
+        "board",
+        "bindings",
+        "halfpipe",
+        "slopestyle",
+        "winter-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-snowboard-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-snowboard-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-snowboard-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-snowboard-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-squash",
+      "path": "core/sb/fdsi-squash",
+      "displayName": "Squash Racket & Ball",
+      "description": "PSA World Tour squash match, game handicap, and point markets.",
+      "tags": [
+        "squash",
+        "racket",
+        "ball",
+        "court",
+        "psa",
+        "racquet-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-squash-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-squash-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-squash-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-squash-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-stadium-arena",
+      "path": "core/sb/fdsi-stadium-arena",
+      "displayName": "Stadium / Arena Venue",
+      "description": "Venue details, home/away stadium factor, and tournament host arenas.",
+      "tags": [
+        "stadium",
+        "arena",
+        "venue",
+        "colosseum",
+        "ground",
+        "home-advantage"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-stadium-arena-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-stadium-arena-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-stadium-arena-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-stadium-arena-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-stats-bars",
+      "path": "core/sb/fdsi-stats-bars",
+      "displayName": "Match Stats / Form Guide",
+      "description": "Team form guide, head-to-head statistics, and league standings analytics.",
+      "tags": [
+        "stats",
+        "statistics",
+        "analytics",
+        "chart",
+        "bars",
+        "form",
+        "standings"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-stats-bars-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-stats-bars-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-stats-bars-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-stats-bars-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-surfing-wave",
+      "path": "core/sb/fdsi-surfing-wave",
+      "displayName": "Surfing / Water Sports",
+      "description": "WSL World Surf League and Olympic surfing heat and event markets.",
+      "tags": [
+        "surfing",
+        "surfboard",
+        "wave",
+        "ocean",
+        "water-sports",
+        "wsl"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-surfing-wave-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-surfing-wave-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-surfing-wave-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-surfing-wave-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-swimming",
+      "path": "core/sb/fdsi-swimming",
+      "displayName": "Swimming Crawl",
+      "description": "Olympic and World Aquatics freestyle, butterfly, and relay swimming.",
+      "tags": [
+        "swimming",
+        "swimmer",
+        "pool",
+        "aquatics",
+        "freestyle",
+        "water-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-swimming-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-swimming-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-swimming-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-swimming-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-table-tennis",
+      "path": "core/sb/fdsi-table-tennis",
+      "displayName": "Table Tennis / Ping Pong",
+      "description": "24/7 international table tennis and ping-pong set and point markets.",
+      "tags": [
+        "table-tennis",
+        "ping-pong",
+        "paddle",
+        "racket",
+        "ball",
+        "ittf"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-table-tennis-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-table-tennis-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-table-tennis-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-table-tennis-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-tail-tipster",
+      "path": "core/sb/fdsi-tail-tipster",
+      "displayName": "Copy / Tail Tipster Bet",
+      "description": "Social betting: copy and tail a featured tipster's or friend's betslip.",
+      "tags": [
+        "copy-bet",
+        "tail",
+        "tipster",
+        "social-betting",
+        "follow",
+        "share-slip"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-tail-tipster-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-tail-tipster-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-tail-tipster-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-tail-tipster-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-team-jersey",
+      "path": "core/sb/fdsi-team-jersey",
+      "displayName": "Player Props / Team Kit Jersey",
+      "description": "Player props, anytime goalscorer, shots on target, and assists markets.",
+      "tags": [
+        "jersey",
+        "shirt",
+        "kit",
+        "player-props",
+        "goalscorer",
+        "squad",
+        "number"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-team-jersey-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-team-jersey-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-team-jersey-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-team-jersey-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-tennis",
+      "path": "core/sb/fdsi-tennis",
+      "displayName": "Tennis Racket & Ball",
+      "description": "ATP, WTA, and Grand Slam tennis match, set, and live point betting.",
+      "tags": [
+        "tennis",
+        "racket",
+        "ball",
+        "atp",
+        "wta",
+        "grand-slam",
+        "wimbledon"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-tennis-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-tennis-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-tennis-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-tennis-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-track-hurdle",
+      "path": "core/sb/fdsi-track-hurdle",
+      "displayName": "Track & Field Hurdle",
+      "description": "110m/400m hurdles, steeplechase, and track & field athletics events.",
+      "tags": [
+        "hurdles",
+        "track",
+        "athletics",
+        "barrier",
+        "steeplechase",
+        "running"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-track-hurdle-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-track-hurdle-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-track-hurdle-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-track-hurdle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-trending-market",
+      "path": "core/sb/fdsi-trending-market",
+      "displayName": "Hot / Trending Market",
+      "description": "Popular trending bets and fast-moving market movers.",
+      "tags": [
+        "trending",
+        "popular",
+        "chart",
+        "rising",
+        "market-mover",
+        "hot"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-trending-market-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-trending-market-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-trending-market-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-trending-market-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-triathlon-loops",
+      "path": "core/sb/fdsi-triathlon-loops",
+      "displayName": "Triathlon",
+      "description": "Ironman and Olympic triathlon (swim, bike, run) endurance events.",
+      "tags": [
+        "triathlon",
+        "ironman",
+        "swim-bike-run",
+        "rings",
+        "endurance",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-triathlon-loops-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-triathlon-loops-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-triathlon-loops-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-triathlon-loops-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-trophy-cup",
+      "path": "core/sb/fdsi-trophy-cup",
+      "displayName": "Championship Trophy Cup",
+      "description": "Championship outrights, tournament winners, and league futures markets.",
+      "tags": [
+        "trophy",
+        "cup",
+        "champion",
+        "outrights",
+        "futures",
+        "winner",
+        "league"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-trophy-cup-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-trophy-cup-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-trophy-cup-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-trophy-cup-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-var-screen",
+      "path": "core/sb/fdsi-var-screen",
+      "displayName": "VAR / Video Assistant Referee",
+      "description": "Video Assistant Referee (VAR) review and overturned decision specials.",
+      "tags": [
+        "var",
+        "video-referee",
+        "review",
+        "monitor",
+        "screen",
+        "decision"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-var-screen-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-var-screen-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-var-screen-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-var-screen-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-volleyball-panel",
+      "path": "core/sb/fdsi-volleyball-panel",
+      "displayName": "Volleyball",
+      "description": "Indoor FIVB and league volleyball set, point, and outright markets.",
+      "tags": [
+        "volleyball",
+        "ball",
+        "fivb",
+        "indoor",
+        "sets",
+        "team-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-volleyball-panel-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-volleyball-panel-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-volleyball-panel-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-volleyball-panel-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-water-polo",
+      "path": "core/sb/fdsi-water-polo",
+      "displayName": "Water Polo",
+      "description": "LEN Champions League and Olympic water polo match and total goals.",
+      "tags": [
+        "water-polo",
+        "ball",
+        "aquatics",
+        "pool",
+        "olympic",
+        "team-sports"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-water-polo-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-water-polo-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-water-polo-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-water-polo-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-weather-rain",
+      "path": "core/sb/fdsi-weather-rain",
+      "displayName": "Pitch Weather — Rain",
+      "description": "Match pitch weather conditions, rain delay, and wet-track specials.",
+      "tags": [
+        "weather",
+        "rain",
+        "cloud",
+        "pitch-conditions",
+        "wet",
+        "forecast"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-weather-rain-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-weather-rain-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-weather-rain-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-weather-rain-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-weightlifting-barbell",
+      "path": "core/sb/fdsi-weightlifting-barbell",
+      "displayName": "Weightlifting / Barbell",
+      "description": "Olympic weightlifting, powerlifting, and CrossFit strength competitions.",
+      "tags": [
+        "weightlifting",
+        "barbell",
+        "weights",
+        "plates",
+        "strength",
+        "gym",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-weightlifting-barbell-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-weightlifting-barbell-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-weightlifting-barbell-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-weightlifting-barbell-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-win-streak",
+      "path": "core/sb/fdsi-win-streak",
+      "displayName": "Winning Streak / Combo Multiplier",
+      "description": "Multi-bet winning streak challenge and progressive combo boost.",
+      "tags": [
+        "win-streak",
+        "combo",
+        "stars",
+        "challenge",
+        "milestone",
+        "hot-streak"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-win-streak-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-win-streak-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-win-streak-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-win-streak-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-winner-medal",
+      "path": "core/sb/fdsi-winner-medal",
+      "displayName": "Gold Medal / Podium Winner",
+      "description": "Podium finish, gold medal winner, and top-3 placement markets.",
+      "tags": [
+        "medal",
+        "gold",
+        "winner",
+        "podium",
+        "first-place",
+        "olympic",
+        "award"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-winner-medal-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-winner-medal-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-winner-medal-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-winner-medal-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-wrestling-grapple",
+      "path": "core/sb/fdsi-wrestling-grapple",
+      "displayName": "Olympic Wrestling Lockup",
+      "description": "Olympic freestyle and Greco-Roman wrestling bout markets.",
+      "tags": [
+        "wrestling",
+        "grapple",
+        "lockup",
+        "freestyle",
+        "greco-roman",
+        "combat",
+        "olympic"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-wrestling-grapple-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-wrestling-grapple-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-wrestling-grapple-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-wrestling-grapple-reg-color.svg"
         }
       ]
     }

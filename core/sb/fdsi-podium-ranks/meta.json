@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-podium-ranks",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Leaderboard / Podium 1-2-3",
+  "description": "1st, 2nd, 3rd podium finish, each-way places, and tournament leaderboards.",
+  "tags": [
+    "podium",
+    "leaderboard",
+    "ranks",
+    "1-2-3",
+    "top-3",
+    "standings",
+    "places"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-podium-ranks-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-podium-ranks-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-podium-ranks-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-podium-ranks-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

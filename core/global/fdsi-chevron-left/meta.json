@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-chevron-left",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Chevron Left",
+  "description": "Navigate back to the previous screen, step, or carousel item.",
+  "tags": [
+    "chevron",
+    "left",
+    "back",
+    "previous",
+    "return",
+    "arrow",
+    "navigate"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-chevron-left-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-chevron-left-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-chevron-left-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-chevron-left-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

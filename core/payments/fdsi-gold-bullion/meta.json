@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-gold-bullion",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Gold Bullion Stack",
+  "description": "High-value treasury reserve, VIP bankroll, or jackpot bullion tier.",
+  "tags": [
+    "gold",
+    "bullion",
+    "ingot",
+    "bars",
+    "treasury",
+    "wealth",
+    "vip",
+    "reserve"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-gold-bullion-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-gold-bullion-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-gold-bullion-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-gold-bullion-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

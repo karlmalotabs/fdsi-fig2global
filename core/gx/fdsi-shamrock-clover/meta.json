@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-shamrock-clover",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Irish Luck Shamrock",
+  "description": "Irish luck themed slots, St. Patrick's promotions, and lucky charms.",
+  "tags": [
+    "shamrock",
+    "clover",
+    "irish",
+    "luck",
+    "green",
+    "slots",
+    "charm"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-shamrock-clover-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-shamrock-clover-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-shamrock-clover-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-shamrock-clover-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

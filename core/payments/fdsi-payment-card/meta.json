@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-payment-card",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Credit / Debit Card",
+  "description": "Pay or withdraw using Visa, Mastercard, or debit/credit cards.",
+  "tags": [
+    "card",
+    "credit-card",
+    "debit-card",
+    "visa",
+    "mastercard",
+    "payment",
+    "emv"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-payment-card-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-payment-card-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-payment-card-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-payment-card-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

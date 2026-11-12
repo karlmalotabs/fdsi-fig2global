@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-chevron-right",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Chevron Right",
+  "description": "Navigate forward, drill down into a sub-menu, or advance to the next item.",
+  "tags": [
+    "chevron",
+    "right",
+    "next",
+    "forward",
+    "arrow",
+    "navigate",
+    "drilldown",
+    "breadcrumb"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-chevron-right-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-chevron-right-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-chevron-right-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-chevron-right-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

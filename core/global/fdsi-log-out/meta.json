@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-log-out",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Log Out",
+  "description": "Sign out of the current player account and end the active session.",
+  "tags": [
+    "logout",
+    "sign-out",
+    "exit",
+    "leave",
+    "session",
+    "account",
+    "door"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-log-out-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-log-out-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-log-out-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-log-out-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

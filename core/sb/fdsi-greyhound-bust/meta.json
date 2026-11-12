@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-greyhound-bust",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Horse Racing & Jockey",
+  "description": "Greyhound racing portrait mark for dog track cards and specials.",
+  "tags": [
+    "greyhound",
+    "dog-racing",
+    "sighthound",
+    "whippet",
+    "bust",
+    "track"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-greyhound-bust-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-greyhound-bust-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-greyhound-bust-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-greyhound-bust-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

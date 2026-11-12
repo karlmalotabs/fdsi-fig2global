@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-live-broadcast",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Live In-Play",
+  "description": "Live in-play betting events currently underway with real-time odds.",
+  "tags": [
+    "live",
+    "in-play",
+    "broadcast",
+    "radio",
+    "waves",
+    "real-time",
+    "now"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-live-broadcast-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-live-broadcast-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-live-broadcast-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-live-broadcast-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

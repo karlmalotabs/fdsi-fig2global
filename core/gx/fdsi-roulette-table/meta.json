@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-roulette-table",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Casino Roulette Table",
+  "description": "Full Roulette table felt layout showing the wheel and inside/outside grid.",
+  "tags": [
+    "roulette",
+    "table",
+    "felt",
+    "layout",
+    "grid",
+    "wheel",
+    "casino"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-roulette-table-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-roulette-table-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-roulette-table-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-roulette-table-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

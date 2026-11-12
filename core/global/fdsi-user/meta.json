@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-user",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "User Profile / Account",
+  "description": "Open player profile, account overview, or personal details.",
+  "tags": [
+    "user",
+    "profile",
+    "account",
+    "avatar",
+    "person",
+    "member",
+    "player"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-user-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-user-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-user-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-user-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

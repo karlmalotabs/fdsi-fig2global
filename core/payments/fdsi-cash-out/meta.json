@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-cash-out",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Cash Out",
+  "description": "Settle an open bet early for an instant guaranteed real-money return.",
+  "tags": [
+    "cash-out",
+    "early-settlement",
+    "return",
+    "banknote",
+    "payout",
+    "instant",
+    "settle"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-cash-out-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-cash-out-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-cash-out-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-cash-out-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

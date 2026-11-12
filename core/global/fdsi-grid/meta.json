@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-grid",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Bento Category Grid",
+  "description": "Switch to grid layout view or open the app/lobby category launcher.",
+  "tags": [
+    "grid",
+    "bento",
+    "dashboard",
+    "tiles",
+    "view",
+    "layout",
+    "categories",
+    "lobby"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-grid-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-grid-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-grid-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-grid-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

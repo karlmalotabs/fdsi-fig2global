@@ -1,0 +1,43 @@
+{
+  "name": "fdsi-badminton-shuttle",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Badminton Shuttlecock",
+  "description": "BWF World Tour and Olympic badminton match and handicap markets.",
+  "tags": [
+    "badminton",
+    "shuttlecock",
+    "birdie",
+    "feathers",
+    "racket-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-badminton-shuttle-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-badminton-shuttle-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-badminton-shuttle-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-badminton-shuttle-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

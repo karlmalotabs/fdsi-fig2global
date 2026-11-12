@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-caret-down",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Caret Down",
+  "description": "Compact inline dropdown indicator for select inputs, filters, and compact menus.",
+  "tags": [
+    "caret",
+    "down",
+    "select",
+    "dropdown",
+    "picker",
+    "menu",
+    "inline"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-caret-down-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-caret-down-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-caret-down-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-caret-down-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

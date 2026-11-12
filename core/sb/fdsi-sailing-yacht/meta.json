@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-sailing-yacht",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Sailing / Regatta Yacht",
+  "description": "America's Cup, SailGP, and Olympic yachting regatta markets.",
+  "tags": [
+    "sailing",
+    "yacht",
+    "boat",
+    "regatta",
+    "americas-cup",
+    "wind",
+    "water-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-sailing-yacht-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-sailing-yacht-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-sailing-yacht-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-sailing-yacht-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

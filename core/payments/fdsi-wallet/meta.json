@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-wallet",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Wallet / Balance",
+  "description": "View player wallet balance, real-money and bonus funds, and cashier overview.",
+  "tags": [
+    "wallet",
+    "balance",
+    "cashier",
+    "funds",
+    "money",
+    "account",
+    "bankroll"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-wallet-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-wallet-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-wallet-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-wallet-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

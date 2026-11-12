@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-promo-megaphone",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Promo / Announcement Megaphone",
+  "description": "Special promotional offer, price boost announcement, and news broadcast.",
+  "tags": [
+    "megaphone",
+    "promotion",
+    "announcement",
+    "offer",
+    "campaign",
+    "news",
+    "marketing"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-promo-megaphone-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-promo-megaphone-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-promo-megaphone-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-promo-megaphone-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

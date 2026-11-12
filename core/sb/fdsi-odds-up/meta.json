@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-odds-up",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Price / Odds Drifting Up",
+  "description": "Odds lengthening / drifting upward indicator on live price updates.",
+  "tags": [
+    "odds-up",
+    "drifting",
+    "higher",
+    "increase",
+    "triangle",
+    "up",
+    "price-change"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-odds-up-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-odds-up-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-odds-up-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-odds-up-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

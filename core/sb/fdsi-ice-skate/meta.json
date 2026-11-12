@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-ice-skate",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Figure Skating / Ice Skate",
+  "description": "Figure skating, speed skating, and short-track winter ice markets.",
+  "tags": [
+    "ice-skate",
+    "skating",
+    "blade",
+    "boot",
+    "figure-skating",
+    "speed-skating",
+    "winter"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-ice-skate-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-ice-skate-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-ice-skate-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-ice-skate-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

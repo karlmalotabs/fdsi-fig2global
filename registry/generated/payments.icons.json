@@ -1,0 +1,490 @@
+{
+  "$schema": "../schema/area.index.schema.json",
+  "brand": "core",
+  "area": "payments",
+  "generatedAt": "2026-11-12T12:17:59.559Z",
+  "icons": [
+    {
+      "name": "fdsi-bank-transfer",
+      "path": "core/payments/fdsi-bank-transfer",
+      "displayName": "Bank / Wire Transfer",
+      "description": "Direct bank wire, Open Banking, or instant ACH/SEPA bank transfer.",
+      "tags": [
+        "bank",
+        "wire",
+        "transfer",
+        "sepa",
+        "ach",
+        "building",
+        "institution",
+        "iban"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bank-transfer-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bank-transfer-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bank-transfer-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bank-transfer-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-cash-out",
+      "path": "core/payments/fdsi-cash-out",
+      "displayName": "Cash Out",
+      "description": "Settle an open bet early for an instant guaranteed real-money return.",
+      "tags": [
+        "cash-out",
+        "early-settlement",
+        "return",
+        "banknote",
+        "payout",
+        "instant",
+        "settle"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-cash-out-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-cash-out-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-cash-out-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-cash-out-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-coins",
+      "path": "core/payments/fdsi-coins",
+      "displayName": "High-Stakes Coins",
+      "description": "High-stakes bankroll, loyalty coins, or multi-currency balance.",
+      "tags": [
+        "coins",
+        "stack",
+        "bankroll",
+        "currency",
+        "money",
+        "gold",
+        "wealth",
+        "balance"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-coins-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-coins-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-coins-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-coins-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-deposit",
+      "path": "core/payments/fdsi-deposit",
+      "displayName": "Deposit / Top-Up",
+      "description": "Top up player wallet balance via instant deposit methods.",
+      "tags": [
+        "deposit",
+        "top-up",
+        "add-funds",
+        "pay-in",
+        "wallet",
+        "cashier",
+        "credit"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-deposit-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-deposit-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-deposit-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-deposit-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-early-payout",
+      "path": "core/payments/fdsi-early-payout",
+      "displayName": "Early Payout / Instant Settlement",
+      "description": "Instant automatic payout when your team goes 2 goals ahead (2-Up Early Payout).",
+      "tags": [
+        "early-payout",
+        "instant-win",
+        "2-up",
+        "lightning",
+        "settled",
+        "fast-payout"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-early-payout-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-early-payout-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-early-payout-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-early-payout-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-gold-bullion",
+      "path": "core/payments/fdsi-gold-bullion",
+      "displayName": "Gold Bullion Stack",
+      "description": "High-value treasury reserve, VIP bankroll, or jackpot bullion tier.",
+      "tags": [
+        "gold",
+        "bullion",
+        "ingot",
+        "bars",
+        "treasury",
+        "wealth",
+        "vip",
+        "reserve"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-gold-bullion-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-gold-bullion-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-gold-bullion-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-gold-bullion-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-money-back",
+      "path": "core/payments/fdsi-money-back",
+      "displayName": "Money-Back / Stake Refund",
+      "description": "Stake refund or money-back guarantee when a match condition triggers.",
+      "tags": [
+        "money-back",
+        "refund",
+        "cashback",
+        "return",
+        "stake",
+        "guarantee",
+        "coin"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-money-back-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-money-back-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-money-back-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-money-back-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-payment-card",
+      "path": "core/payments/fdsi-payment-card",
+      "displayName": "Credit / Debit Card",
+      "description": "Pay or withdraw using Visa, Mastercard, or debit/credit cards.",
+      "tags": [
+        "card",
+        "credit-card",
+        "debit-card",
+        "visa",
+        "mastercard",
+        "payment",
+        "emv"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-payment-card-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-payment-card-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-payment-card-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-payment-card-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-qr-code",
+      "path": "core/payments/fdsi-qr-code",
+      "displayName": "QR Code / Fast Deposit",
+      "description": "Scan QR code for instant mobile payment, Pix, Swish, or retail ticket check.",
+      "tags": [
+        "qr",
+        "scan",
+        "barcode",
+        "mobile-pay",
+        "pix",
+        "instant",
+        "camera"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-qr-code-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-qr-code-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-qr-code-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-qr-code-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-receipt",
+      "path": "core/payments/fdsi-receipt",
+      "displayName": "Transaction Receipt / Statement",
+      "description": "View itemized transaction statement, payment receipt, or account ledger.",
+      "tags": [
+        "receipt",
+        "statement",
+        "invoice",
+        "history",
+        "ledger",
+        "transaction",
+        "bill"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-receipt-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-receipt-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-receipt-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-receipt-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-wallet",
+      "path": "core/payments/fdsi-wallet",
+      "displayName": "Wallet / Balance",
+      "description": "View player wallet balance, real-money and bonus funds, and cashier overview.",
+      "tags": [
+        "wallet",
+        "balance",
+        "cashier",
+        "funds",
+        "money",
+        "account",
+        "bankroll"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-wallet-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-wallet-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-wallet-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-wallet-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-withdraw",
+      "path": "core/payments/fdsi-withdraw",
+      "displayName": "Withdrawal / Payout",
+      "description": "Withdraw winnings from the player wallet to a linked bank or card.",
+      "tags": [
+        "withdraw",
+        "payout",
+        "cashout",
+        "transfer",
+        "winnings",
+        "wallet",
+        "bank"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-withdraw-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-withdraw-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-withdraw-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-withdraw-reg-color.svg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-surfing-wave",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Surfing / Water Sports",
+  "description": "WSL World Surf League and Olympic surfing heat and event markets.",
+  "tags": [
+    "surfing",
+    "surfboard",
+    "wave",
+    "ocean",
+    "water-sports",
+    "wsl"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-surfing-wave-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-surfing-wave-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-surfing-wave-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-surfing-wave-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

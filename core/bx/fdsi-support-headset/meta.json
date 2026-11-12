@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-support-headset",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Customer Support / Live Chat Headset",
+  "description": "24/7 customer support, live chat agent, and player helpdesk.",
+  "tags": [
+    "support",
+    "headset",
+    "helpdesk",
+    "customer-service",
+    "live-chat",
+    "agent",
+    "contact"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-support-headset-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-support-headset-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-support-headset-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-support-headset-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

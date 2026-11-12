@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-match-alert-bell",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Live Match Alert / Kick-Off Bell",
+  "description": "Live goal alerts, kick-off reminders, and bet settlement notifications.",
+  "tags": [
+    "bell",
+    "ringing",
+    "match-alert",
+    "goal-alert",
+    "live-notification",
+    "alarm"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-match-alert-bell-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-match-alert-bell-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-match-alert-bell-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-match-alert-bell-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

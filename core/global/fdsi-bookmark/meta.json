@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-bookmark",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Bookmark / Saved Event",
+  "description": "Bookmark a match, market, or promotion for quick access later.",
+  "tags": [
+    "bookmark",
+    "save",
+    "ribbon",
+    "pin",
+    "watch",
+    "saved",
+    "later"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bookmark-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bookmark-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bookmark-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bookmark-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

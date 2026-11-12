@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-slot-cherries",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Slot Cherries",
+  "description": "Classic fruit machines, retro pub slots, and fruit symbol combinations.",
+  "tags": [
+    "cherries",
+    "fruit",
+    "classic-slots",
+    "retro",
+    "arcade",
+    "berries"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-slot-cherries-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-slot-cherries-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-slot-cherries-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-slot-cherries-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

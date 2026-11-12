@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-triathlon-loops",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Triathlon",
+  "description": "Ironman and Olympic triathlon (swim, bike, run) endurance events.",
+  "tags": [
+    "triathlon",
+    "ironman",
+    "swim-bike-run",
+    "rings",
+    "endurance",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-triathlon-loops-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-triathlon-loops-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-triathlon-loops-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-triathlon-loops-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

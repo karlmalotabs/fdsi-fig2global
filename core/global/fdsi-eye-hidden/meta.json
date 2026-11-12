@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-eye-hidden",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Eye Off / Hide Balance",
+  "description": "Hide wallet balance, mask password input, or enable privacy mode.",
+  "tags": [
+    "eye",
+    "hide",
+    "hidden",
+    "mask",
+    "invisible",
+    "private",
+    "balance",
+    "password"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-eye-hidden-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-eye-hidden-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-eye-hidden-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-eye-hidden-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-sic-bo",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Sic Bo / Live Table Cloche Dome",
+  "description": "Super Sic Bo and Asian live dealer dice shaker dome games.",
+  "tags": [
+    "sic-bo",
+    "cloche",
+    "dome",
+    "dice-cup",
+    "asian-games",
+    "live-casino"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-sic-bo-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-sic-bo-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-sic-bo-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-sic-bo-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

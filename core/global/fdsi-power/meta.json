@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-power",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Power / Log Off Switch",
+  "description": "Quickly end session, log out, or toggle system power state.",
+  "tags": [
+    "power",
+    "switch",
+    "off",
+    "shutdown",
+    "logout",
+    "disconnect"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-power-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-power-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-power-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-power-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

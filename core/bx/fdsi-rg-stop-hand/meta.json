@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-rg-stop-hand",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Responsible Gaming — Stop Hand",
+  "description": "Responsible Gaming self-exclusion, deposit cap, or take-a-break stop prompt.",
+  "tags": [
+    "responsible-gaming",
+    "rg",
+    "stop",
+    "hand",
+    "self-exclusion",
+    "limit",
+    "protection",
+    "pause"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-rg-stop-hand-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-rg-stop-hand-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-rg-stop-hand-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-rg-stop-hand-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

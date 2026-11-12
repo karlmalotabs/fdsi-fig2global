@@ -26,6 +26,7 @@
             "type": "array",
             "items": { "type": "string" }
           },
+          "crsKey": { "type": "string" },
           "variants": {
             "type": "array",
             "items": {
@@ -33,7 +34,7 @@
               "required": ["size", "style", "file"],
               "properties": {
                 "size": { "type": "string", "enum": ["sm", "reg", "lg"] },
-                "style": { "type": "string", "enum": ["outline", "solid", "color"] },
+                "style": { "type": "string", "enum": ["outline", "solid", "duotone", "color"] },
                 "file": { "type": "string" }
               }
             }

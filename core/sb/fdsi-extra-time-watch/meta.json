@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-extra-time-watch",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Injury / Extra Time",
+  "description": "Injury time, stoppage minutes added, and extra-time qualification markets.",
+  "tags": [
+    "extra-time",
+    "injury-time",
+    "stoppage",
+    "stopwatch",
+    "overtime",
+    "90-plus"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-extra-time-watch-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-extra-time-watch-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-extra-time-watch-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-extra-time-watch-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

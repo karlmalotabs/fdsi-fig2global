@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-pool-eight-ball",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "8-Ball Pool / Snooker",
+  "description": "World Snooker Tour, 8-Ball, and 9-Ball pool frame and match markets.",
+  "tags": [
+    "pool",
+    "8-ball",
+    "snooker",
+    "billiards",
+    "cue-sports",
+    "black-ball"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-pool-eight-ball-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-pool-eight-ball-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-pool-eight-ball-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-pool-eight-ball-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

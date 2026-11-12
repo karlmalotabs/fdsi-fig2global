@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-volume-on",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Sound On / Speaker",
+  "description": "Audio enabled for live stream commentary, game sound effects, or match alerts.",
+  "tags": [
+    "volume",
+    "sound",
+    "audio",
+    "speaker",
+    "unmute",
+    "listen",
+    "on"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-volume-on-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-volume-on-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-volume-on-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-volume-on-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

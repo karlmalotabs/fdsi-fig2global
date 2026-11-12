@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-kayak-paddle",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Kayak & Double-Bladed Paddle",
+  "description": "Canoe sprint, kayak slalom, and whitewater paddling markets.",
+  "tags": [
+    "kayak",
+    "canoe",
+    "paddle",
+    "boat",
+    "slalom",
+    "water-sports",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-kayak-paddle-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-kayak-paddle-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-kayak-paddle-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-kayak-paddle-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

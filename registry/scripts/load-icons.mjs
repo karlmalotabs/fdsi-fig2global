@@ -9,9 +9,9 @@ export const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..
 const NON_BRAND_DIRS = new Set(['assets', 'docs', 'registry', 'figma-sync', 'storybook', 'node_modules']);
 
 const NAME_RE = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*$/;
-const FILE_RE = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|color)\.svg$/;
+const FILE_RE = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|duotone|color)\.svg$/;
 const SIZES = ['sm', 'reg', 'lg'];
-const STYLES = ['outline', 'solid', 'color'];
+const STYLES = ['outline', 'solid', 'duotone', 'color'];
 const STATUSES = ['active', 'deprecated', 'draft'];
 
 export const sizeTokens = (() => {
@@ -123,6 +123,7 @@ export function loadIcons() {
             description: meta.description ?? '',
             tags: meta.tags ?? [],
             aliases: meta.aliases ?? [],
+            crsKey: meta.crsKey ?? '',
             status: meta.status,
             deprecatedInFavorOf: meta.deprecatedInFavorOf ?? null,
             variants,

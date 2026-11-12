@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-diamond-gem",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "High-Roller Diamond Gem",
+  "description": "Gemstone cluster slots, high-volatility games, and diamond jackpot tiers.",
+  "tags": [
+    "diamond",
+    "gem",
+    "jewel",
+    "crystal",
+    "slots",
+    "jackpot",
+    "luxury"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-diamond-gem-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-diamond-gem-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-diamond-gem-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-diamond-gem-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

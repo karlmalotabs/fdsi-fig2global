@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-goal-posts",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "3D Football Goal Net / Score",
+  "description": "Total goals, over/under goals, both teams to score (BTTS), and correct score.",
+  "tags": [
+    "goal",
+    "net",
+    "score",
+    "btts",
+    "over-under",
+    "goalposts",
+    "football"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-goal-posts-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-goal-posts-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-goal-posts-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-goal-posts-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

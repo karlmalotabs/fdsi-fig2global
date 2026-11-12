@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-warning",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Warning / Alert Triangle",
+  "description": "Alert the user to suspended markets, stake limits, or important notices.",
+  "tags": [
+    "warning",
+    "alert",
+    "caution",
+    "error",
+    "danger",
+    "exclamation",
+    "notice",
+    "limit"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-warning-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-warning-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-warning-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-warning-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-referee-whistle",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Referee Whistle",
+  "description": "Match officiating markets, fouls committed, and referee stoppage specials.",
+  "tags": [
+    "whistle",
+    "referee",
+    "umpire",
+    "foul",
+    "official",
+    "stoppage"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-referee-whistle-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-referee-whistle-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-referee-whistle-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-referee-whistle-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

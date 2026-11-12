@@ -2,10 +2,10 @@ import type { IconSize, IconStyle } from "./types";
 
 export const ICON_NAME_PATTERN = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*$/;
 export const VARIANT_FILE_PATTERN =
-  /^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|color)\.svg$/;
+  /^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|duotone|color)\.svg$/;
 
 export const SIZES: IconSize[] = ["sm", "reg", "lg"];
-export const STYLES: IconStyle[] = ["outline", "solid", "color"];
+export const STYLES: IconStyle[] = ["outline", "solid", "duotone", "color"];
 
 export function isValidIconName(name: string): boolean {
   return ICON_NAME_PATTERN.test(name);

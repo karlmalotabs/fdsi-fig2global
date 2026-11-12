@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-baccarat",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Baccarat — Banker vs. Player",
+  "description": "VIP Baccarat (Punto Banco) comparing Player and Banker dealt hands.",
+  "tags": [
+    "baccarat",
+    "punto-banco",
+    "banker",
+    "player",
+    "cards",
+    "crown",
+    "table-games"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-baccarat-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-baccarat-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-baccarat-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-baccarat-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

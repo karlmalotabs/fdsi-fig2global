@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-vip-diamond-crown",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "VIP Diamond Crown",
+  "description": "Diamond VIP elite tier, personal account manager, and luxury rewards.",
+  "tags": [
+    "crown",
+    "diamond",
+    "vip",
+    "elite",
+    "luxury",
+    "loyalty",
+    "high-roller"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-vip-diamond-crown-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-vip-diamond-crown-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-vip-diamond-crown-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-vip-diamond-crown-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

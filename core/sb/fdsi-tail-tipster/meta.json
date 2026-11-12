@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-tail-tipster",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Copy / Tail Tipster Bet",
+  "description": "Social betting: copy and tail a featured tipster's or friend's betslip.",
+  "tags": [
+    "copy-bet",
+    "tail",
+    "tipster",
+    "social-betting",
+    "follow",
+    "share-slip"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-tail-tipster-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-tail-tipster-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-tail-tipster-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-tail-tipster-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

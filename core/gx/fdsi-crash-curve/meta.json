@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-crash-curve",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Crash Game Multiplier Curve",
+  "description": "Rising exponential multiplier curve and delta jet for Aviator/Crash games.",
+  "tags": [
+    "crash",
+    "curve",
+    "aviator",
+    "jet",
+    "plane",
+    "multiplier",
+    "graph"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-crash-curve-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-crash-curve-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-crash-curve-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-crash-curve-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-volleyball-panel",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Volleyball",
+  "description": "Indoor FIVB and league volleyball set, point, and outright markets.",
+  "tags": [
+    "volleyball",
+    "ball",
+    "fivb",
+    "indoor",
+    "sets",
+    "team-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-volleyball-panel-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-volleyball-panel-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-volleyball-panel-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-volleyball-panel-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

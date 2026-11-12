@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-withdraw",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Withdrawal / Payout",
+  "description": "Withdraw winnings from the player wallet to a linked bank or card.",
+  "tags": [
+    "withdraw",
+    "payout",
+    "cashout",
+    "transfer",
+    "winnings",
+    "wallet",
+    "bank"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-withdraw-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-withdraw-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-withdraw-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-withdraw-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

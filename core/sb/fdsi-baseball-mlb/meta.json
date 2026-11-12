@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-baseball-mlb",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Baseball / MLB",
+  "description": "MLB, NPB, and international baseball moneyline, run line, and total markets.",
+  "tags": [
+    "baseball",
+    "mlb",
+    "ball",
+    "stitches",
+    "home-run",
+    "inning",
+    "pitcher"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-baseball-mlb-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-baseball-mlb-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-baseball-mlb-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-baseball-mlb-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

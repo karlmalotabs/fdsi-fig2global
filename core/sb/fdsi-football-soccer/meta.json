@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-football-soccer",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "3D Isometric Telstar Ball",
+  "description": "Premier League, Champions League, and World Cup football (soccer) markets.",
+  "tags": [
+    "football",
+    "soccer",
+    "ball",
+    "premier-league",
+    "champions-league",
+    "fifa"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-football-soccer-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-football-soccer-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-football-soccer-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-football-soccer-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

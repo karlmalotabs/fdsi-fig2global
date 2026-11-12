@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-bowling-strike",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Bowling Pin & Ball",
+  "description": "PBA ten-pin bowling strike and tournament outright markets.",
+  "tags": [
+    "bowling",
+    "ten-pin",
+    "pin",
+    "ball",
+    "strike",
+    "alley"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bowling-strike-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bowling-strike-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bowling-strike-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bowling-strike-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

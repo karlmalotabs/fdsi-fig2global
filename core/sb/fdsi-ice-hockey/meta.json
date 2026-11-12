@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-ice-hockey",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Ice Hockey Stick & Puck",
+  "description": "NHL, KHL, and World Championship ice hockey stick and puck markets.",
+  "tags": [
+    "ice-hockey",
+    "nhl",
+    "stick",
+    "puck",
+    "rink",
+    "winter-sports"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-ice-hockey-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-ice-hockey-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-ice-hockey-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-ice-hockey-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-horse-racing",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Galloping Thoroughbred",
+  "description": "Thoroughbred flat, jump, and international festival horse racing.",
+  "tags": [
+    "horse-racing",
+    "thoroughbred",
+    "gallop",
+    "racehorse",
+    "equestrian",
+    "derby"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-horse-racing-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-horse-racing-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-horse-racing-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-horse-racing-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

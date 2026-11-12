@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-martial-arts-belt",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Judo / Karate / BJJ Belt",
+  "description": "Judo, Karate, Taekwondo, and Brazilian Jiu-Jitsu (BJJ) combat sports.",
+  "tags": [
+    "martial-arts",
+    "judo",
+    "karate",
+    "bjj",
+    "black-belt",
+    "combat",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-martial-arts-belt-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-martial-arts-belt-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-martial-arts-belt-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-martial-arts-belt-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

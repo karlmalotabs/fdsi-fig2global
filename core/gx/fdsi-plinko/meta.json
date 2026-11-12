@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-plinko",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Plinko Peg Pyramid",
+  "description": "Plinko peg-drop arcade game with multiplier buckets at the base.",
+  "tags": [
+    "plinko",
+    "pegs",
+    "pyramid",
+    "drop",
+    "multiplier",
+    "arcade",
+    "instant-win"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-plinko-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-plinko-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-plinko-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-plinko-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

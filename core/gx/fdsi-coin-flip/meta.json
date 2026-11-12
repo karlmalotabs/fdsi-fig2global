@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-coin-flip",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Coin Flip — Heads or Tails",
+  "description": "Heads or Tails 50/50 instant coin flip game and side bet.",
+  "tags": [
+    "coin-flip",
+    "heads-or-tails",
+    "50-50",
+    "toss",
+    "instant-game",
+    "arcade"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-coin-flip-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-coin-flip-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-coin-flip-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-coin-flip-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

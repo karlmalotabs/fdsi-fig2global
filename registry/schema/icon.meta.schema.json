@@ -31,6 +31,10 @@
       "items": { "type": "string" },
       "description": "Old/legacy icon names kept for agent grep-based bulk renames."
     },
+    "crsKey": {
+      "type": "string",
+      "description": "Optional CRS localization/catalog key."
+    },
     "status": {
       "type": "string",
       "enum": ["active", "deprecated", "draft"]
@@ -51,10 +55,10 @@
             "enum": ["sm", "reg", "lg"],
             "description": "Canonical px per token (sm=16, reg=24, lg=48) is defined in size-tokens.json; the SVG's width/height/viewBox must match it."
           },
-          "style": { "type": "string", "enum": ["outline", "solid", "color"] },
+          "style": { "type": "string", "enum": ["outline", "solid", "duotone", "color"] },
           "file": {
             "type": "string",
-            "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|color)\\.svg$"
+            "pattern": "^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|duotone|color)\\.svg$"
           }
         }
       }

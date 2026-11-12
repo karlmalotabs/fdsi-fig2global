@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-golden-boot",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Golden Boot / Top Goalscorer",
+  "description": "First goalscorer, anytime scorer, and tournament Golden Boot winner.",
+  "tags": [
+    "golden-boot",
+    "cleat",
+    "football-boot",
+    "goalscorer",
+    "striker",
+    "top-scorer"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-golden-boot-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-golden-boot-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-golden-boot-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-golden-boot-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

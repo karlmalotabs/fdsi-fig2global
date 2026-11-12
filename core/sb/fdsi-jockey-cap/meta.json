@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-jockey-cap",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Horse Racing Jockey Silk Cap",
+  "description": "Thoroughbred flat and national hunt horse racing silks and jockey specials.",
+  "tags": [
+    "jockey",
+    "cap",
+    "silks",
+    "horse-racing",
+    "helmet",
+    "turf",
+    "racecourse"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-jockey-cap-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-jockey-cap-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-jockey-cap-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-jockey-cap-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-liberty-bell",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Slot Liberty Bell",
+  "description": "Iconic cracked golden Liberty Bell symbol from original mechanical slots.",
+  "tags": [
+    "liberty-bell",
+    "bell",
+    "cracked",
+    "golden",
+    "classic-slots",
+    "jackpot"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-liberty-bell-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-liberty-bell-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-liberty-bell-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-liberty-bell-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

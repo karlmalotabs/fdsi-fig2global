@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-american-football",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "American Football / NFL",
+  "description": "NFL, NCAA College Football, and CFL gridiron betting markets.",
+  "tags": [
+    "american-football",
+    "nfl",
+    "ncaa",
+    "gridiron",
+    "super-bowl",
+    "pigskin"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-american-football-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-american-football-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-american-football-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-american-football-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

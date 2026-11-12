@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-weather-rain",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Pitch Weather — Rain",
+  "description": "Match pitch weather conditions, rain delay, and wet-track specials.",
+  "tags": [
+    "weather",
+    "rain",
+    "cloud",
+    "pitch-conditions",
+    "wet",
+    "forecast"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-weather-rain-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-weather-rain-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-weather-rain-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-weather-rain-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

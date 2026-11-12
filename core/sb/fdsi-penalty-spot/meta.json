@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-penalty-spot",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Penalty Kick Spot",
+  "description": "Penalty kick awarded, penalty shootout winner, and spot-kick conversion.",
+  "tags": [
+    "penalty",
+    "spot-kick",
+    "shootout",
+    "goal",
+    "football",
+    "12-yards"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-penalty-spot-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-penalty-spot-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-penalty-spot-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-penalty-spot-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-bank-transfer",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "payments",
+  "displayName": "Bank / Wire Transfer",
+  "description": "Direct bank wire, Open Banking, or instant ACH/SEPA bank transfer.",
+  "tags": [
+    "bank",
+    "wire",
+    "transfer",
+    "sepa",
+    "ach",
+    "building",
+    "institution",
+    "iban"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bank-transfer-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bank-transfer-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bank-transfer-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bank-transfer-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-kyc-id-card",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "KYC ID Card / Verification",
+  "description": "Know Your Customer (KYC) document upload and identity verification.",
+  "tags": [
+    "kyc",
+    "id-card",
+    "identity",
+    "passport",
+    "license",
+    "verification",
+    "document"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-kyc-id-card-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-kyc-id-card-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-kyc-id-card-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-kyc-id-card-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

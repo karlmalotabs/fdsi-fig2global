@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-slot-bar",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Slot BAR Symbol",
+  "description": "Classic double BAR bullion symbol for vintage Vegas stepper slots.",
+  "tags": [
+    "bar",
+    "slot-bar",
+    "classic-slots",
+    "stepper",
+    "vintage",
+    "vegas"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-slot-bar-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-slot-bar-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-slot-bar-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-slot-bar-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

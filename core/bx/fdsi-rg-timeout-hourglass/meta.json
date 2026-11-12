@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-rg-timeout-hourglass",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Responsible Gaming — Time-Out Hourglass",
+  "description": "Responsible Gaming short time-out or cooling-off break timer.",
+  "tags": [
+    "responsible-gaming",
+    "rg",
+    "timeout",
+    "hourglass",
+    "cooling-off",
+    "break",
+    "timer",
+    "limit"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-rg-timeout-hourglass-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-rg-timeout-hourglass-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-rg-timeout-hourglass-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-rg-timeout-hourglass-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-odds-down",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Price / Odds Shortening Down",
+  "description": "Odds shortening / dropping downward indicator on live price updates.",
+  "tags": [
+    "odds-down",
+    "shortening",
+    "lower",
+    "decrease",
+    "triangle",
+    "down",
+    "price-change"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-odds-down-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-odds-down-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-odds-down-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-odds-down-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

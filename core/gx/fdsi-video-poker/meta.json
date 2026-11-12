@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-video-poker",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Video Poker / Live Card Stream",
+  "description": "Video Poker and live-streamed casino poker tables (Jacks or Better, Hold'em).",
+  "tags": [
+    "video-poker",
+    "poker",
+    "stream",
+    "camera",
+    "card",
+    "live-poker",
+    "holdem"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-video-poker-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-video-poker-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-video-poker-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-video-poker-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

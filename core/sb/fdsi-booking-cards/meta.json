@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-booking-cards",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Yellow / Red Booking Cards",
+  "description": "Total booking points, yellow/red cards shown, and player to be carded markets.",
+  "tags": [
+    "cards",
+    "yellow-card",
+    "red-card",
+    "booking",
+    "sending-off",
+    "referee",
+    "foul"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-booking-cards-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-booking-cards-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-booking-cards-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-booking-cards-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

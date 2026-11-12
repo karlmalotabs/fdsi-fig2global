@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-settings",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Settings Gear",
+  "description": "Open account preferences, odds format configuration, or application settings.",
+  "tags": [
+    "settings",
+    "gear",
+    "cog",
+    "preferences",
+    "options",
+    "configuration",
+    "system"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-settings-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-settings-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-settings-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-settings-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

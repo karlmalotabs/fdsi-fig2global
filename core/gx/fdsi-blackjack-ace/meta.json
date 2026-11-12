@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-blackjack-ace",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Blackjack Ace Card",
+  "description": "Blackjack 21 table games featuring the Ace card.",
+  "tags": [
+    "blackjack",
+    "21",
+    "ace",
+    "card",
+    "pontoon",
+    "table-games",
+    "casino"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-blackjack-ace-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-blackjack-ace-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-blackjack-ace-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-blackjack-ace-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

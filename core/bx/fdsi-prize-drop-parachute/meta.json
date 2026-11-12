@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-prize-drop-parachute",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Cash Drop / Airdrop Parachute",
+  "description": "Daily cash drop, airdrop bonus, and random prize giveaway.",
+  "tags": [
+    "parachute",
+    "airdrop",
+    "prize-drop",
+    "bonus",
+    "giveaway",
+    "reward",
+    "box"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-prize-drop-parachute-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-prize-drop-parachute-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-prize-drop-parachute-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-prize-drop-parachute-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

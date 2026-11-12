@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-athletics-sprint",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Athletics Sprint",
+  "description": "Track and field 100m sprint, marathon, and Diamond League athletics.",
+  "tags": [
+    "athletics",
+    "sprint",
+    "running",
+    "runner",
+    "track",
+    "marathon",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-athletics-sprint-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-athletics-sprint-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-athletics-sprint-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-athletics-sprint-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

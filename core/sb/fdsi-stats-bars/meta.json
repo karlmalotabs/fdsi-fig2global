@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-stats-bars",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Match Stats / Form Guide",
+  "description": "Team form guide, head-to-head statistics, and league standings analytics.",
+  "tags": [
+    "stats",
+    "statistics",
+    "analytics",
+    "chart",
+    "bars",
+    "form",
+    "standings"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-stats-bars-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-stats-bars-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-stats-bars-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-stats-bars-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-clock",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Clock / Kick-Off Time",
+  "description": "Display match kick-off time, countdown, or recent activity.",
+  "tags": [
+    "clock",
+    "time",
+    "schedule",
+    "kickoff",
+    "countdown",
+    "hour",
+    "recent"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-clock-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-clock-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-clock-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-clock-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

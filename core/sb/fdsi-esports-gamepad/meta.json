@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-esports-gamepad",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Pro Esports Gamepad",
+  "description": "CS2, League of Legends, Dota 2, EA FC, and competitive Esports betting.",
+  "tags": [
+    "esports",
+    "gaming",
+    "gamepad",
+    "controller",
+    "cs2",
+    "lol",
+    "dota",
+    "virtuals"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-esports-gamepad-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-esports-gamepad-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-esports-gamepad-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-esports-gamepad-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-winner-medal",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Gold Medal / Podium Winner",
+  "description": "Podium finish, gold medal winner, and top-3 placement markets.",
+  "tags": [
+    "medal",
+    "gold",
+    "winner",
+    "podium",
+    "first-place",
+    "olympic",
+    "award"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-winner-medal-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-winner-medal-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-winner-medal-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-winner-medal-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

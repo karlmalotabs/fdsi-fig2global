@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-pot-of-gold",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Pot of Gold / Irish Jackpot",
+  "description": "Rainbow jackpot pots, Irish gold collect features, and progressive treasure.",
+  "tags": [
+    "pot-of-gold",
+    "cauldron",
+    "irish",
+    "rainbow",
+    "coins",
+    "jackpot",
+    "treasure"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-pot-of-gold-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-pot-of-gold-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-pot-of-gold-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-pot-of-gold-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

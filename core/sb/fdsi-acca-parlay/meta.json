@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-acca-parlay",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Accumulator / Parlay",
+  "description": "Accumulator (Acca) and multi-leg parlay bets across multiple events.",
+  "tags": [
+    "acca",
+    "accumulator",
+    "parlay",
+    "multi",
+    "combo",
+    "trend",
+    "legs"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-acca-parlay-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-acca-parlay-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-acca-parlay-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-acca-parlay-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

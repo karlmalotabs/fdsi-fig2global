@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-volume-mute",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Mute / Sound Off",
+  "description": "Mute live stream audio, casino game music, or sound effects.",
+  "tags": [
+    "mute",
+    "silent",
+    "volume-off",
+    "audio",
+    "speaker",
+    "quiet"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-volume-mute-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-volume-mute-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-volume-mute-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-volume-mute-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

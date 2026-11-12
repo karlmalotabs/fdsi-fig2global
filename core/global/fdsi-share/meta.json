@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-share",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Share / Send Betslip",
+  "description": "Share a betslip, referral link, or big win across social channels.",
+  "tags": [
+    "share",
+    "send",
+    "social",
+    "network",
+    "nodes",
+    "export",
+    "referral"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-share-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-share-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-share-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-share-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

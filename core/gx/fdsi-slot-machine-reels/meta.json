@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-slot-machine-reels",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "3-Reel Slot Machine",
+  "description": "3-reel slot machine window with aligned payline and side pull lever.",
+  "tags": [
+    "slot-machine",
+    "reels",
+    "payline",
+    "lever",
+    "one-armed-bandit",
+    "spins"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-slot-machine-reels-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-slot-machine-reels-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-slot-machine-reels-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-slot-machine-reels-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

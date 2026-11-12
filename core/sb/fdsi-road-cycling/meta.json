@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-road-cycling",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Road Cycling",
+  "description": "Tour de France, Giro d'Italia, andUCI World Tour road cycling stage markets.",
+  "tags": [
+    "cycling",
+    "bike",
+    "bicycle",
+    "tour-de-france",
+    "peloton",
+    "uci"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-road-cycling-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-road-cycling-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-road-cycling-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-road-cycling-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

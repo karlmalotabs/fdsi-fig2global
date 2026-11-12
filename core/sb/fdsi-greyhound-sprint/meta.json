@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-greyhound-sprint",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Sprinting Greyhound",
+  "description": "Live greyhound track racing win, forecast, and tricast markets.",
+  "tags": [
+    "greyhound",
+    "dog-racing",
+    "sprint",
+    "hound",
+    "coursing",
+    "tricast"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-greyhound-sprint-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-greyhound-sprint-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-greyhound-sprint-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-greyhound-sprint-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

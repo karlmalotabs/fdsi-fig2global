@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-smartphone",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Smartphone / Mobile Betting App",
+  "description": "Mobile app download, SMS verification, or device management.",
+  "tags": [
+    "smartphone",
+    "mobile",
+    "phone",
+    "device",
+    "app",
+    "ios",
+    "android"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-smartphone-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-smartphone-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-smartphone-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-smartphone-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

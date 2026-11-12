@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-pitch-tracker",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Match Pitch View",
+  "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
+  "tags": [
+    "pitch",
+    "field",
+    "tracker",
+    "visualizer",
+    "stadium",
+    "football",
+    "court"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-pitch-tracker-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-pitch-tracker-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-pitch-tracker-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-pitch-tracker-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

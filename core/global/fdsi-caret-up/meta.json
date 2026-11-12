@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-caret-up",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Caret Up",
+  "description": "Compact inline upward indicator for ascending sort or open select menus.",
+  "tags": [
+    "caret",
+    "up",
+    "ascending",
+    "sort",
+    "select",
+    "close",
+    "inline"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-caret-up-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-caret-up-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-caret-up-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-caret-up-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

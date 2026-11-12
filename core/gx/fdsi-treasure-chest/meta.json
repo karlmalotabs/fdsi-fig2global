@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-treasure-chest",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Treasure Chest / Mystery Drop",
+  "description": "Pirate adventure slots, hold-and-win chests, and bonus feature unlocks.",
+  "tags": [
+    "treasure",
+    "chest",
+    "booty",
+    "pirate",
+    "loot",
+    "bonus",
+    "jackpot"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-treasure-chest-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-treasure-chest-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-treasure-chest-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-treasure-chest-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

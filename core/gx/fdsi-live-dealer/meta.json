@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-live-dealer",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Live Casino Dealer / Croupier",
+  "description": "Live Casino studio streams hosted by real professional croupiers.",
+  "tags": [
+    "live-dealer",
+    "croupier",
+    "host",
+    "bowtie",
+    "tuxedo",
+    "live-casino",
+    "studio"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-live-dealer-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-live-dealer-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-live-dealer-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-live-dealer-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

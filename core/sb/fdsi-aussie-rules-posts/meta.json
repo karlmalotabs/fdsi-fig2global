@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-aussie-rules-posts",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Australian Rules / Rugby H-Posts",
+  "description": "Australian Rules Football (AFL) goalposts for match and margin betting.",
+  "tags": [
+    "aussie-rules",
+    "afl",
+    "goalposts",
+    "footy",
+    "australia",
+    "behind-posts"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-aussie-rules-posts-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-aussie-rules-posts-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-aussie-rules-posts-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-aussie-rules-posts-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-bet-insurance",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Bet Insurance / Safe Bet",
+  "description": "Rainy-day stake protection and risk-free bet insurance coverage.",
+  "tags": [
+    "umbrella",
+    "insurance",
+    "protection",
+    "risk-free",
+    "cover",
+    "safe",
+    "refund"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bet-insurance-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bet-insurance-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bet-insurance-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bet-insurance-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

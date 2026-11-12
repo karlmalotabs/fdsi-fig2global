@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-check",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Checkmark / Confirmation Tick",
+  "description": "Confirm selection, indicate completed state, or verify valid input.",
+  "tags": [
+    "check",
+    "tick",
+    "confirm",
+    "done",
+    "valid",
+    "success",
+    "complete",
+    "selected"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-check-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-check-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-check-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-check-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

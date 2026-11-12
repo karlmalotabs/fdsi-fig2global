@@ -2,60 +2,1675 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "gx",
-  "generatedAt": "2026-10-06T11:01:18.290Z",
+  "generatedAt": "2026-11-12T12:46:38.817Z",
   "icons": [
     {
-      "name": "fdsi-live-casino",
-      "path": "core/gx/fdsi-live-casino",
-      "displayName": "Live Casinooooo",
-      "description": "Live casino icon.",
+      "name": "fdsi-aviator-propeller",
+      "path": "core/gx/fdsi-aviator-propeller",
+      "displayName": "Aviator Propeller",
+      "description": "Spinning aircraft propeller icon for Aviator and flight crash games.",
       "tags": [
-        "live-casino",
-        "casino"
+        "aviator",
+        "propeller",
+        "plane",
+        "flight",
+        "crash",
+        "spin",
+        "blades"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
-      "aliases": [
-        "fdsi-live_casino"
-      ],
+      "aliases": [],
       "variants": [
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-live-casino-reg-outline.svg"
+          "file": "fdsi-aviator-propeller-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-live-casino-reg-solid.svg"
+          "file": "fdsi-aviator-propeller-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-aviator-propeller-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-aviator-propeller-reg-color.svg"
         }
       ]
     },
     {
-      "name": "fdsi-my-games",
-      "path": "core/gx/fdsi-my-games",
-      "displayName": "My Games",
-      "description": "User's games icon.",
+      "name": "fdsi-baccarat",
+      "path": "core/gx/fdsi-baccarat",
+      "displayName": "Baccarat — Banker vs. Player",
+      "description": "VIP Baccarat (Punto Banco) comparing Player and Banker dealt hands.",
       "tags": [
-        "my-games",
-        "games",
-        "account"
+        "baccarat",
+        "punto-banco",
+        "banker",
+        "player",
+        "cards",
+        "crown",
+        "table-games"
       ],
       "status": "active",
       "deprecatedInFavorOf": null,
-      "aliases": [
-        "fdsi-my_games"
-      ],
+      "aliases": [],
       "variants": [
         {
           "size": "reg",
           "style": "outline",
-          "file": "fdsi-my-games-reg-outline.svg"
+          "file": "fdsi-baccarat-reg-outline.svg"
         },
         {
           "size": "reg",
           "style": "solid",
-          "file": "fdsi-my-games-reg-solid.svg"
+          "file": "fdsi-baccarat-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-baccarat-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-baccarat-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bingo-ball",
+      "path": "core/gx/fdsi-bingo-ball",
+      "displayName": "Keno / Bingo / Lotto Ball",
+      "description": "Bingo rooms, Keno draws, lotto numbers, and live ball-draw game shows.",
+      "tags": [
+        "bingo",
+        "lotto",
+        "ball",
+        "number",
+        "draw",
+        "keno",
+        "7"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bingo-ball-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bingo-ball-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bingo-ball-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bingo-ball-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-blackjack-ace",
+      "path": "core/gx/fdsi-blackjack-ace",
+      "displayName": "Blackjack Ace Card",
+      "description": "Blackjack 21 table games featuring the Ace card.",
+      "tags": [
+        "blackjack",
+        "21",
+        "ace",
+        "card",
+        "pontoon",
+        "table-games",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-blackjack-ace-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-blackjack-ace-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-blackjack-ace-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-blackjack-ace-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-bonus-magnet",
+      "path": "core/gx/fdsi-bonus-magnet",
+      "displayName": "Bonus Magnet",
+      "description": "Cash-collect magnet symbols, sticky wild features, and bonus attractors.",
+      "tags": [
+        "magnet",
+        "collect",
+        "attract",
+        "bonus",
+        "feature",
+        "wild",
+        "slots"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-bonus-magnet-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-bonus-magnet-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-bonus-magnet-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-bonus-magnet-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-casino-chip",
+      "path": "core/gx/fdsi-casino-chip",
+      "displayName": "Casino Chip",
+      "description": "Table games, live casino chips, and wagering denomination selector.",
+      "tags": [
+        "chip",
+        "token",
+        "casino",
+        "table-games",
+        "bet",
+        "stake",
+        "wager"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-casino-chip-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-casino-chip-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-casino-chip-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-casino-chip-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-casino-dice",
+      "path": "core/gx/fdsi-casino-dice",
+      "displayName": "Casino Craps Die",
+      "description": "Craps, Lightning Dice, Sic Bo, and dice-based table games.",
+      "tags": [
+        "dice",
+        "craps",
+        "cube",
+        "pips",
+        "roll",
+        "random",
+        "casino",
+        "table-games"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-casino-dice-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-casino-dice-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-casino-dice-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-casino-dice-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-coin-flip",
+      "path": "core/gx/fdsi-coin-flip",
+      "displayName": "Coin Flip — Heads or Tails",
+      "description": "Heads or Tails 50/50 instant coin flip game and side bet.",
+      "tags": [
+        "coin-flip",
+        "heads-or-tails",
+        "50-50",
+        "toss",
+        "instant-game",
+        "arcade"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-coin-flip-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-coin-flip-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-coin-flip-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-coin-flip-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-crash-curve",
+      "path": "core/gx/fdsi-crash-curve",
+      "displayName": "Crash Game Multiplier Curve",
+      "description": "Rising exponential multiplier curve and delta jet for Aviator/Crash games.",
+      "tags": [
+        "crash",
+        "curve",
+        "aviator",
+        "jet",
+        "plane",
+        "multiplier",
+        "graph"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-crash-curve-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-crash-curve-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-crash-curve-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-crash-curve-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-crash-rocket",
+      "path": "core/gx/fdsi-crash-rocket",
+      "displayName": "Crash Game Rocket",
+      "description": "Crash multiplier arcade games where players cash out before the rocket explodes.",
+      "tags": [
+        "crash",
+        "rocket",
+        "multiplier",
+        "arcade",
+        "instant-game",
+        "blast",
+        "space"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-crash-rocket-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-crash-rocket-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-crash-rocket-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-crash-rocket-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-diamond-gem",
+      "path": "core/gx/fdsi-diamond-gem",
+      "displayName": "High-Roller Diamond Gem",
+      "description": "Gemstone cluster slots, high-volatility games, and diamond jackpot tiers.",
+      "tags": [
+        "diamond",
+        "gem",
+        "jewel",
+        "crystal",
+        "slots",
+        "jackpot",
+        "luxury"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-diamond-gem-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-diamond-gem-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-diamond-gem-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-diamond-gem-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-free-spins",
+      "path": "core/gx/fdsi-free-spins",
+      "displayName": "Free Spins / Respin Cycle",
+      "description": "Free spins bonus rounds, respin mechanics, and auto-spin controls.",
+      "tags": [
+        "free-spins",
+        "respin",
+        "spin",
+        "cycle",
+        "arrows",
+        "bonus-round",
+        "slots"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-free-spins-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-free-spins-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-free-spins-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-free-spins-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-hi-lo",
+      "path": "core/gx/fdsi-hi-lo",
+      "displayName": "Hi-Lo Arcade Card Game",
+      "description": "Hi-Lo arcade card game predicting whether the next card is higher or lower.",
+      "tags": [
+        "hi-lo",
+        "high-low",
+        "up-down",
+        "predict",
+        "arcade",
+        "cards"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-hi-lo-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-hi-lo-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-hi-lo-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-hi-lo-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-jackpot-meter",
+      "path": "core/gx/fdsi-jackpot-meter",
+      "displayName": "Hot-Streak / Jackpot Meter Gauge",
+      "description": "Must-drop jackpot thermometer gauge and hot-payout readiness meter.",
+      "tags": [
+        "jackpot",
+        "meter",
+        "gauge",
+        "hot-drop",
+        "progressive",
+        "dial",
+        "thermometer"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-jackpot-meter-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-jackpot-meter-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-jackpot-meter-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-jackpot-meter-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-keno-board",
+      "path": "core/gx/fdsi-keno-board",
+      "displayName": "Keno / Lotto Number Grid",
+      "description": "Keno and lottery number selection board with matched hit spots.",
+      "tags": [
+        "keno",
+        "board",
+        "grid",
+        "numbers",
+        "lottery",
+        "picks",
+        "draws"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-keno-board-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-keno-board-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-keno-board-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-keno-board-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-liberty-bell",
+      "path": "core/gx/fdsi-liberty-bell",
+      "displayName": "Slot Liberty Bell",
+      "description": "Iconic cracked golden Liberty Bell symbol from original mechanical slots.",
+      "tags": [
+        "liberty-bell",
+        "bell",
+        "cracked",
+        "golden",
+        "classic-slots",
+        "jackpot"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-liberty-bell-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-liberty-bell-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-liberty-bell-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-liberty-bell-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-live-dealer",
+      "path": "core/gx/fdsi-live-dealer",
+      "displayName": "Live Casino Dealer / Croupier",
+      "description": "Live Casino studio streams hosted by real professional croupiers.",
+      "tags": [
+        "live-dealer",
+        "croupier",
+        "host",
+        "bowtie",
+        "tuxedo",
+        "live-casino",
+        "studio"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-live-dealer-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-live-dealer-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-live-dealer-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-live-dealer-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-lucky-horseshoe",
+      "path": "core/gx/fdsi-lucky-horseshoe",
+      "displayName": "Lucky Horseshoe",
+      "description": "Lucky horseshoe jackpot slots, western themes, and fortune symbols.",
+      "tags": [
+        "horseshoe",
+        "luck",
+        "fortune",
+        "charm",
+        "gold",
+        "slots",
+        "western"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-lucky-horseshoe-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-lucky-horseshoe-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-lucky-horseshoe-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-lucky-horseshoe-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-mines-bomb",
+      "path": "core/gx/fdsi-mines-bomb",
+      "displayName": "Mines / Crash Bomb",
+      "description": "Minesweeper casino arcade game where players avoid hidden bombs.",
+      "tags": [
+        "mines",
+        "bomb",
+        "explosive",
+        "fuse",
+        "arcade",
+        "crash",
+        "instant-game"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-mines-bomb-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-mines-bomb-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-mines-bomb-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-mines-bomb-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-multiplier-x",
+      "path": "core/gx/fdsi-multiplier-x",
+      "displayName": "Crash / Slot Multiplier Badge",
+      "description": "Win multiplier badges (2x–10,000x) in tumbling slots and crash games.",
+      "tags": [
+        "multiplier",
+        "x",
+        "win",
+        "boost",
+        "tumbling",
+        "slots",
+        "crash"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-multiplier-x-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-multiplier-x-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-multiplier-x-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-multiplier-x-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-playing-cards",
+      "path": "core/gx/fdsi-playing-cards",
+      "displayName": "Playing Cards / Blackjack Pair",
+      "description": "Card table games including Blackjack, Poker, Baccarat, and Solitaire.",
+      "tags": [
+        "cards",
+        "playing-cards",
+        "deck",
+        "blackjack",
+        "poker",
+        "table-games",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-playing-cards-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-playing-cards-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-playing-cards-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-playing-cards-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-plinko",
+      "path": "core/gx/fdsi-plinko",
+      "displayName": "Plinko Peg Pyramid",
+      "description": "Plinko peg-drop arcade game with multiplier buckets at the base.",
+      "tags": [
+        "plinko",
+        "pegs",
+        "pyramid",
+        "drop",
+        "multiplier",
+        "arcade",
+        "instant-win"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-plinko-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-plinko-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-plinko-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-plinko-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-pot-of-gold",
+      "path": "core/gx/fdsi-pot-of-gold",
+      "displayName": "Pot of Gold / Irish Jackpot",
+      "description": "Rainbow jackpot pots, Irish gold collect features, and progressive treasure.",
+      "tags": [
+        "pot-of-gold",
+        "cauldron",
+        "irish",
+        "rainbow",
+        "coins",
+        "jackpot",
+        "treasure"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-pot-of-gold-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-pot-of-gold-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-pot-of-gold-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-pot-of-gold-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-roulette-table",
+      "path": "core/gx/fdsi-roulette-table",
+      "displayName": "Casino Roulette Table",
+      "description": "Full Roulette table felt layout showing the wheel and inside/outside grid.",
+      "tags": [
+        "roulette",
+        "table",
+        "felt",
+        "layout",
+        "grid",
+        "wheel",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-roulette-table-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-roulette-table-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-roulette-table-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-roulette-table-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-roulette-wheel",
+      "path": "core/gx/fdsi-roulette-wheel",
+      "displayName": "Roulette Wheel",
+      "description": "European, American, and Lightning Roulette live and RNG wheel games.",
+      "tags": [
+        "roulette",
+        "wheel",
+        "table-games",
+        "casino",
+        "spin",
+        "pockets"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-roulette-wheel-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-roulette-wheel-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-roulette-wheel-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-roulette-wheel-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-scratchcard",
+      "path": "core/gx/fdsi-scratchcard",
+      "displayName": "Scratchcard / Instant Win",
+      "description": "Instant-win digital scratchcards with coin reveal track.",
+      "tags": [
+        "scratchcard",
+        "scratch",
+        "instant-win",
+        "lottery",
+        "reveal",
+        "coin",
+        "ticket"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-scratchcard-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-scratchcard-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-scratchcard-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-scratchcard-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-shamrock-clover",
+      "path": "core/gx/fdsi-shamrock-clover",
+      "displayName": "Irish Luck Shamrock",
+      "description": "Irish luck themed slots, St. Patrick's promotions, and lucky charms.",
+      "tags": [
+        "shamrock",
+        "clover",
+        "irish",
+        "luck",
+        "green",
+        "slots",
+        "charm"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-shamrock-clover-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-shamrock-clover-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-shamrock-clover-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-shamrock-clover-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-sic-bo",
+      "path": "core/gx/fdsi-sic-bo",
+      "displayName": "Sic Bo / Live Table Cloche Dome",
+      "description": "Super Sic Bo and Asian live dealer dice shaker dome games.",
+      "tags": [
+        "sic-bo",
+        "cloche",
+        "dome",
+        "dice-cup",
+        "asian-games",
+        "live-casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-sic-bo-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-sic-bo-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-sic-bo-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-sic-bo-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-777",
+      "path": "core/gx/fdsi-slot-777",
+      "displayName": "Jackpot 777 Slot Machine",
+      "description": "Classic Vegas 777 slot machine cabinet and video slots category.",
+      "tags": [
+        "slots",
+        "777",
+        "jackpot",
+        "machine",
+        "reels",
+        "vegas",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-777-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-777-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-777-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-777-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-bar",
+      "path": "core/gx/fdsi-slot-bar",
+      "displayName": "Slot BAR Symbol",
+      "description": "Classic double BAR bullion symbol for vintage Vegas stepper slots.",
+      "tags": [
+        "bar",
+        "slot-bar",
+        "classic-slots",
+        "stepper",
+        "vintage",
+        "vegas"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-bar-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-bar-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-bar-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-bar-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-cherries",
+      "path": "core/gx/fdsi-slot-cherries",
+      "displayName": "Slot Cherries",
+      "description": "Classic fruit machines, retro pub slots, and fruit symbol combinations.",
+      "tags": [
+        "cherries",
+        "fruit",
+        "classic-slots",
+        "retro",
+        "arcade",
+        "berries"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-cherries-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-cherries-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-cherries-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-cherries-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-grapes",
+      "path": "core/gx/fdsi-slot-grapes",
+      "displayName": "Slot Grapes Cluster",
+      "description": "Cluster of royal grapes for fruit slots and cascading cluster-pay games.",
+      "tags": [
+        "grapes",
+        "fruit",
+        "bunch",
+        "cluster",
+        "vine",
+        "classic-slots"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-grapes-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-grapes-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-grapes-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-grapes-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-lemon",
+      "path": "core/gx/fdsi-slot-lemon",
+      "displayName": "Slot Lemon / Citrus Fruit",
+      "description": "Citrus lemon fruit symbol for classic fruit machines and juicy slots.",
+      "tags": [
+        "lemon",
+        "citrus",
+        "fruit",
+        "classic-slots",
+        "arcade",
+        "yellow"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-lemon-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-lemon-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-lemon-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-lemon-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-machine-reels",
+      "path": "core/gx/fdsi-slot-machine-reels",
+      "displayName": "3-Reel Slot Machine",
+      "description": "3-reel slot machine window with aligned payline and side pull lever.",
+      "tags": [
+        "slot-machine",
+        "reels",
+        "payline",
+        "lever",
+        "one-armed-bandit",
+        "spins"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-machine-reels-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-machine-reels-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-machine-reels-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-machine-reels-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-slot-watermelon",
+      "path": "core/gx/fdsi-slot-watermelon",
+      "displayName": "Slot Watermelon Slice",
+      "description": "Watermelon slice symbol for high-paying fruit slot combinations.",
+      "tags": [
+        "watermelon",
+        "melon",
+        "fruit",
+        "slice",
+        "seeds",
+        "classic-slots"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-slot-watermelon-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-slot-watermelon-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-slot-watermelon-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-slot-watermelon-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-suit-club",
+      "path": "core/gx/fdsi-suit-club",
+      "displayName": "Club Suit",
+      "description": "Club trefoil card suit for poker, blackjack side bets, and suit markets.",
+      "tags": [
+        "club",
+        "clover",
+        "suit",
+        "cards",
+        "poker",
+        "trefoil",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-suit-club-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-suit-club-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-suit-club-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-suit-club-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-suit-diamond",
+      "path": "core/gx/fdsi-suit-diamond",
+      "displayName": "Diamond Suit",
+      "description": "Diamond rhombus card suit for poker tables, card filters, and suit bets.",
+      "tags": [
+        "diamond",
+        "rhombus",
+        "suit",
+        "cards",
+        "poker",
+        "red",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-suit-diamond-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-suit-diamond-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-suit-diamond-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-suit-diamond-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-suit-heart",
+      "path": "core/gx/fdsi-suit-heart",
+      "displayName": "Heart Suit",
+      "description": "Heart card suit for card game UI, suit side bets, and royal flush displays.",
+      "tags": [
+        "heart",
+        "suit",
+        "cards",
+        "poker",
+        "red",
+        "romance",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-suit-heart-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-suit-heart-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-suit-heart-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-suit-heart-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-suit-spade",
+      "path": "core/gx/fdsi-suit-spade",
+      "displayName": "Spade Suit",
+      "description": "Spade card suit for poker hand rankings, card filters, and hi-lo games.",
+      "tags": [
+        "spade",
+        "suit",
+        "cards",
+        "poker",
+        "black",
+        "ace",
+        "casino"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-suit-spade-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-suit-spade-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-suit-spade-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-suit-spade-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-treasure-chest",
+      "path": "core/gx/fdsi-treasure-chest",
+      "displayName": "Treasure Chest / Mystery Drop",
+      "description": "Pirate adventure slots, hold-and-win chests, and bonus feature unlocks.",
+      "tags": [
+        "treasure",
+        "chest",
+        "booty",
+        "pirate",
+        "loot",
+        "bonus",
+        "jackpot"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-treasure-chest-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-treasure-chest-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-treasure-chest-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-treasure-chest-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-video-poker",
+      "path": "core/gx/fdsi-video-poker",
+      "displayName": "Video Poker / Live Card Stream",
+      "description": "Video Poker and live-streamed casino poker tables (Jacks or Better, Hold'em).",
+      "tags": [
+        "video-poker",
+        "poker",
+        "stream",
+        "camera",
+        "card",
+        "live-poker",
+        "holdem"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-video-poker-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-video-poker-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-video-poker-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-video-poker-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-wheel-of-fortune",
+      "path": "core/gx/fdsi-wheel-of-fortune",
+      "displayName": "Wheel of Fortune / Game Show",
+      "description": "Live casino game shows, Crazy Time prize wheels, and daily spin bonuses.",
+      "tags": [
+        "wheel",
+        "game-show",
+        "fortune",
+        "spin",
+        "prize",
+        "live-casino",
+        "bonus"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-wheel-of-fortune-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-wheel-of-fortune-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-wheel-of-fortune-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-wheel-of-fortune-reg-color.svg"
         }
       ]
     }

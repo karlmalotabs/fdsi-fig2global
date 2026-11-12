@@ -1,0 +1,46 @@
+{
+  "name": "fdsi-vip-crown",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "bx",
+  "displayName": "Royal VIP Crown",
+  "description": "VIP loyalty club, royal tier status, and exclusive high-roller rewards.",
+  "tags": [
+    "crown",
+    "vip",
+    "royal",
+    "loyalty",
+    "king",
+    "tier",
+    "exclusive",
+    "premium"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-vip-crown-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-vip-crown-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-vip-crown-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-vip-crown-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

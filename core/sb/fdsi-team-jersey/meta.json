@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-team-jersey",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Player Props / Team Kit Jersey",
+  "description": "Player props, anytime goalscorer, shots on target, and assists markets.",
+  "tags": [
+    "jersey",
+    "shirt",
+    "kit",
+    "player-props",
+    "goalscorer",
+    "squad",
+    "number"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-team-jersey-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-team-jersey-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-team-jersey-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-team-jersey-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

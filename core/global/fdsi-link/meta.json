@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-link",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Link / Referral URL",
+  "description": "Copy direct URL link or connect linked accounts and referrals.",
+  "tags": [
+    "link",
+    "chain",
+    "url",
+    "hyperlink",
+    "connect",
+    "referral"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-link-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-link-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-link-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-link-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

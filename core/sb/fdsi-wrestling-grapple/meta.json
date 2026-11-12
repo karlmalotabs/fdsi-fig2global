@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-wrestling-grapple",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Olympic Wrestling Lockup",
+  "description": "Olympic freestyle and Greco-Roman wrestling bout markets.",
+  "tags": [
+    "wrestling",
+    "grapple",
+    "lockup",
+    "freestyle",
+    "greco-roman",
+    "combat",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-wrestling-grapple-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-wrestling-grapple-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-wrestling-grapple-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-wrestling-grapple-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

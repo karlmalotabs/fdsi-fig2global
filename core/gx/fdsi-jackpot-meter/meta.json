@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-jackpot-meter",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Hot-Streak / Jackpot Meter Gauge",
+  "description": "Must-drop jackpot thermometer gauge and hot-payout readiness meter.",
+  "tags": [
+    "jackpot",
+    "meter",
+    "gauge",
+    "hot-drop",
+    "progressive",
+    "dial",
+    "thermometer"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-jackpot-meter-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-jackpot-meter-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-jackpot-meter-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-jackpot-meter-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

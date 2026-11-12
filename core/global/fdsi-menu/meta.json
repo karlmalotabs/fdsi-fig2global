@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-menu",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Navigation Hamburger Menu",
+  "description": "Open primary application navigation drawer or mobile hamburger menu.",
+  "tags": [
+    "menu",
+    "hamburger",
+    "navigation",
+    "drawer",
+    "bars",
+    "sidebar",
+    "list"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-menu-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-menu-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-menu-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-menu-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

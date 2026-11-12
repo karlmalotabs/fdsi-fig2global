@@ -70,6 +70,7 @@ for (const { brand, area, icons: areaIcons } of [...groups.values()].sort((a, b)
           status: i.status,
           deprecatedInFavorOf: i.deprecatedInFavorOf,
           aliases: i.aliases,
+          ...(i.crsKey ? { crsKey: i.crsKey } : {}),
           variants: i.variants.map(({ size, style, file }) => ({ size, style, file })),
         })),
     });

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-bracket-tree",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Knockout Tournament Bracket",
+  "description": "Knockout tournament bracket predictor, path to the final, and playoffs.",
+  "tags": [
+    "bracket",
+    "tournament",
+    "knockout",
+    "playoffs",
+    "draw",
+    "tree"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bracket-tree-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bracket-tree-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bracket-tree-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bracket-tree-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-bonus-magnet",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Bonus Magnet",
+  "description": "Cash-collect magnet symbols, sticky wild features, and bonus attractors.",
+  "tags": [
+    "magnet",
+    "collect",
+    "attract",
+    "bonus",
+    "feature",
+    "wild",
+    "slots"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-bonus-magnet-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-bonus-magnet-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-bonus-magnet-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-bonus-magnet-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-scratchcard",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Scratchcard / Instant Win",
+  "description": "Instant-win digital scratchcards with coin reveal track.",
+  "tags": [
+    "scratchcard",
+    "scratch",
+    "instant-win",
+    "lottery",
+    "reveal",
+    "coin",
+    "ticket"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-scratchcard-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-scratchcard-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-scratchcard-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-scratchcard-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

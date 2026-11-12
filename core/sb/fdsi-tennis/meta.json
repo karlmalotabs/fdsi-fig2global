@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-tennis",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Tennis Racket & Ball",
+  "description": "ATP, WTA, and Grand Slam tennis match, set, and live point betting.",
+  "tags": [
+    "tennis",
+    "racket",
+    "ball",
+    "atp",
+    "wta",
+    "grand-slam",
+    "wimbledon"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-tennis-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-tennis-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-tennis-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-tennis-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

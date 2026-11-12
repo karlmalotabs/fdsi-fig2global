@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-caret-right",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Caret Right",
+  "description": "Compact inline tree-view or nested menu indicator showing a collapsed branch.",
+  "tags": [
+    "caret",
+    "right",
+    "tree",
+    "branch",
+    "submenu",
+    "expand",
+    "inline"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-caret-right-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-caret-right-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-caret-right-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-caret-right-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

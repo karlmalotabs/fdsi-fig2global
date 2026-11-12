@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-weightlifting-barbell",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Weightlifting / Barbell",
+  "description": "Olympic weightlifting, powerlifting, and CrossFit strength competitions.",
+  "tags": [
+    "weightlifting",
+    "barbell",
+    "weights",
+    "plates",
+    "strength",
+    "gym",
+    "olympic"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-weightlifting-barbell-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-weightlifting-barbell-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-weightlifting-barbell-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-weightlifting-barbell-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

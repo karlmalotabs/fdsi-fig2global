@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-odds-format",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Odds Format / Margin %",
+  "description": "Switch between Decimal (2.50), Fractional (6/4), and American (+150) odds.",
+  "tags": [
+    "odds-format",
+    "percentage",
+    "margin",
+    "decimal",
+    "fractional",
+    "american"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-odds-format-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-odds-format-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-odds-format-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-odds-format-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

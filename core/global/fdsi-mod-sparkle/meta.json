@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-mod-sparkle",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Modifier — Sparkle",
+  "description": "Standalone amber 4-point sparkle new/promo modifier badge.",
+  "tags": [
+    "modifier",
+    "badge",
+    "sparkle",
+    "new",
+    "magic",
+    "promo"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-mod-sparkle-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-mod-sparkle-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-mod-sparkle-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-mod-sparkle-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-fullscreen",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Fullscreen / Expand View",
+  "description": "Expand live stream video or casino game canvas to full screen.",
+  "tags": [
+    "fullscreen",
+    "expand",
+    "maximize",
+    "enlarge",
+    "video",
+    "screen"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-fullscreen-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-fullscreen-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-fullscreen-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-fullscreen-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

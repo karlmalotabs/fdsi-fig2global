@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-motocross-bike",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Speedway / Motocross Dirt Bike",
+  "description": "Speedway GP, MXGP motocross, and supercross dirt-bike racing.",
+  "tags": [
+    "speedway",
+    "motocross",
+    "dirt-bike",
+    "motorcycle",
+    "mxgp",
+    "supercross"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-motocross-bike-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-motocross-bike-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-motocross-bike-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-motocross-bike-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

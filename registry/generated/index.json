@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-10-05T12:29:38.151Z",
+  "generatedAt": "2026-11-12T12:17:59.569Z",
   "brands": [
     {
       "brand": "core",
       "areas": [
         {
           "area": "bx",
-          "iconCount": 0,
-          "file": null
+          "iconCount": 25,
+          "file": "registry/generated/bx.icons.json"
         },
         {
           "area": "global",
-          "iconCount": 2,
+          "iconCount": 55,
           "file": "registry/generated/global.icons.json"
         },
         {
           "area": "gx",
-          "iconCount": 2,
+          "iconCount": 42,
           "file": "registry/generated/gx.icons.json"
         },
         {
           "area": "payments",
-          "iconCount": 0,
-          "file": null
+          "iconCount": 12,
+          "file": "registry/generated/payments.icons.json"
         },
         {
           "area": "sb",
-          "iconCount": 3,
+          "iconCount": 98,
           "file": "registry/generated/sb.icons.json"
         }
       ]

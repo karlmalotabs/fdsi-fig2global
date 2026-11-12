@@ -1,0 +1,45 @@
+{
+  "name": "fdsi-boxing-glove",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Boxing Glove",
+  "description": "Professional Championship Boxing bout winner, method of victory, and round betting.",
+  "tags": [
+    "boxing",
+    "glove",
+    "heavyweight",
+    "bout",
+    "knockout",
+    "ring",
+    "fight"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-boxing-glove-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-boxing-glove-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-boxing-glove-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-boxing-glove-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-builder-lego-unified",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Bet Builder — Isometric Lego Block",
+  "description": "Bet Builder single-block variant for multi-market match combinations.",
+  "tags": [
+    "bet-builder",
+    "lego",
+    "isometric",
+    "cube",
+    "same-game-parlay",
+    "custom"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-builder-lego-unified-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-builder-lego-unified-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-builder-lego-unified-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-builder-lego-unified-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

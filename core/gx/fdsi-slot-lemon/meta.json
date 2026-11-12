@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-slot-lemon",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Slot Lemon / Citrus Fruit",
+  "description": "Citrus lemon fruit symbol for classic fruit machines and juicy slots.",
+  "tags": [
+    "lemon",
+    "citrus",
+    "fruit",
+    "classic-slots",
+    "arcade",
+    "yellow"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-slot-lemon-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-slot-lemon-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-slot-lemon-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-slot-lemon-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

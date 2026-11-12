@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-copy",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "global",
+  "displayName": "Copy Betslip Code",
+  "description": "Copy betslip booking code, transaction ID, or referral link to clipboard.",
+  "tags": [
+    "copy",
+    "duplicate",
+    "clipboard",
+    "clone",
+    "code",
+    "paste"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-copy-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-copy-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-copy-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-copy-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

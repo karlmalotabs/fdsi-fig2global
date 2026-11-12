@@ -1,0 +1,44 @@
+{
+  "name": "fdsi-hi-lo",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "gx",
+  "displayName": "Hi-Lo Arcade Card Game",
+  "description": "Hi-Lo arcade card game predicting whether the next card is higher or lower.",
+  "tags": [
+    "hi-lo",
+    "high-low",
+    "up-down",
+    "predict",
+    "arcade",
+    "cards"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-hi-lo-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-hi-lo-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-hi-lo-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-hi-lo-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}
