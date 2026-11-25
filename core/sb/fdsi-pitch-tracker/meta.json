@@ -3,7 +3,7 @@
   "prefix": "fdsi",
   "brand": "core",
   "area": "sb",
-  "displayName": "Match Pitch View",
+  "displayName": "ww",
   "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
   "tags": [
     "pitch",
@@ -39,7 +39,13 @@
       "file": "fdsi-pitch-tracker-reg-color.svg"
     }
   ],
+  "figma": {
+    "nodeId": "1:6184",
+    "componentKey": null,
+    "lastSyncedHash": "f5cb764bcd75fba5",
+    "lastSyncedAt": "2026-11-25T15:01:59.361Z"
+  },
   "version": "1.0.0",
   "createdAt": "2026-11-12",
-  "updatedAt": "2026-11-12"
+  "updatedAt": "2026-11-25"
 }
