@@ -2,7 +2,7 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "sb",
-  "generatedAt": "2026-11-12T12:46:38.822Z",
+  "generatedAt": "2026-11-25T15:02:26.172Z",
   "icons": [
     {
       "name": "fdsi-acca-parlay",
@@ -2569,7 +2569,7 @@
     {
       "name": "fdsi-pitch-tracker",
       "path": "core/sb/fdsi-pitch-tracker",
-      "displayName": "Match Pitch View",
+      "displayName": "ww",
       "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
       "tags": [
         "pitch",
