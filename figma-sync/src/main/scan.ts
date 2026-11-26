@@ -141,6 +141,16 @@ export async function scanLibrary(
     });
     // The name is not part of the metadata hash, so a rename has to be raised separately.
     if (state === "in-sync" && renamed) state = "changed-in-figma";
+    // If a base icon ComponentSet is `in-sync` with GitHub, but hasn't yet had adjustable `Show Modifier` + `Modifier`
+    // Component Properties wired onto it, mark it `"changed-in-repo"` so the "Pull from repo" button is active and upgrades it in 1 click!
+    if (
+      state === "in-sync" &&
+      set !== null &&
+      !name.startsWith("fdsi-mod-") &&
+      set.getPluginData("fdsiModifiersWired") !== "true"
+    ) {
+      state = "changed-in-repo";
+    }
 
     const errors = row
       ? validateRowFields(row.fields, {

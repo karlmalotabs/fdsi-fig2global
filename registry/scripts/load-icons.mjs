@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 export const REPO_ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 
 // Top-level folders that are never brands.
-const NON_BRAND_DIRS = new Set(['assets', 'docs', 'registry', 'figma-sync', 'storybook', 'node_modules']);
+const NON_BRAND_DIRS = new Set(['assets', 'docs', 'registry', 'figma-sync', 'storybook', 'workbench', 'node_modules']);
 
 const NAME_RE = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*$/;
 const FILE_RE = /^fdsi-[a-z0-9]+(-[a-z0-9]+)*-(sm|reg|lg)-(outline|solid|duotone|color)\.svg$/;

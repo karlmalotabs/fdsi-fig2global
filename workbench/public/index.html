@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FDSI Iconography Workbench</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+  <!-- 1. TOP CORPORATE NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="brand-mark">F</span>
+      <div class="nav-breadcrumb">
+        <span>FDSI Iconography</span>
+        <span style="color:var(--border-strong)">/</span>
+        <span>Workbench</span>
+      </div>
+      <span class="badge-status"><span class="badge-dot"></span><span id="liveStatusText">Loading…</span></span>
+    </div>
+
+    <div class="nav-right">
+      <select id="themeFamilySelect" class="theme-select" data-tip="Select Theme (Light or Dark)">
+        <optgroup label="☀ Light Themes">
+          <option value="enterprise-light">☀ Enterprise Light</option>
+          <option value="warm-paper">☀ Warm Paper</option>
+        </optgroup>
+        <optgroup label="☾ Dark Themes">
+          <option value="enterprise-dark">☾ Enterprise Dark</option>
+          <option value="dracula">☾ Dracula</option>
+          <option value="catppuccin-mocha">☾ Catppuccin Mocha</option>
+          <option value="tokyo-night">☾ Tokyo Night</option>
+        </optgroup>
+      </select>
+      <button type="button" class="icon-btn" id="btnTheme" data-tip="Toggle Dark / Light Mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="btnKeylines" data-tip="Toggle Keyline Blueprints in Preview">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-dasharray="3 2"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="btnExportMeta" data-tip="Export Metadata Catalog (JSON)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="icon-btn active" id="btnToggleInspector" data-tip="Toggle Details Panel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="15" y1="4" x2="15" y2="20"/></svg>
+      </button>
+      <span class="nav-divider"></span>
+      <button type="button" class="btn-primary" id="btnPublishRepo">Publish to fdsi-fig2global</button>
+    </div>
+  </header>
+
+  <!-- 2. MAIN SHELL -->
+  <div id="appShell" class="app-shell">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- PANEL 1: Compact 3-Pill Workspace Switcher with Spring Sliding Thumb -->
+      <div class="sidebar-box">
+        <div class="sidebar-box-header"><span>Workspace</span></div>
+        <div class="ws-pill-3">
+          <div class="ws-sliding-thumb" id="wsThumb" style="transform:translateX(100%)"></div>
+          <button type="button" class="ws-pill-btn" data-ws="pipeline">Pipeline</button>
+          <button type="button" class="ws-pill-btn active" data-ws="library">Library</button>
+          <button type="button" class="ws-pill-btn" data-ws="overview">Overview</button>
+        </div>
+      </div>
+
+      <!-- PANEL 2: ATTENTION QUEUES + REAL PERSISTED HISTORY CURVE (Variant B) -->
+      <div class="sidebar-box">
+        <div class="sidebar-box-header">
+          <span>Completion Progress</span>
+          <span id="qHeaderActive" style="color:var(--success)">+222 Approved</span>
+        </div>
+
+        <div class="chart-stage">
+          <div class="chart-kpi-row">
+            <span class="chart-kpi-big"><span id="qReadyPct">100%</span> <span style="font-size:11px;font-weight:500;color:var(--text-muted)">Approved</span></span>
+            <span class="chart-kpi-sub" id="qSubLabel">222 icons active</span>
+          </div>
+          <!-- 100% Real-Data Persisted History SVG Chart (Green = Approved, Amber Dashed = CRS/Alias Mapped) -->
+          <svg width="100%" height="50" viewBox="0 0 220 50" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="gradApprovedReal" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#16a34a" stop-opacity="0.22"/>
+                <stop offset="100%" stop-color="#16a34a" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="12" x2="220" y2="12" stroke="var(--border)" stroke-dasharray="2 2" stroke-width="1"/>
+            <line x1="0" y1="32" x2="220" y2="32" stroke="var(--border)" stroke-dasharray="2 2" stroke-width="1"/>
+            <path id="qAreaApproved" d="" fill="url(#gradApprovedReal)"/>
+            <polyline id="qPolyApproved" points="" fill="none" stroke="var(--success)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline id="qPolyMapped" points="" fill="none" stroke="var(--warning)" stroke-width="1.9" stroke-dasharray="3 2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle id="qDotApproved" cx="212" cy="8" r="3" fill="var(--success)"/>
+            <circle id="qDotMapped" cx="212" cy="44" r="3" fill="var(--warning)"/>
+          </svg>
+        </div>
+
+        <div class="action-dock-5">
+          <button type="button" class="dock-icon-btn danger" id="qBtnTodo" data-tip="Needs Fix / TODO">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            <span class="cnt" id="qCntTodo">0</span>
+          </button>
+          <button type="button" class="dock-icon-btn purple" id="qBtnNew" data-tip="Newly Generated by Agent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg>
+            <span class="cnt" id="qCntNew">0</span>
+          </button>
+          <button type="button" class="dock-icon-btn ok" id="qBtnReview" data-tip="Ready for Review">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            <span class="cnt" id="qCntReview">0</span>
+          </button>
+          <button type="button" class="dock-icon-btn warn" id="qBtnNoCrs" data-tip="Missing CRS Key">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+            <span class="cnt" id="qCntNoCrs">0</span>
+          </button>
+          <button type="button" class="dock-icon-btn blue" id="qBtnNoAlias" data-tip="Missing Old Icon Alias">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            <span class="cnt" id="qCntNoAlias">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- PANEL 3: 2-Column Compact Category Chip Grid (3A) -->
+      <div class="sidebar-box" id="categoryFilterBox">
+        <div class="sidebar-box-header"><span>Categories</span><span>5</span></div>
+        <div class="cat-grid-2">
+          <button type="button" class="cat-chip active" data-area="all">
+            <span><span class="domain-dot" style="background:#64748b"></span>All</span>
+            <span class="count-pill" id="cnt-all">0</span>
+          </button>
+          <button type="button" class="cat-chip" data-area="common">
+            <span><span class="domain-dot" style="background:#0284c7"></span>Core</span>
+            <span class="count-pill" id="cnt-core">0</span>
+          </button>
+          <button type="button" class="cat-chip" data-area="sb">
+            <span><span class="domain-dot" style="background:#16a34a"></span>Sports</span>
+            <span class="count-pill" id="cnt-gaming">0</span>
+          </button>
+          <button type="button" class="cat-chip" data-area="gx">
+            <span><span class="domain-dot" style="background:#9333ea"></span>Casino</span>
+            <span class="count-pill" id="cnt-casino">0</span>
+          </button>
+          <button type="button" class="cat-chip" data-area="payments">
+            <span><span class="domain-dot" style="background:#d97706"></span>Payments</span>
+            <span class="count-pill" id="cnt-payments">0</span>
+          </button>
+          <button type="button" class="cat-chip" data-area="bx">
+            <span><span class="domain-dot" style="background:#e11d48"></span>Brand</span>
+            <span class="count-pill" id="cnt-brand">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- PANEL 4: 2D SHAPE CHARACTER PAD + VISUAL MODIFIER MATRIX -->
+      <div class="sidebar-box">
+        <div class="sidebar-box-header">
+          <span>Shape Character &amp; Modifiers</span>
+          <button type="button" class="icon-btn" id="btnResetPad" style="width:20px;height:20px" data-tip="Reset to Default (Soft · r:2.0 · b:0.20 · s:1.75)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          </button>
+        </div>
+
+        <div class="xy-pad-wrap" id="xyPad" data-tip="Drag puck in 2D: Horizontal = Roundness (r), Vertical = Bloat (b)">
+          <span class="xy-axis-lbl tl">Plump + Sharp</span>
+          <span class="xy-axis-lbl tr">Plump + Round</span>
+          <span class="xy-axis-lbl bl">Flat + Sharp</span>
+          <span class="xy-axis-lbl br">Flat + Round</span>
+
+          <span class="xy-anchor" data-preset="Sharp" data-nx="0.06" data-ny="0.90" data-r="0.0" data-b="0.0" style="left:6%;top:90%"></span>
+          <span class="xy-anchor" data-preset="Flat" data-nx="0.60" data-ny="0.90" data-r="1.8" data-b="0.0" style="left:60%;top:90%"></span>
+          <span class="xy-anchor snapped" data-preset="Soft Default" data-nx="0.66" data-ny="0.56" data-r="2.0" data-b="0.20" style="left:66%;top:56%"></span>
+          <span class="xy-anchor" data-preset="Plump" data-nx="0.86" data-ny="0.22" data-r="2.6" data-b="0.35" style="left:86%;top:22%"></span>
+
+          <div class="xy-puck" id="xyPuck">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <rect id="puckSquircle" x="4" y="4" width="16" height="16" rx="5"/>
+            </svg>
+          </div>
+          <span class="xy-snap-toast show" id="xySnapToast">★ Soft Default</span>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;font-size:10.5px;color:var(--text-muted);padding:0 2px">
+          <span id="readoutR">Roundness: <b style="color:var(--text-main)">2.0px</b></span>
+          <span id="readoutB">Bloat: <b style="color:var(--text-main)">0.20</b></span>
+        </div>
+
+        <!-- Tactile Stroke Weight Dots -->
+        <div class="stroke-dots-bar" id="strokeDotsBar">
+          <button type="button" class="stroke-dot-btn" data-s="1.5" data-tip="Thin Stroke (1.50px)">
+            <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="2.2" fill="currentColor"/></svg>1.5
+          </button>
+          <button type="button" class="stroke-dot-btn active" data-s="1.75" data-tip="Canonical Stroke (1.75px)">
+            <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="3.2" fill="currentColor"/></svg>1.75
+          </button>
+          <button type="button" class="stroke-dot-btn" data-s="2.0" data-tip="Bold Stroke (2.00px)">
+            <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="4.2" fill="currentColor"/></svg>2.0
+          </button>
+          <button type="button" class="stroke-dot-btn" data-s="2.25" data-tip="Heavy Stroke (2.25px)">
+            <svg width="12" height="12" viewBox="0 0 12 12"><circle cx="6" cy="6" r="5.1" fill="currentColor"/></svg>2.25
+          </button>
+        </div>
+
+        <!-- Duotone Accent Color Swatch Bar -->
+        <div class="sidebar-box-header" style="padding-top:6px">
+          <span>Duotone Accent Color</span>
+          <span id="duoHexLabel" class="mono" style="text-transform:none;font-size:10px;color:var(--text-muted)">#0969da</span>
+        </div>
+        <div class="duo-swatch-bar" id="duoSwatchBar">
+          <button type="button" class="duo-dot active" style="background:#0969da" data-duo="#0969da" data-tip="Ocean Blue (#0969da)"></button>
+          <button type="button" class="duo-dot" style="background:#16a34a" data-duo="#16a34a" data-tip="Emerald Green (#16a34a)"></button>
+          <button type="button" class="duo-dot" style="background:#d97706" data-duo="#d97706" data-tip="Amber Gold (#d97706)"></button>
+          <button type="button" class="duo-dot" style="background:#e11d48" data-duo="#e11d48" data-tip="Crimson Red (#e11d48)"></button>
+          <button type="button" class="duo-dot" style="background:#7c3aed" data-duo="#7c3aed" data-tip="Royal Violet (#7c3aed)"></button>
+          <button type="button" class="duo-dot" style="background:#0d9488" data-duo="#0d9488" data-tip="Teal (#0d9488)"></button>
+          <input type="color" id="duoCustomPicker" class="duo-picker-input" value="#0969da" data-tip="Custom Duotone Hex Color" />
+        </div>
+
+        <!-- Visual 11-Cell Colored SVG Modifier Matrix -->
+        <div class="sidebar-box-header" style="padding-top:6px">
+          <span>Corner Modifier Badge</span>
+          <span id="modActiveLabel" style="text-transform:none;font-weight:600;color:var(--primary)">None</span>
+        </div>
+        <div class="mod-badge-grid" id="sidebarModGrid"></div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER STAGE -->
+    <main class="main-stage">
+
+      <!-- SECTION 1: PIPELINE & QA KANBAN BOARD -->
+      <section id="sec-pipeline" class="section-page">
+        <div class="page-head">
+          <div>
+            <h1>Pipeline &amp; QA Board</h1>
+            <p>Review newly generated icons, track items needing fixes, and approve icons into the library.</p>
+          </div>
+          <div class="icon-actions-cluster">
+            <button type="button" class="icon-btn tone-ok active" id="btnApproveAllReady" style="width:auto;padding:0 10px;gap:6px;font-weight:600;font-size:12px" data-tip="Approve All Icons in Review">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Approve Ready</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="kanban-board" id="kanbanBoard"></div>
+      </section>
+
+      <!-- SECTION 2: ICON LIBRARY (Single-Row Locked Command Bar + Cards | Table) -->
+      <section id="sec-library" class="section-page active">
+        <div class="library-command-bar">
+          <div class="cmd-title-slot">
+            <strong id="libHeading" style="font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">All Categories</strong>
+            <span id="libCountPill" class="area-pill area-common">222</span>
+          </div>
+
+          <div class="cmd-filters-slot">
+            <input id="searchInput" class="search-input" type="search" placeholder="Search name, token, alias, CRS, tag… (⌘K)" />
+            <select id="stageFilter" class="cmd-select">
+              <option value="all">Stage: All</option>
+              <option value="approved">Approved Only</option>
+              <option value="new">Newly Added</option>
+              <option value="todo">Needs Fix</option>
+              <option value="review">In Review</option>
+            </select>
+            <select id="govFilter" class="cmd-select">
+              <option value="all">Mapping: All</option>
+              <option value="missing-crs">Missing CRS</option>
+              <option value="missing-alias">Missing Alias</option>
+              <option value="mapped">CRS Mapped</option>
+            </select>
+          </div>
+
+          <div class="view-pill" id="libViewTabs">
+            <button type="button" class="view-pill-btn active" data-lib-view="cards">Cards</button>
+            <button type="button" class="view-pill-btn" data-lib-view="table">Table</button>
+          </div>
+        </div>
+
+        <div id="libraryContent"></div>
+      </section>
+
+      <!-- SECTION 3: OVERVIEW & STATS -->
+      <section id="sec-overview" class="section-page">
+        <div class="page-head">
+          <div>
+            <h1>Overview &amp; 24px Contact Sheet</h1>
+            <p>Library health metrics and full-set 24×24 px contact strips across all 4 styles.</p>
+          </div>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-header"><span>Production Assets</span><span>v1.0.0</span></div>
+            <div class="kpi-value"><span id="kpiTotal">222</span> <span style="font-size:12px;font-weight:500;color:var(--text-muted)">icons · 928 SVGs</span></div>
+            <div class="progress-track"><div style="width:100%;background:var(--success)"></div></div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-header"><span>Pipeline Queue</span><span>Kanban</span></div>
+            <div class="kpi-value"><span id="kpiQueueSummary">0 Pending</span></div>
+            <div class="progress-track"><div style="width:100%;background:var(--primary)"></div></div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-header"><span>CRS Key Coverage</span><span id="kpiCrsPct">0%</span></div>
+            <div class="kpi-value" id="kpiCrsCount">0 / 222</div>
+            <div class="progress-track"><div id="kpiCrsBar" style="width:0%;background:var(--warning)"></div></div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-header"><span>Old Alias Coverage</span><span id="kpiAliasPct">0%</span></div>
+            <div class="kpi-value" id="kpiAliasCount">0 / 222</div>
+            <div class="progress-track"><div id="kpiAliasBar" style="width:0%;background:var(--primary)"></div></div>
+          </div>
+        </div>
+
+        <div class="contact-strip-card">
+          <div class="strip-row"><div class="strip-label">Outline</div><div id="ovStripOutline" class="strip-icons"></div></div>
+          <div class="strip-row"><div class="strip-label">Solid</div><div id="ovStripSolid" class="strip-icons"></div></div>
+          <div class="strip-row"><div class="strip-label">Duotone</div><div id="ovStripDuotone" class="strip-icons"></div></div>
+          <div class="strip-row"><div class="strip-label">Color</div><div id="ovStripColor" class="strip-icons"></div></div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- USER-FRIENDLY RIGHT INSPECTOR PANE -->
+    <aside class="inspector-pane">
+      <div class="inspector-header">
+        <div style="min-width:0">
+          <div style="display:flex;align-items:center;gap:8px">
+            <strong id="inspTitle" style="font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Select an Icon</strong>
+            <span id="inspAreaPill" class="area-pill area-common">Core UI</span>
+          </div>
+          <div style="font-size:11.5px;color:var(--text-muted);margin-top:1px">Selected Icon Details</div>
+        </div>
+        <div class="icon-actions-cluster" id="inspStageCluster">
+          <button type="button" class="icon-btn tone-purple" data-set-stage="new" data-tip="Mark as Newly Generated">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg>
+          </button>
+          <button type="button" class="icon-btn tone-danger" data-set-stage="todo" data-tip="Flag: Needs Fix (TODO)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </button>
+          <button type="button" class="icon-btn tone-warn" data-set-stage="review" data-tip="Send to Review">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+          <button type="button" class="icon-btn tone-ok" data-set-stage="approved" data-tip="Approve Icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="inspector-body">
+
+        <div class="dual-stage">
+          <div class="stage-box light">
+            <span class="stage-tag">Light Mode</span>
+            <div id="inspLightSvg"></div>
+          </div>
+          <div class="stage-box dark">
+            <span class="stage-tag">Dark Mode</span>
+            <div id="inspDarkSvg"></div>
+          </div>
+        </div>
+
+        <div class="quick-copy-row">
+          <button type="button" class="copy-style-card" data-copy-style="line" data-tip="Copy Outline SVG">
+            <span id="miniCopyLine"></span>
+            <span>Outline</span>
+          </button>
+          <button type="button" class="copy-style-card" data-copy-style="solid" data-tip="Copy Solid SVG">
+            <span id="miniCopySolid"></span>
+            <span>Solid</span>
+          </button>
+          <button type="button" class="copy-style-card" data-copy-style="duotone" data-tip="Copy Duotone SVG">
+            <span id="miniCopyDuotone"></span>
+            <span>Duotone</span>
+          </button>
+          <button type="button" class="copy-style-card" data-copy-style="color" data-tip="Copy Color SVG">
+            <span id="miniCopyColor"></span>
+            <span>Color</span>
+          </button>
+        </div>
+
+        <details class="insp-section" open>
+          <summary>Corner Badge (Modifier) Preview</summary>
+          <div class="insp-section-body">
+            <span class="field-hint" style="margin-top:0">Click any badge to preview the 1.8px corner cutout on this icon:</span>
+            <div class="mod-badge-grid" id="inspectorModGrid"></div>
+          </div>
+        </details>
+
+        <details class="insp-section" open>
+          <summary>Review Notes &amp; Feedback</summary>
+          <div class="insp-section-body">
+            <div class="friendly-field">
+              <label>What needs fixing?</label>
+              <textarea id="inspReworkNote" class="friendly-input" rows="2" placeholder="Write a plain-English note for the design agent…"></textarea>
+            </div>
+          </div>
+        </details>
+
+        <details class="insp-section" open>
+          <summary>Description &amp; Search Keywords</summary>
+          <div class="insp-section-body">
+            <div class="friendly-field">
+              <label>Icon Title (Display Name)</label>
+              <input id="inspNameInput" class="friendly-input" type="text" placeholder="e.g. Football / Soccer" />
+            </div>
+            <div class="friendly-field">
+              <label>Category</label>
+              <select id="inspArea" class="friendly-input">
+                <option value="common">Core UI</option>
+                <option value="sb">Sportsbook</option>
+                <option value="gx">Casino &amp; Gaming</option>
+                <option value="payments">Payments</option>
+                <option value="bx">Brand Experience</option>
+              </select>
+            </div>
+            <div class="friendly-field">
+              <label>Usage Description</label>
+              <textarea id="inspDesc" class="friendly-input" rows="2" placeholder="Plain-English description…"></textarea>
+            </div>
+            <div class="friendly-field">
+              <label>Search Keywords (comma separated)</label>
+              <input id="inspTags" class="friendly-input" type="text" placeholder="e.g. football, soccer, ball" />
+            </div>
+          </div>
+        </details>
+
+        <details class="insp-section" open>
+          <summary>System Mapping (CRS &amp; Old Name)</summary>
+          <div class="insp-section-body">
+            <div class="friendly-field">
+              <label>CRS Key</label>
+              <span class="field-hint">Links this icon to the Content Management System</span>
+              <input id="inspCrsKey" class="friendly-input" type="text" placeholder="e.g. CRS-SB-001" />
+            </div>
+            <div class="friendly-field">
+              <label>Replaces Old Icon Name (Alias)</label>
+              <span class="field-hint">Previous icon name that should redirect here</span>
+              <input id="inspAlias" class="friendly-input" type="text" placeholder="e.g. icon_soccer_ball" />
+            </div>
+          </div>
+        </details>
+
+        <details class="insp-section" id="devCodeDetails">
+          <summary>Developer &amp; Vector Code</summary>
+          <div class="insp-section-body">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:6px">
+              <input id="inspTokenId" class="friendly-input mono" style="font-size:11px;flex:1" readonly value="" />
+              <div class="icon-actions-cluster">
+                <button type="button" class="icon-btn" id="btnCopyFdsTag" data-tip="Copy <fds-icon> Web Component Tag">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                </button>
+                <button type="button" class="icon-btn tone-ok" id="btnSaveSource" data-tip="Save &amp; Hot-Reload Vector JS (⌘S)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+                </button>
+              </div>
+            </div>
+            <textarea id="inspCode" class="code-textarea" spellcheck="false"></textarea>
+          </div>
+        </details>
+
+      </div>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <div id="globalTooltip" class="portal-tooltip" role="tooltip"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

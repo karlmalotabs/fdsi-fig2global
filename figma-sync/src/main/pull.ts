@@ -2,7 +2,14 @@ import type { IconMeta, PluginSettings, VariantContent, FileChange } from "./typ
 import { GitHubClient } from "./github-client";
 import { hashIconVariants } from "./hashing";
 import { mapWithConcurrency } from "./concurrency";
-import { createIconComponentSet, getOrCreateTableContainer, updateIconComponentSet } from "./figma-nodes";
+import {
+  createIconComponentSet,
+  getOrCreateTableContainer,
+  hasUnwiredModifierSets,
+  readBases,
+  updateIconComponentSet,
+  wireAdjustableModifiersOnAllSets,
+} from "./figma-nodes";
 import { addIconRow, iconCellOf, placeIconSet, writeRowFields } from "./table";
 import { fieldsFromMeta } from "./contract";
 import type { SyncState } from "./contract";
@@ -35,7 +42,19 @@ export async function pullIcons(settings: PluginSettings, client: GitHubClient):
         break;
       case "new-in-repo":
       case "changed-in-repo":
-        if (entry.repo && entry.repo.status !== "deprecated" && entry.repo.status !== "draft") pending.push(entry);
+        if (entry.repo && entry.repo.status !== "deprecated" && entry.repo.status !== "draft") {
+          // If the set already exists and its GitHub hash already matches `repoBase` (meaning it was only marked `changed-in-repo`
+          // because `fdsiModifiersWired` wasn't set yet), upgrade its modifier properties locally without re-fetching 888 SVGs from GitHub!
+          const bases = entry.set ? readBases(entry.set) : { figmaBase: null, repoBase: null };
+          if (
+            entry.set &&
+            bases.repoBase === entry.repo.hash &&
+            entry.set.getPluginData("fdsiModifiersWired") !== "true"
+          ) {
+            break;
+          }
+          pending.push(entry);
+        }
         break;
       case "new-in-figma":
       case "draft":
@@ -60,7 +79,16 @@ export async function pullIcons(settings: PluginSettings, client: GitHubClient):
 
   const container = getOrCreateTableContainer();
   let touched = 0;
-  for (const { entry, meta, variants } of fetched) {
+
+  // Sort `fetched` so `fdsi-mod-*` standalone modifier sets are created/updated FIRST before base icons!
+  const sortedFetched = [...fetched].sort((a, b) => {
+    const aMod = (a.meta?.name ?? a.entry.name).startsWith("fdsi-mod-") ? 0 : 1;
+    const bMod = (b.meta?.name ?? b.entry.name).startsWith("fdsi-mod-") ? 0 : 1;
+    return aMod - bMod;
+  });
+
+  const touchedSets: { set: ComponentSetNode; repoHash: string }[] = [];
+  for (const { entry, meta, variants } of sortedFetched) {
     if (!meta) {
       result.errors.push({ icon: entry.name, error: `${entry.repo!.path}/meta.json not found` });
       continue;
@@ -89,8 +117,34 @@ export async function pullIcons(settings: PluginSettings, client: GitHubClient):
 
     if (entry.row) await writeRowFields(row, fields);
 
-    await recordBases(set, entry.repo!.hash);
+    touchedSets.push({ set, repoHash: entry.repo!.hash });
     touched++;
+  }
+
+  // Wire adjustable `Show Modifier` (BOOLEAN) + `Modifier` (INSTANCE_SWAP) + `Modifier Cutout Mask` onto all base icon sets
+  // (including existing sets that were already in Figma before modifiers were wired!):
+  if (touched > 0 || hasUnwiredModifierSets(settings.brand)) {
+    const unwiredBefore = new Set(
+      scan.entries
+        .filter((e) => e.set && !e.name.startsWith("fdsi-mod-") && e.set.getPluginData("fdsiModifiersWired") !== "true")
+        .map((e) => e.name)
+    );
+    const wired = wireAdjustableModifiersOnAllSets(settings.brand);
+    if (wired > 0) {
+      for (const entry of scan.entries) {
+        if (entry.set && entry.repo && unwiredBefore.has(entry.name) && !touchedSets.some((t) => t.set === entry.set)) {
+          await recordBases(entry.set, entry.repo.hash);
+          result.updated.push(entry.name);
+          const idx = result.skipped.indexOf(entry.name);
+          if (idx !== -1) result.skipped.splice(idx, 1);
+          touched++;
+        }
+      }
+    }
+  }
+
+  for (const { set, repoHash } of touchedSets) {
+    await recordBases(set, repoHash);
   }
 
   if (touched > 0) await scanLibrary(settings, client);

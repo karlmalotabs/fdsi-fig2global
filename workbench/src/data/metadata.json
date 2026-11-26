@@ -1,0 +1,4197 @@
+{
+  "ui-close-x": {
+    "slug": "close",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Dismiss modal, close drawer, clear input, or cancel current action.",
+    "tags": [
+      "close",
+      "dismiss",
+      "cancel",
+      "clear",
+      "remove",
+      "x",
+      "cross",
+      "modal"
+    ],
+    "id": "ui-close-x",
+    "name": "Close X (12×12 Optical Glyph)",
+    "order": 1,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-close-circle": {
+    "slug": "close-circle",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Enclosed circular close action for clearing search fields, tags, or toast alerts.",
+    "tags": [
+      "close",
+      "circle",
+      "clear",
+      "reset",
+      "cancel",
+      "remove",
+      "delete",
+      "chip"
+    ],
+    "id": "ui-close-circle",
+    "name": "Close Circle (Dismiss Badge)",
+    "order": 2,
+    "status": "approved",
+    "reworkNote": "Something is really wrong about it"
+  },
+  "ui-chevron-right": {
+    "slug": "chevron-right",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Navigate forward, drill down into a sub-menu, or advance to the next item.",
+    "tags": [
+      "chevron",
+      "right",
+      "next",
+      "forward",
+      "arrow",
+      "navigate",
+      "drilldown",
+      "breadcrumb"
+    ],
+    "id": "ui-chevron-right",
+    "name": "Chevron Right (Compact 12×12 Zone)",
+    "order": 3
+  },
+  "ui-chevron-down": {
+    "slug": "chevron-down",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Expand accordion section, open dropdown menu, or reveal additional options.",
+    "tags": [
+      "chevron",
+      "down",
+      "expand",
+      "open",
+      "dropdown",
+      "accordion",
+      "more"
+    ],
+    "id": "ui-chevron-down",
+    "name": "Chevron Down (Compact 12×12 Zone)",
+    "order": 4,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-chevron-double": {
+    "slug": "chevron-double-right",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Fast-forward, skip to last page, or collapse/expand a side navigation panel.",
+    "tags": [
+      "chevron",
+      "double",
+      "fast-forward",
+      "skip",
+      "last",
+      "sidebar",
+      "collapse"
+    ],
+    "id": "ui-chevron-double",
+    "name": "Double Chevrons (Compact 12×12 Zone)",
+    "order": 5,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-caret-down": {
+    "slug": "caret-down",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Compact inline dropdown indicator for select inputs, filters, and compact menus.",
+    "tags": [
+      "caret",
+      "down",
+      "select",
+      "dropdown",
+      "picker",
+      "menu",
+      "inline"
+    ],
+    "id": "ui-caret-down",
+    "name": "Caret Down (Micro 8×8 Zone)",
+    "order": 6,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-caret-right": {
+    "slug": "caret-right",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Compact inline tree-view or nested menu indicator showing a collapsed branch.",
+    "tags": [
+      "caret",
+      "right",
+      "tree",
+      "branch",
+      "submenu",
+      "expand",
+      "inline"
+    ],
+    "id": "ui-caret-right",
+    "name": "Caret Right (Micro 8×8 Zone)",
+    "order": 7,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-caret-sort": {
+    "slug": "caret-sort",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Bidirectional sort indicator for sortable table columns and list headers.",
+    "tags": [
+      "caret",
+      "sort",
+      "order",
+      "table",
+      "column",
+      "ascending",
+      "descending",
+      "filter"
+    ],
+    "id": "ui-caret-sort",
+    "name": "Caret Sort Up/Down (Compact Selector)",
+    "order": 8,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-nav-menu": {
+    "slug": "menu",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Open primary application navigation drawer or mobile hamburger menu.",
+    "tags": [
+      "menu",
+      "hamburger",
+      "navigation",
+      "drawer",
+      "bars",
+      "sidebar",
+      "list"
+    ],
+    "id": "ui-nav-menu",
+    "name": "Navigation Hamburger Menu (14×14 Zone)",
+    "order": 9,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-bento-grid": {
+    "slug": "grid",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Switch to grid layout view or open the app/lobby category launcher.",
+    "tags": [
+      "grid",
+      "bento",
+      "dashboard",
+      "tiles",
+      "view",
+      "layout",
+      "categories",
+      "lobby"
+    ],
+    "id": "ui-bento-grid",
+    "name": "Bento Category Grid (4 Padded Bloated Squares)",
+    "order": 10,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-nav-home": {
+    "slug": "home",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Return to the main lobby, home screen, or primary dashboard.",
+    "tags": [
+      "home",
+      "house",
+      "lobby",
+      "main",
+      "start",
+      "dashboard",
+      "navigation"
+    ],
+    "id": "ui-nav-home",
+    "name": "Navigation Home (5-Vertex House + Arch Door)",
+    "order": 11,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-search": {
+    "slug": "search",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Search events, teams, leagues, slot titles, or help articles.",
+    "tags": [
+      "search",
+      "find",
+      "magnifier",
+      "lookup",
+      "query",
+      "explore",
+      "filter"
+    ],
+    "id": "ui-search",
+    "name": "Search Magnifier (Squash-Style Inner Lens Window in Solid)",
+    "order": 12,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-log-in": {
+    "slug": "log-in",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Sign in to an existing player account or enter authenticated session.",
+    "tags": [
+      "login",
+      "sign-in",
+      "enter",
+      "auth",
+      "account",
+      "session",
+      "door",
+      "arrow"
+    ],
+    "id": "ui-log-in",
+    "name": "Log In (Organic Contour-Hugging Arrowhead Knockout — Zero Inner-Wing Bleed)",
+    "order": 13,
+    "status": "approved",
+    "reworkNote": ""
+  },
+  "ui-log-out": {
+    "slug": "log-out",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Sign out of the current player account and end the active session.",
+    "tags": [
+      "logout",
+      "sign-out",
+      "exit",
+      "leave",
+      "session",
+      "account",
+      "door"
+    ],
+    "id": "ui-log-out",
+    "name": "Log Out (Organic Contour-Hugging Arrow Knockout)",
+    "order": 14,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-shield-security": {
+    "slug": "shield-security",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Account security center, two-factor protection, and safe play guarantee.",
+    "tags": [
+      "shield",
+      "security",
+      "protection",
+      "safe",
+      "trust",
+      "check",
+      "guard"
+    ],
+    "id": "ui-shield-security",
+    "name": "Security Shield (6-Vertex Heraldic Hull + Check)",
+    "order": 15,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-padlock": {
+    "slug": "padlock",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Locked market, password security, or encrypted account data.",
+    "tags": [
+      "padlock",
+      "lock",
+      "security",
+      "password",
+      "encrypted",
+      "closed",
+      "private"
+    ],
+    "id": "ui-padlock",
+    "name": "Security Padlock (Bloated Body + edgeY Shackle)",
+    "order": 16,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-key": {
+    "slug": "key",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Password recovery, security credentials, or API/account access key.",
+    "tags": [
+      "key",
+      "password",
+      "access",
+      "unlock",
+      "credentials",
+      "security",
+      "auth"
+    ],
+    "id": "ui-key",
+    "name": "Passkey / Access Key (Circular Bow + Stepped Bit)",
+    "order": 17,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-settings-gear": {
+    "slug": "settings",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Open account preferences, odds format configuration, or application settings.",
+    "tags": [
+      "settings",
+      "gear",
+      "cog",
+      "preferences",
+      "options",
+      "configuration",
+      "system"
+    ],
+    "id": "ui-settings-gear",
+    "name": "Settings Gear (8-Lobed Concave-Bloat Contour + r=3.2 Core)",
+    "order": 18,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-filter-funnel": {
+    "slug": "filter",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Filter events, markets, transactions, or casino games by criteria.",
+    "tags": [
+      "filter",
+      "funnel",
+      "refine",
+      "narrow",
+      "sort",
+      "criteria",
+      "facets"
+    ],
+    "id": "ui-filter-funnel",
+    "name": "Filter Funnel (2 Separate Padded Solid Shapes — Upper Cone & Lower Spout, Like Crown)",
+    "order": 19,
+    "status": "todo",
+    "reworkNote": ""
+  },
+  "ui-tuning-sliders": {
+    "slug": "sliders",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Adjust granular filter parameters, bet ranges, or display controls.",
+    "tags": [
+      "sliders",
+      "tuning",
+      "controls",
+      "adjust",
+      "preferences",
+      "options",
+      "equalizer"
+    ],
+    "id": "ui-tuning-sliders",
+    "name": "Tuning Sliders (edgeX-Locked Tracks + Bloated Knobs)",
+    "order": 20
+  },
+  "bet-live-broadcast": {
+    "slug": "live-broadcast",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live in-play betting events currently underway with real-time odds.",
+    "tags": [
+      "live",
+      "in-play",
+      "broadcast",
+      "radio",
+      "waves",
+      "real-time",
+      "now"
+    ],
+    "id": "bet-live-broadcast",
+    "name": "Live In-Play (Bold Center Core + Symmetrical Broadcast Waves)",
+    "order": 21
+  },
+  "bet-live-stream": {
+    "slug": "live-stream",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Watch live match video stream directly inside the sportsbook event view.",
+    "tags": [
+      "live-stream",
+      "watch",
+      "video",
+      "tv",
+      "play",
+      "monitor",
+      "broadcast"
+    ],
+    "id": "bet-live-stream",
+    "name": "Live Stream / Watch & Bet (2 Separate Padded Shapes — Screen + Stand)",
+    "order": 22
+  },
+  "bet-slip-ticket": {
+    "slug": "slip-ticket",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Active betslip containing selected wagers, stakes, and potential payout.",
+    "tags": [
+      "betslip",
+      "ticket",
+      "wager",
+      "selections",
+      "coupon",
+      "stake",
+      "bet"
+    ],
+    "id": "bet-slip-ticket",
+    "name": "Betslip Ticket (2-Part Split Ticket + 3 Selection Rows)",
+    "order": 23
+  },
+  "bet-placed-check": {
+    "slug": "placed-check",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Confirmed and settled bet ticket in the player's open or settled bets.",
+    "tags": [
+      "placed-bet",
+      "settled",
+      "confirmed",
+      "ticket",
+      "check",
+      "wager",
+      "receipt"
+    ],
+    "id": "bet-placed-check",
+    "name": "Placed Bet (2-Part Split Ticket — Separate Upper Stub + Lower Body with Bold Checkmark)",
+    "order": 24
+  },
+  "bet-odds-boost": {
+    "slug": "odds-boost",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Enhanced odds price boost with higher payout on selected markets.",
+    "tags": [
+      "odds-boost",
+      "price-boost",
+      "enhanced",
+      "arrow",
+      "rocket",
+      "super-boost",
+      "value"
+    ],
+    "id": "bet-odds-boost",
+    "name": "Odds Boost (Thick 45° Diagonal Arrow + 2 Bold Separate Padded Trail Bars Behind)",
+    "order": 25
+  },
+  "bet-builder-lego": {
+    "slug": "builder-lego",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Bet Builder tool for combining multiple markets from the same match.",
+    "tags": [
+      "bet-builder",
+      "same-game-multi",
+      "lego",
+      "block",
+      "custom-bet",
+      "combine"
+    ],
+    "id": "bet-builder-lego",
+    "name": "Bet Builder — Isometric Lego Block (Variant A: Unsplit Solid Stud + 3 Cube Faces)",
+    "order": 26
+  },
+  "bet-builder-lego-unified": {
+    "slug": "builder-lego-unified",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Bet Builder single-block variant for multi-market match combinations.",
+    "tags": [
+      "bet-builder",
+      "lego",
+      "isometric",
+      "cube",
+      "same-game-parlay",
+      "custom"
+    ],
+    "id": "bet-builder-lego-unified",
+    "name": "Bet Builder — Isometric Lego Block (Variant B: Unified Crown-Stud + 2 Side Faces — Zero Top Seam)",
+    "order": 27
+  },
+  "bet-cash-out": {
+    "slug": "cash-out",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Settle an open bet early for an instant guaranteed real-money return.",
+    "tags": [
+      "cash-out",
+      "early-settlement",
+      "return",
+      "banknote",
+      "payout",
+      "instant",
+      "settle"
+    ],
+    "id": "bet-cash-out",
+    "name": "Cash Out (2 Non-Overlapping Shapes — Banknote Card Above + Bold Return Arrow Below)",
+    "order": 28
+  },
+  "bet-early-payout": {
+    "slug": "early-payout",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Instant automatic payout when your team goes 2 goals ahead (2-Up Early Payout).",
+    "tags": [
+      "early-payout",
+      "instant-win",
+      "2-up",
+      "lightning",
+      "settled",
+      "fast-payout"
+    ],
+    "id": "bet-early-payout",
+    "name": "Early Payout / Instant Settlement (Circle + Filled Lightning Bolt in Line)",
+    "order": 29
+  },
+  "bet-acca-parlay": {
+    "slug": "acca-parlay",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Accumulator (Acca) and multi-leg parlay bets across multiple events.",
+    "tags": [
+      "acca",
+      "accumulator",
+      "parlay",
+      "multi",
+      "combo",
+      "trend",
+      "legs"
+    ],
+    "id": "bet-acca-parlay",
+    "name": "Accumulator / Parlay (2-Step Rising Trend Arrow + 2 Anchor Nodes)",
+    "order": 30
+  },
+  "bet-free-bet-gift": {
+    "slug": "free-bet-gift",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Free bet token, welcome bonus package, or promotional gift drop.",
+    "tags": [
+      "gift",
+      "free-bet",
+      "bonus",
+      "present",
+      "reward",
+      "promotion",
+      "welcome"
+    ],
+    "id": "bet-free-bet-gift",
+    "name": "Free Bet / Bonus Gift Box (4 Separate Padded Quarter-Panels + Bold Bow)",
+    "order": 31
+  },
+  "bet-stats-bars": {
+    "slug": "stats-bars",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Team form guide, head-to-head statistics, and league standings analytics.",
+    "tags": [
+      "stats",
+      "statistics",
+      "analytics",
+      "chart",
+      "bars",
+      "form",
+      "standings"
+    ],
+    "id": "bet-stats-bars",
+    "name": "Match Stats / Form Guide (3 Separate Padded Ascending Bar Columns)",
+    "order": 32
+  },
+  "bet-pitch-tracker": {
+    "slug": "pitch-tracker",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
+    "tags": [
+      "pitch",
+      "field",
+      "tracker",
+      "visualizer",
+      "stadium",
+      "football",
+      "court"
+    ],
+    "id": "bet-pitch-tracker",
+    "name": "Match Pitch View (2 Separate Padded Pitch Halves + Center Circle)",
+    "order": 33
+  },
+  "pack-a-01-user-account": {
+    "slug": "user",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Open player profile, account overview, or personal details.",
+    "tags": [
+      "user",
+      "profile",
+      "account",
+      "avatar",
+      "person",
+      "member",
+      "player"
+    ],
+    "id": "pack-a-01-user-account",
+    "name": "#1. User Profile / Account (2 Separate Padded Shapes — Head Circle + Shoulder Arch)",
+    "order": 34
+  },
+  "pack-a-02-wallet-balance": {
+    "slug": "wallet",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "View player wallet balance, real-money and bonus funds, and cashier overview.",
+    "tags": [
+      "wallet",
+      "balance",
+      "cashier",
+      "funds",
+      "money",
+      "account",
+      "bankroll"
+    ],
+    "id": "pack-a-02-wallet-balance",
+    "name": "#2. Wallet / Balance (Bloated Wallet Body + Separate Padded Clasp Tab)",
+    "order": 35
+  },
+  "pack-a-03-wallet-deposit": {
+    "slug": "deposit",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Top up player wallet balance via instant deposit methods.",
+    "tags": [
+      "deposit",
+      "top-up",
+      "add-funds",
+      "pay-in",
+      "wallet",
+      "cashier",
+      "credit"
+    ],
+    "id": "pack-a-03-wallet-deposit",
+    "name": "#3. Deposit / Top-Up (2 Non-Overlapping Shapes — Downward Arrow + Bloated Tray)",
+    "order": 36
+  },
+  "pack-a-04-wallet-withdraw": {
+    "slug": "withdraw",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Withdraw winnings from the player wallet to a linked bank or card.",
+    "tags": [
+      "withdraw",
+      "payout",
+      "cashout",
+      "transfer",
+      "winnings",
+      "wallet",
+      "bank"
+    ],
+    "id": "pack-a-04-wallet-withdraw",
+    "name": "#4. Withdrawal / Payout (2 Non-Overlapping Shapes — Upward Arrow + Bloated Tray)",
+    "order": 37
+  },
+  "pack-a-05-payment-card": {
+    "slug": "payment-card",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Pay or withdraw using Visa, Mastercard, or debit/credit cards.",
+    "tags": [
+      "card",
+      "credit-card",
+      "debit-card",
+      "visa",
+      "mastercard",
+      "payment",
+      "emv"
+    ],
+    "id": "pack-a-05-payment-card",
+    "name": "#5. Credit / Debit Card (2-Part Split Card — Upper Band + Lower Body with Chip, Like Betslip)",
+    "order": 38
+  },
+  "pack-a-06-bank-building": {
+    "slug": "bank-transfer",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Direct bank wire, Open Banking, or instant ACH/SEPA bank transfer.",
+    "tags": [
+      "bank",
+      "wire",
+      "transfer",
+      "sepa",
+      "ach",
+      "building",
+      "institution",
+      "iban"
+    ],
+    "id": "pack-a-06-bank-building",
+    "name": "#6. Bank / Wire Transfer (5 Separate Padded Shapes — Roof Pediment + 3 Pillars + Plinth)",
+    "order": 39
+  },
+  "pack-a-07-qr-scan": {
+    "slug": "qr-code",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Scan QR code for instant mobile payment, Pix, Swish, or retail ticket check.",
+    "tags": [
+      "qr",
+      "scan",
+      "barcode",
+      "mobile-pay",
+      "pix",
+      "instant",
+      "camera"
+    ],
+    "id": "pack-a-07-qr-scan",
+    "name": "#7. QR Code / Fast Deposit (3 Finder Modules + 4th Data Cross)",
+    "order": 40
+  },
+  "pack-a-08-receipt-statement": {
+    "slug": "receipt",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "View itemized transaction statement, payment receipt, or account ledger.",
+    "tags": [
+      "receipt",
+      "statement",
+      "invoice",
+      "history",
+      "ledger",
+      "transaction",
+      "bill"
+    ],
+    "id": "pack-a-08-receipt-statement",
+    "name": "#8. Transaction Receipt / Statement (Bloated Ticket + 3 Sawtooth Bottom Peaks + 2 Rows)",
+    "order": 41
+  },
+  "pack-a-09-eye-visible": {
+    "slug": "eye-visible",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Show wallet balance, reveal password, or unhide sensitive account data.",
+    "tags": [
+      "eye",
+      "show",
+      "visible",
+      "reveal",
+      "view",
+      "balance",
+      "password",
+      "privacy"
+    ],
+    "id": "pack-a-09-eye-visible",
+    "name": "#9. Eye / Show Balance (Symmetric Intersecting Ogive Arcs + Pupil Ring)",
+    "order": 42
+  },
+  "pack-a-10-eye-hidden": {
+    "slug": "eye-hidden",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Hide wallet balance, mask password input, or enable privacy mode.",
+    "tags": [
+      "eye",
+      "hide",
+      "hidden",
+      "mask",
+      "invisible",
+      "private",
+      "balance",
+      "password"
+    ],
+    "id": "pack-a-10-eye-hidden",
+    "name": "#10. Eye Off / Hide Balance (Ogive Eye + Bold 45° Privacy Slash with Contour Knockout)",
+    "order": 43
+  },
+  "pack-a-11-heart-favorite": {
+    "slug": "heart",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Save a sport, team, league, or casino game to player favorites.",
+    "tags": [
+      "heart",
+      "favorite",
+      "like",
+      "love",
+      "save",
+      "wishlist",
+      "preferred"
+    ],
+    "id": "pack-a-11-heart-favorite",
+    "name": "#11. Heart / Favorite (Exact 2-Circle Lobe Tangents to Rounded Apex)",
+    "order": 44
+  },
+  "pack-a-12-bookmark-ribbon": {
+    "slug": "bookmark",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Bookmark a match, market, or promotion for quick access later.",
+    "tags": [
+      "bookmark",
+      "save",
+      "ribbon",
+      "pin",
+      "watch",
+      "saved",
+      "later"
+    ],
+    "id": "pack-a-12-bookmark-ribbon",
+    "name": "#12. Bookmark / Saved Event (Bloated Vertical Ribbon + Inverted V-Tail)",
+    "order": 45
+  },
+  "pack-a-13-share-nodes": {
+    "slug": "share",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Share a betslip, referral link, or big win across social channels.",
+    "tags": [
+      "share",
+      "send",
+      "social",
+      "network",
+      "nodes",
+      "export",
+      "referral"
+    ],
+    "id": "pack-a-13-share-nodes",
+    "name": "#13. Share / Send Betslip (3 Connected Nodes + Exact Circle-Edge Link Rays)",
+    "order": 46
+  },
+  "pack-a-14-copy-duplicate": {
+    "slug": "copy",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Copy betslip booking code, transaction ID, or referral link to clipboard.",
+    "tags": [
+      "copy",
+      "duplicate",
+      "clipboard",
+      "clone",
+      "code",
+      "paste"
+    ],
+    "id": "pack-a-14-copy-duplicate",
+    "name": "#14. Copy Betslip Code (2 Separate Padded Shapes — Front Card + Back L-Frame)",
+    "order": 47
+  },
+  "pack-a-15-trash-delete": {
+    "slug": "trash",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Remove a selection from the betslip or clear all saved items.",
+    "tags": [
+      "trash",
+      "delete",
+      "remove",
+      "bin",
+      "clear",
+      "discard",
+      "garbage"
+    ],
+    "id": "pack-a-15-trash-delete",
+    "name": "#15. Trash / Clear Betslip (2 Separate Padded Shapes — Lid Bar + Tapered Bin)",
+    "order": 48
+  },
+  "pack-a-16-calendar-schedule": {
+    "slug": "calendar",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Browse upcoming fixture schedules, match dates, or transaction history by date.",
+    "tags": [
+      "calendar",
+      "date",
+      "schedule",
+      "fixtures",
+      "events",
+      "day",
+      "month",
+      "planner"
+    ],
+    "id": "pack-a-16-calendar-schedule",
+    "name": "#16. Calendar / Match Schedule (2-Part Split Card — Header Bar with Rings + Grid Body)",
+    "order": 49
+  },
+  "pack-a-17-clock-time": {
+    "slug": "clock",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Display match kick-off time, countdown, or recent activity.",
+    "tags": [
+      "clock",
+      "time",
+      "schedule",
+      "kickoff",
+      "countdown",
+      "hour",
+      "recent"
+    ],
+    "id": "pack-a-17-clock-time",
+    "name": "#17. Clock / Kick-Off Time (Exact 9.0px Dial + 12:20 Hands)",
+    "order": 50
+  },
+  "pack-a-18-rg-hourglass": {
+    "slug": "rg-timeout-hourglass",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Responsible Gaming short time-out or cooling-off break timer.",
+    "tags": [
+      "responsible-gaming",
+      "rg",
+      "timeout",
+      "hourglass",
+      "cooling-off",
+      "break",
+      "timer",
+      "limit"
+    ],
+    "id": "pack-a-18-rg-hourglass",
+    "name": "#18. Responsible Gaming — Time-Out Hourglass (2 Separate Padded Glass Bulbs + Frame Caps)",
+    "order": 51
+  },
+  "pack-a-19-support-headset": {
+    "slug": "support-headset",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "24/7 customer support, live chat agent, and player helpdesk.",
+    "tags": [
+      "support",
+      "headset",
+      "helpdesk",
+      "customer-service",
+      "live-chat",
+      "agent",
+      "contact"
+    ],
+    "id": "pack-a-19-support-headset",
+    "name": "#19. Customer Support / Live Chat Headset (Headband Arc + 2 Padded Earcups + Mic Boom)",
+    "order": 52
+  },
+  "pack-a-20-help-question": {
+    "slug": "help-faq",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Help center, frequently asked questions (FAQ), and betting guides.",
+    "tags": [
+      "help",
+      "question",
+      "faq",
+      "support",
+      "guide",
+      "how-to",
+      "assistance"
+    ],
+    "id": "pack-a-20-help-question",
+    "name": "#20. Help / FAQ (Exact 9.0px Circle + Geometric Question Hook & Dot)",
+    "order": 53
+  },
+  "pack-b-21-american-football": {
+    "slug": "american-football",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "NFL, NCAA College Football, and CFL gridiron betting markets.",
+    "tags": [
+      "american-football",
+      "nfl",
+      "ncaa",
+      "gridiron",
+      "super-bowl",
+      "pigskin"
+    ],
+    "id": "pack-b-21-american-football",
+    "name": "#21. American Football / NFL (Full-Width Solid Matching Outline 1:1!)",
+    "order": 54
+  },
+  "pack-b-22-rugby-ball": {
+    "slug": "rugby-ball",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Rugby Union, Rugby League, Six Nations, and NRL betting markets.",
+    "tags": [
+      "rugby",
+      "union",
+      "league",
+      "six-nations",
+      "nrl",
+      "oval-ball"
+    ],
+    "id": "pack-b-22-rugby-ball",
+    "name": "#22. Rugby Ball (45° Rounded Oval Hull + Longitudinal Panel Seams)",
+    "order": 55
+  },
+  "pack-b-23-baseball-mlb": {
+    "slug": "baseball-mlb",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "MLB, NPB, and international baseball moneyline, run line, and total markets.",
+    "tags": [
+      "baseball",
+      "mlb",
+      "ball",
+      "stitches",
+      "home-run",
+      "inning",
+      "pitcher"
+    ],
+    "id": "pack-b-23-baseball-mlb",
+    "name": "#23. Baseball / MLB (R=9.0 Sphere + 2 Symmetric C-Curve Stitching Seams)",
+    "order": 56
+  },
+  "pack-b-24-cricket-bat": {
+    "slug": "cricket-bat",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "International Test, ODI, T20, and IPL cricket bat-and-ball markets.",
+    "tags": [
+      "cricket",
+      "bat",
+      "ball",
+      "ipl",
+      "t20",
+      "ashes",
+      "wicket"
+    ],
+    "id": "pack-b-24-cricket-bat",
+    "name": "#24. Cricket Bat & Ball (3 Separate Padded Shapes — Blade + Cane Handle + Ball)",
+    "order": 57
+  },
+  "pack-b-25-ice-hockey": {
+    "slug": "ice-hockey",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "NHL, KHL, and World Championship ice hockey stick and puck markets.",
+    "tags": [
+      "ice-hockey",
+      "nhl",
+      "stick",
+      "puck",
+      "rink",
+      "winter-sports"
+    ],
+    "id": "pack-b-25-ice-hockey",
+    "name": "#25. Ice Hockey Stick & Puck (2 Separate Padded Shapes — L-Blade Stick + Flat Puck)",
+    "order": 58
+  },
+  "pack-b-26-golf-pin": {
+    "slug": "golf-pin",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "PGA Tour, Majors, and Ryder Cup golf outright and 3-ball markets.",
+    "tags": [
+      "golf",
+      "pin",
+      "flag",
+      "green",
+      "hole",
+      "pga",
+      "masters"
+    ],
+    "id": "pack-b-26-golf-pin",
+    "name": "#26. Golf Flag & Putting Green (Triangular Pennant + Pin + Putting Hole Arc)",
+    "order": 59
+  },
+  "pack-b-27-table-tennis": {
+    "slug": "table-tennis",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "24/7 international table tennis and ping-pong set and point markets.",
+    "tags": [
+      "table-tennis",
+      "ping-pong",
+      "paddle",
+      "racket",
+      "ball",
+      "ittf"
+    ],
+    "id": "pack-b-27-table-tennis",
+    "name": "#27. Table Tennis / Ping Pong (3 Separate Padded Shapes — Paddle Head + Handle + Ball)",
+    "order": 60
+  },
+  "pack-b-28-badminton-shuttle": {
+    "slug": "badminton-shuttle",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "BWF World Tour and Olympic badminton match and handicap markets.",
+    "tags": [
+      "badminton",
+      "shuttlecock",
+      "birdie",
+      "feathers",
+      "racket-sports"
+    ],
+    "id": "pack-b-28-badminton-shuttle",
+    "name": "#28. Badminton Shuttlecock (45° Angled — Cork Nose + Flared Feather Skirt)",
+    "order": 61
+  },
+  "pack-b-29-pool-eight-ball": {
+    "slug": "pool-eight-ball",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "World Snooker Tour, 8-Ball, and 9-Ball pool frame and match markets.",
+    "tags": [
+      "pool",
+      "8-ball",
+      "snooker",
+      "billiards",
+      "cue-sports",
+      "black-ball"
+    ],
+    "id": "pack-b-29-pool-eight-ball",
+    "name": "#29. 8-Ball Pool / Snooker (Zero Overlap Clipping on Solid Figure-8!)",
+    "order": 62
+  },
+  "pack-b-30-darts-target": {
+    "slug": "darts-target",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "PDC World Darts Championship and Premier League 180s and match markets.",
+    "tags": [
+      "darts",
+      "pdc",
+      "steel-tip",
+      "flight",
+      "bullseye",
+      "180",
+      "oche"
+    ],
+    "id": "pack-b-30-darts-target",
+    "name": "#30. Competition Dart (45° Steel-Tip Dart — Tail Flight Fins + Torpedo Barrel + Needle Point)",
+    "order": 63
+  },
+  "pack-b-31-volleyball-panel": {
+    "slug": "volleyball-panel",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Indoor FIVB and league volleyball set, point, and outright markets.",
+    "tags": [
+      "volleyball",
+      "ball",
+      "fivb",
+      "indoor",
+      "sets",
+      "team-sports"
+    ],
+    "id": "pack-b-31-volleyball-panel",
+    "name": "#31. Volleyball (3-Way 120° Curved Panel Seams + 3 Padded Sector Faces in Solid)",
+    "order": 64
+  },
+  "pack-b-32-handball-throw": {
+    "slug": "handball-throw",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "European EHF Champions League and World Championship team handball.",
+    "tags": [
+      "handball",
+      "throw",
+      "athlete",
+      "ehf",
+      "indoor",
+      "team-sports"
+    ],
+    "id": "pack-b-32-handball-throw",
+    "name": "#32. Handball / Throw Athlete (Precision Stick-Figure Grammar — Hollow Head + Tapered Torso + Ball)",
+    "order": 65
+  },
+  "pack-b-33-mma-octagon": {
+    "slug": "mma-octagon",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "UFC, Bellator, and PFL Mixed Martial Arts (MMA) fight winner and round markets.",
+    "tags": [
+      "mma",
+      "ufc",
+      "glove",
+      "fight",
+      "combat",
+      "cage",
+      "grappling",
+      "knockout"
+    ],
+    "id": "pack-b-33-mma-octagon",
+    "name": "#33. MMA Open-Finger Fight Glove (100% Separate Padded Shapes — Zero Knockouts!)",
+    "order": 66
+  },
+  "pack-b-34-martial-arts-belt": {
+    "slug": "martial-arts-belt",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Judo, Karate, Taekwondo, and Brazilian Jiu-Jitsu (BJJ) combat sports.",
+    "tags": [
+      "martial-arts",
+      "judo",
+      "karate",
+      "bjj",
+      "black-belt",
+      "combat",
+      "olympic"
+    ],
+    "id": "pack-b-34-martial-arts-belt",
+    "name": "#34. Judo / Karate / BJJ Belt (Dynamic 2-Tone Color: Dark Crimson Center Knot + Lighter Red Sides!)",
+    "order": 67
+  },
+  "pack-b-35-archery-bow": {
+    "slug": "archery-bow",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic recurve and compound archery head-to-head and medal markets.",
+    "tags": [
+      "archery",
+      "bow",
+      "arrow",
+      "recurve",
+      "target",
+      "olympic"
+    ],
+    "id": "pack-b-35-archery-bow",
+    "name": "#35. Recurve Archery Bow & Broadhead Arrow (45° Drawn V-String + Recurve Limbs + Broadhead)",
+    "order": 68
+  },
+  "pack-b-36-bowling-strike": {
+    "slug": "bowling-strike",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "PBA ten-pin bowling strike and tournament outright markets.",
+    "tags": [
+      "bowling",
+      "ten-pin",
+      "pin",
+      "ball",
+      "strike",
+      "alley"
+    ],
+    "id": "pack-b-36-bowling-strike",
+    "name": "#36. Bowling Pin & Ball (Larger Bold r=1.05 Finger Holes in Line & Solid!)",
+    "order": 69
+  },
+  "pack-b-37-curling-stone": {
+    "slug": "curling-stone",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Winter Olympic and World Championship curling end and match markets.",
+    "tags": [
+      "curling",
+      "stone",
+      "granite",
+      "ice",
+      "winter-sports",
+      "olympic"
+    ],
+    "id": "pack-b-37-curling-stone",
+    "name": "#37. Curling Stone (2-Part Split Granite Body + L-Shaped Top Handle)",
+    "order": 70
+  },
+  "pack-b-38-surfing-wave": {
+    "slug": "surfing-wave",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "WSL World Surf League and Olympic surfing heat and event markets.",
+    "tags": [
+      "surfing",
+      "surfboard",
+      "wave",
+      "ocean",
+      "water-sports",
+      "wsl"
+    ],
+    "id": "pack-b-38-surfing-wave",
+    "name": "#38. Surfing / Water Sports (Zero Wave Bleed — Clean Masked Surfboard + 2 Wave Crests)",
+    "order": 71
+  },
+  "pack-b-39-weightlifting-barbell": {
+    "slug": "weightlifting-barbell",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic weightlifting, powerlifting, and CrossFit strength competitions.",
+    "tags": [
+      "weightlifting",
+      "barbell",
+      "weights",
+      "plates",
+      "strength",
+      "gym",
+      "olympic"
+    ],
+    "id": "pack-b-39-weightlifting-barbell",
+    "name": "#39. Weightlifting / Barbell (4 Separate Padded Weight Plates + Center Bar)",
+    "order": 72
+  },
+  "pack-b-40-aussie-rules-posts": {
+    "slug": "aussie-rules-posts",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Australian Rules Football (AFL) goalposts for match and margin betting.",
+    "tags": [
+      "aussie-rules",
+      "afl",
+      "goalposts",
+      "footy",
+      "australia",
+      "behind-posts"
+    ],
+    "id": "pack-b-40-aussie-rules-posts",
+    "name": "#40. Australian Rules / Rugby H-Posts (H-Goalposts + Outer Behind Posts + Turf Line)",
+    "order": 73
+  },
+  "pack-c-41-trophy-cup": {
+    "slug": "trophy-cup",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Championship outrights, tournament winners, and league futures markets.",
+    "tags": [
+      "trophy",
+      "cup",
+      "champion",
+      "outrights",
+      "futures",
+      "winner",
+      "league"
+    ],
+    "id": "pack-c-41-trophy-cup",
+    "name": "#41. Championship Trophy Cup (2 Separate Padded Shapes — U-Chalice + Pedestal Base)",
+    "order": 74
+  },
+  "pack-c-42-winner-medal": {
+    "slug": "winner-medal",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Podium finish, gold medal winner, and top-3 placement markets.",
+    "tags": [
+      "medal",
+      "gold",
+      "winner",
+      "podium",
+      "first-place",
+      "olympic",
+      "award"
+    ],
+    "id": "pack-c-42-winner-medal",
+    "name": "#42. Gold Medal / Podium Winner (3 Separate Padded Shapes — 2 Ribbon Flaps + Star Medallion)",
+    "order": 75
+  },
+  "pack-c-43-referee-whistle": {
+    "slug": "referee-whistle",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Match officiating markets, fouls committed, and referee stoppage specials.",
+    "tags": [
+      "whistle",
+      "referee",
+      "umpire",
+      "foul",
+      "official",
+      "stoppage"
+    ],
+    "id": "pack-c-43-referee-whistle",
+    "name": "#43. Referee Whistle (Exact Circle Pea-Chamber + Tangent Mouthpiece + Sound Ticks)",
+    "order": 76
+  },
+  "pack-c-44-booking-cards": {
+    "slug": "booking-cards",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Total booking points, yellow/red cards shown, and player to be carded markets.",
+    "tags": [
+      "cards",
+      "yellow-card",
+      "red-card",
+      "booking",
+      "sending-off",
+      "referee",
+      "foul"
+    ],
+    "id": "pack-c-44-booking-cards",
+    "name": "#44. Yellow / Red Booking Cards (Parallel Tilted Portrait Cards — Uniform 3.3px Back Card Band, Zero Slivers!)",
+    "order": 77
+  },
+  "pack-c-45-corner-flag": {
+    "slug": "corner-flag",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Total match corners, corner handicap, and race-to-X corners markets.",
+    "tags": [
+      "corner",
+      "flag",
+      "corner-kick",
+      "set-piece",
+      "football",
+      "touchline"
+    ],
+    "id": "pack-c-45-corner-flag",
+    "name": "#45. Corner Kick Flag (Waving Triangular Pennant + Slanted Pole + Touchline Base)",
+    "order": 78
+  },
+  "pack-c-46-extra-time-watch": {
+    "slug": "extra-time-watch",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Injury time, stoppage minutes added, and extra-time qualification markets.",
+    "tags": [
+      "extra-time",
+      "injury-time",
+      "stoppage",
+      "stopwatch",
+      "overtime",
+      "90-plus"
+    ],
+    "id": "pack-c-46-extra-time-watch",
+    "name": "#46. Injury / Extra Time (+90' Stopwatch + Bold Plus Cross Inside)",
+    "order": 79
+  },
+  "pack-c-47-match-substitution": {
+    "slug": "match-substitution",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Player substitution markets and Super Sub rollover (bet carries over to sub).",
+    "tags": [
+      "substitution",
+      "sub",
+      "super-sub",
+      "player-on",
+      "player-off",
+      "arrows"
+    ],
+    "id": "pack-c-47-match-substitution",
+    "name": "#47. Player Substitution (Plump Rounded Solid Arrows — Soft Filleted Tips & Wings)",
+    "order": 80
+  },
+  "pack-c-48-var-screen": {
+    "slug": "var-screen",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Video Assistant Referee (VAR) review and overturned decision specials.",
+    "tags": [
+      "var",
+      "video-referee",
+      "review",
+      "monitor",
+      "screen",
+      "decision"
+    ],
+    "id": "pack-c-48-var-screen",
+    "name": "#48. VAR / Video Assistant Referee (Bloated Monitor + Corner Frame Brackets + Stand)",
+    "order": 81
+  },
+  "pack-c-49-goal-posts": {
+    "slug": "goal-posts",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Total goals, over/under goals, both teams to score (BTTS), and correct score.",
+    "tags": [
+      "goal",
+      "net",
+      "score",
+      "btts",
+      "over-under",
+      "goalposts",
+      "football"
+    ],
+    "id": "pack-c-49-goal-posts",
+    "name": "#49. 3D Football Goal Net / Score (Solid Matches Line 1:1 — Pure Linear Wireframe Net)",
+    "order": 82
+  },
+  "pack-c-50-team-jersey": {
+    "slug": "team-jersey",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Player props, anytime goalscorer, shots on target, and assists markets.",
+    "tags": [
+      "jersey",
+      "shirt",
+      "kit",
+      "player-props",
+      "goalscorer",
+      "squad",
+      "number"
+    ],
+    "id": "pack-c-50-team-jersey",
+    "name": "#50. Player Props / Team Kit Jersey (3 Separate Padded Shapes — Left Sleeve + Torso + Right Sleeve)",
+    "order": 83
+  },
+  "pack-c-51-sgp-linked-rings": {
+    "slug": "sgp-linked-rings",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Same Game Parlay (SGP) and linked multi-market combinations.",
+    "tags": [
+      "sgp",
+      "same-game-parlay",
+      "linked",
+      "rings",
+      "chain",
+      "combo",
+      "multi"
+    ],
+    "id": "pack-c-51-sgp-linked-rings",
+    "name": "#51. Same Game Parlay / SGP (2 Interlocking Chain Stadium Rings with Over/Under Crossing)",
+    "order": 84
+  },
+  "pack-c-52-trending-market": {
+    "slug": "trending-market",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Popular trending bets and fast-moving market movers.",
+    "tags": [
+      "trending",
+      "popular",
+      "chart",
+      "rising",
+      "market-mover",
+      "hot"
+    ],
+    "id": "pack-c-52-trending-market",
+    "name": "#52. Hot / Trending Market (2 Separate Shapes — Rising Trend Arrow + Base Horizon Bar)",
+    "order": 85
+  },
+  "pack-c-53-odds-up": {
+    "slug": "odds-up",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Odds lengthening / drifting upward indicator on live price updates.",
+    "tags": [
+      "odds-up",
+      "drifting",
+      "higher",
+      "increase",
+      "triangle",
+      "up",
+      "price-change"
+    ],
+    "id": "pack-c-53-odds-up",
+    "name": "#53. Price / Odds Drifting Up (2 Separate Padded Shapes — Equilateral Up Triangle + Base Bar)",
+    "order": 86
+  },
+  "pack-c-54-odds-down": {
+    "slug": "odds-down",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Odds shortening / dropping downward indicator on live price updates.",
+    "tags": [
+      "odds-down",
+      "shortening",
+      "lower",
+      "decrease",
+      "triangle",
+      "down",
+      "price-change"
+    ],
+    "id": "pack-c-54-odds-down",
+    "name": "#54. Price / Odds Shortening Down (2 Separate Padded Shapes — Top Bar + Equilateral Down Triangle)",
+    "order": 87
+  },
+  "pack-c-55-money-back-refund": {
+    "slug": "money-back",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "Stake refund or money-back guarantee when a match condition triggers.",
+    "tags": [
+      "money-back",
+      "refund",
+      "cashback",
+      "return",
+      "stake",
+      "guarantee",
+      "coin"
+    ],
+    "id": "pack-c-55-money-back-refund",
+    "name": "#55. Money-Back / Stake Refund (Exact 180° Vertical-Tangent Refund Arrowhead + Coin Core)",
+    "order": 88
+  },
+  "pack-c-56-bet-insurance-umbrella": {
+    "slug": "bet-insurance",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Rainy-day stake protection and risk-free bet insurance coverage.",
+    "tags": [
+      "umbrella",
+      "insurance",
+      "protection",
+      "risk-free",
+      "cover",
+      "safe",
+      "refund"
+    ],
+    "id": "pack-c-56-bet-insurance-umbrella",
+    "name": "#56. Bet Insurance / Safe Bet (Hemispherical Umbrella Canopy + J-Hook Handle)",
+    "order": 89
+  },
+  "pack-c-57-podium-ranks": {
+    "slug": "podium-ranks",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "1st, 2nd, 3rd podium finish, each-way places, and tournament leaderboards.",
+    "tags": [
+      "podium",
+      "leaderboard",
+      "ranks",
+      "1-2-3",
+      "top-3",
+      "standings",
+      "places"
+    ],
+    "id": "pack-c-57-podium-ranks",
+    "name": "#57. Leaderboard / Podium 1-2-3 (3 Separate Padded Stepped Podium Blocks)",
+    "order": 90
+  },
+  "pack-c-58-promo-megaphone": {
+    "slug": "promo-megaphone",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Special promotional offer, price boost announcement, and news broadcast.",
+    "tags": [
+      "megaphone",
+      "promotion",
+      "announcement",
+      "offer",
+      "campaign",
+      "news",
+      "marketing"
+    ],
+    "id": "pack-c-58-promo-megaphone",
+    "name": "#58. Promo / Announcement Megaphone (2 Separate Padded Shapes — Mouthpiece + Flared Horn)",
+    "order": 91
+  },
+  "pack-c-59-bet-barcode": {
+    "slug": "bet-barcode",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Retail shop betslip barcode scanner for checking or cashing out in-store tickets.",
+    "tags": [
+      "barcode",
+      "scanner",
+      "retail",
+      "shop",
+      "ticket-check",
+      "in-store"
+    ],
+    "id": "pack-c-59-bet-barcode",
+    "name": "#59. Retail Ticket Scanner / Barcode (4 Corner Viewfinder Brackets + Vertical Barcode Bars)",
+    "order": 92
+  },
+  "pack-c-60-stadium-arena": {
+    "slug": "stadium-arena",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Venue details, home/away stadium factor, and tournament host arenas.",
+    "tags": [
+      "stadium",
+      "arena",
+      "venue",
+      "colosseum",
+      "ground",
+      "home-advantage"
+    ],
+    "id": "pack-c-60-stadium-arena",
+    "name": "#60. Stadium / Arena Venue (2 Separate Padded Shapes — Upper Bowl Rim + Lower Arched Facade)",
+    "order": 93
+  },
+  "pack-d-61-playing-cards": {
+    "slug": "playing-cards",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Card table games including Blackjack, Poker, Baccarat, and Solitaire.",
+    "tags": [
+      "cards",
+      "playing-cards",
+      "deck",
+      "blackjack",
+      "poker",
+      "table-games",
+      "casino"
+    ],
+    "id": "pack-d-61-playing-cards",
+    "name": "#61. Playing Cards / Blackjack Pair (Parallel Tilted Portrait Cards + Diamond Pip)",
+    "order": 94
+  },
+  "pack-d-62-casino-dice": {
+    "slug": "casino-dice",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Craps, Lightning Dice, Sic Bo, and dice-based table games.",
+    "tags": [
+      "dice",
+      "craps",
+      "cube",
+      "pips",
+      "roll",
+      "random",
+      "casino",
+      "table-games"
+    ],
+    "id": "pack-d-62-casino-dice",
+    "name": "#62. Casino Craps Die (Bloated Cube Face + 5 Bold Circular Pips)",
+    "order": 95
+  },
+  "pack-d-63-suit-spade": {
+    "slug": "suit-spade",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Spade card suit for poker hand rankings, card filters, and hi-lo games.",
+    "tags": [
+      "spade",
+      "suit",
+      "cards",
+      "poker",
+      "black",
+      "ace",
+      "casino"
+    ],
+    "id": "pack-d-63-suit-spade",
+    "name": "#63. Spade Suit (Unified Continuous Suit Silhouette in Line & Solid — Zero Stem Gap!)",
+    "order": 96
+  },
+  "pack-d-64-suit-club": {
+    "slug": "suit-club",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Club trefoil card suit for poker, blackjack side bets, and suit markets.",
+    "tags": [
+      "club",
+      "clover",
+      "suit",
+      "cards",
+      "poker",
+      "trefoil",
+      "casino"
+    ],
+    "id": "pack-d-64-suit-club",
+    "name": "#64. Club Suit (Unified Continuous Trefoil Silhouette — Solid Matches Line 1:1!)",
+    "order": 97
+  },
+  "pack-d-65-lucky-horseshoe": {
+    "slug": "lucky-horseshoe",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Lucky horseshoe jackpot slots, western themes, and fortune symbols.",
+    "tags": [
+      "horseshoe",
+      "luck",
+      "fortune",
+      "charm",
+      "gold",
+      "slots",
+      "western"
+    ],
+    "id": "pack-d-65-lucky-horseshoe",
+    "name": "#65. Lucky Horseshoe (3 Separate Padded Shapes in Solid — U-Arch + 2 Squared Heel Caps)",
+    "order": 98
+  },
+  "pack-d-66-pot-of-gold": {
+    "slug": "pot-of-gold",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Rainbow jackpot pots, Irish gold collect features, and progressive treasure.",
+    "tags": [
+      "pot-of-gold",
+      "cauldron",
+      "irish",
+      "rainbow",
+      "coins",
+      "jackpot",
+      "treasure"
+    ],
+    "id": "pack-d-66-pot-of-gold",
+    "name": "#66. Pot of Gold / Irish Jackpot (2 Large Bold Gold Coins + Cauldron)",
+    "order": 99
+  },
+  "pack-d-67-wheel-of-fortune": {
+    "slug": "wheel-of-fortune",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live casino game shows, Crazy Time prize wheels, and daily spin bonuses.",
+    "tags": [
+      "wheel",
+      "game-show",
+      "fortune",
+      "spin",
+      "prize",
+      "live-casino",
+      "bonus"
+    ],
+    "id": "pack-d-67-wheel-of-fortune",
+    "name": "#67. Wheel of Fortune / Game Show (Donut Prize Wheel + 6 Radial Spokes + Top Pointer)",
+    "order": 100
+  },
+  "pack-d-68-plinko-pyramid": {
+    "slug": "plinko",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Plinko peg-drop arcade game with multiplier buckets at the base.",
+    "tags": [
+      "plinko",
+      "pegs",
+      "pyramid",
+      "drop",
+      "multiplier",
+      "arcade",
+      "instant-win"
+    ],
+    "id": "pack-d-68-plinko-pyramid",
+    "name": "#68. Plinko Peg Pyramid (Bottom 3 Multiplier Buckets Filled in Both Outline & Solid!)",
+    "order": 101
+  },
+  "pack-d-69-mines-bomb": {
+    "slug": "mines-bomb",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Minesweeper casino arcade game where players avoid hidden bombs.",
+    "tags": [
+      "mines",
+      "bomb",
+      "explosive",
+      "fuse",
+      "arcade",
+      "crash",
+      "instant-game"
+    ],
+    "id": "pack-d-69-mines-bomb",
+    "name": "#69. Mines / Crash Bomb (Cast-Iron Sphere + Tilted Fuse Cap + 4-Point Spark Star)",
+    "order": 102
+  },
+  "pack-d-70-treasure-chest": {
+    "slug": "treasure-chest",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Pirate adventure slots, hold-and-win chests, and bonus feature unlocks.",
+    "tags": [
+      "treasure",
+      "chest",
+      "booty",
+      "pirate",
+      "loot",
+      "bonus",
+      "jackpot"
+    ],
+    "id": "pack-d-70-treasure-chest",
+    "name": "#70. Treasure Chest / Mystery Drop (2 Separate Padded Shapes — Domed Lid + Lower Chest Box)",
+    "order": 103
+  },
+  "pack-d-71-coin-stack": {
+    "slug": "coins",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "High-stakes bankroll, loyalty coins, or multi-currency balance.",
+    "tags": [
+      "coins",
+      "stack",
+      "bankroll",
+      "currency",
+      "money",
+      "gold",
+      "wealth",
+      "balance"
+    ],
+    "id": "pack-d-71-coin-stack",
+    "name": "#71. High-Stakes Coins (Front Circular Treasury Coin + Staggered Coin Stack Behind — Zero Database Look!)",
+    "order": 104
+  },
+  "pack-d-72-bonus-magnet": {
+    "slug": "bonus-magnet",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Cash-collect magnet symbols, sticky wild features, and bonus attractors.",
+    "tags": [
+      "magnet",
+      "collect",
+      "attract",
+      "bonus",
+      "feature",
+      "wild",
+      "slots"
+    ],
+    "id": "pack-d-72-bonus-magnet",
+    "name": "#72. Bonus Magnet (Classic Red U-Arch + Silver/Gold Pole Tips in Color Mode!)",
+    "order": 105
+  },
+  "pack-d-73-free-spins-cycle": {
+    "slug": "free-spins",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Free spins bonus rounds, respin mechanics, and auto-spin controls.",
+    "tags": [
+      "free-spins",
+      "respin",
+      "spin",
+      "cycle",
+      "arrows",
+      "bonus-round",
+      "slots"
+    ],
+    "id": "pack-d-73-free-spins-cycle",
+    "name": "#73. Free Spins / Respin Cycle (2 Chasing 145° Circular Arcs + Filled Center Star)",
+    "order": 106
+  },
+  "pack-d-74-vip-star-rosette": {
+    "slug": "vip-star-badge",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Loyalty level-up badge, achievement rosette, and featured reward.",
+    "tags": [
+      "vip",
+      "star",
+      "rosette",
+      "badge",
+      "loyalty",
+      "achievement",
+      "reward",
+      "level"
+    ],
+    "id": "pack-d-74-vip-star-rosette",
+    "name": "#74. VIP Loyalty Tier Badge (8-Point Bloated Rosette + Filled 5-Point Star Window)",
+    "order": 107
+  },
+  "pack-d-75-live-dealer-bowtie": {
+    "slug": "live-dealer",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live Casino studio streams hosted by real professional croupiers.",
+    "tags": [
+      "live-dealer",
+      "croupier",
+      "host",
+      "bowtie",
+      "tuxedo",
+      "live-casino",
+      "studio"
+    ],
+    "id": "pack-d-75-live-dealer-bowtie",
+    "name": "#75. Live Casino Dealer / Croupier (Single Smooth Hairline Sweep + Tuxedo Shoulders & Bowtie!)",
+    "order": 108
+  },
+  "pack-d-76-vip-martini": {
+    "slug": "vip-lounge",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Exclusive VIP hospitality lounge, private tables, and concierge perks.",
+    "tags": [
+      "vip",
+      "lounge",
+      "martini",
+      "cocktail",
+      "hospitality",
+      "club",
+      "exclusive"
+    ],
+    "id": "pack-d-76-vip-martini",
+    "name": "#76. VIP Lounge Cocktail / Martini (2 Separate Padded Bowl Shapes + Stem & Base)",
+    "order": 109
+  },
+  "pack-d-77-sic-bo-dome": {
+    "slug": "sic-bo",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Super Sic Bo and Asian live dealer dice shaker dome games.",
+    "tags": [
+      "sic-bo",
+      "cloche",
+      "dome",
+      "dice-cup",
+      "asian-games",
+      "live-casino"
+    ],
+    "id": "pack-d-77-sic-bo-dome",
+    "name": "#77. Sic Bo / Live Table Cloche Dome (2 Separate Padded Shapes — Bell Dome + Base Plinth)",
+    "order": 110
+  },
+  "pack-d-78-bingo-ball": {
+    "slug": "bingo-ball",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Bingo rooms, Keno draws, lotto numbers, and live ball-draw game shows.",
+    "tags": [
+      "bingo",
+      "lotto",
+      "ball",
+      "number",
+      "draw",
+      "keno",
+      "7"
+    ],
+    "id": "pack-d-78-bingo-ball",
+    "name": "#78. Keno / Bingo / Lotto Ball (R=9.0 Sphere + Lucky Number '7' Inside)",
+    "order": 111
+  },
+  "pack-d-79-multiplier-x-badge": {
+    "slug": "multiplier-x",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Win multiplier badges (2x–10,000x) in tumbling slots and crash games.",
+    "tags": [
+      "multiplier",
+      "x",
+      "win",
+      "boost",
+      "tumbling",
+      "slots",
+      "crash"
+    ],
+    "id": "pack-d-79-multiplier-x-badge",
+    "name": "#79. Crash / Slot Multiplier Badge (Bloated Octagonal Shield + Bold 'X' Cross)",
+    "order": 112
+  },
+  "pack-d-80-tournament-hourglass": {
+    "slug": "rg-session-timer",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Responsible Gaming session reality-check reminder and play duration tracker.",
+    "tags": [
+      "responsible-gaming",
+      "rg",
+      "session",
+      "timer",
+      "hourglass",
+      "reality-check",
+      "duration"
+    ],
+    "id": "pack-d-80-tournament-hourglass",
+    "name": "#80. Casino Tournament Timer (4 Separate Padded Shapes — Top Cap + 2 Glass Bulbs + Bottom Cap)",
+    "order": 113
+  },
+  "pack-a2-81-chevron-left": {
+    "slug": "chevron-left",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Navigate back to the previous screen, step, or carousel item.",
+    "tags": [
+      "chevron",
+      "left",
+      "back",
+      "previous",
+      "return",
+      "arrow",
+      "navigate"
+    ],
+    "id": "pack-a2-81-chevron-left",
+    "name": "#81. Chevron Left (Compact 12×12 Zone — Matches Chevron Right/Down)",
+    "order": 114
+  },
+  "pack-a2-82-chevron-up": {
+    "slug": "chevron-up",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Collapse an open accordion section, fold content, or scroll to top.",
+    "tags": [
+      "chevron",
+      "up",
+      "collapse",
+      "fold",
+      "less",
+      "top",
+      "accordion"
+    ],
+    "id": "pack-a2-82-chevron-up",
+    "name": "#82. Chevron Up (Compact 12×12 Zone — Matches Chevron Down)",
+    "order": 115
+  },
+  "pack-a2-83-caret-up": {
+    "slug": "caret-up",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Compact inline upward indicator for ascending sort or open select menus.",
+    "tags": [
+      "caret",
+      "up",
+      "ascending",
+      "sort",
+      "select",
+      "close",
+      "inline"
+    ],
+    "id": "pack-a2-83-caret-up",
+    "name": "#83. Caret Up (Micro 8×8 Zone — Closes Into Rounded Triangle in Solid)",
+    "order": 116
+  },
+  "pack-a2-84-caret-left": {
+    "slug": "caret-left",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Compact inline leftward indicator for RTL tree branches or inline steppers.",
+    "tags": [
+      "caret",
+      "left",
+      "previous",
+      "back",
+      "tree",
+      "stepper",
+      "inline"
+    ],
+    "id": "pack-a2-84-caret-left",
+    "name": "#84. Caret Left (Micro 8×8 Zone — Closes Into Rounded Triangle in Solid)",
+    "order": 117
+  },
+  "pack-a2-85-plus-add": {
+    "slug": "plus",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Add selection to betslip, increase stake amount, or create a new item.",
+    "tags": [
+      "plus",
+      "add",
+      "new",
+      "create",
+      "increase",
+      "increment",
+      "expand"
+    ],
+    "id": "pack-a2-85-plus-add",
+    "name": "#85. Plus / Add (Compact 12×12 Zone Orthogonal Cross)",
+    "order": 118
+  },
+  "pack-a2-86-minus-remove": {
+    "slug": "minus",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Decrease stake amount, remove item, or collapse section.",
+    "tags": [
+      "minus",
+      "subtract",
+      "decrease",
+      "decrement",
+      "remove",
+      "collapse"
+    ],
+    "id": "pack-a2-86-minus-remove",
+    "name": "#86. Minus / Collapse (Compact 12×12 Zone Horizontal Bar)",
+    "order": 119
+  },
+  "pack-a2-87-check-tick": {
+    "slug": "check",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Confirm selection, indicate completed state, or verify valid input.",
+    "tags": [
+      "check",
+      "tick",
+      "confirm",
+      "done",
+      "valid",
+      "success",
+      "complete",
+      "selected"
+    ],
+    "id": "pack-a2-87-check-tick",
+    "name": "#87. Checkmark / Confirmation Tick (Compact 14×14 Zone)",
+    "order": 120
+  },
+  "pack-a2-88-info-circle": {
+    "slug": "info",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Display market rules, bet settlement terms, or contextual tooltip information.",
+    "tags": [
+      "info",
+      "information",
+      "details",
+      "rules",
+      "tooltip",
+      "about",
+      "help"
+    ],
+    "id": "pack-a2-88-info-circle",
+    "name": "#88. Info Circle (Exact R=9.0 Circle + Vertical 'i' Stem & Top Dot)",
+    "order": 121
+  },
+  "pack-a2-89-warning-triangle": {
+    "slug": "warning",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Alert the user to suspended markets, stake limits, or important notices.",
+    "tags": [
+      "warning",
+      "alert",
+      "caution",
+      "error",
+      "danger",
+      "exclamation",
+      "notice",
+      "limit"
+    ],
+    "id": "pack-a2-89-warning-triangle",
+    "name": "#89. Warning / Alert Triangle (Bloated Equilateral Hazard Triangle + Exclamation Cut)",
+    "order": 122
+  },
+  "pack-a2-90-power-switch": {
+    "slug": "power",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Quickly end session, log out, or toggle system power state.",
+    "tags": [
+      "power",
+      "switch",
+      "off",
+      "shutdown",
+      "logout",
+      "disconnect"
+    ],
+    "id": "pack-a2-90-power-switch",
+    "name": "#90. Power / Log Off Switch (270° Open Arc + Top Vertical Power Bar)",
+    "order": 123
+  },
+  "pack-a2-91-volume-on": {
+    "slug": "volume-on",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Audio enabled for live stream commentary, game sound effects, or match alerts.",
+    "tags": [
+      "volume",
+      "sound",
+      "audio",
+      "speaker",
+      "unmute",
+      "listen",
+      "on"
+    ],
+    "id": "pack-a2-91-volume-on",
+    "name": "#91. Sound On / Speaker (Bloated Acoustic Horn + 2 Concentric Sound Wave Arcs)",
+    "order": 124
+  },
+  "pack-a2-92-volume-mute": {
+    "slug": "volume-mute",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Mute live stream audio, casino game music, or sound effects.",
+    "tags": [
+      "mute",
+      "silent",
+      "volume-off",
+      "audio",
+      "speaker",
+      "quiet"
+    ],
+    "id": "pack-a2-92-volume-mute",
+    "name": "#92. Mute / Sound Off (2-Part Padded Speaker Horn + Crisp 'X' Cross)",
+    "order": 125
+  },
+  "pack-a2-93-fullscreen-expand": {
+    "slug": "fullscreen",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Expand live stream video or casino game canvas to full screen.",
+    "tags": [
+      "fullscreen",
+      "expand",
+      "maximize",
+      "enlarge",
+      "video",
+      "screen"
+    ],
+    "id": "pack-a2-93-fullscreen-expand",
+    "name": "#93. Fullscreen / Expand View (4 Corner Brackets + Outward 45° Rays)",
+    "order": 126
+  },
+  "pack-a2-94-pin-thumbtack": {
+    "slug": "pin",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Pin a favorite league, live scoreboard, or market group to the top of the page.",
+    "tags": [
+      "pin",
+      "thumbtack",
+      "sticky",
+      "keep",
+      "top",
+      "attach",
+      "fix"
+    ],
+    "id": "pack-a2-94-pin-thumbtack",
+    "name": "#94. Pin / Sticky Event (2 Separate Padded Solid Shapes — Top Cap + Flared Bell + Needle)",
+    "order": 127
+  },
+  "pack-a2-95-link-chain": {
+    "slug": "link",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Copy direct URL link or connect linked accounts and referrals.",
+    "tags": [
+      "link",
+      "chain",
+      "url",
+      "hyperlink",
+      "connect",
+      "referral"
+    ],
+    "id": "pack-a2-95-link-chain",
+    "name": "#95. Link / Referral URL (2 Interlocking 45° Stadium Links)",
+    "order": 128
+  },
+  "pack-a2-96-external-link": {
+    "slug": "external-link",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Open detailed statistics, regulatory info, or external page in a new window.",
+    "tags": [
+      "external",
+      "open",
+      "new-tab",
+      "window",
+      "popout",
+      "launch",
+      "out"
+    ],
+    "id": "pack-a2-96-external-link",
+    "name": "#96. External Link / Pop-Out Window (Bloated Card + Organic 45° Outgoing Arrow Knockout)",
+    "order": 129
+  },
+  "pack-a2-97-kyc-id-card": {
+    "slug": "kyc-id-card",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Know Your Customer (KYC) document upload and identity verification.",
+    "tags": [
+      "kyc",
+      "id-card",
+      "identity",
+      "passport",
+      "license",
+      "verification",
+      "document"
+    ],
+    "id": "pack-a2-97-kyc-id-card",
+    "name": "#97. KYC ID Card / Verification (Bloated Badge Card + Avatar Head/Shoulders + Text Bar)",
+    "order": 130
+  },
+  "pack-a2-98-face-id": {
+    "slug": "biometric-face-id",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Biometric Face ID authentication for instant secure login and withdrawals.",
+    "tags": [
+      "face-id",
+      "biometric",
+      "scan",
+      "authentication",
+      "login",
+      "security",
+      "face"
+    ],
+    "id": "pack-a2-98-face-id",
+    "name": "#98. Biometric Face ID (4 Scanner Corner Brackets + Eyes, L-Nose & Smile)",
+    "order": 131
+  },
+  "pack-a2-99-smartphone": {
+    "slug": "smartphone",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Mobile app download, SMS verification, or device management.",
+    "tags": [
+      "smartphone",
+      "mobile",
+      "phone",
+      "device",
+      "app",
+      "ios",
+      "android"
+    ],
+    "id": "pack-a2-99-smartphone",
+    "name": "#99. Smartphone / Mobile Betting App (Bloated Handset + Top Speaker + Home Indicator)",
+    "order": 132
+  },
+  "pack-a2-100-moon-dark": {
+    "slug": "theme-dark",
+    "area": "common",
+    "alias": "",
+    "crsKey": "",
+    "description": "Toggle dark mode appearance or night-time display theme.",
+    "tags": [
+      "moon",
+      "dark",
+      "night",
+      "theme",
+      "appearance",
+      "mode"
+    ],
+    "id": "pack-a2-100-moon-dark",
+    "name": "#100. Theme / Dark Mode Crescent Moon (Exact Intersecting Circular Arcs)",
+    "order": 133
+  },
+  "pack-b2-101-rowing-scull": {
+    "slug": "rowing-scull",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic rowing, single sculls, eights, and University Boat Race markets.",
+    "tags": [
+      "rowing",
+      "scull",
+      "oar",
+      "boat",
+      "crew",
+      "regatta",
+      "water-sports"
+    ],
+    "id": "pack-b2-101-rowing-scull",
+    "name": "#101. Rowing / Scull (Solid Matches Line with Solid Head — Stick-Figure Rower + Boat + Oar)",
+    "order": 134
+  },
+  "pack-b2-102-kayak-paddle": {
+    "slug": "kayak-paddle",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Canoe sprint, kayak slalom, and whitewater paddling markets.",
+    "tags": [
+      "kayak",
+      "canoe",
+      "paddle",
+      "boat",
+      "slalom",
+      "water-sports",
+      "olympic"
+    ],
+    "id": "pack-b2-102-kayak-paddle",
+    "name": "#102. Kayak & Double-Bladed Paddle (Pointed Kayak Hull + Crossed Double-Blade Paddle)",
+    "order": 135
+  },
+  "pack-b2-103-sailing-yacht": {
+    "slug": "sailing-yacht",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "America's Cup, SailGP, and Olympic yachting regatta markets.",
+    "tags": [
+      "sailing",
+      "yacht",
+      "boat",
+      "regatta",
+      "americas-cup",
+      "wind",
+      "water-sports"
+    ],
+    "id": "pack-b2-103-sailing-yacht",
+    "name": "#103. Sailing / Regatta Yacht (3 Separate Padded Shapes — Main Sail + Jib Sail + Boat Hull)",
+    "order": 136
+  },
+  "pack-b2-104-ice-skate": {
+    "slug": "ice-skate",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Figure skating, speed skating, and short-track winter ice markets.",
+    "tags": [
+      "ice-skate",
+      "skating",
+      "blade",
+      "boot",
+      "figure-skating",
+      "speed-skating",
+      "winter"
+    ],
+    "id": "pack-b2-104-ice-skate",
+    "name": "#104. Figure Skating / Ice Skate (2 Separate Padded Shapes — High-Ankle Boot + Rocker Blade)",
+    "order": 137
+  },
+  "pack-b2-105-goalie-mask": {
+    "slug": "goalie-mask",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Hockey goaltender saves, shutouts, and goalie player prop markets.",
+    "tags": [
+      "goalie",
+      "mask",
+      "goaltender",
+      "hockey",
+      "saves",
+      "shutout",
+      "nhl"
+    ],
+    "id": "pack-b2-105-goalie-mask",
+    "name": "#105. Ice Hockey Goalie Mask (Contoured Mask Shield + 2 Angled Eye Windows + Vent Slots)",
+    "order": 138
+  },
+  "pack-b2-106-fencing-sabres": {
+    "slug": "fencing-sabres",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic foil, épée, and sabre fencing bout and medal markets.",
+    "tags": [
+      "fencing",
+      "sabres",
+      "foils",
+      "epee",
+      "swords",
+      "crossed",
+      "olympic"
+    ],
+    "id": "pack-b2-106-fencing-sabres",
+    "name": "#106. Fencing Crossed Sabres (2 Crossed 45° Blades + Hemispherical Bell Guards + Over/Under Mask)",
+    "order": 139
+  },
+  "pack-b2-107-gymnastics-rings": {
+    "slug": "gymnastics-rings",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Artistic gymnastics all-around and apparatus medal markets.",
+    "tags": [
+      "gymnastics",
+      "rings",
+      "iron-cross",
+      "athlete",
+      "artistic",
+      "olympic"
+    ],
+    "id": "pack-b2-107-gymnastics-rings",
+    "name": "#107. Artistic Gymnastics (Stick-Figure Gymnast in Iron Cross on Hanging Rings!)",
+    "order": 140
+  },
+  "pack-b2-108-track-hurdle": {
+    "slug": "track-hurdle",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "110m/400m hurdles, steeplechase, and track & field athletics events.",
+    "tags": [
+      "hurdles",
+      "track",
+      "athletics",
+      "barrier",
+      "steeplechase",
+      "running"
+    ],
+    "id": "pack-b2-108-track-hurdle",
+    "name": "#108. Track & Field Hurdle (Bloated Top Crossbar with Diagonal Stripes + Side Legs)",
+    "order": 141
+  },
+  "pack-b2-109-lacrosse-stick": {
+    "slug": "lacrosse-stick",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "PLL, NLL, and NCAA lacrosse stick and ball match markets.",
+    "tags": [
+      "lacrosse",
+      "crosse",
+      "stick",
+      "pocket",
+      "net",
+      "ball",
+      "pll"
+    ],
+    "id": "pack-b2-109-lacrosse-stick",
+    "name": "#109. Lacrosse Crosse & Ball (45° V-Head Pocket + Diamond Net + Ball)",
+    "order": 142
+  },
+  "pack-b2-110-field-hockey": {
+    "slug": "field-hockey",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "FIH Pro League and Olympic turf field hockey match markets.",
+    "tags": [
+      "field-hockey",
+      "stick",
+      "ball",
+      "turf",
+      "fih",
+      "olympic"
+    ],
+    "id": "pack-b2-110-field-hockey",
+    "name": "#110. Field Hockey J-Stick & Ball (Tapered J-Hook Stick + Grip Seam + Ball)",
+    "order": 143
+  },
+  "pack-b2-111-biathlon-target": {
+    "slug": "biathlon-target",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Winter biathlon cross-country skiing and rifle shooting target markets.",
+    "tags": [
+      "biathlon",
+      "target",
+      "shooting",
+      "winter-sports",
+      "knockdown",
+      "ibu"
+    ],
+    "id": "pack-b2-111-biathlon-target",
+    "name": "#111. Biathlon / Shooting Target Plate (Bloated Housing + 3 Knockdown Target Windows + Stand)",
+    "order": 144
+  },
+  "pack-b2-112-snowboard": {
+    "slug": "snowboard",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Winter X Games and Olympic snowboard halfpipe, slopestyle, and cross.",
+    "tags": [
+      "snowboard",
+      "board",
+      "bindings",
+      "halfpipe",
+      "slopestyle",
+      "winter-sports"
+    ],
+    "id": "pack-b2-112-snowboard",
+    "name": "#112. Snowboard / Halfpipe Board (45° Round-Nose Capsule Deck + 2 Angled Bindings)",
+    "order": 145
+  },
+  "pack-b2-113-checkered-flag": {
+    "slug": "checkered-flag",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Motorsport race winner, pole position, and podium finish markets.",
+    "tags": [
+      "checkered-flag",
+      "motorsport",
+      "racing",
+      "finish-line",
+      "lap",
+      "winner"
+    ],
+    "id": "pack-b2-113-checkered-flag",
+    "name": "#113. Motorsport Checkered Flag (Solid Matches Line 1:1 — 2x2 Checkerboard Banner)",
+    "order": 146
+  },
+  "pack-b2-114-racing-helmet": {
+    "slug": "f1-monogram",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Formula 1 Grand Prix race, qualifying, and constructors championship.",
+    "tags": [
+      "f1",
+      "formula-1",
+      "grand-prix",
+      "monogram",
+      "motorsport",
+      "racing"
+    ],
+    "id": "pack-b2-114-racing-helmet",
+    "name": "#114. Formula 1 — Stylized Forward-Slanted 'F1' Speed Monogram (Wide 3.4px Gap Between Top Wing & L-Stem!)",
+    "order": 147
+  },
+  "pack-b2-115-speedway-wheel": {
+    "slug": "motocross-bike",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Speedway GP, MXGP motocross, and supercross dirt-bike racing.",
+    "tags": [
+      "speedway",
+      "motocross",
+      "dirt-bike",
+      "motorcycle",
+      "mxgp",
+      "supercross"
+    ],
+    "id": "pack-b2-115-speedway-wheel",
+    "name": "#115. Speedway / Motocross Dirt Bike (Open Wheels + Colored Rider in Duotone & Color!)",
+    "order": 148
+  },
+  "pack-b2-116-wrestling-grapple": {
+    "slug": "wrestling-grapple",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic freestyle and Greco-Roman wrestling bout markets.",
+    "tags": [
+      "wrestling",
+      "grapple",
+      "lockup",
+      "freestyle",
+      "greco-roman",
+      "combat",
+      "olympic"
+    ],
+    "id": "pack-b2-116-wrestling-grapple",
+    "name": "#116. Olympic Wrestling Lockup (2 Wrestlers Leaning Inward Head-to-Head with Braced Stance)",
+    "order": 149
+  },
+  "pack-b2-117-triathlon-loops": {
+    "slug": "triathlon-loops",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Ironman and Olympic triathlon (swim, bike, run) endurance events.",
+    "tags": [
+      "triathlon",
+      "ironman",
+      "swim-bike-run",
+      "rings",
+      "endurance",
+      "olympic"
+    ],
+    "id": "pack-b2-117-triathlon-loops",
+    "name": "#117. Triathlon (3 Trefoil-Arranged Motion Rings — Swim · Bike · Run)",
+    "order": 150
+  },
+  "pack-b2-118-jockey-cap": {
+    "slug": "jockey-cap",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Thoroughbred flat and national hunt horse racing silks and jockey specials.",
+    "tags": [
+      "jockey",
+      "cap",
+      "silks",
+      "horse-racing",
+      "helmet",
+      "turf",
+      "racecourse"
+    ],
+    "id": "pack-b2-118-jockey-cap",
+    "name": "#118. Horse Racing Jockey Silk Cap (2 Separate Padded Dome Panel Halves + Visor Peak)",
+    "order": 151
+  },
+  "pack-b2-119-futsal-ball": {
+    "slug": "futsal-ball",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "FIFA and UEFA indoor 5-a-side futsal match and tournament markets.",
+    "tags": [
+      "futsal",
+      "indoor-football",
+      "5-a-side",
+      "ball",
+      "court",
+      "soccer"
+    ],
+    "id": "pack-b2-119-futsal-ball",
+    "name": "#119. Futsal / Indoor Football (4 Separate Padded Spherical Sector Shapes in Solid — Zero Cut Lines!)",
+    "order": 152
+  },
+  "pack-b2-120-beach-volleyball": {
+    "slug": "beach-volleyball",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "FIVB Pro Tour and Olympic 2-on-2 beach volleyball markets.",
+    "tags": [
+      "beach-volleyball",
+      "net",
+      "ball",
+      "sand",
+      "fivb",
+      "olympic"
+    ],
+    "id": "pack-b2-120-beach-volleyball",
+    "name": "#120. Beach Volleyball (Volleyball Flying Over Full-Width Net & Posts!)",
+    "order": 153
+  },
+  "pack-c2-121-penalty-spot": {
+    "slug": "penalty-spot",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Penalty kick awarded, penalty shootout winner, and spot-kick conversion.",
+    "tags": [
+      "penalty",
+      "spot-kick",
+      "shootout",
+      "goal",
+      "football",
+      "12-yards"
+    ],
+    "id": "pack-c2-121-penalty-spot",
+    "name": "#121. Penalty Kick Spot (Goalpost Arch in Background + Football on Foreground Penalty Spot)",
+    "order": 154
+  },
+  "pack-c2-122-free-kick": {
+    "slug": "free-kick",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Direct free-kick goal, set-piece specials, and shot outside the box.",
+    "tags": [
+      "free-kick",
+      "set-piece",
+      "wall",
+      "curling-shot",
+      "football",
+      "goal"
+    ],
+    "id": "pack-c2-122-free-kick",
+    "name": "#122. Free Kick / Curling Shot (Ball at Bottom-Left + Curling Arc Over 2-Pillar Wall to Top-Right)",
+    "order": 155
+  },
+  "pack-c2-123-offside-flag": {
+    "slug": "offside-flag",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Total match offsides and player offside prop markets.",
+    "tags": [
+      "offside",
+      "linesman",
+      "flag",
+      "assistant-referee",
+      "football",
+      "props"
+    ],
+    "id": "pack-c2-123-offside-flag",
+    "name": "#123. Assistant Referee Offside Flag (45° Upward Pole + Quartered 2×2 Diamond Flag)",
+    "order": 156
+  },
+  "pack-c2-124-injury-cross": {
+    "slug": "injury-cross",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Injury stoppage, medical treatment on pitch, and injury protection.",
+    "tags": [
+      "injury",
+      "medical",
+      "first-aid",
+      "kit",
+      "cross",
+      "stoppage",
+      "physio"
+    ],
+    "id": "pack-c2-124-injury-cross",
+    "name": "#124. Medical / Injury Stoppage (Bloated First-Aid Case + Top Handle + Bold Plus Cross)",
+    "order": 157
+  },
+  "pack-c2-125-halftime-split": {
+    "slug": "halftime-split",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Half-Time / Full-Time (HT/FT) double result and 1st-half markets.",
+    "tags": [
+      "half-time",
+      "45-minutes",
+      "first-half",
+      "ht-ft",
+      "stopwatch",
+      "period"
+    ],
+    "id": "pack-c2-125-halftime-split",
+    "name": "#125. Half-Time / 45' Match Timer (Stopwatch + 12-to-6 Half-Pie Sector)",
+    "order": 158
+  },
+  "pack-c2-126-golden-boot": {
+    "slug": "golden-boot",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "First goalscorer, anytime scorer, and tournament Golden Boot winner.",
+    "tags": [
+      "golden-boot",
+      "cleat",
+      "football-boot",
+      "goalscorer",
+      "striker",
+      "top-scorer"
+    ],
+    "id": "pack-c2-126-golden-boot",
+    "name": "#126. Golden Boot / Top Goalscorer (2 Separate Padded Boot Shapes in Solid — Zero Knockout Lines!)",
+    "order": 159
+  },
+  "pack-c2-127-goalie-gloves": {
+    "slug": "goalie-gloves",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Clean sheet (team to win to nil) and goalkeeper total saves markets.",
+    "tags": [
+      "goalkeeper",
+      "gloves",
+      "clean-sheet",
+      "saves",
+      "keeper",
+      "shutout"
+    ],
+    "id": "pack-c2-127-goalie-gloves",
+    "name": "#127. Goalkeeper Saves / Clean Sheet (Open-Palm Goalie Glove — 5 Rounded Fingers + Palm + Cuff)",
+    "order": 160
+  },
+  "pack-c2-128-weather-rain": {
+    "slug": "weather-rain",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Match pitch weather conditions, rain delay, and wet-track specials.",
+    "tags": [
+      "weather",
+      "rain",
+      "cloud",
+      "pitch-conditions",
+      "wet",
+      "forecast"
+    ],
+    "id": "pack-c2-128-weather-rain",
+    "name": "#128. Pitch Weather — Rain (3-Circle Tangent Cloud + 3 Diagonal Rain Streaks)",
+    "order": 161
+  },
+  "pack-c2-129-flash-bet": {
+    "slug": "flash-bet",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Lightning-fast micro-markets settling in the next 60 seconds or next point.",
+    "tags": [
+      "flash-bet",
+      "micro-betting",
+      "instant",
+      "lightning",
+      "next-minute",
+      "fast-market"
+    ],
+    "id": "pack-c2-129-flash-bet",
+    "name": "#129. Flash Bet / Next-60s Market (Bold High-Voltage Lightning Bolt + 2 Speed Trail Bars)",
+    "order": 162
+  },
+  "pack-c2-130-bracket-tree": {
+    "slug": "bracket-tree",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Knockout tournament bracket predictor, path to the final, and playoffs.",
+    "tags": [
+      "bracket",
+      "tournament",
+      "knockout",
+      "playoffs",
+      "draw",
+      "tree"
+    ],
+    "id": "pack-c2-130-bracket-tree",
+    "name": "#130. Knockout Tournament Bracket (2 Seed Pairings Converging to Final Winner Node)",
+    "order": 163
+  },
+  "pack-c2-131-mystery-box": {
+    "slug": "mystery-box",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Mystery prize box drop with surprise free spins, cash, or free bets.",
+    "tags": [
+      "mystery",
+      "box",
+      "prize-drop",
+      "surprise",
+      "gift",
+      "question",
+      "reward"
+    ],
+    "id": "pack-c2-131-mystery-box",
+    "name": "#131. Mystery Box / Prize Drop (2-Part Padded Box Lid & Body + Large Unobstructed '?' Inside!)",
+    "order": 164
+  },
+  "pack-c2-132-vip-crown-gem": {
+    "slug": "vip-diamond-crown",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Diamond VIP elite tier, personal account manager, and luxury rewards.",
+    "tags": [
+      "crown",
+      "diamond",
+      "vip",
+      "elite",
+      "luxury",
+      "loyalty",
+      "high-roller"
+    ],
+    "id": "pack-c2-132-vip-crown-gem",
+    "name": "#132. VIP Diamond Crown (2 Separate Padded Crown Shapes + Center Diamond Cutout)",
+    "order": 165
+  },
+  "pack-c2-133-tail-tipster": {
+    "slug": "tail-tipster",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Social betting: copy and tail a featured tipster's or friend's betslip.",
+    "tags": [
+      "copy-bet",
+      "tail",
+      "tipster",
+      "social-betting",
+      "follow",
+      "share-slip"
+    ],
+    "id": "pack-c2-133-tail-tipster",
+    "name": "#133. Copy / Tail Tipster Bet (2 Separate Padded Betslip Cards + Crisp Horizontal-Tangent Arrowhead!)",
+    "order": 166
+  },
+  "pack-c2-134-win-streak": {
+    "slug": "win-streak",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Multi-bet winning streak challenge and progressive combo boost.",
+    "tags": [
+      "win-streak",
+      "combo",
+      "stars",
+      "challenge",
+      "milestone",
+      "hot-streak"
+    ],
+    "id": "pack-c2-134-win-streak",
+    "name": "#134. Winning Streak / Combo Multiplier (3 Separate Padded Ascending Stars + Trajectory)",
+    "order": 167
+  },
+  "pack-c2-135-commentary-mic": {
+    "slug": "commentary-mic",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live audio match commentary, sportsbook podcasts, and expert previews.",
+    "tags": [
+      "microphone",
+      "commentary",
+      "audio",
+      "podcast",
+      "radio",
+      "live-voice"
+    ],
+    "id": "pack-c2-135-commentary-mic",
+    "name": "#135. Live Audio Commentary / Podcast Mic (2-Part Split Capsule Mic + U-Cradle & Stand)",
+    "order": 168
+  },
+  "pack-c2-136-bet-shield-tick": {
+    "slug": "bet-protection-shield",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Protected bet token or acca insurance coverage against a single losing leg.",
+    "tags": [
+      "shield",
+      "protection",
+      "insurance",
+      "safe-bet",
+      "cover",
+      "heraldic"
+    ],
+    "id": "pack-c2-136-bet-shield-tick",
+    "name": "#136. Bet Protection Shield (2 Separate Padded Shield Halves in Solid — Left & Right Heraldic Split)",
+    "order": 169
+  },
+  "pack-c2-137-odds-format": {
+    "slug": "odds-format",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Switch between Decimal (2.50), Fractional (6/4), and American (+150) odds.",
+    "tags": [
+      "odds-format",
+      "percentage",
+      "margin",
+      "decimal",
+      "fractional",
+      "american"
+    ],
+    "id": "pack-c2-137-odds-format",
+    "name": "#137. Odds Format / Margin % (Bloated Badge + Diagonal Slash & 2 Counter Dots)",
+    "order": 170
+  },
+  "pack-c2-138-match-alert": {
+    "slug": "match-alert-bell",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live goal alerts, kick-off reminders, and bet settlement notifications.",
+    "tags": [
+      "bell",
+      "ringing",
+      "match-alert",
+      "goal-alert",
+      "live-notification",
+      "alarm"
+    ],
+    "id": "pack-c2-138-match-alert",
+    "name": "#138. Live Match Alert / Kick-Off Bell (2 Padded Bell Shapes + Flanking Ringing Arcs)",
+    "order": 171
+  },
+  "pack-c2-139-prize-parachute": {
+    "slug": "prize-drop-parachute",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Daily cash drop, airdrop bonus, and random prize giveaway.",
+    "tags": [
+      "parachute",
+      "airdrop",
+      "prize-drop",
+      "bonus",
+      "giveaway",
+      "reward",
+      "box"
+    ],
+    "id": "pack-c2-139-prize-parachute",
+    "name": "#139. Cash Drop / Airdrop Parachute (Semicircular Canopy + Rigging Lines + Prize Box)",
+    "order": 172
+  },
+  "pack-c2-140-jackpot-gauge": {
+    "slug": "jackpot-meter",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Must-drop jackpot thermometer gauge and hot-payout readiness meter.",
+    "tags": [
+      "jackpot",
+      "meter",
+      "gauge",
+      "hot-drop",
+      "progressive",
+      "dial",
+      "thermometer"
+    ],
+    "id": "pack-c2-140-jackpot-gauge",
+    "name": "#140. Hot-Streak / Jackpot Meter Gauge (Squash/Roulette-Style Open Dial Window + Needle in Solid!)",
+    "order": 173
+  },
+  "pack-d2-141-suit-heart": {
+    "slug": "suit-heart",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Heart card suit for card game UI, suit side bets, and royal flush displays.",
+    "tags": [
+      "heart",
+      "suit",
+      "cards",
+      "poker",
+      "red",
+      "romance",
+      "casino"
+    ],
+    "id": "pack-d2-141-suit-heart",
+    "name": "#141. Heart Suit (Companion to #63 Spade & #64 Club — Unified Continuous Suit Silhouette)",
+    "order": 174
+  },
+  "pack-d2-142-suit-diamond": {
+    "slug": "suit-diamond",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Diamond rhombus card suit for poker tables, card filters, and suit bets.",
+    "tags": [
+      "diamond",
+      "rhombus",
+      "suit",
+      "cards",
+      "poker",
+      "red",
+      "casino"
+    ],
+    "id": "pack-d2-142-suit-diamond",
+    "name": "#142. Diamond Suit (Concave-Curved Casino Rhombus — Companion to Spade, Club & Heart)",
+    "order": 175
+  },
+  "pack-d2-143-slot-bar": {
+    "slug": "slot-bar",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Classic double BAR bullion symbol for vintage Vegas stepper slots.",
+    "tags": [
+      "bar",
+      "slot-bar",
+      "classic-slots",
+      "stepper",
+      "vintage",
+      "vegas"
+    ],
+    "id": "pack-d2-143-slot-bar",
+    "name": "#143. Slot BAR Symbol (2 Stacked Padded Bullion Plaques + Inner Emboss Bars)",
+    "order": 176
+  },
+  "pack-d2-144-gold-ingot": {
+    "slug": "gold-bullion",
+    "area": "payments",
+    "alias": "",
+    "crsKey": "",
+    "description": "High-value treasury reserve, VIP bankroll, or jackpot bullion tier.",
+    "tags": [
+      "gold",
+      "bullion",
+      "ingot",
+      "bars",
+      "treasury",
+      "wealth",
+      "vip",
+      "reserve"
+    ],
+    "id": "pack-d2-144-gold-ingot",
+    "name": "#144. Gold Bullion Stack (3 Separate Padded Trapezoidal Gold Ingots in 1-on-2 Pyramid!)",
+    "order": 177
+  },
+  "pack-d2-145-slot-lemon": {
+    "slug": "slot-lemon",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Citrus lemon fruit symbol for classic fruit machines and juicy slots.",
+    "tags": [
+      "lemon",
+      "citrus",
+      "fruit",
+      "classic-slots",
+      "arcade",
+      "yellow"
+    ],
+    "id": "pack-d2-145-slot-lemon",
+    "name": "#145. Slot Lemon / Citrus Fruit (45° Prolate Citrus Hull + Nipple Tips + Leaf)",
+    "order": 178
+  },
+  "pack-d2-146-slot-melon": {
+    "slug": "slot-watermelon",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Watermelon slice symbol for high-paying fruit slot combinations.",
+    "tags": [
+      "watermelon",
+      "melon",
+      "fruit",
+      "slice",
+      "seeds",
+      "classic-slots"
+    ],
+    "id": "pack-d2-146-slot-melon",
+    "name": "#146. Slot Watermelon Slice (2 Separate Padded Shapes — Outer Rind Band + Inner Wedge with Seeds)",
+    "order": 179
+  },
+  "pack-d2-147-slot-grapes": {
+    "slug": "slot-grapes",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Cluster of royal grapes for fruit slots and cascading cluster-pay games.",
+    "tags": [
+      "grapes",
+      "fruit",
+      "bunch",
+      "cluster",
+      "vine",
+      "classic-slots"
+    ],
+    "id": "pack-d2-147-slot-grapes",
+    "name": "#147. Slot Grapes Cluster (6 Separate Padded Grape Spheres in 3-2-1 Pyramid + Top Stem)",
+    "order": 180
+  },
+  "pack-d2-148-liberty-bell": {
+    "slug": "liberty-bell",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Iconic cracked golden Liberty Bell symbol from original mechanical slots.",
+    "tags": [
+      "liberty-bell",
+      "bell",
+      "cracked",
+      "golden",
+      "classic-slots",
+      "jackpot"
+    ],
+    "id": "pack-d2-148-liberty-bell",
+    "name": "#148. Slot Liberty Bell (3-Segment Tapered Z-Lightning Crack + Separate Padded Clapper!)",
+    "order": 181
+  },
+  "pack-d2-149-crash-plane": {
+    "slug": "crash-curve",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Rising exponential multiplier curve and delta jet for Aviator/Crash games.",
+    "tags": [
+      "crash",
+      "curve",
+      "aviator",
+      "jet",
+      "plane",
+      "multiplier",
+      "graph"
+    ],
+    "id": "pack-d2-149-crash-plane",
+    "name": "#149. Crash Game Multiplier Curve (G1 Tangent-Locked Parabolic Curve + Symmetric 45° Delta Head)",
+    "order": 182
+  },
+  "pack-d2-150-aviator-prop": {
+    "slug": "aviator-propeller",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Spinning aircraft propeller icon for Aviator and flight crash games.",
+    "tags": [
+      "aviator",
+      "propeller",
+      "plane",
+      "flight",
+      "crash",
+      "spin",
+      "blades"
+    ],
+    "id": "pack-d2-150-aviator-prop",
+    "name": "#150. Aviator Propeller (3 Separate Padded Shapes — Center Spinner Hub + 2 Tapered Blades)",
+    "order": 183
+  },
+  "pack-d2-151-roulette-grid": {
+    "slug": "roulette-table",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Full Roulette table felt layout showing the wheel and inside/outside grid.",
+    "tags": [
+      "roulette",
+      "table",
+      "felt",
+      "layout",
+      "grid",
+      "wheel",
+      "casino"
+    ],
+    "id": "pack-d2-151-roulette-grid",
+    "name": "#151. Casino Roulette Table (Landscape Table Felt + Left Roulette Wheel + Right Betting Grid!)",
+    "order": 184
+  },
+  "pack-d2-152-card-shoe": {
+    "slug": "baccarat",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "VIP Baccarat (Punto Banco) comparing Player and Banker dealt hands.",
+    "tags": [
+      "baccarat",
+      "punto-banco",
+      "banker",
+      "player",
+      "cards",
+      "crown",
+      "table-games"
+    ],
+    "id": "pack-d2-152-card-shoe",
+    "name": "#152. Baccarat — Banker vs. Player (Wide 3.6px Gap Between Crown & 2 Dealt Cards!)",
+    "order": 185
+  },
+  "pack-d2-153-blackjack-21": {
+    "slug": "blackjack-ace",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Blackjack 21 table games featuring the Ace card.",
+    "tags": [
+      "blackjack",
+      "21",
+      "ace",
+      "card",
+      "pontoon",
+      "table-games",
+      "casino"
+    ],
+    "id": "pack-d2-153-blackjack-21",
+    "name": "#153. Blackjack Ace Card (Bloated Portrait Card + Bold 'A' Ace Peak & Crossbar)",
+    "order": 186
+  },
+  "pack-d2-154-royal-flush": {
+    "slug": "video-poker",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Video Poker and live-streamed casino poker tables (Jacks or Better, Hold'em).",
+    "tags": [
+      "video-poker",
+      "poker",
+      "stream",
+      "camera",
+      "card",
+      "live-poker",
+      "holdem"
+    ],
+    "id": "pack-d2-154-royal-flush",
+    "name": "#154. Video Poker / Live Card Stream (Playing Card with Large Bold Suit Symbol + Video Camera Lens!)",
+    "order": 187
+  },
+  "pack-d2-155-scratchcard": {
+    "slug": "scratchcard",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Instant-win digital scratchcards with coin reveal track.",
+    "tags": [
+      "scratchcard",
+      "scratch",
+      "instant-win",
+      "lottery",
+      "reveal",
+      "coin",
+      "ticket"
+    ],
+    "id": "pack-d2-155-scratchcard",
+    "name": "#155. Scratchcard / Instant Win (Bloated Card + Zig-Zag Scratch Track + Coin Disc)",
+    "order": 188
+  },
+  "pack-d2-156-keno-board": {
+    "slug": "keno-board",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Keno and lottery number selection board with matched hit spots.",
+    "tags": [
+      "keno",
+      "board",
+      "grid",
+      "numbers",
+      "lottery",
+      "picks",
+      "draws"
+    ],
+    "id": "pack-d2-156-keno-board",
+    "name": "#156. Keno / Lotto Number Grid (Bloated Board + 2×2 Number Spots — 2 Hit + 2 Open)",
+    "order": 189
+  },
+  "pack-d2-157-hi-lo-card": {
+    "slug": "hi-lo",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Hi-Lo arcade card game predicting whether the next card is higher or lower.",
+    "tags": [
+      "hi-lo",
+      "high-low",
+      "up-down",
+      "predict",
+      "arcade",
+      "cards"
+    ],
+    "id": "pack-d2-157-hi-lo-card",
+    "name": "#157. Hi-Lo Arcade Card Game (3 Separate Padded Shapes — Up Triangle + Center Bar + Down Triangle)",
+    "order": 190
+  },
+  "pack-d2-158-coin-flip": {
+    "slug": "coin-flip",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Heads or Tails 50/50 instant coin flip game and side bet.",
+    "tags": [
+      "coin-flip",
+      "heads-or-tails",
+      "50-50",
+      "toss",
+      "instant-game",
+      "arcade"
+    ],
+    "id": "pack-d2-158-coin-flip",
+    "name": "#158. Coin Flip — Heads or Tails (2 Opposite Coins + Bidirectional Flip Arrows!)",
+    "order": 191
+  },
+  "pack-d2-159-jackpot-banner": {
+    "slug": "slot-machine-reels",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "3-reel slot machine window with aligned payline and side pull lever.",
+    "tags": [
+      "slot-machine",
+      "reels",
+      "payline",
+      "lever",
+      "one-armed-bandit",
+      "spins"
+    ],
+    "id": "pack-d2-159-jackpot-banner",
+    "name": "#159. 3-Reel Slot Machine (3 Separate Padded Reel Columns + Center Payline + Pull Lever!)",
+    "order": 192
+  },
+  "pack-d2-160-rg-stop-hand": {
+    "slug": "rg-stop-hand",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Responsible Gaming self-exclusion, deposit cap, or take-a-break stop prompt.",
+    "tags": [
+      "responsible-gaming",
+      "rg",
+      "stop",
+      "hand",
+      "self-exclusion",
+      "limit",
+      "protection",
+      "pause"
+    ],
+    "id": "pack-d2-160-rg-stop-hand",
+    "name": "#160. Responsible Gaming — Stop Hand (Unified Palm-Thumb Base + 4 Aligned Fingers!)",
+    "order": 193
+  },
+  "horse-knight": {
+    "slug": "horse-racing",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Thoroughbred flat, jump, and international festival horse racing.",
+    "tags": [
+      "horse-racing",
+      "thoroughbred",
+      "gallop",
+      "racehorse",
+      "equestrian",
+      "derby"
+    ],
+    "id": "horse-knight",
+    "name": "Galloping Thoroughbred (Muscular Neck Throat + Equal 2.6px Parallel Far-Leg Spacing)",
+    "order": 194
+  },
+  "greyhound-bust": {
+    "slug": "greyhound-bust",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Greyhound racing portrait mark for dog track cards and specials.",
+    "tags": [
+      "greyhound",
+      "dog-racing",
+      "sighthound",
+      "whippet",
+      "bust",
+      "track"
+    ],
+    "id": "greyhound-bust",
+    "name": "Horse Racing & Jockey (Muscular Neck Throat + Equal 2.6px Parallel Far-Leg Spacing)",
+    "order": 195
+  },
+  "greyhound-coursing": {
+    "slug": "greyhound-sprint",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Live greyhound track racing win, forecast, and tricast markets.",
+    "tags": [
+      "greyhound",
+      "dog-racing",
+      "sprint",
+      "hound",
+      "coursing",
+      "tricast"
+    ],
+    "id": "greyhound-coursing",
+    "name": "Sprinting Greyhound (Athlete-Pictogram Arc Hull + Soft-Joint Limbs)",
+    "order": 196
+  },
+  "falcon-head": {
+    "slug": "falcon-raptor",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Eagles, Falcons, and avian team mascots or virtual bird racing.",
+    "tags": [
+      "falcon",
+      "eagle",
+      "hawk",
+      "bird",
+      "raptor",
+      "mascot",
+      "wings"
+    ],
+    "id": "falcon-head",
+    "name": "Diving Falcon (Same Architecture as Greyhound — Filled Body + Swept Wing Lines)",
+    "order": 197
+  },
+  "hot-flame": {
+    "slug": "hot-streak-flame",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Trending hot game, player winning streak, or popular market indicator.",
+    "tags": [
+      "flame",
+      "fire",
+      "hot",
+      "trending",
+      "popular",
+      "streak",
+      "burn"
+    ],
+    "id": "hot-flame",
+    "name": "Hot Streak Flame (Squash-Style Inner Teardrop Window in Solid)",
+    "order": 198
+  },
+  "shamrock-clover": {
+    "slug": "shamrock-clover",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Irish luck themed slots, St. Patrick's promotions, and lucky charms.",
+    "tags": [
+      "shamrock",
+      "clover",
+      "irish",
+      "luck",
+      "green",
+      "slots",
+      "charm"
+    ],
+    "id": "shamrock-clover",
+    "name": "Irish Luck Shamrock (3 Separate Padded Leaf Shapes in Solid, Like Crown/Diamond)",
+    "order": 199
+  },
+  "slot-cherries": {
+    "slug": "slot-cherries",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Classic fruit machines, retro pub slots, and fruit symbol combinations.",
+    "tags": [
+      "cherries",
+      "fruit",
+      "classic-slots",
+      "retro",
+      "arcade",
+      "berries"
+    ],
+    "id": "slot-cherries",
+    "name": "Slot Cherries (Exact Polar Stem Tangents + Leaf Lens)",
+    "order": 200
+  },
+  "boxing-glove-pro": {
+    "slug": "boxing-glove",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Professional Championship Boxing bout winner, method of victory, and round betting.",
+    "tags": [
+      "boxing",
+      "glove",
+      "heavyweight",
+      "bout",
+      "knockout",
+      "ring",
+      "fight"
+    ],
+    "id": "boxing-glove-pro",
+    "name": "Boxing Glove (Keyline Dome Arcs + Continuous Thumb Cut)",
+    "order": 201
+  },
+  "road-cycling": {
+    "slug": "road-cycling",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Tour de France, Giro d'Italia, andUCI World Tour road cycling stage markets.",
+    "tags": [
+      "cycling",
+      "bike",
+      "bicycle",
+      "tour-de-france",
+      "peloton",
+      "uci"
+    ],
+    "id": "road-cycling",
+    "name": "Road Cycling (Tapered Tangent-Hull Torso & Limbs — Open Wheels in All Modes!)",
+    "order": 202
+  },
+  "downhill-skiing": {
+    "slug": "alpine-skiing",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "FIS World Cup and Winter Olympic alpine downhill and slalom skiing.",
+    "tags": [
+      "skiing",
+      "alpine",
+      "downhill",
+      "slalom",
+      "snow",
+      "winter-sports"
+    ],
+    "id": "downhill-skiing",
+    "name": "Downhill Skiing (Tangent-Hull Aero Torso + Soft Knee Rig)",
+    "order": 203
+  },
+  "athletics-sprint": {
+    "slug": "athletics-sprint",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Track and field 100m sprint, marathon, and Diamond League athletics.",
+    "tags": [
+      "athletics",
+      "sprint",
+      "running",
+      "runner",
+      "track",
+      "marathon",
+      "olympic"
+    ],
+    "id": "athletics-sprint",
+    "name": "Athletics Sprint (Tapered Tangent-Hull Torso + S-Sweep Arms)",
+    "order": 204
+  },
+  "swimming-crawl": {
+    "slug": "swimming",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Olympic and World Aquatics freestyle, butterfly, and relay swimming.",
+    "tags": [
+      "swimming",
+      "swimmer",
+      "pool",
+      "aquatics",
+      "freestyle",
+      "water-sports"
+    ],
+    "id": "swimming-crawl",
+    "name": "Swimming Crawl (Curved Recovery Arm & Back Line — No Triangle!)",
+    "order": 205
+  },
+  "basketball-basket": {
+    "slug": "basketball",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "NBA, EuroLeague, and FIBA basketball point spread, total, and player props.",
+    "tags": [
+      "basketball",
+      "nba",
+      "hoop",
+      "basket",
+      "net",
+      "euroleague",
+      "court"
+    ],
+    "id": "basketball-basket",
+    "name": "Basketball Hoop (Exact ellipseY + Polar Seam Lock)",
+    "order": 206
+  },
+  "soccer-ball": {
+    "slug": "football-soccer",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Premier League, Champions League, and World Cup football (soccer) markets.",
+    "tags": [
+      "football",
+      "soccer",
+      "ball",
+      "premier-league",
+      "champions-league",
+      "fifa"
+    ],
+    "id": "soccer-ball",
+    "name": "3D Isometric Telstar Ball (Continuous Sphere + Pentagon & Seam Cutouts)",
+    "order": 207
+  },
+  "waterpolo-ball": {
+    "slug": "water-polo",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "LEN Champions League and Olympic water polo match and total goals.",
+    "tags": [
+      "water-polo",
+      "ball",
+      "aquatics",
+      "pool",
+      "olympic",
+      "team-sports"
+    ],
+    "id": "waterpolo-ball",
+    "name": "Water Polo (3 Padded Sector Panels + 2 Sinusoidal Water Waves)",
+    "order": 208
+  },
+  "squash-racket": {
+    "slug": "squash",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "PSA World Tour squash match, game handicap, and point markets.",
+    "tags": [
+      "squash",
+      "racket",
+      "ball",
+      "court",
+      "psa",
+      "racquet-sports"
+    ],
+    "id": "squash-racket",
+    "name": "Squash Racket & Ball (Symmetrical Teardrop Hoop + 4 Rounded Window Holes)",
+    "order": 209
+  },
+  "tennis-racket": {
+    "slug": "tennis",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "ATP, WTA, and Grand Slam tennis match, set, and live point betting.",
+    "tags": [
+      "tennis",
+      "racket",
+      "ball",
+      "atp",
+      "wta",
+      "grand-slam",
+      "wimbledon"
+    ],
+    "id": "tennis-racket",
+    "name": "Tennis Racket & Ball (Squash-Style Rounded Interior Window in Solid!)",
+    "order": 210
+  },
+  "formula-one": {
+    "slug": "formula-1-car",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Formula 1 open-wheel bolide for Grand Prix race, podium, and fastest lap.",
+    "tags": [
+      "formula-1",
+      "f1",
+      "bolide",
+      "race-car",
+      "motorsport",
+      "grand-prix"
+    ],
+    "id": "formula-one",
+    "name": "Formula 1 Bolide (Symmetric Top-Down Aero Plan)",
+    "order": 211
+  },
+  "moto-gp": {
+    "slug": "moto-gp",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "MotoGP, WorldSBK, and Isle of Man TT superbike motorcycle racing.",
+    "tags": [
+      "motogp",
+      "motorcycle",
+      "superbike",
+      "racing",
+      "motorsport",
+      "rider"
+    ],
+    "id": "moto-gp",
+    "name": "MotoGP Superbike (Open Wheels + Colored Sportbike Fairing & Rider!)",
+    "order": 212
+  },
+  "slot-777": {
+    "slug": "slot-777",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Classic Vegas 777 slot machine cabinet and video slots category.",
+    "tags": [
+      "slots",
+      "777",
+      "jackpot",
+      "machine",
+      "reels",
+      "vegas",
+      "casino"
+    ],
+    "id": "slot-777",
+    "name": "Jackpot 777 Slot Machine",
+    "order": 213
+  },
+  "roulette-wheel": {
+    "slug": "roulette-wheel",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "European, American, and Lightning Roulette live and RNG wheel games.",
+    "tags": [
+      "roulette",
+      "wheel",
+      "table-games",
+      "casino",
+      "spin",
+      "pockets"
+    ],
+    "id": "roulette-wheel",
+    "name": "Roulette Wheel (Squash-Style Donut Window + Cross Spokes in Solid)",
+    "order": 214
+  },
+  "casino-chip": {
+    "slug": "casino-chip",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Table games, live casino chips, and wagering denomination selector.",
+    "tags": [
+      "chip",
+      "token",
+      "casino",
+      "table-games",
+      "bet",
+      "stake",
+      "wager"
+    ],
+    "id": "casino-chip",
+    "name": "Casino Chip (Filled Center + 4 Rim Stripes in Solid)",
+    "order": 215
+  },
+  "diamond-gem": {
+    "slug": "diamond-gem",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Gemstone cluster slots, high-volatility games, and diamond jackpot tiers.",
+    "tags": [
+      "diamond",
+      "gem",
+      "jewel",
+      "crystal",
+      "slots",
+      "jackpot",
+      "luxury"
+    ],
+    "id": "diamond-gem",
+    "name": "High-Roller Diamond Gem (6 Individual facePoly Facet Shapes in Solid!)",
+    "order": 216
+  },
+  "royal-crown": {
+    "slug": "vip-crown",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "VIP loyalty club, royal tier status, and exclusive high-roller rewards.",
+    "tags": [
+      "crown",
+      "vip",
+      "royal",
+      "loyalty",
+      "king",
+      "tier",
+      "exclusive",
+      "premium"
+    ],
+    "id": "royal-crown",
+    "name": "Royal VIP Crown (2 Independent Rounded Solid Shapes — Crown & Base)",
+    "order": 217
+  },
+  "esports-gamepad": {
+    "slug": "esports-gamepad",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "CS2, League of Legends, Dota 2, EA FC, and competitive Esports betting.",
+    "tags": [
+      "esports",
+      "gaming",
+      "gamepad",
+      "controller",
+      "cs2",
+      "lol",
+      "dota",
+      "virtuals"
+    ],
+    "id": "esports-gamepad",
+    "name": "Pro Esports Gamepad (4-Circle Tangent Horn Construction)",
+    "order": 218
+  },
+  "passkey": {
+    "slug": "passkey",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Passwordless WebAuthn passkey login and cryptographic sign-in.",
+    "tags": [
+      "passkey",
+      "key",
+      "auth",
+      "passwordless",
+      "biometric",
+      "security",
+      "login"
+    ],
+    "id": "passkey",
+    "name": "Security Passkey (Same Silhouette in Line & Solid!)",
+    "order": 219
+  },
+  "shield-verified": {
+    "slug": "shield-verified",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Verified player identity, licensed operator seal, or protected transaction.",
+    "tags": [
+      "shield",
+      "verified",
+      "approved",
+      "trusted",
+      "kyc",
+      "safe",
+      "security"
+    ],
+    "id": "shield-verified",
+    "name": "Verified Security Shield (6-Vertex Heraldic Hull)",
+    "order": 220
+  },
+  "bell-alert": {
+    "slug": "notification-bell",
+    "area": "bx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Push notifications, account alerts, and promotional message inbox.",
+    "tags": [
+      "bell",
+      "notification",
+      "alert",
+      "inbox",
+      "push",
+      "reminder",
+      "updates"
+    ],
+    "id": "bell-alert",
+    "name": "Notification Bell (2 Separate Padded Solid Shapes — Bell Dome & Clapper)",
+    "order": 221
+  },
+  "crash-rocket": {
+    "slug": "crash-rocket",
+    "area": "gx",
+    "alias": "",
+    "crsKey": "",
+    "description": "Crash multiplier arcade games where players cash out before the rocket explodes.",
+    "tags": [
+      "crash",
+      "rocket",
+      "multiplier",
+      "arcade",
+      "instant-game",
+      "blast",
+      "space"
+    ],
+    "id": "crash-rocket",
+    "name": "Crash Game Rocket (Intersecting Ogive Arcs + Porthole)",
+    "order": 222
+  }
+}
