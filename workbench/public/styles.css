@@ -1240,6 +1240,104 @@ details.insp-section:not([open]) summary::after { transform: rotate(-90deg); }
   flex-direction: column;
   gap: 4px;
 }
+
+/* Comment Thread & AI Feedback UI */
+.comment-count-pill {
+  font: 700 10px/1 var(--font-sans);
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  margin-left: auto;
+  margin-right: 8px;
+}
+.comment-count-pill.resolved {
+  background: var(--success-soft);
+  color: var(--success);
+}
+.comment-thread-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 170px;
+  overflow-y: auto;
+}
+.comment-thread-list:empty {
+  display: none;
+}
+.comment-bubble {
+  padding: 7px 9px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-page);
+  font-size: 11.5px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.comment-bubble.is-open {
+  border-left: 3px solid var(--warning);
+  background: var(--warning-soft);
+}
+.comment-bubble.is-ai {
+  border-left: 3px solid var(--primary);
+  background: var(--primary-soft);
+}
+.comment-bubble.is-resolved:not(.is-ai) {
+  opacity: 0.72;
+}
+.comment-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.comment-author-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
+}
+.comment-bubble.is-ai .comment-author-tag {
+  color: var(--primary);
+}
+.comment-action-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.btn-comment-todo {
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  background: var(--danger-soft);
+  color: var(--danger);
+  font: 600 11px/1 var(--font-sans);
+  cursor: pointer;
+}
+.btn-comment-todo:hover {
+  background: var(--danger);
+  color: #fff;
+}
+.btn-comment-secondary {
+  height: 26px;
+  padding: 0 9px;
+  border-radius: 5px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-page);
+  color: var(--text-secondary);
+  font: 600 11px/1 var(--font-sans);
+  cursor: pointer;
+}
+.btn-comment-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
 .friendly-field label {
   font-size: 11.5px;
   font-weight: 600;

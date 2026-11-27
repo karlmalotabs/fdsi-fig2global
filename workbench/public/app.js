@@ -577,6 +577,60 @@ function renderInspectorStages(item) {
   });
 }
 
+function renderCommentThread(m) {
+  const threadEl = document.getElementById("inspCommentThread");
+  const badgeEl = document.getElementById("inspCommentBadge");
+  if (!threadEl || !badgeEl) return;
+
+  const comments = Array.isArray(m.comments) ? [...m.comments] : [];
+  if (comments.length === 0 && m.reworkNote && m.reworkNote.trim()) {
+    comments.push({
+      id: "c_legacy",
+      author: "designer",
+      text: m.reworkNote.trim(),
+      status: "open",
+      createdAt: "",
+    });
+  }
+
+  const openCount = comments.filter((c) => c.status !== "resolved").length;
+  if (comments.length === 0) {
+    badgeEl.style.display = "none";
+    threadEl.innerHTML = "";
+    return;
+  }
+
+  badgeEl.style.display = "inline-flex";
+  if (openCount > 0) {
+    badgeEl.className = "comment-count-pill";
+    badgeEl.textContent = `${openCount} open`;
+  } else {
+    badgeEl.className = "comment-count-pill resolved";
+    badgeEl.textContent = "✓ Resolved";
+  }
+
+  threadEl.innerHTML = comments
+    .map((c) => {
+      const isAi = c.author === "ai";
+      const isOpen = c.status !== "resolved";
+      const cls = isAi ? "is-ai" : isOpen ? "is-open" : "is-resolved";
+      const authorLabel = isAi ? "✦ AI Agent Fix" : isOpen ? "● Designer (Open)" : "✓ Designer (Resolved)";
+      const timeLabel = c.createdAt ? new Date(c.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "";
+      const safeText = String(c.text || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+      return `<div class="comment-bubble ${cls}">
+        <div class="comment-meta-row">
+          <span class="comment-author-tag">${authorLabel}</span>
+          <span>${timeLabel}</span>
+        </div>
+        <div>${safeText}</div>
+      </div>`;
+    })
+    .join("");
+}
+
 async function populateInspector(item, loadSource = true) {
   inspectedItem = item;
   const m = getMeta(item);
@@ -594,6 +648,7 @@ async function populateInspector(item, loadSource = true) {
   document.getElementById("inspAlias").value = m.alias || "";
   document.getElementById("inspTokenId").value = `fdsi-${m.slug}-reg`;
 
+  renderCommentThread(m);
   renderInspectorStages(item);
 
   if (loadSource || document.getElementById("devCodeDetails").open) {
@@ -906,6 +961,58 @@ document.addEventListener("click", async (e) => {
       false
     );
   });
+});
+
+// Comment Thread Actions (Post & Flag TODO, Add Note, Resolve All)
+async function submitCommentAction({ moveToStage = null, resolveAll = false } = {}) {
+  if (!inspectedItem) return;
+  const cur = getMeta(inspectedItem);
+  const noteEl = document.getElementById("inspReworkNote");
+  const text = resolveAll ? "" : noteEl.value.trim();
+  if (!resolveAll && !text && !moveToStage) {
+    showToast("Write a comment first before posting.", 1600);
+    return;
+  }
+
+  const res = await fetch("/api/comments", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      id: inspectedItem.id,
+      slug: cur.slug,
+      area: cur.area,
+      author: "designer",
+      text,
+      moveToStage: moveToStage || cur.status,
+      resolveAll,
+    }),
+  });
+  const data = await res.json();
+  if (data.ok) {
+    metaCatalog[inspectedItem.id] = data.entry;
+    if (Array.isArray(data.history)) historyLog = data.history;
+    if (resolveAll) noteEl.value = "";
+    renderAll();
+    populateInspector(inspectedItem, false);
+    showToast(
+      resolveAll
+        ? `✓ Resolved comments on ${cleanDisplayName(inspectedItem)}`
+        : moveToStage === "todo"
+        ? `⚑ Flagged ${cleanDisplayName(inspectedItem)} as TODO & sent comment to AI queue!`
+        : `💬 Added comment on ${cleanDisplayName(inspectedItem)}`,
+      2000
+    );
+  }
+}
+
+document.getElementById("btnPostTodoComment")?.addEventListener("click", () => {
+  submitCommentAction({ moveToStage: "todo", resolveAll: false });
+});
+document.getElementById("btnPostNoteOnly")?.addEventListener("click", () => {
+  submitCommentAction({ moveToStage: null, resolveAll: false });
+});
+document.getElementById("btnResolveAllComments")?.addEventListener("click", () => {
+  submitCommentAction({ moveToStage: null, resolveAll: true });
 });
 
 // Duotone Accent Color Swatches & Custom Picker

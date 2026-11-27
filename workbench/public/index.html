@@ -390,11 +390,26 @@
         </details>
 
         <details class="insp-section" open>
-          <summary>Review Notes &amp; Feedback</summary>
+          <summary>
+            <span>Review Notes &amp; AI Feedback</span>
+            <span id="inspCommentBadge" class="comment-count-pill" style="display:none">0 open</span>
+          </summary>
           <div class="insp-section-body">
+            <div id="inspCommentThread" class="comment-thread-list"></div>
             <div class="friendly-field">
-              <label>What needs fixing?</label>
-              <textarea id="inspReworkNote" class="friendly-input" rows="2" placeholder="Write a plain-English note for the design agent…"></textarea>
+              <label>Comment / Fix Instruction for AI</label>
+              <textarea id="inspReworkNote" class="friendly-input" rows="2" placeholder="Describe what needs changing (AI reads this via MCP / API)…"></textarea>
+              <div class="comment-action-row">
+                <button type="button" class="btn-comment-todo" id="btnPostTodoComment" data-tip="Save comment and move icon to Needs Fix (TODO) queue for AI">
+                  Flag TODO &amp; Comment
+                </button>
+                <button type="button" class="btn-comment-secondary" id="btnPostNoteOnly" data-tip="Add comment to thread without changing stage">
+                  Add Note
+                </button>
+                <button type="button" class="btn-comment-secondary" id="btnResolveAllComments" data-tip="Mark all open comments on this icon as resolved" style="margin-left:auto">
+                  ✓ Resolve
+                </button>
+              </div>
             </div>
           </div>
         </details>
