@@ -3,7 +3,7 @@
   "prefix": "fdsi",
   "brand": "core",
   "area": "sb",
-  "displayName": "ww",
+  "displayName": "Match Pitch View",
   "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
   "tags": [
     "pitch",
@@ -47,5 +47,5 @@
   },
   "version": "1.0.0",
   "createdAt": "2026-11-12",
-  "updatedAt": "2026-11-25"
+  "updatedAt": "2026-11-12"
 }

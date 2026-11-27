@@ -24,7 +24,7 @@ export default {
           "configuration",
           "system"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: ({ r }) => {
       const raw = Array.from({ length: 8 }, (_, i) => polar(12, 12, 8.8, -22.5 + i * 45));

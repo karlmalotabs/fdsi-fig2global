@@ -24,7 +24,7 @@ export default {
           "account",
           "door"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: ({ s, b, r }) => {
       const D = bloatRect({ x: 3.8, y: 3.8, w: 9.8, h: 16.4, r: Math.min(r + 0.4, 2.4), b });

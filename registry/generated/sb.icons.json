@@ -2,7 +2,7 @@
   "$schema": "../schema/area.index.schema.json",
   "brand": "core",
   "area": "sb",
-  "generatedAt": "2026-11-25T15:02:26.172Z",
+  "generatedAt": "2026-11-27T09:55:23.773Z",
   "icons": [
     {
       "name": "fdsi-acca-parlay",
@@ -275,6 +275,40 @@
           "size": "reg",
           "style": "color",
           "file": "fdsi-badminton-shuttle-reg-color.svg"
+        }
+      ]
+    },
+    {
+      "name": "fdsi-baseball-glove",
+      "path": "core/sb/fdsi-baseball-glove",
+      "displayName": "Baseball Glove / Mitt",
+      "description": "Cupped leather baseball fielder's mitt with 3 rounded finger stalls, angled thumb bolster, laced webbing basket, and a stitched baseball nestled inside the palm pocket.",
+      "tags": [
+        "baseball-glove"
+      ],
+      "status": "active",
+      "deprecatedInFavorOf": null,
+      "aliases": [],
+      "variants": [
+        {
+          "size": "reg",
+          "style": "outline",
+          "file": "fdsi-baseball-glove-reg-outline.svg"
+        },
+        {
+          "size": "reg",
+          "style": "solid",
+          "file": "fdsi-baseball-glove-reg-solid.svg"
+        },
+        {
+          "size": "reg",
+          "style": "duotone",
+          "file": "fdsi-baseball-glove-reg-duotone.svg"
+        },
+        {
+          "size": "reg",
+          "style": "color",
+          "file": "fdsi-baseball-glove-reg-color.svg"
         }
       ]
     },
@@ -2569,7 +2603,7 @@
     {
       "name": "fdsi-pitch-tracker",
       "path": "core/sb/fdsi-pitch-tracker",
-      "displayName": "ww",
+      "displayName": "Match Pitch View",
       "description": "Live 2D match pitch visualizer showing ball possession and attacks.",
       "tags": [
         "pitch",

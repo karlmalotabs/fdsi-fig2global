@@ -1,0 +1,39 @@
+{
+  "name": "fdsi-baseball-glove",
+  "prefix": "fdsi",
+  "brand": "core",
+  "area": "sb",
+  "displayName": "Baseball Glove / Mitt",
+  "description": "Cupped leather baseball fielder's mitt with 3 rounded finger stalls, angled thumb bolster, laced webbing basket, and a stitched baseball nestled inside the palm pocket.",
+  "tags": [
+    "baseball-glove"
+  ],
+  "aliases": [],
+  "status": "active",
+  "deprecatedInFavorOf": null,
+  "variants": [
+    {
+      "size": "reg",
+      "style": "outline",
+      "file": "fdsi-baseball-glove-reg-outline.svg"
+    },
+    {
+      "size": "reg",
+      "style": "solid",
+      "file": "fdsi-baseball-glove-reg-solid.svg"
+    },
+    {
+      "size": "reg",
+      "style": "duotone",
+      "file": "fdsi-baseball-glove-reg-duotone.svg"
+    },
+    {
+      "size": "reg",
+      "style": "color",
+      "file": "fdsi-baseball-glove-reg-color.svg"
+    }
+  ],
+  "version": "1.0.0",
+  "createdAt": "2026-11-12",
+  "updatedAt": "2026-11-12"
+}

@@ -1,14 +1,5 @@
 [
   {
-    "at": "2026-11-26T16:02:13.795Z",
-    "total": 222,
-    "approved": 215,
-    "todo": 7,
-    "newCount": 0,
-    "crsMapped": 0,
-    "aliasMapped": 0
-  },
-  {
     "at": "2026-11-26T16:02:14.772Z",
     "total": 222,
     "approved": 214,
@@ -211,6 +202,15 @@
     "total": 222,
     "approved": 216,
     "todo": 6,
+    "newCount": 0,
+    "crsMapped": 0,
+    "aliasMapped": 0
+  },
+  {
+    "at": "2026-11-27T09:53:00.584Z",
+    "total": 223,
+    "approved": 216,
+    "todo": 7,
     "newCount": 0,
     "crsMapped": 0,
     "aliasMapped": 0

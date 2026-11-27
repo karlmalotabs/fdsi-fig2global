@@ -24,7 +24,7 @@ export default {
           "closed",
           "private"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: ({ b, r }) => {
       const B = bloatRect({ x: 4.8, y: 10.5, w: 14.4, h: 10.0, r: Math.min(r + 0.4, 2.4), b });

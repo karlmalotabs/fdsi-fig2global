@@ -24,7 +24,7 @@ export default {
           "check",
           "guard"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: ({ b, r }) => {
       const pts = [[12, 3.0], [19.5, 5.6], [19.0, 13.0], [12, 21.0], [5.0, 13.0], [4.5, 5.6]];

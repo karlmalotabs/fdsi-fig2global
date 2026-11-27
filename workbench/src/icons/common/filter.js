@@ -24,7 +24,7 @@ export default {
           "criteria",
           "facets"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: ({ b, r }) => {
       const pts = [[3.5, 4.5], [20.5, 4.5], [14.0, 12.6], [14.0, 19.8], [10.0, 19.8], [10.0, 12.6]];

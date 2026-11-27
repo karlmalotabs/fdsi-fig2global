@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T12:17:59.569Z",
+  "generatedAt": "2026-11-27T09:55:23.777Z",
   "brands": [
     {
       "brand": "core",
@@ -26,7 +26,7 @@
         },
         {
           "area": "sb",
-          "iconCount": 98,
+          "iconCount": 99,
           "file": "registry/generated/sb.icons.json"
         }
       ]

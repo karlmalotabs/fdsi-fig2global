@@ -4193,5 +4193,36 @@
     "id": "crash-rocket",
     "name": "Crash Game Rocket (Intersecting Ogive Arcs + Porthole)",
     "order": 222
+  },
+  "sb-baseball-glove": {
+    "id": "sb-baseball-glove",
+    "slug": "baseball-glove",
+    "area": "sb",
+    "alias": "",
+    "crsKey": "",
+    "description": "Cupped leather baseball fielder's mitt with 3 rounded finger stalls, angled thumb bolster, laced webbing basket, and a stitched baseball nestled inside the palm pocket.",
+    "tags": [
+      "baseball-glove"
+    ],
+    "status": "todo",
+    "reworkNote": "Too organic It is hard to recognize whether its a glove or some irregular shape. Icon would not be easiuly recognized without text label.",
+    "name": "Baseball Glove / Mitt",
+    "order": 57,
+    "comments": [
+      {
+        "id": "c_1795773110312",
+        "author": "designer",
+        "text": "Too organic It is hard to recognize whether its a glove or some irregular shape. Icon would not be easiuly recognized without text label.",
+        "status": "open",
+        "createdAt": "2026-11-27T09:51:50.312Z"
+      },
+      {
+        "id": "c_1795773180576_8yt7",
+        "author": "designer",
+        "text": "Too organic It is hard to recognize whether its a glove or some irregular shape. Icon would not be easiuly recognized without text label.",
+        "status": "open",
+        "createdAt": "2026-11-27T09:53:00.576Z"
+      }
+    ]
   }
 }

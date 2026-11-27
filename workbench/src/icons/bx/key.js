@@ -24,7 +24,7 @@ export default {
           "security",
           "auth"
       ],
-      "status": "todo"
+      "status": "approved"
   },
   build: () => {
       const cx = 7.5, cy = 12.0, R = 4.5;
