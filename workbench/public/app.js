@@ -151,32 +151,47 @@ function fdsiName(item, style) {
 }
 
 async function loadAllIcons() {
-  const res = await fetch("/api/manifest");
-  const { modules, metadata, history } = await res.json();
-  metaCatalog = metadata || {};
-  historyLog = Array.isArray(history) ? history : [];
+  try {
+    const res = await fetch("/api/manifest");
+    const { modules, metadata, history } = await res.json();
+    metaCatalog = metadata || {};
+    historyLog = Array.isArray(history) ? history : [];
 
-  const loaded = await Promise.all(
-    modules.map(async (m) => {
-      const mod = await import(m.url);
-      const spec = mod.default;
-      return { ...spec, _fileArea: m.area, _fileSlug: m.slug };
-    })
-  );
+    let loaded = [];
+    try {
+      const bundleMod = await import(`/api/icons-bundle.js?v=${Date.now()}`);
+      if (Array.isArray(bundleMod.ICONS) && bundleMod.ICONS.length > 0) {
+        loaded = bundleMod.ICONS;
+      }
+    } catch {}
 
-  loaded.sort((a, b) => (a.order ?? 9999) - (b.order ?? 9999) || a.slug.localeCompare(b.slug));
-  allIcons = loaded;
-  document.getElementById("liveStatusText").textContent = `${allIcons.length} Icons · Live`;
+    if (loaded.length === 0 && Array.isArray(modules)) {
+      loaded = await Promise.all(
+        modules.map(async (m) => {
+          const mod = await import(m.url);
+          const spec = mod.default;
+          return { ...spec, _fileArea: m.area, _fileSlug: m.slug };
+        })
+      );
+    }
 
-  if (!inspectedItem && allIcons.length > 0) {
-    inspectedItem = allIcons[0];
-  } else if (inspectedItem) {
-    inspectedItem = allIcons.find((x) => x.id === inspectedItem.id || x.slug === inspectedItem.slug) || allIcons[0];
+    loaded.sort((a, b) => (a.order ?? 9999) - (b.order ?? 9999) || a.slug.localeCompare(b.slug));
+    allIcons = loaded;
+    document.getElementById("liveStatusText").textContent = `${allIcons.length} Icons · Live`;
+
+    if (!inspectedItem && allIcons.length > 0) {
+      inspectedItem = allIcons[0];
+    } else if (inspectedItem) {
+      inspectedItem = allIcons.find((x) => x.id === inspectedItem.id || x.slug === inspectedItem.slug) || allIcons[0];
+    }
+
+    renderModifierGrids();
+    renderAll();
+    if (inspectedItem) populateInspector(inspectedItem, false);
+  } catch (err) {
+    console.error("Failed to load icons:", err);
+    document.getElementById("liveStatusText").textContent = "Load Error (Retry)";
   }
-
-  renderModifierGrids();
-  renderAll();
-  if (inspectedItem) populateInspector(inspectedItem, false);
 }
 
 function renderModifierGrids() {
@@ -1299,12 +1314,38 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-// Live SSE File Watcher
-const ev = new EventSource("/api/events");
-ev.addEventListener("icons-changed", (e) => {
-  const info = JSON.parse(e.data || "{}");
-  showToast(`🔄 Hot-reloading (${info.area}/${info.file})…`, 1800);
-  loadAllIcons();
+// Visibility-aware Live SSE File Watcher (connects AFTER initial load and releases
+// connection when tab is hidden so background tabs never exhaust browser HTTP/1.1 sockets!)
+let sseSource = null;
+function connectSse() {
+  if (sseSource || document.hidden) return;
+  sseSource = new EventSource("/api/events");
+  sseSource.addEventListener("icons-changed", (e) => {
+    const info = JSON.parse(e.data || "{}");
+    showToast(`🔄 Hot-reloading (${info.area || "icons"}/${info.file || info.slug || ""})…`, 1800);
+    loadAllIcons();
+  });
+  sseSource.onerror = () => {
+    try {
+      sseSource.close();
+    } catch {}
+    sseSource = null;
+  };
+}
+function disconnectSse() {
+  if (!sseSource) return;
+  try {
+    sseSource.close();
+  } catch {}
+  sseSource = null;
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    disconnectSse();
+  } else {
+    loadAllIcons().then(connectSse);
+  }
 });
+window.addEventListener("pagehide", disconnectSse);
 
-loadAllIcons();
+loadAllIcons().then(connectSse);

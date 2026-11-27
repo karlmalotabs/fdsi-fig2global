@@ -160,8 +160,33 @@ function scanIconModules() {
   return modules;
 }
 
-// SSE clients for live multi-agent hot-reload:
+// Build a single on-the-fly ES module bundle of all 222 icon files so the browser
+// loads all icons in 1 HTTP request (~5ms) instead of 222 separate HTTP/1.1 requests!
+function buildDynamicBundleJs() {
+  const mods = scanIconModules();
+  const chunks = [
+    `import * as _P from "/src/engine/primitives.js";`,
+    `const { deg2rad, f, P, add, sub, mul, len, norm, perp, rot, distPtSeg, sampleCubic, circleToD, ellToD, lineSegD, polyD, bloatPoly, bloatRect, edgeX, edgeY, spanLine, facePoly, sectorFace, drawKeylines } = _P;`,
+    `export const ICONS = [];`,
+  ];
+  for (let i = 0; i < mods.length; i++) {
+    const m = mods[i];
+    const fp = path.join(ICONS_DIR, m.area, `${m.slug}.js`);
+    let src = fs.readFileSync(fp, "utf8");
+    // Strip the per-file primitives import and rewrite `export default` into `const _icN =`:
+    src = src.replace(/^\s*import\s+\{[^}]*\}\s+from\s+["'][^"']*primitives\.js["'];?\s*$/gm, "");
+    src = src.replace(/export\s+default\s+/, `const _ic${i} = `);
+    chunks.push(
+      `{\n${src}\nICONS.push({ ..._ic${i}, _fileArea: ${JSON.stringify(m.area)}, _fileSlug: ${JSON.stringify(m.slug)} });\n}`
+    );
+  }
+  return chunks.join("\n");
+}
+
+// SSE clients for live multi-agent hot-reload (capped to 2 concurrent streams so
+// multiple open tabs in Chrome never exhaust the browser's 6-socket-per-origin HTTP/1.1 limit!):
 const sseClients = new Set();
+const MAX_SSE_CLIENTS = 2;
 function broadcastSse(event, payload) {
   const msg = `event: ${event}\ndata: ${JSON.stringify(payload)}\n\n`;
   for (const res of sseClients) {
@@ -224,6 +249,13 @@ const server = http.createServer(async (req, res) => {
 
   // 1. SSE endpoint for live file-watch & comment hot reload:
   if (req.method === "GET" && pathname === "/api/events") {
+    while (sseClients.size >= MAX_SSE_CLIENTS) {
+      const oldest = sseClients.values().next().value;
+      sseClients.delete(oldest);
+      try {
+        oldest.end();
+      } catch {}
+    }
     res.writeHead(200, {
       "Content-Type": "text/event-stream",
       "Cache-Control": "no-cache",
@@ -233,6 +265,23 @@ const server = http.createServer(async (req, res) => {
     res.write(`event: connected\ndata: {"ok":true}\n\n`);
     sseClients.add(res);
     req.on("close", () => sseClients.delete(res));
+    return;
+  }
+
+  // 1B. GET /api/icons-bundle.js -> all 222 modular .js icons compiled on-the-fly into 1 HTTP request:
+  if (req.method === "GET" && pathname === "/api/icons-bundle.js") {
+    try {
+      const bundleCode = buildDynamicBundleJs();
+      res.writeHead(200, {
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Cache-Control": "no-store",
+        "Access-Control-Allow-Origin": "*",
+      });
+      res.end(bundleCode);
+    } catch (e) {
+      res.writeHead(500, { "Content-Type": "application/javascript; charset=utf-8" });
+      res.end(`export const ICONS = []; console.error(${JSON.stringify(e.message)});`);
+    }
     return;
   }
 
