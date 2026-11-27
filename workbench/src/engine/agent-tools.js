@@ -203,13 +203,23 @@ export function buildQueueResponse(catalog, { status = "todo", area = "", missin
 }
 
 // Validate a parametric .js icon module by loading it and compiling across all 4 styles & XY pad extremes
+// + running the Deterministic Golden-Rule Static Linter (Gate A)
 export async function validateIconSource(source, fallbackArea = "sb", fallbackSlug = "temp-check") {
   const issues = [];
+  const warnings = [];
   if (typeof source !== "string" || !source.includes("export default")) {
     return {
       ok: false,
       issues: ["Icon module must be an ES module with `export default { id, slug, name, area, meta, build }`."],
+      warnings,
     };
+  }
+
+  // Gate A1: Hard ban on bitmap Marching Squares tracers (`solidFaces` and `outline`)
+  if (/\bsolidFaces\s*\(|\boutline\s*\(/.test(source)) {
+    issues.push(
+      "Golden Rule Violation: `solidFaces()` and `outline()` are banned (they rasterize onto a bitmap). Use analytical `face: [...]`, `fill: [...]`, `over: [...]`, `holeExact: [...]`, or `tubes: [...]`."
+    );
   }
 
   // Rewrite relative `../../engine/primitives.js` import to an absolute file:// URL so we can import from a temp file or data URL:
@@ -225,6 +235,7 @@ export async function validateIconSource(source, fallbackArea = "sb", fallbackSl
     return {
       ok: false,
       issues: [`Syntax / import error: ${e.message}`],
+      warnings,
     };
   }
 
@@ -232,7 +243,46 @@ export async function validateIconSource(source, fallbackArea = "sb", fallbackSl
     return {
       ok: false,
       issues: ["Exported default object is missing a `build({ b, r, s, styleMode })` function."],
+      warnings,
     };
+  }
+
+  // Gate A2: Inspect raw `spec.build()` return structure at Soft Default tokens
+  try {
+    const sampleOut = spec.build({ styleMode: "round", s: 1.75, r: 2.0, b: 0.2, duoColor: "#0969da", mod: "none", isDark: false });
+    if (!sampleOut || typeof sampleOut.line !== "string" || !sampleOut.line.trim()) {
+      issues.push("`build()` must return a non-empty `line` SVG markup string (e.g. `<path d=\"...\"/>`).");
+    }
+    const S = sampleOut?.solid;
+    const hasSolidContent =
+      S &&
+      ((Array.isArray(S.fill) && S.fill.length > 0) ||
+        (Array.isArray(S.face) && S.face.length > 0) ||
+        (Array.isArray(S.faces) && S.faces.length > 0) ||
+        (Array.isArray(S.tubes) && S.tubes.length > 0) ||
+        (Array.isArray(S.stroke) && S.stroke.length > 0));
+    if (!hasSolidContent) {
+      issues.push("`build()` must return a `solid` object with at least one of `face`, `fill`, `tubes`, or `stroke`.");
+    }
+    if (S) {
+      for (const key of ["fill", "face", "faces", "over", "holeExact", "hole", "cut", "knocks", "stroke"]) {
+        const arr = S[key];
+        if (Array.isArray(arr) && arr.some((d) => typeof d === "string" && d.trim().startsWith("<"))) {
+          issues.push(
+            `\`solid.${key}\` must contain raw SVG path \`d\` strings (e.g. \`"M4 4..."\`), NEVER \`<path .../>\` HTML tags.`
+          );
+        }
+      }
+    }
+    const D = sampleOut?.duotone;
+    if (!D || ((!Array.isArray(D.tone) || D.tone.length === 0) && (!Array.isArray(D.secondary) || D.secondary.length === 0))) {
+      warnings.push("`duotone` has neither `tone` fills nor `secondary` inner strokes; add `duotone: { tone: [...], secondary: [...], line }` so Duotone and Color styles have full depth.");
+    }
+    if (!sampleOut?.keylines) {
+      warnings.push("`keylines` is empty; consider returning `keylines: drawKeylines(circles, anchors)` for blueprint inspection.");
+    }
+  } catch (err) {
+    issues.push(`Runtime error calling \`build()\` at default tokens: ${err.message}`);
   }
 
   const presets = [
@@ -261,6 +311,7 @@ export async function validateIconSource(source, fallbackArea = "sb", fallbackSl
   return {
     ok: issues.length === 0,
     issues,
+    warnings,
     specMeta: {
       id: spec.id || `${fallbackArea}-${fallbackSlug}`,
       slug: spec.slug || fallbackSlug,

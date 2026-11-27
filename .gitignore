@@ -5,6 +5,7 @@ Thumbs.db
 # Editors
 .vscode/*
 !.vscode/extensions.json
+!.vscode/mcp.json
 .idea/
 
 # Local Storybook sandbox (not committed)

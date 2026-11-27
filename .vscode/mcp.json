@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "fdsi-workbench": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${workspaceFolder}/workbench/mcp.mjs"],
+      "env": {
+        "WORKBENCH_URL": "http://127.0.0.1:4650"
+      }
+    }
+  }
+}
