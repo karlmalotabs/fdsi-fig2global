@@ -130,6 +130,15 @@ export function latestOpenNote(comments) {
   return openDesigner ? openDesigner.text : "";
 }
 
+export const GOLDEN_RULES_CHECKLIST = [
+  "1. 24x24 Canvas & 2..22 Active Zone: Outer 2px margin (0..2, 22..24) is reserved for corner modifiers. Snap centers/lines to 0.5px increments and keep >= 1.5px stroke clearance.",
+  "2. Anchor-Locked Bloat (b): Connect interior seams to `H.anchors[i]` (never raw `pts[i]`), lock horizontal/vertical wall T-junctions with `edgeX(H.poly, y, side)` / `edgeY(H.poly, x, side)` / `ellipseY()`, and use `spanLine(H, y, b)` for full-width dividers.",
+  "3. Multi-Shape Padded Solids First (`solid.face: [...]`): For segmented containers, cards, tickets, funnels, crowns, gems, or multi-part sports gear, build `solid` from 2–7 independent rounded shapes (`bloatRect`/`bloatPoly`/`facePoly`/true `A R R` arcs) separated by a 1.5–1.8px padding gap — NEVER a single-line slot knockout, and NEVER call bitmap tracers `solidFaces()` or `outline()`.",
+  "4. Foreground Shapes Over Halo Masks (`solid.over: [...]`): Any foreground shape sitting inside a `holeExact`/`cut` halo (e.g. Lego top stud, wallet clasp, 8-ball loops, bowling ball) MUST go in `solid.over: [...]` so `<g mask>` does not erase it. Pass overlapping `evenodd` rings as separate array entries (`over: [topRing, botRing]`).",
+  "5. 4-Style Completeness (`line`, `solid`, `duotone`, `color`): Always return `keylines: drawKeylines(...)`, `line`, `solid`, and `duotone: { tone: [...], secondary: [...], line: '...' }`. In `color` mode, `compiler.js` automatically layers `tone` (Layer 1) -> `secondary` (Layer 2) -> `extractOuterStroke(line, secondary)` (Layer 3 on top).",
+  "6. Call `workbench_get_skill` for full category recipes (3D isometric balls, `tangentHull2` + `roundOpen` athlete pictograms, ogive rockets/flames, and T-junction formulas), and ALWAYS run `workbench_validate_icon` before `workbench_submit_icon`.",
+];
+
 export function buildQueueResponse(catalog, { status = "todo", area = "", missing = "" } = {}) {
   const entries = Object.entries(catalog).map(([id, m]) => {
     const comments = normalizeComments(m);
@@ -186,7 +195,11 @@ export function buildQueueResponse(catalog, { status = "todo", area = "", missin
     return bScore - aScore || a.slug.localeCompare(b.slug);
   });
 
-  return { counts, items };
+  return {
+    counts,
+    goldenRulesChecklist: GOLDEN_RULES_CHECKLIST,
+    items,
+  };
 }
 
 // Validate a parametric .js icon module by loading it and compiling across all 4 styles & XY pad extremes
@@ -260,62 +273,35 @@ export async function validateIconSource(source, fallbackArea = "sb", fallbackSl
 }
 
 export function getAuthoringSkillMarkdown() {
-  return `# FDSI Parametric Icon Authoring Skill (Workbench ES Module Format)
+  const fullSkillPath = path.join(WORKBENCH_DIR, "SKILL.md");
+  const fullSkillBody = fs.existsSync(fullSkillPath) ? fs.readFileSync(fullSkillPath, "utf8") : "";
 
-## 1. File Structure (\`src/icons/<area>/<slug>.js\`)
-Every icon is a standalone ES module on a \`24×24\` viewBox (\`2..22\` live zone) that imports helpers from \`../../engine/primitives.js\`:
+  const header = `# FDSI Parametric Icon Authoring Skill & Golden Rules (Workbench ES Module Format)
 
-\`\`\`js
-import { f, P, bloatPoly, bloatRect, facePoly, sectorFace, spanLine, edgeX, edgeY, circleToD, drawKeylines } from "../../engine/primitives.js";
+## Quick Golden Rules Checklist
+${GOLDEN_RULES_CHECKLIST.map((r) => `- ${r}`).join("\n")}
 
-export default {
-  id: "sb-example-icon",
-  slug: "example-icon",
-  name: "Example Icon",
-  area: "sb", // "common" | "sb" | "gx" | "payments" | "bx"
-  order: 223,
-  desc: "Short geometric description of construction.",
-  meta: {
-    slug: "example-icon",
-    area: "sb",
-    alias: "",
-    crsKey: "",
-    description: "Human-friendly usage description.",
-    tags: ["example", "sports"],
-    status: "review"
-  },
-  build: ({ b, r, s, styleMode }) => {
-    const body = bloatRect({ x: 4, y: 5, w: 16, h: 14, r: Math.min(r, 2.2), b });
-    return {
-      keylines: drawKeylines([[12, 12, 4]], body.anchors),
-      line: \`<path d="\${body.d}"/>\`,
-      solid: {
-        fill: [body.d],
-        cut: [\`M8 12H16\`]
-      },
-      duotone: {
-        tone: [body.d],
-        secondary: [\`M8 12H16\`],
-        line: \`<path d="\${body.d}"/>\`
-      }
-    };
-  }
-};
-\`\`\`
+## Available Primitives in \`../../engine/primitives.js\`
+- \`f(n)\`, \`P([x, y])\`, \`add(a, b)\`, \`sub(a, b)\`, \`mul(a, k)\`, \`len(a)\`, \`norm(a)\`, \`deg2rad(d)\`, \`rad2deg(r)\`
+- \`polar(cx, cy, r, deg)\` -> \`[x, y]\` on circle at angle \`deg\`
+- \`circleD(cx, cy, r)\` -> closed 2-arc circle path \`d\`
+- \`arcD(cx, cy, r, deg0, deg1, sweep = 1)\` -> open circular arc path \`d\`
+- \`outerTangents(c1, r1, c2, r2)\` -> external bitangent points & angles between two circles
+- \`tangentHull2(c1, r1, c2, r2)\` -> \`{ d, t }\` closed smooth capsule/tapered hull connecting two circles (ideal for athlete torsos, equine thighs, dart barrels)
+- \`capsule(a, b, w, x2, r)\` -> round-capped pill contour between two points
+- \`ellipseY(cx, cy, rx, ry, x, half = "bottom" | "top")\` -> exact y coordinate on an ellipse at x
+- \`roundOpen(pts, r)\` -> open polyline with circular-arc filleted joints (ideal for athlete limbs)
+- \`bloatRect({ x, y, w, h, r, b })\` -> \`{ d, anchors, poly, pts, box }\` bloated squircle rectangle
+- \`bloatPoly(pts, r, b, { minEdge, inset, edgeBulge })\` -> \`{ d, anchors, poly, pts, box }\` bloated closed polygon
+- \`edgeX(poly, yy, "left" | "right")\` / \`edgeY(poly, xx, "top" | "bottom")\` -> exact wall intersection on a bloated polygon
+- \`spanLine(shape, yy, b)\` -> horizontal cubic curve spanning \`shape.poly\` from left wall to right wall
+- \`facePoly(pts, { offset, r, bulge })\` -> inset closed polygon for Multi-Shape Padded Solids (\`solid.face: [...]\`)
+- \`sectorFace(cx, cy, R, a0Deg, a1Deg, s, rCorner = 0.55)\` -> rounded circular sector wedge for balls/wheels
+- \`drawKeylines(circlesArray, tangentsArray)\` -> blueprint construction overlay
 
-## 2. Available Primitives (\`src/engine/primitives.js\`)
-- \`bloatRect({ x, y, w, h, r, b })\` -> returns \`{ d, anchors, poly, pts, box }\` for a squircle/bloated rectangle.
-- \`bloatPoly(pts, r, b, { minEdge = 3.5 })\` -> returns \`{ d, anchors, poly, pts, box }\` for an arbitrary closed polygon with rounded corners \`r\` and outward edge bulge \`b\`.
-- \`facePoly(pts, { offset, r, bulge })\` -> inset/offset closed polygon for multi-shape padded solid faces (\`offset\` is an array of per-edge inward offsets in px, e.g. \`0.85\` for a \`1.7px\` gap between adjacent faces).
-- \`sectorFace(cx, cy, R, a0Deg, a1Deg, s, rCorner = 0.55)\` -> rounded circular sector wedge for balls/wheels.
-- \`spanLine(shape, yy, b)\` -> horizontal cubic curve spanning \`shape.poly\` from left edge to right edge at \`y = yy\`.
-- \`edgeX(poly, yy, "left" | "right")\` / \`edgeY(poly, xx, "top" | "bottom")\` -> exact intersection of an internal divider with a bloated outer polygon so T-junctions never overshoot or gap.
-- \`circleToD(cx, cy, r)\` -> exact 4-arc circular path \`d\`.
-- \`drawKeylines(circlesArray, tangentsArray)\` -> blueprint construction overlay (\`circlesArray = [[cx, cy, r], ...]\`, \`tangentsArray = [[x, y], ...]\`).
+---
 
-## 3. Hard Geometry & Style Rules
-1. **Multi-Shape Padded Solids First:** Whenever an icon has segmented panels (tickets, cards, funnels, crowns, gems, sports balls, gloves), build \`solid.face\` from **2–7 independent rounded shapes separated by a \`1.5–1.8px\` gap** rather than a single-line slot cut.
-2. **Foreground Shapes Over Halo Masks (\`solid.over\`):** Any foreground shape sitting inside a \`holeExact\` / \`cut\` mask must be placed in \`solid.over: [...]\` so the mask does not erase it.
-3. **Duotone 3-Layer Rule:** \`duotone.tone\` holds \`28%\` opacity fill paths, \`duotone.secondary\` holds inner detail stroke paths (colored in \`duoColor\`), and \`duotone.line\` holds the outer silhouette stroke.
 `;
+
+  return header + fullSkillBody;
 }

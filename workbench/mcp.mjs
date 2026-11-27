@@ -12,8 +12,10 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   AREAS,
+  GOLDEN_RULES_CHECKLIST,
   ICONS_DIR,
   META_PATH,
+  SRC_DIR,
   buildQueueResponse,
   findIconEntry,
   getAuthoringSkillMarkdown,
@@ -231,6 +233,7 @@ async function executeTool(name, args = {}) {
           slug: meta.slug,
           area: meta.area,
           path: `src/icons/${meta.area}/${meta.slug}.js`,
+          goldenRulesChecklist: GOLDEN_RULES_CHECKLIST,
           meta,
           comments,
           openComments: comments.filter((c) => c.status !== "resolved"),
@@ -385,7 +388,11 @@ async function handleRpcMessage(msg) {
       id,
       result: {
         protocolVersion: params?.protocolVersion || "2024-11-05",
-        capabilities: { tools: {} },
+        capabilities: {
+          tools: {},
+          resources: {},
+          prompts: {},
+        },
         serverInfo: {
           name: "fdsi-workbench",
           version: "1.0.0",
@@ -407,6 +414,84 @@ async function handleRpcMessage(msg) {
       jsonrpc: "2.0",
       id,
       result: { tools: TOOLS },
+    });
+  }
+
+  if (method === "resources/list") {
+    return sendRpcResponse({
+      jsonrpc: "2.0",
+      id,
+      result: {
+        resources: [
+          {
+            uri: "fdsi://skill/golden-rules",
+            name: "FDSI Icon Authoring Skill & Golden Rules",
+            description: "Complete 2D Spatial Protocol, Anchor-Locked Bloat, Multi-Shape Padded Solids, and Category Recipes.",
+            mimeType: "text/markdown",
+          },
+          {
+            uri: "fdsi://skill/primitives",
+            name: "FDSI Geometric Primitives Kernel (primitives.js)",
+            description: "Full source code of src/engine/primitives.js.",
+            mimeType: "text/javascript",
+          },
+        ],
+      },
+    });
+  }
+
+  if (method === "resources/read") {
+    const uri = params?.uri || "fdsi://skill/golden-rules";
+    const text =
+      uri === "fdsi://skill/primitives"
+        ? fs.readFileSync(path.join(SRC_DIR, "engine/primitives.js"), "utf8")
+        : getAuthoringSkillMarkdown();
+    return sendRpcResponse({
+      jsonrpc: "2.0",
+      id,
+      result: {
+        contents: [
+          {
+            uri,
+            mimeType: uri === "fdsi://skill/primitives" ? "text/javascript" : "text/markdown",
+            text,
+          },
+        ],
+      },
+    });
+  }
+
+  if (method === "prompts/list") {
+    return sendRpcResponse({
+      jsonrpc: "2.0",
+      id,
+      result: {
+        prompts: [
+          {
+            name: "fdsi-icon-author",
+            description: "Loads the FDSI Icon Authoring Golden Rules and guides the agent through fixing TODO icons or creating new icons.",
+          },
+        ],
+      },
+    });
+  }
+
+  if (method === "prompts/get") {
+    return sendRpcResponse({
+      jsonrpc: "2.0",
+      id,
+      result: {
+        description: "FDSI Icon Authoring Golden Rules & Workflow",
+        messages: [
+          {
+            role: "user",
+            content: {
+              type: "text",
+              text: getAuthoringSkillMarkdown(),
+            },
+          },
+        ],
+      },
     });
   }
 

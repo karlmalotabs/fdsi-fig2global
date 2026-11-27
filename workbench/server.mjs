@@ -9,6 +9,7 @@ import {
   AREAS,
   FIG2GLOBAL_ROOT,
   FIG2GLOBAL_WB,
+  GOLDEN_RULES_CHECKLIST,
   HISTORY_PATH,
   ICONS_DIR,
   META_PATH,
@@ -164,17 +165,16 @@ function scanIconModules() {
 // loads all icons in 1 HTTP request (~5ms) instead of 222 separate HTTP/1.1 requests!
 function buildDynamicBundleJs() {
   const mods = scanIconModules();
-  const chunks = [
-    `import * as _P from "/src/engine/primitives.js";`,
-    `const { deg2rad, f, P, add, sub, mul, len, norm, perp, rot, distPtSeg, sampleCubic, circleToD, ellToD, lineSegD, polyD, bloatPoly, bloatRect, edgeX, edgeY, spanLine, facePoly, sectorFace, drawKeylines } = _P;`,
-    `export const ICONS = [];`,
-  ];
+  const chunks = [`import * as _P from "/src/engine/primitives.js";`, `export const ICONS = [];`];
   for (let i = 0; i < mods.length; i++) {
     const m = mods[i];
     const fp = path.join(ICONS_DIR, m.area, `${m.slug}.js`);
     let src = fs.readFileSync(fp, "utf8");
-    // Strip the per-file primitives import and rewrite `export default` into `const _icN =`:
-    src = src.replace(/^\s*import\s+\{[^}]*\}\s+from\s+["'][^"']*primitives\.js["'];?\s*$/gm, "");
+    // Rewrite each file's `import { ... } from "../../engine/primitives.js"` into `const { ... } = _P;` inside its own block scope:
+    src = src.replace(
+      /^\s*import\s+\{([^}]*)\}\s+from\s+["'][^"']*primitives\.js["'];?\s*$/gm,
+      (_, names) => `const {${names.replace(/\bas\b/g, ":")}} = _P;`
+    );
     src = src.replace(/export\s+default\s+/, `const _ic${i} = `);
     chunks.push(
       `{\n${src}\nICONS.push({ ..._ic${i}, _fileArea: ${JSON.stringify(m.area)}, _fileSlug: ${JSON.stringify(m.slug)} });\n}`
@@ -328,6 +328,7 @@ const server = http.createServer(async (req, res) => {
       slug: meta.slug,
       area: meta.area,
       path: `src/icons/${meta.area}/${meta.slug}.js`,
+      goldenRulesChecklist: GOLDEN_RULES_CHECKLIST,
       meta: {
         ...meta,
         comments,
