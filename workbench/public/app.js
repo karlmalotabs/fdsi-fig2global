@@ -646,22 +646,34 @@ function renderCommentThread(m) {
     .join("");
 }
 
+let lastPopulatedId = null;
+function setFieldValueSafe(id, val, force = false) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (!force && document.activeElement === el) return;
+  el.value = val;
+}
+
 async function populateInspector(item, loadSource = true) {
+  const switchedIcon = !lastPopulatedId || lastPopulatedId !== item.id;
+  lastPopulatedId = item.id;
   inspectedItem = item;
   const m = getMeta(item);
   document.getElementById("inspTitle").textContent = cleanDisplayName(item);
-  document.getElementById("inspNameInput").value = cleanDisplayName(item);
+  setFieldValueSafe("inspNameInput", cleanDisplayName(item), switchedIcon);
   const pill = document.getElementById("inspAreaPill");
   pill.className = `area-pill area-${m.area}`;
   pill.textContent = AREA_LABELS[m.area] || m.area;
 
-  document.getElementById("inspReworkNote").value = m.reworkNote || "";
-  document.getElementById("inspArea").value = m.area;
-  document.getElementById("inspDesc").value = m.description || "";
-  document.getElementById("inspTags").value = (m.tags || []).join(", ");
-  document.getElementById("inspCrsKey").value = m.crsKey || "";
-  document.getElementById("inspAlias").value = m.alias || "";
-  document.getElementById("inspTokenId").value = `fdsi-${m.slug}-reg`;
+  if (switchedIcon) {
+    setFieldValueSafe("inspReworkNote", "", true);
+  }
+  setFieldValueSafe("inspArea", m.area, switchedIcon);
+  setFieldValueSafe("inspDesc", m.description || "", switchedIcon);
+  setFieldValueSafe("inspTags", (m.tags || []).join(", "), switchedIcon);
+  setFieldValueSafe("inspCrsKey", m.crsKey || "", switchedIcon);
+  setFieldValueSafe("inspAlias", m.alias || "", switchedIcon);
+  setFieldValueSafe("inspTokenId", `fdsi-${m.slug}-reg`, true);
 
   renderCommentThread(m);
   renderInspectorStages(item);
@@ -671,7 +683,7 @@ async function populateInspector(item, loadSource = true) {
       `/api/icon-source?area=${encodeURIComponent(item._fileArea || m.area)}&slug=${encodeURIComponent(m.slug)}`
     );
     const data = await res.json();
-    document.getElementById("inspCode").value = data.ok ? data.source : `// Error loading source: ${data.error}`;
+    setFieldValueSafe("inspCode", data.ok ? data.source : `// Error loading source: ${data.error}`, switchedIcon);
   }
 }
 
@@ -712,7 +724,7 @@ function scheduleMetaSave(id, patch, immediateRender = false) {
         }
         showToast(`✓ Saved changes for ${cleanDisplayName(item)}`, 1400);
       }
-    }, 280)
+    }, 800)
   );
 }
 
@@ -952,9 +964,11 @@ document.addEventListener("click", async (e) => {
   }
 });
 
-// Inspector Form Inputs -> Auto-Save to Disk
-["inspNameInput", "inspReworkNote", "inspArea", "inspDesc", "inspTags", "inspCrsKey", "inspAlias"].forEach((id) => {
-  document.getElementById(id).addEventListener("input", () => {
+// Inspector Metadata Fields -> Debounced Save (excludes `#inspReworkNote` which is a comment composer!)
+["inspNameInput", "inspArea", "inspDesc", "inspTags", "inspCrsKey", "inspAlias"].forEach((id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener("input", () => {
     if (!inspectedItem) return;
     const newTitle = document.getElementById("inspNameInput").value.trim() || inspectedItem.name;
     document.getElementById("inspTitle").textContent = newTitle;
@@ -962,7 +976,6 @@ document.addEventListener("click", async (e) => {
       inspectedItem.id,
       {
         name: newTitle,
-        reworkNote: document.getElementById("inspReworkNote").value,
         area: document.getElementById("inspArea").value,
         description: document.getElementById("inspDesc").value,
         tags: document
@@ -1006,7 +1019,7 @@ async function submitCommentAction({ moveToStage = null, resolveAll = false } = 
   if (data.ok) {
     metaCatalog[inspectedItem.id] = data.entry;
     if (Array.isArray(data.history)) historyLog = data.history;
-    if (resolveAll) noteEl.value = "";
+    noteEl.value = "";
     renderAll();
     populateInspector(inspectedItem, false);
     showToast(
@@ -1019,6 +1032,13 @@ async function submitCommentAction({ moveToStage = null, resolveAll = false } = 
     );
   }
 }
+
+document.getElementById("inspReworkNote")?.addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
+    e.preventDefault();
+    submitCommentAction({ moveToStage: "todo", resolveAll: false });
+  }
+});
 
 document.getElementById("btnPostTodoComment")?.addEventListener("click", () => {
   submitCommentAction({ moveToStage: "todo", resolveAll: false });
@@ -1322,6 +1342,16 @@ function connectSse() {
   sseSource = new EventSource("/api/events");
   sseSource.addEventListener("icons-changed", (e) => {
     const info = JSON.parse(e.data || "{}");
+    const activeTag = document.activeElement?.tagName;
+    if (activeTag === "INPUT" || activeTag === "TEXTAREA") {
+      // Do not clobber the DOM while the user is actively typing in an input or textarea!
+      const onBlurOnce = () => {
+        document.activeElement?.removeEventListener("blur", onBlurOnce);
+        loadAllIcons();
+      };
+      document.activeElement.addEventListener("blur", onBlurOnce, { once: true });
+      return;
+    }
     showToast(`🔄 Hot-reloading (${info.area || "icons"}/${info.file || info.slug || ""})…`, 1800);
     loadAllIcons();
   });

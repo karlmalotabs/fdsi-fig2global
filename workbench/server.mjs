@@ -198,16 +198,28 @@ function broadcastSse(event, payload) {
   }
 }
 
+// Track metadata-only writes to `src/icons/<area>/<slug>.js` so `fs.watch`
+// does NOT broadcast a false `icons-changed` hot-reload back to the typing user!
+const suppressedWatchFiles = new Map();
+function markInternalMetaWrite(area, slug) {
+  suppressedWatchFiles.set(`${area}/${slug}.js`, Date.now() + 1500);
+}
+
 let watchTimer = null;
 for (const area of AREAS) {
   const dir = path.join(ICONS_DIR, area);
   if (!fs.existsSync(dir)) continue;
   fs.watch(dir, (eventType, filename) => {
     if (!filename || !filename.endsWith(".js")) return;
+    const key = `${area}/${filename}`;
+    const exp = suppressedWatchFiles.get(key);
+    if (exp && exp > Date.now()) {
+      return;
+    }
     clearTimeout(watchTimer);
     watchTimer = setTimeout(() => {
       broadcastSse("icons-changed", { area, file: filename, at: Date.now() });
-    }, 120);
+    }, 150);
   });
 }
 
@@ -403,9 +415,9 @@ const server = http.createServer(async (req, res) => {
       };
       catalog[iconId] = updated;
       writeMetaCatalog(catalog);
+      markInternalMetaWrite(updated.area || "sb", updated.slug);
       syncIconJsMetaBlock(updated.area || "sb", updated.slug, updated);
       const history = readAndRecordHistory(catalog);
-      broadcastSse("icons-changed", { id: iconId, slug: updated.slug, area: updated.area, at: Date.now() });
 
       return sendJson(res, 200, {
         ok: true,
@@ -543,12 +555,15 @@ const server = http.createServer(async (req, res) => {
       const newArea = AREAS.includes(next.area) ? next.area : oldArea;
       const newFile = path.join(ICONS_DIR, newArea, `${targetSlug}.js`);
       if (fs.existsSync(oldFile) && newFile !== oldFile) {
+        markInternalMetaWrite(oldArea, targetSlug);
+        markInternalMetaWrite(newArea, targetSlug);
         fs.copyFileSync(oldFile, newFile);
         fs.rmSync(oldFile, { force: true });
         try {
           fs.rmSync(path.join(FIG2GLOBAL_WB, `src/icons/${oldArea}/${targetSlug}.js`), { force: true });
         } catch {}
       }
+      markInternalMetaWrite(newArea, targetSlug);
       syncIconJsMetaBlock(newArea, targetSlug, next);
 
       return sendJson(res, 200, { ok: true, entry: next, history });
